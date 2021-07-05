@@ -3,7 +3,7 @@
           box-sizing: border-box;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, p {
   margin: 0;
   font-weight: unset;
 }
@@ -62,39 +62,83 @@ body nav .banner .container170 {
 
 body nav .banner .container170 span {
   font-size: 32px;
-  color: gray;
+  color: #707070;
 }
 
 body nav .banner .container170 .mid {
-  margin-top: -12px;
+  margin: -12px 0 8px;
 }
 
-body nav .banner .container170 .mid h1 {
+body nav .banner .container170 .mid .area-top, body nav .banner .container170 .mid .area-bot {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+body nav .banner .container170 .mid .area-top h1, body nav .banner .container170 .mid .area-bot h1 {
   font-size: 120px;
-  color: orange;
+  color: #FFA183;
   margin-right: 10px;
 }
 
-body nav .banner .container170 .mid h3 {
+body nav .banner .container170 .mid .area-top h3, body nav .banner .container170 .mid .area-bot h3 {
   font-size: 48px;
-  color: gray;
+  color: #707070;
+  margin-bottom: 16px;
 }
 
-body nav .banner .container170 .mid .area-top {
+body nav .banner .container170 .mid div:nth-child(2) {
+  margin-left: 64px;
+}
+
+body nav .banner .container170 .bot {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body nav .banner .container170 .bot h1 {
+  font-size: 168px;
+  color: #FE886D;
+  margin: 0 10px;
+  line-height: 190px;
+}
+
+body nav .banner .container170 .bot h2 {
+  margin-top: 80px;
+  font-size: 64px;
+  color: #4F4F4F;
+}
+
+body nav .banner .container170 .banner-btn {
+  width: 387px;
+  height: 116px;
+  background-color: #FF7950;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 40px;
+  -webkit-box-shadow: 0px 10px 30px 0px #FF7950;
+          box-shadow: 0px 10px 30px 0px #FF7950;
 }
 
-body nav .banner .container170 .mid .area-bot {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+body nav .banner .container170 .banner-btn p {
+  font-size: 56px;
+  font-weight: bold;
+  color: #FFFFFF;
+  border-bottom: 4px solid #FF7950;
+}
+
+body nav .banner .container170 .banner-btn p:hover {
+  border-bottom: 4px solid #FFFFFF;
 }
 /*# sourceMappingURL=index.css.map */

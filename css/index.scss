@@ -2,10 +2,18 @@
 	box-sizing: border-box;
 }
 
-h1,h2,h3,h4,h5,h6{
+h1,h2,h3,h4,h5,h6,p{
 	margin: 0;
 	font-weight: unset;
 }
+
+$color-banner-gray : #707070;
+$color-banner-number : #FFA183;
+$color-light-orange : #FE886D;
+$color-dark-orange: #FF7950;
+
+$color-text: #4F4F4F;
+$color-btn-text: #FFFFFF;
 
 .container170{
 	padding: 0 170px;
@@ -54,29 +62,62 @@ body {
 
 				span{
 					font-size: 32px;
-					color: gray;
+					color: $color-banner-gray;
 				}
 
 				.mid{
-					margin-top: -12px;
+					margin: -12px 0 8px;
+					.area-top,.area-bot{
+						display: flex;
+						align-items: flex-end;
+						h1{
+							font-size: 120px;
+							color: $color-banner-number;
+							margin-right: 10px ;
+						}
+						h3{
+							font-size: 48px;
+							color: $color-banner-gray;
+							margin-bottom: 16px;
+						}
+					}
+					div:nth-child(2){
+						margin-left: 64px ;
+					}
+				}
+				.bot{
+					display: flex;
 					h1{
-						font-size: 120px;
-						color: orange;
-						margin-right: 10px ;
+						font-size: 168px;
+						color: $color-light-orange;
+						margin:0 10px;
+						line-height: 190px;
 					}
-					h3{
-						font-size: 48px;
-						color: gray;
+					h2{
+						margin-top: 80px;
+						font-size: 64px;
+						color: #4F4F4F;
 					}
-					.area-top{
-						
-						display: flex;
-						align-items: center;
+				}
+				.banner-btn{
+					width: 387px;
+					height: 116px;
+					background-color: $color-dark-orange;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					border-radius: 40px;
+					box-shadow:  0px 10px 30px 0px $color-dark-orange;
+					p{
+						font-size: 56px;
+						font-weight: bold;
+						color: #FFFFFF;
+						border-bottom: 4px solid $color-dark-orange;
+						&:hover{
+							border-bottom: 4px solid #FFFFFF;
+						}
 					}
-					.area-bot{
-						display: flex;
-						align-items: center;
-					}
+					
 				}
 			}
 		}
