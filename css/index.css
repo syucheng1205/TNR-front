@@ -28,7 +28,7 @@ body nav .banner .nav-top {
 }
 
 body nav .banner .nav-top .logo {
-  width: 520px;
+  width: 540px;
   height: 90px;
   background-image: url("/img/logo.png");
   background-repeat: no-repeat;
@@ -44,5 +44,41 @@ body nav .banner .nav-top .menu {
 body nav .banner .nav-top .menu:hover {
   color: white;
   cursor: pointer;
+}
+
+body nav .banner .text-area {
+  margin-left: 170px;
+  margin-top: 100px;
+}
+
+body nav .banner .text-area span {
+  font-size: 30px;
+  color: gray;
+}
+
+body nav .banner .text-area .mid h1 {
+  color: orange;
+}
+
+body nav .banner .text-area .mid h3 {
+  color: gray;
+}
+
+body nav .banner .text-area .mid .area-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body nav .banner .text-area .mid .area-bot {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 /*# sourceMappingURL=index.css.map */
