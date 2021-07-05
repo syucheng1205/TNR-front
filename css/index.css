@@ -3,6 +3,15 @@
           box-sizing: border-box;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-weight: unset;
+}
+
+.container170 {
+  padding: 0 170px;
+}
+
 body {
   margin: 0;
 }
@@ -46,27 +55,32 @@ body nav .banner .nav-top .menu:hover {
   cursor: pointer;
 }
 
-body nav .banner .text-area {
+body nav .banner .container170 {
   margin-left: 170px;
   margin-top: 200px;
 }
 
-body nav .banner .text-area span {
+body nav .banner .container170 span {
   font-size: 32px;
   color: gray;
 }
 
-body nav .banner .text-area .mid h1 {
-  font-size: 120px;
-  color: orange;
+body nav .banner .container170 .mid {
+  margin-top: -12px;
 }
 
-body nav .banner .text-area .mid h3 {
+body nav .banner .container170 .mid h1 {
+  font-size: 120px;
+  color: orange;
+  margin-right: 10px;
+}
+
+body nav .banner .container170 .mid h3 {
   font-size: 48px;
   color: gray;
 }
 
-body nav .banner .text-area .mid .area-top {
+body nav .banner .container170 .mid .area-top {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -75,7 +89,7 @@ body nav .banner .text-area .mid .area-top {
           align-items: center;
 }
 
-body nav .banner .text-area .mid .area-bot {
+body nav .banner .container170 .mid .area-bot {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

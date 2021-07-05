@@ -2,6 +2,15 @@
 	box-sizing: border-box;
 }
 
+h1,h2,h3,h4,h5,h6{
+	margin: 0;
+	font-weight: unset;
+}
+
+.container170{
+	padding: 0 170px;
+}
+
 body {
 	margin: 0;
 	nav {
@@ -39,7 +48,7 @@ body {
 				}
 			}
 
-			.text-area{
+			.container170{
 				margin-left: 170px;
 				margin-top: 200px;
 
@@ -49,9 +58,11 @@ body {
 				}
 
 				.mid{
+					margin-top: -12px;
 					h1{
 						font-size: 120px;
 						color: orange;
+						margin-right: 10px ;
 					}
 					h3{
 						font-size: 48px;
@@ -62,7 +73,6 @@ body {
 						display: flex;
 						align-items: center;
 					}
-
 					.area-bot{
 						display: flex;
 						align-items: center;
