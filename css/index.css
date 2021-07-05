@@ -28,8 +28,8 @@ body nav .banner .nav-top {
 }
 
 body nav .banner .nav-top .logo {
-  width: 540px;
-  height: 90px;
+  width: 511px;
+  height: 83.5px;
   background-image: url("/img/logo.png");
   background-repeat: no-repeat;
   background-position: center;
@@ -52,7 +52,7 @@ body nav .banner .text-area {
 }
 
 body nav .banner .text-area span {
-  font-size: 30px;
+  font-size: 32px;
   color: gray;
 }
 
