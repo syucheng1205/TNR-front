@@ -3,7 +3,13 @@
           box-sizing: border-box;
 }
 
-h1, h2, h3, h4, h5, h6, p {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
   margin: 0;
   font-weight: unset;
 }
@@ -12,11 +18,15 @@ h1, h2, h3, h4, h5, h6, p {
   padding: 0 170px;
 }
 
+.container140 {
+  padding: 0 140px;
+}
+
 body {
   margin: 0;
 }
 
-body nav .banner {
+nav .banner {
   background-image: url("/img/banner.png");
   width: 100%;
   height: 100vh;
@@ -25,7 +35,7 @@ body nav .banner {
   background-size: cover;
 }
 
-body nav .banner .nav-top {
+nav .banner .nav-top {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -36,7 +46,7 @@ body nav .banner .nav-top {
   padding: 20px 140px 0 140px;
 }
 
-body nav .banner .nav-top .logo {
+nav .banner .nav-top .logo {
   width: 511px;
   height: 83.5px;
   background-image: url("/img/logo.png");
@@ -45,30 +55,31 @@ body nav .banner .nav-top .logo {
   background-size: cover;
 }
 
-body nav .banner .nav-top .menu {
+nav .banner .nav-top .menu {
   font-size: 100px;
   line-height: 50px;
 }
 
-body nav .banner .nav-top .menu:hover {
+nav .banner .nav-top .menu:hover {
   color: white;
   cursor: pointer;
 }
 
-body nav .banner .container170 {
+nav .banner .container170 {
   margin-top: 200px;
 }
 
-body nav .banner .container170 span {
+nav .banner .container170 span {
   font-size: 32px;
   color: #707070;
 }
 
-body nav .banner .container170 .mid {
+nav .banner .container170 .mid {
   margin: -12px 0 8px;
 }
 
-body nav .banner .container170 .mid .area-top, body nav .banner .container170 .mid .area-bot {
+nav .banner .container170 .mid .area-top,
+nav .banner .container170 .mid .area-bot {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -77,45 +88,47 @@ body nav .banner .container170 .mid .area-top, body nav .banner .container170 .m
           align-items: flex-end;
 }
 
-body nav .banner .container170 .mid .area-top h1, body nav .banner .container170 .mid .area-bot h1 {
+nav .banner .container170 .mid .area-top h1,
+nav .banner .container170 .mid .area-bot h1 {
   font-size: 120px;
-  color: #FFA183;
+  color: #ffa183;
   margin-right: 10px;
 }
 
-body nav .banner .container170 .mid .area-top h3, body nav .banner .container170 .mid .area-bot h3 {
+nav .banner .container170 .mid .area-top h3,
+nav .banner .container170 .mid .area-bot h3 {
   font-size: 48px;
   color: #707070;
   margin-bottom: 16px;
 }
 
-body nav .banner .container170 .mid div:nth-child(2) {
+nav .banner .container170 .mid div:nth-child(2) {
   margin-left: 64px;
 }
 
-body nav .banner .container170 .bot {
+nav .banner .container170 .bot {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-body nav .banner .container170 .bot h1 {
+nav .banner .container170 .bot h1 {
   font-size: 168px;
-  color: #FE886D;
+  color: #fe886d;
   margin: 0 10px;
   line-height: 190px;
 }
 
-body nav .banner .container170 .bot h2 {
+nav .banner .container170 .bot h2 {
   margin-top: 80px;
   font-size: 64px;
-  color: #4F4F4F;
+  color: #4f4f4f;
 }
 
-body nav .banner .container170 .banner-btn {
+nav .banner .container170 .banner-btn {
   width: 387px;
   height: 116px;
-  background-color: #FF7950;
+  background-color: #ff7950;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -126,18 +139,28 @@ body nav .banner .container170 .banner-btn {
       -ms-flex-pack: center;
           justify-content: center;
   border-radius: 40px;
-  -webkit-box-shadow: 0px 10px 30px 0px #FF7950;
-          box-shadow: 0px 10px 30px 0px #FF7950;
+  -webkit-box-shadow: 0px 10px 30px 0px #ff7950;
+          box-shadow: 0px 10px 30px 0px #ff7950;
 }
 
-body nav .banner .container170 .banner-btn p {
+nav .banner .container170 .banner-btn p {
   font-size: 56px;
   font-weight: bold;
-  color: #FFFFFF;
-  border-bottom: 4px solid #FF7950;
+  color: #ffffff;
+  border-bottom: 4px solid #ff7950;
 }
 
-body nav .banner .container170 .banner-btn p:hover {
-  border-bottom: 4px solid #FFFFFF;
+nav .banner .container170 .banner-btn p:hover {
+  border-bottom: 4px solid #ffffff;
+}
+
+main .first-section .container140 .title-area {
+  margin: auto;
+  width: 428px;
+  height: 130px;
+  background-image: url(/img/deco-title.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 /*# sourceMappingURL=index.css.map */
