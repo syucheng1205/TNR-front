@@ -133,7 +133,7 @@
 						</div>
 						<div class="text">
 							<h3>節育貓咪數</h3>
-							<h1 class="count" data-target="19940">0</h1>
+							<h1 class="count" data-target="1940">0</h1>
 						</div>
 					</div>
 					<div class="col-4 numerical-value">
@@ -142,7 +142,7 @@
 						</div>
 						<div class="text">
 							<h3>節育貓咪數</h3>
-							<h1 class="count" data-target="19940">0</h1>
+							<h1 class="count" data-target="3000">0</h1>
 						</div>
 					</div>
 				</div>
@@ -236,10 +236,10 @@
 				console.log(increment);
 
 				if (count < target) {
-					counter.innerText = count + increment;
+					counter.innerText = (count + increment).toLocaleString();
 					setTimeout(updateCount, 1);
 				} else {
-					count.innerText = target;
+					count.innerText = target.toLocaleString();
 				}
 			};
 			updateCount();
