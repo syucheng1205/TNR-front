@@ -85,8 +85,10 @@ nav .nav .menu .burger::after {
   top: 30px;
 }
 
-nav .nav .menu:hover .burger, nav .nav .menu:hover .burger::after, nav .nav .menu:hover .burger::before {
-  background-color: #ffffff;
+nav .nav .menu:hover .burger,
+nav .nav .menu:hover .burger::after,
+nav .nav .menu:hover .burger::before {
+  background-color: #ff7950;
 }
 
 main .banner {
@@ -171,6 +173,7 @@ main .banner .container170 .banner-btn {
   border-radius: 40px;
   -webkit-box-shadow: 0px 10px 30px 0px #ff7950;
           box-shadow: 0px 10px 30px 0px #ff7950;
+  cursor: pointer;
 }
 
 main .banner .container170 .banner-btn p {
@@ -189,8 +192,8 @@ main .banner .container170 .banner-btn:hover p {
 main .banner .container170 .banner-btn:hover {
   -webkit-box-shadow: 0px 0px 10px 0px #ff7950;
           box-shadow: 0px 0px 10px 0px #ff7950;
-  -webkit-transition-duration: .8s;
-          transition-duration: .8s;
+  -webkit-transition-duration: 0.8s;
+          transition-duration: 0.8s;
 }
 
 main .first-section {
@@ -305,7 +308,7 @@ main .first-section .container170 .col .about-us .bot {
 
 main .first-section .container170 .col .about-us p {
   font-size: 24px;
-  color: #FFA183;
+  color: #ffa183;
 }
 
 main .first-section .container170 .col .about-us .about-btn {
@@ -324,6 +327,7 @@ main .first-section .container170 .col .about-us .about-btn {
       -ms-flex-pack: center;
           justify-content: center;
   border-radius: 40px;
+  cursor: pointer;
 }
 
 main .first-section .container170 .col .about-us .about-btn p {
@@ -335,5 +339,58 @@ main .first-section .container170 .col .about-us .about-btn p {
 
 main .first-section .container170 .col .about-us .about-btn p:hover {
   border-bottom: 4px solid #ffffff;
+}
+
+main .first-section .container170 .col .about-us .about-btn p:hover p {
+  border-bottom: 4px solid #ffffff;
+  -webkit-transition-duration: 0.8s;
+          transition-duration: 0.8s;
+}
+
+main .first-section .container170 .col .about-us .about-btn p:hover {
+  -webkit-box-shadow: 0px 0px 10px 0px #ff7950;
+          box-shadow: 0px 0px 10px 0px #ff7950;
+  -webkit-transition-duration: 0.8s;
+          transition-duration: 0.8s;
+}
+
+main .container140 .col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .container140 .col .icon {
+  width: 133px;
+  height: 133px;
+  border-radius: 50%;
+  background-color: #fe886d;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .container140 .col .icon i {
+  font-size: 60px;
+  color: #ffffff;
+}
+
+main .container140 .col .text h3 {
+  font-size: 32px;
+  color: #707070;
+  margin-left: 20px;
+  font-weight: bold;
+}
+
+main .container140 .col .text h1 {
+  font-size: 96px;
+  color: #4F4F4F;
+  margin-left: 10px;
 }
 /*# sourceMappingURL=index.css.map */
