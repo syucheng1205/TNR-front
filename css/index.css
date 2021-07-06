@@ -227,8 +227,8 @@ main .first-section .container170 .col {
 
 main .first-section .container170 .col .about-img {
   margin-right: 90px;
-  width: 793px;
-  height: 675px;
+  width: 793px !important;
+  height: 675px !important;
   background-image: url("/img/first-section/cat-1.png");
   background-repeat: no-repeat;
   background-position: center;
@@ -236,7 +236,33 @@ main .first-section .container170 .col .about-img {
   position: relative;
 }
 
-main .first-section .container170 .col .about-img .about-shadow {
+main .first-section .container170 .col .swiper-point {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 92px;
+  padding-top: 50px;
+  margin-left: -72px;
+}
+
+main .first-section .container170 .col .swiper-point .swiper-pagination-bullet {
+  width: 20px;
+  height: 20px;
+  background-color: #ffffff;
+  opacity: 1;
+}
+
+main .first-section .container170 .col .swiper-point .swiper-pagination-bullet-active {
+  background-color: #fe886d;
+}
+
+main .first-section .container170 .col .about-shadow {
   width: 693px;
   height: 582px;
   background-image: url("/img/first-section/米色背景.jpg");

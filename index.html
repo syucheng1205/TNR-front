@@ -9,6 +9,8 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
 		integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 	<link rel="stylesheet" href="/css/index.css">
+	<!-- swiper -->
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -64,12 +66,18 @@
 
 			<div class="container170">
 				<div class="row">
-					<div class="col">
-						<div class="about-img">
-							<div class="about-shadow"></div>
+					<div class="col-6 col">
+						<div class="swiper-container mySwiper">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide about-img"></div>
+								<div class="swiper-slide"></div>
+								<div class="swiper-slide"></div>
+							</div>
 						</div>
+						<div class="swiper-pagination swiper-point"></div>
+						<div class="about-shadow"></div>
 					</div>
-					<div class="col">
+					<div class="col-6 col">
 						<div class="about-us">
 							<div class="top">
 								<div class="row">
@@ -103,7 +111,7 @@
 				</div>
 			</div>
 
-			
+
 		</div>
 
 	</main>
@@ -119,6 +127,18 @@
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
 		integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
 		crossorigin="anonymous"></script>
+	<!-- swiper -->
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+	<script>
+		var swiper = new Swiper(".mySwiper", {
+			pagination: {
+				el: ".swiper-pagination",
+			},
+			autoplay: {
+				delay: 5000,
+			},
+		});
+	</script>
 </body>
 
 </html>

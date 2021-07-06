@@ -196,44 +196,54 @@ main {
 
 		.container170 {
 			margin-top: 100px;
-
 			.col {
 				padding: 0;
-
 				.about-img {
 					margin-right: 90px;
-					width: 793px;
-					height: 675px;
+					width: 793px !important;
+					height: 675px !important;
 					background-image: url("/img/first-section/cat-1.png");
 					background-repeat: no-repeat;
 					background-position: center;
 					background-size: cover;
-
 					position: relative;
-
-					.about-shadow {
-						width: 693px;
-						height: 582px;
-						background-image: url("/img/first-section/米色背景.jpg");
-
-						position: absolute;
-						top: 210px;
-						left: -110px;
-						z-index: -1;
+				}
+				.swiper-point{
+					display: flex;
+					justify-content: space-between;
+					align-items: center;
+					width: 92px;
+					padding-top: 50px; ;
+					margin-left: -72px;
+					.swiper-pagination-bullet{
+						width: 20px;
+						height: 20px;
+						background-color: #ffffff;
+						opacity: 1;
+					}
+					.swiper-pagination-bullet-active{
+						background-color: $color-light-orange;
 					}
 				}
+				.about-shadow {
+					width: 693px;
+					height: 582px;
+					background-image: url("/img/first-section/米色背景.jpg");
+					position: absolute;
+					top: 210px;
+					left: -110px;
+					z-index: -1;
+				}
 			}
-
 			.col {
 				padding: 0;
-
 				.about-us {
 					width: 620px;
 					margin-top: 110px;
 
 					h1 {
 						font-size: 48px;
-						color: #fe886d;
+						color: $color-light-orange;
 					}
 
 					span {
