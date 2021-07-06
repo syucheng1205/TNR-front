@@ -242,17 +242,63 @@ main .first-section .container170 .col {
   padding: 0;
 }
 
+main .first-section .container170 .col .about-us {
+  width: 620px;
+  margin-top: 110px;
+}
+
 main .first-section .container170 .col .about-us h1 {
   font-size: 48px;
-  color: #FE886D;
+  color: #fe886d;
 }
 
 main .first-section .container170 .col .about-us span {
   font-size: 18px;
-  color: #4F4F4F;
+  color: #4f4f4f;
 }
 
 main .first-section .container170 .col .about-us .row {
   margin: 0;
+}
+
+main .first-section .container170 .col .about-us .top {
+  margin-bottom: 70px;
+}
+
+main .first-section .container170 .col .about-us .bot {
+  margin-bottom: 110px;
+}
+
+main .first-section .container170 .col .about-us p {
+  font-size: 24px;
+  color: #FFA183;
+}
+
+main .first-section .container170 .col .about-us .about-btn {
+  margin-top: 20px;
+  width: 308px;
+  height: 100px;
+  background-color: #ff7950;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 40px;
+}
+
+main .first-section .container170 .col .about-us .about-btn p {
+  font-size: 36px;
+  font-weight: bold;
+  color: #ffffff;
+  border-bottom: 4px solid #ff7950;
+}
+
+main .first-section .container170 .col .about-us .about-btn p:hover {
+  border-bottom: 4px solid #ffffff;
 }
 /*# sourceMappingURL=index.css.map */
