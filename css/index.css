@@ -171,6 +171,7 @@ main .banner .container170 .banner-btn {
   border-radius: 40px;
   -webkit-box-shadow: 0px 10px 30px 0px #ff7950;
           box-shadow: 0px 10px 30px 0px #ff7950;
+  cursor: pointer;
 }
 
 main .banner .container170 .banner-btn p {
@@ -298,6 +299,7 @@ main .first-section .container170 .col .about-us .about-btn {
       -ms-flex-pack: center;
           justify-content: center;
   border-radius: 40px;
+  cursor: pointer;
 }
 
 main .first-section .container170 .col .about-us .about-btn p {
@@ -309,5 +311,18 @@ main .first-section .container170 .col .about-us .about-btn p {
 
 main .first-section .container170 .col .about-us .about-btn p:hover {
   border-bottom: 4px solid #ffffff;
+}
+
+main .first-section .container170 .col .about-us .about-btn p:hover p {
+  border-bottom: 4px solid #ffffff;
+  -webkit-transition-duration: 0.8s;
+          transition-duration: 0.8s;
+}
+
+main .first-section .container170 .col .about-us .about-btn p:hover {
+  -webkit-box-shadow: 0px 0px 10px 0px #ff7950;
+          box-shadow: 0px 0px 10px 0px #ff7950;
+  -webkit-transition-duration: .8s;
+          transition-duration: .8s;
 }
 /*# sourceMappingURL=index.css.map */
