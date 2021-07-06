@@ -53,6 +53,7 @@ nav .nav .menu {
   line-height: 50px;
   position: fixed;
   right: 140px;
+  top: 40px;
 }
 
 nav .nav .menu .burger {
