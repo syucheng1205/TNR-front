@@ -127,7 +127,7 @@
 						</div>
 						<div class="text">
 							<h3>節育貓咪數</h3>
-							<h1 class="count" data-target="19940">0</h1>
+							<h1 class="count" data-target="19940">19940</h1>
 						</div>
 					</div>
 					<div class="col-4 numerical-value" style="padding: 0%;">
@@ -136,7 +136,7 @@
 						</div>
 						<div class="text">
 							<h3>節育貓咪數</h3>
-							<h1 class="count" data-target="1940">0</h1>
+							<h1 class="count" data-target="1940">1940</h1>
 						</div>
 					</div>
 					<div class="col-4 numerical-value" style="padding: 0%;">
@@ -145,7 +145,7 @@
 						</div>
 						<div class="text">
 							<h3>節育貓咪數</h3>
-							<h1 class="count" data-target="3000">0</h1>
+							<h1 class="count" data-target="3000">3000</h1>
 						</div>
 					</div>
 				</div>
@@ -242,33 +242,77 @@
 		});
 	</script>
 	<!-- number counter -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 	<script>
-		window.addEventListener('scroll',function () {
-			const counters = document.querySelectorAll(".count");
-			const speed = 200;
-	
-			counters.forEach((counter) => {
-				const updateCount = () => {
-					const target = +counter.getAttribute("data-target");
-					const count = +counter.innerText;
-					const increment = Math.trunc(target / speed);
-					// console.log(increment);
-	
-					if (count < target) {
-						counter.innerText = parseInt(count + increment);
-						console.log(parseInt(count + increment));
-						setTimeout(updateCount, 7);
-					} else {
-						count.innerText = target.toLocaleString();
-					}
-				};
-				if (scrollY > 1900) {
-					updateCount();
-					
-				}
+		$(window).scroll(function () {
+			var height = $(window).scrollTop();
+			console.log(height);
+			if (height >= 1900) {
+				$(function () {
+				$('.count').each(function () {
+					$(this).prop('Counter', 0).animate({
+						Counter: $(this).text()
+					}, {
+						duration: 2000,
+						easing: 'swing',
+						step: function (now) {
+							$(this).text(Math.ceil(now).toString().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,"));
+						}
+					});
+				});
+
 			});
+			}
+		});
+		// window.addEventListener('scroll', function () {
+		
 			
-		})
+		// 		$('.count').each(function () {
+		// 			$(this).prop('Counter', 0).animate({
+		// 				Counter: $(this).text()
+		// 			}, {
+		// 				duration: 2000,
+		// 				easing: 'swing',
+		// 				step: function (now) {
+		// 					$(this).text(Math.ceil(now).toString().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,"));
+		// 				}
+		// 			});
+		// 		});
+
+			
+
+		// // const counters = document.querySelectorAll(".count");
+		// // const speed = 200;
+
+		// // counters.forEach((counter) => {
+		// // 	const updateCount = () => {
+		// // 		const target = +counter.getAttribute("data-target");
+		// // 		const count = +counter.innerText;
+		// // 		const increment = Math.trunc(target / speed);
+		// // 		// console.log(increment);
+
+		// // 		if (count < target) {
+		// // 			counter.innerText = parseInt(count + increment);
+		// // 			console.log(parseInt(count + increment));
+		// // 			setTimeout(updateCount, 7);
+		// // 		} else {
+		// // 			count = target;
+		// 		// }
+		// });
+		// // if (scrollY > 1900) {
+		
+
+			
+
+
+		// });
+
+
+
+			// }
+			// });
+
+		// });
 
 	</script>
 </body>
