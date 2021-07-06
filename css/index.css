@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -182,5 +183,76 @@ main .banner .container170 .banner-btn p {
 
 main .banner .container170 .banner-btn p:hover {
   border-bottom: 4px solid #ffffff;
+}
+
+main .first-section {
+  margin-top: 200px;
+  width: 100%;
+  height: auto;
+}
+
+main .first-section .title-area {
+  width: 428px;
+  height: 130px;
+  margin: auto;
+  position: relative;
+}
+
+main .first-section .title-area .title-text {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+main .first-section .title-area .title-text h1 {
+  color: #4f4f4f;
+  font-size: 72px;
+}
+
+main .first-section .container170 {
+  margin-top: 100px;
+}
+
+main .first-section .container170 .col {
+  padding: 0;
+}
+
+main .first-section .container170 .col .about-img {
+  margin-right: 90px;
+  width: 793px;
+  height: 675px;
+  background-image: url("/img/first-section/cat-1.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+main .first-section .container170 .col .about-img .about-shadow {
+  width: 693px;
+  height: 582px;
+  background-image: url("/img/first-section/米色背景.jpg");
+  position: absolute;
+  top: 210px;
+  left: -110px;
+  z-index: -1;
+}
+
+main .first-section .container170 .col {
+  padding: 0;
+}
+
+main .first-section .container170 .col .about-us h1 {
+  font-size: 48px;
+  color: #FE886D;
+}
+
+main .first-section .container170 .col .about-us span {
+  font-size: 18px;
+  color: #4F4F4F;
+}
+
+main .first-section .container170 .col .about-us .row {
+  margin: 0;
 }
 /*# sourceMappingURL=index.css.map */

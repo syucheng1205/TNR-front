@@ -57,17 +57,17 @@ nav {
 			right: 140px;
 			top: 40px;
 
-			.burger{
-				width:90px;
+			.burger {
+				width: 90px;
 				height: 7px;
 				border-radius: 20px;
 				background-color: #4f4f4f;
 
 				position: relative;
 
-				&::before{
+				&::before {
 					content: "";
-					width:90px;
+					width: 90px;
 					height: 7px;
 					border-radius: 20px;
 					background-color: #4f4f4f;
@@ -75,10 +75,10 @@ nav {
 					position: absolute;
 					top: 15px;
 				}
-	
-				&::after{
+
+				&::after {
 					content: "";
-					width:90px;
+					width: 90px;
 					height: 7px;
 					border-radius: 20px;
 					background-color: #4f4f4f;
@@ -87,10 +87,7 @@ nav {
 					top: 30px;
 				}
 			}
-
 		}
-
-
 
 		.menu:hover {
 			color: white;
@@ -166,6 +163,82 @@ main {
 					border-bottom: 4px solid $color-dark-orange;
 					&:hover {
 						border-bottom: 4px solid #ffffff;
+					}
+				}
+			}
+		}
+	}
+
+	.first-section {
+		margin-top: 200px; //之後要修改
+		width: 100%;
+		height: auto;
+
+		.title-area {
+			width: 428px;
+			height: 130px;
+			margin: auto;
+			position: relative;
+
+			.title-text {
+				position: absolute;
+				bottom: 0;
+				right: 0;
+				h1 {
+					color: #4f4f4f;
+					font-size: 72px;
+				}
+			}
+		}
+
+		.container170 {
+			margin-top: 100px;
+
+			.col {
+				padding: 0;
+
+				.about-img {
+					margin-right: 90px;
+					width: 793px;
+					height: 675px;
+					background-image: url("/img/first-section/cat-1.png");
+					background-repeat: no-repeat;
+					background-position: center;
+					background-size: cover;
+
+					position: relative;
+
+					.about-shadow{
+						width: 693px;
+						height: 582px;
+						background-image: url('/img/first-section/米色背景.jpg');
+
+						position: absolute;
+						top: 210px;
+						left: -110px;
+						z-index: -1;
+					}
+				}
+
+			}
+
+			.col{
+				padding: 0;
+
+				.about-us{
+
+					 h1{
+						font-size: 48px;
+						color: #FE886D;
+					 }
+
+					 span{
+						 font-size: 18px;
+						 color: #4F4F4F;
+					 }
+					 
+					.row{
+						margin: 0;
 					}
 				}
 			}
