@@ -6,6 +6,15 @@ body {
 	margin: 0;
 }
 
+// color
+$color-banner-gray: #707070;
+$color-banner-number: #ffa183;
+$color-light-orange: #fe886d;
+$color-dark-orange: #ff7950;
+
+$color-text: #4f4f4f;
+$color-btn-text: #ffffff;
+
 h1,
 h2,
 h3,
@@ -28,7 +37,6 @@ a:hover {
 .container140 {
 	padding: 0 140px;
 }
-
 
 nav {
 	.nav {
@@ -88,7 +96,6 @@ nav {
 }
 
 main {
-
 	.banner {
 		background-image: url("/img/banner.png");
 		width: 100%;
@@ -204,30 +211,28 @@ main {
 					background-size: cover;
 					position: relative;
 				}
-				.about-img-1{
+				.about-img-1 {
 					background-image: url("/img/first-section/cat-1.png");
 				}
-				.about-img-2{
-					
+				.about-img-2 {
 				}
-				.about-img-3{
-					
+				.about-img-3 {
 				}
 
-				.swiper-point{
+				.swiper-point {
 					display: flex;
 					justify-content: space-between;
 					align-items: center;
 					width: 92px;
-					padding-top: 50px; ;
+					padding-top: 50px;
 					margin-left: -72px;
-					.swiper-pagination-bullet{
+					.swiper-pagination-bullet {
 						width: 20px;
 						height: 20px;
 						background-color: #ffffff;
 						opacity: 1;
 					}
-					.swiper-pagination-bullet-active{
+					.swiper-pagination-bullet-active {
 						background-color: $color-light-orange;
 					}
 				}
@@ -311,7 +316,6 @@ main {
 		}
 
 		.container140 {
-			
 			.col {
 				display: flex;
 				.icon {
@@ -322,41 +326,61 @@ main {
 					display: flex;
 					justify-content: center;
 					align-items: center;
-	
+
 					i {
 						font-size: 60px;
 						color: #ffffff;
 					}
 				}
-	
-				.text{
-					
-					h3{
+
+				.text {
+					h3 {
 						font-size: 32px;
 						color: #707070;
 						margin-left: 20px;
 						font-weight: bold;
 					}
-					h1{
+					h1 {
 						font-size: 96px;
-						color: #4F4F4F;
+						color: #4f4f4f;
 						margin-left: 10px;
 					}
-					
 				}
 			}
 		}
 	}
 
+	.second-section {
+		margin-top: 231px;
+		width: 100%;
+		display: flex;
 
-	.second-section{
+		.feed-cat {
+			width: 50%;
 
-		.feed-cat{
+			.feed-img {
+				width: 100%;
+				height: 775px;
+				background-image: url("/img/second-section/cat-2.png");
+				background-repeat: no-repeat;
+				background-size: cover;
+			}
 
+			.feed-area{
+				
+			}
 		}
 
-		.help-cat{
-			
+		.help-cat {
+			width: 50%;
+
+			.help-img {
+				width: 100%;
+				height: 775px;
+				background-image: url("/img/second-section/cat-3.png");
+				background-repeat: no-repeat;
+				background-size: cover;
+			}
 		}
 	}
 }
