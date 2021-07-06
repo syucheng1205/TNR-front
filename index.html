@@ -241,14 +241,15 @@
 
 		counters.forEach((counter) => {
 			const updateCount = () => {
-				const target = parseInt(+counter.getAttribute("data-target"));
-				const count = parseInt(+counter.innerText);
+				const target = +counter.getAttribute("data-target");
+				const count = +counter.innerText;
 				const increment = Math.trunc(target / speed);
-				console.log(increment);
+				// console.log(increment);
 
 				if (count < target) {
-					counter.innerText = (count + increment).toLocaleString();
-					setTimeout(updateCount, 1);
+					counter.innerText = parseInt(count + increment);
+					console.log(parseInt(count + increment));
+					setTimeout(updateCount, 7);
 				} else {
 					count.innerText = target.toLocaleString();
 				}
