@@ -232,6 +232,7 @@ main .first-section .container170 .col .about-img {
   margin-right: 90px;
   width: 793px !important;
   height: 675px !important;
+  border-radius: 20px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -271,6 +272,7 @@ main .first-section .container170 .col .swiper-point .swiper-pagination-bullet-a
 main .first-section .container170 .col .about-shadow {
   width: 693px;
   height: 582px;
+  border-radius: 20px;
   background-image: url("/img/first-section/米色背景.jpg");
   position: absolute;
   top: 210px;
