@@ -236,26 +236,32 @@
 	</script>
 	<!-- number counter -->
 	<script>
-		const counters = document.querySelectorAll(".count");
-		const speed = 200;
-
-		counters.forEach((counter) => {
-			const updateCount = () => {
-				const target = +counter.getAttribute("data-target");
-				const count = +counter.innerText;
-				const increment = Math.trunc(target / speed);
-				// console.log(increment);
-
-				if (count < target) {
-					counter.innerText = parseInt(count + increment);
-					console.log(parseInt(count + increment));
-					setTimeout(updateCount, 7);
-				} else {
-					count.innerText = target.toLocaleString();
+		window.addEventListener('scroll',function () {
+			const counters = document.querySelectorAll(".count");
+			const speed = 200;
+	
+			counters.forEach((counter) => {
+				const updateCount = () => {
+					const target = +counter.getAttribute("data-target");
+					const count = +counter.innerText;
+					const increment = Math.trunc(target / speed);
+					// console.log(increment);
+	
+					if (count < target) {
+						counter.innerText = parseInt(count + increment);
+						console.log(parseInt(count + increment));
+						setTimeout(updateCount, 7);
+					} else {
+						count.innerText = target.toLocaleString();
+					}
+				};
+				if (scrollY > 1900) {
+					updateCount();
+					
 				}
-			};
-			updateCount();
-		});
+			});
+			
+		})
 
 	</script>
 </body>
