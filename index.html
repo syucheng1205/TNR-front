@@ -15,6 +15,7 @@
 	<!-- fontawesome -->
 	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
 		integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+	<link rel="stylesheet" href="./css/odometer-theme-default.css">
 </head>
 
 <body>
@@ -123,7 +124,7 @@
 						</div>
 						<div class="text">
 							<h3>節育貓咪數</h3>
-							<h1>19,940</h1>
+							<h1 class="count" data-target="19940">0</h1>
 						</div>
 					</div>
 					<div class="col-4 numerical-value">
@@ -132,7 +133,7 @@
 						</div>
 						<div class="text">
 							<h3>節育貓咪數</h3>
-							<h1>19,940</h1>
+							<h1 class="count" data-target="19940">0</h1>
 						</div>
 					</div>
 					<div class="col-4 numerical-value">
@@ -141,7 +142,7 @@
 						</div>
 						<div class="text">
 							<h3>節育貓咪數</h3>
-							<h1>19,940</h1>
+							<h1 class="count" data-target="19940">0</h1>
 						</div>
 					</div>
 				</div>
@@ -152,13 +153,6 @@
 			<div class="feed-cat">
 				<div class="feed-img"></div>
 				<div class="feed-area">
-					<div class="text-area">
-						<h3>養貓咪趣</h3>
-						<p>養貓最大的樂趣就是當「鏟屎官」的生活，幫牠把屎把尿體會當父母的感受。從害怕你、親近你到討抱抱，一點一滴的相處過程裡，更是能體驗照顧毛小孩如照顧孩子般，都是培養愛的責任感。</p>					
-					</div>
-					<div class="feed-btn">
-						<p>查看明細</p>
-					</div>
 				</div>
 			</div>
 
@@ -222,20 +216,28 @@
 			},
 		});
 	</script>
-	<!-- count JS -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/countup.js/2.0.7/countUp.min.js"></script>
+	<!-- number counter -->
 	<script>
-		var num1 = new CountUp('myTargetElement', 19940, options);
+		const counters = document.querySelectorAll(".count");
+		const speed = 200;
 
-		const options = {
-			duration: 5,
-		};
-		let demo = new CountUp('myTargetElement', 19940, options);
-		if (!demo.error) {
-			demo.start();
-		} else {
-			console.error(demo.error);
-		}
+		counters.forEach((counter) => {
+			const updateCount = () => {
+				const target = parseInt(+counter.getAttribute("data-target"));
+				const count = parseInt(+counter.innerText);
+				const increment = Math.trunc(target / speed);
+				console.log(increment);
+
+				if (count < target) {
+					counter.innerText = count + increment;
+					setTimeout(updateCount, 1);
+				} else {
+					count.innerText = target;
+				}
+			};
+			updateCount();
+		});
+
 	</script>
 </body>
 
