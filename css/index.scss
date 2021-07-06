@@ -204,11 +204,17 @@ main {
 					margin-right: 90px;
 					width: 793px !important;
 					height: 675px !important;
-					background-image: url("/img/first-section/cat-1.png");
 					background-repeat: no-repeat;
 					background-position: center;
 					background-size: cover;
 					position: relative;
+				}
+				.about-img-1{
+					background-image: url("/img/first-section/cat-1.png");
+				}
+				.about-img-2{
+				}
+				.about-img-3{
 				}
 				.swiper-point{
 					display: flex;
@@ -326,6 +332,7 @@ main {
 			}
 
 			.text{
+				
 				h3{
 					font-size: 32px;
 					color: #707070;
@@ -337,6 +344,7 @@ main {
 					color: #4F4F4F;
 					margin-left: 10px;
 				}
+				
 			}
 		}
 	}

@@ -232,11 +232,14 @@ main .first-section .container170 .col .about-img {
   margin-right: 90px;
   width: 793px !important;
   height: 675px !important;
-  background-image: url("/img/first-section/cat-1.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   position: relative;
+}
+
+main .first-section .container170 .col .about-img-1 {
+  background-image: url("/img/first-section/cat-1.png");
 }
 
 main .first-section .container170 .col .swiper-point {
