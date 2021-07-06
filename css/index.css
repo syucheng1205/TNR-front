@@ -195,6 +195,16 @@ main .banner .container170 .banner-btn:hover {
           transition-duration: 0.8s;
 }
 
+main .banner .grass-1 {
+  margin-left: -170px;
+  margin-top: 42px;
+}
+
+main .banner .grass-2 {
+  margin-top: -92px;
+  margin-left: 1175px;
+}
+
 main .first-section {
   margin-top: 200px;
   width: 100%;
@@ -402,6 +412,12 @@ main .second-section {
   display: -ms-flexbox;
   display: flex;
   position: relative;
+}
+
+main .second-section .grass-3 {
+  position: absolute;
+  top: -126px;
+  left: 0;
 }
 
 main .second-section .feed-cat {
