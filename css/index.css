@@ -227,9 +227,13 @@ main .first-section .container170 .col {
   padding: 0;
 }
 
+main .first-section .container170 .col .swiper-container {
+  width: 792px;
+  height: 675px;
+}
+
 main .first-section .container170 .col .about-img {
-  margin-right: 90px;
-  width: 793px !important;
+  width: 792px !important;
   height: 675px !important;
   border-radius: 20px;
   background-repeat: no-repeat;
