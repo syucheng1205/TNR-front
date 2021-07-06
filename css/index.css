@@ -358,13 +358,13 @@ main .first-section .container170 .col .about-us .about-btn p:hover {
           transition-duration: 0.8s;
 }
 
-main .first-section .container140 .col {
+main .first-section .container140 .numerical-value {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-main .first-section .container140 .col .icon {
+main .first-section .container140 .numerical-value .icon {
   width: 133px;
   height: 133px;
   border-radius: 50%;
@@ -380,19 +380,19 @@ main .first-section .container140 .col .icon {
           align-items: center;
 }
 
-main .first-section .container140 .col .icon i {
+main .first-section .container140 .numerical-value .icon i {
   font-size: 60px;
   color: #ffffff;
 }
 
-main .first-section .container140 .col .text h3 {
+main .first-section .container140 .numerical-value .text h3 {
   font-size: 32px;
   color: #707070;
   margin-left: 20px;
   font-weight: bold;
 }
 
-main .first-section .container140 .col .text h1 {
+main .first-section .container140 .numerical-value .text h1 {
   font-size: 96px;
   color: #4f4f4f;
   margin-left: 10px;
