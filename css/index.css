@@ -28,11 +28,6 @@ a:hover {
   padding: 0 140px;
 }
 
-body {
-  margin: 0;
-  height: 3000px;
-}
-
 nav .nav {
   width: 100%;
   display: -webkit-box;
@@ -226,11 +221,16 @@ main .first-section .container170 {
 
 main .first-section .container170 .col {
   padding: 0;
+  margin-right: 90px;
+}
+
+main .first-section .container170 .col .swiper-container {
+  width: 792px;
+  height: 675px;
 }
 
 main .first-section .container170 .col .about-img {
-  margin-right: 90px;
-  width: 793px !important;
+  width: 792px !important;
   height: 675px !important;
   border-radius: 20px;
   background-repeat: no-repeat;
@@ -282,6 +282,7 @@ main .first-section .container170 .col .about-shadow {
 
 main .first-section .container170 .col {
   padding: 0;
+  padding-left: 90px;
 }
 
 main .first-section .container170 .col .about-us {
@@ -359,13 +360,13 @@ main .first-section .container170 .col .about-us .about-btn p:hover {
           transition-duration: 0.8s;
 }
 
-main .container140 .col {
+main .first-section .container140 .col {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-main .container140 .col .icon {
+main .first-section .container140 .col .icon {
   width: 133px;
   height: 133px;
   border-radius: 50%;
@@ -381,19 +382,19 @@ main .container140 .col .icon {
           align-items: center;
 }
 
-main .container140 .col .icon i {
+main .first-section .container140 .col .icon i {
   font-size: 60px;
   color: #ffffff;
 }
 
-main .container140 .col .text h3 {
+main .first-section .container140 .col .text h3 {
   font-size: 32px;
   color: #707070;
   margin-left: 20px;
   font-weight: bold;
 }
 
-main .container140 .col .text h1 {
+main .first-section .container140 .col .text h1 {
   font-size: 96px;
   color: #4F4F4F;
   margin-left: 10px;

@@ -2,9 +2,14 @@
 	box-sizing: border-box;
 }
 
-body {
-	margin: 0;
-}
+// color
+$color-banner-gray: #707070;
+$color-banner-number: #ffa183;
+$color-light-orange: #fe886d;
+$color-dark-orange: #ff7950;
+
+$color-text: #4f4f4f;
+$color-btn-text: #ffffff;
 
 h1,
 h2,
@@ -194,9 +199,14 @@ main {
 			margin-top: 100px;
 			.col {
 				padding: 0;
+				margin-right: 90px;
+				.swiper-container {
+					width: 792px;
+					height: 675px;
+				  }
 				.about-img {
-					margin-right: 90px;
-					width: 793px !important;
+
+					width: 792px !important;
 					height: 675px !important;
 					border-radius: 20px;
 					background-repeat: no-repeat;
@@ -244,6 +254,7 @@ main {
 			}
 			.col {
 				padding: 0;
+				padding-left: 90px;
 				.about-us {
 					width: 620px;
 					margin-top: 110px;
