@@ -9,9 +9,14 @@ h3,
 h4,
 h5,
 h6,
-p {
+p,
+a {
   margin: 0;
   font-weight: unset;
+}
+
+a:hover {
+  text-decoration: none;
 }
 
 .container170 {
@@ -54,6 +59,7 @@ nav .nav .menu {
   position: fixed;
   right: 140px;
   top: 40px;
+  height: 37px;
 }
 
 nav .nav .menu .burger {
@@ -64,7 +70,7 @@ nav .nav .menu .burger {
   position: relative;
 }
 
-nav .nav .menu .burger::before {
+nav .nav .menu .burger::before, nav .nav .menu .burger::after {
   content: "";
   width: 90px;
   height: 7px;
@@ -75,18 +81,11 @@ nav .nav .menu .burger::before {
 }
 
 nav .nav .menu .burger::after {
-  content: "";
-  width: 90px;
-  height: 7px;
-  border-radius: 20px;
-  background-color: #4f4f4f;
-  position: absolute;
   top: 30px;
 }
 
-nav .nav .menu:hover {
-  color: white;
-  cursor: pointer;
+nav .nav .menu:hover .burger, nav .nav .menu:hover .burger::after, nav .nav .menu:hover .burger::before {
+  background-color: #ffffff;
 }
 
 main .banner {
@@ -180,7 +179,16 @@ main .banner .container170 .banner-btn p {
   border-bottom: 4px solid #ff7950;
 }
 
-main .banner .container170 .banner-btn p:hover {
+main .banner .container170 .banner-btn:hover p {
   border-bottom: 4px solid #ffffff;
+  -webkit-transition-duration: 0.8s;
+          transition-duration: 0.8s;
+}
+
+main .banner .container170 .banner-btn:hover {
+  -webkit-box-shadow: 0px 0px 10px 0px #ff7950;
+          box-shadow: 0px 0px 10px 0px #ff7950;
+  -webkit-transition-duration: .8s;
+          transition-duration: .8s;
 }
 /*# sourceMappingURL=index.css.map */
