@@ -31,6 +31,7 @@ $color-btn-text: #ffffff;
 
 body {
 	margin: 0;
+	height: 3000px;
 }
 nav {
 	.nav {
@@ -52,6 +53,8 @@ nav {
 		.menu {
 			font-size: 100px;
 			line-height: 50px;
+			position: fixed;
+			right: 140px;
 		}
 
 		.menu:hover {
@@ -135,19 +138,12 @@ main {
 		}
 	}
 
-	.first-section {
+	.first-section{
 
-		.container140 {
+		.title-area{
 
-			.title-area{
-				
-				display: flex;
-				justify-content: end;
-				align-items: flex-end;
-				h1{
-					font-size: 72px;
-				}
-			}
+			
+			
 		}
 	}
 }

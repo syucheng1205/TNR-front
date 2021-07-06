@@ -24,6 +24,7 @@ p {
 
 body {
   margin: 0;
+  height: 3000px;
 }
 
 nav .nav {
@@ -50,6 +51,8 @@ nav .nav .logo {
 nav .nav .menu {
   font-size: 100px;
   line-height: 50px;
+  position: fixed;
+  right: 140px;
 }
 
 nav .nav .menu:hover {
@@ -150,21 +153,5 @@ main .banner .container170 .banner-btn p {
 
 main .banner .container170 .banner-btn p:hover {
   border-bottom: 4px solid #ffffff;
-}
-
-main .first-section .container140 .title-area {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-}
-
-main .first-section .container140 .title-area h1 {
-  font-size: 72px;
 }
 /*# sourceMappingURL=index.css.map */
