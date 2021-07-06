@@ -55,9 +55,41 @@ nav {
 			line-height: 50px;
 			position: fixed;
 			right: 140px;
-			
+
+			.burger{
+				width:90px;
+				height: 7px;
+				border-radius: 20px;
+				background-color: #4f4f4f;
+
+				position: relative;
+
+				&::before{
+					content: "";
+					width:90px;
+					height: 7px;
+					border-radius: 20px;
+					background-color: #4f4f4f;
+
+					position: absolute;
+					top: 15px;
+				}
+	
+				&::after{
+					content: "";
+					width:90px;
+					height: 7px;
+					border-radius: 20px;
+					background-color: #4f4f4f;
+
+					position: absolute;
+					top: 30px;
+				}
+			}
 
 		}
+
+
 
 		.menu:hover {
 			color: white;
@@ -136,12 +168,6 @@ main {
 					}
 				}
 			}
-		}
-	}
-
-	.first-section {
-		.title-area {
-
 		}
 	}
 }

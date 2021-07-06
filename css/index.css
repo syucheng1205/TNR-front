@@ -55,6 +55,34 @@ nav .nav .menu {
   right: 140px;
 }
 
+nav .nav .menu .burger {
+  width: 90px;
+  height: 7px;
+  border-radius: 20px;
+  background-color: #4f4f4f;
+  position: relative;
+}
+
+nav .nav .menu .burger::before {
+  content: "";
+  width: 90px;
+  height: 7px;
+  border-radius: 20px;
+  background-color: #4f4f4f;
+  position: absolute;
+  top: 15px;
+}
+
+nav .nav .menu .burger::after {
+  content: "";
+  width: 90px;
+  height: 7px;
+  border-radius: 20px;
+  background-color: #4f4f4f;
+  position: absolute;
+  top: 30px;
+}
+
 nav .nav .menu:hover {
   color: white;
   cursor: pointer;
