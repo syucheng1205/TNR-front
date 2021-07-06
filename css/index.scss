@@ -2,14 +2,9 @@
 	box-sizing: border-box;
 }
 
-// color
-$color-banner-gray: #707070;
-$color-banner-number: #ffa183;
-$color-light-orange: #fe886d;
-$color-dark-orange: #ff7950;
-
-$color-text: #4f4f4f;
-$color-btn-text: #ffffff;
+body {
+	margin: 0;
+}
 
 // color
 $color-banner-gray: #707070;
@@ -31,6 +26,7 @@ a {
 	margin: 0;
 	font-weight: unset;
 }
+
 a:hover {
 	text-decoration: none;
 }
@@ -206,16 +202,14 @@ main {
 			margin-top: 100px;
 			.col {
 				padding: 0;
-				// margin-right: 90px;
 				.swiper-container {
 					width: 792px;
 					height: 675px;
-				  }
+				}
 				.about-img {
-
 					width: 792px !important;
 					height: 675px !important;
-					border-radius: 20px;
+					border-radius: 40px;
 					background-repeat: no-repeat;
 					background-position: center;
 					background-size: cover;
@@ -249,7 +243,7 @@ main {
 				.about-shadow {
 					width: 693px;
 					height: 582px;
-					border-radius: 20px;
+					border-radius: 40px;
 					background-image: url("/img/first-section/米色背景.jpg");
 					position: absolute;
 					top: 210px;
@@ -307,25 +301,22 @@ main {
 							border-bottom: 4px solid $color-dark-orange;
 							&:hover {
 								border-bottom: 4px solid #ffffff;
+								box-shadow: 0px 0px 10px 0px $color-dark-orange;
+								transition-duration: 0.8s;
 							}
 
 							&:hover p {
 								border-bottom: 4px solid #ffffff;
 								transition-duration: 0.8s;
 							}
-							&:hover {
-								box-shadow: 0px 0px 10px 0px $color-dark-orange;
-								transition-duration: 0.8s;
-							}
 						}
 					}
 				}
 
-				.about-us-text-area{
+				.about-us-text-area {
 					padding-left: 90px;
 				}
 			}
-			
 		}
 
 		.container140 {
@@ -370,6 +361,9 @@ main {
 
 		.feed-cat {
 			width: 50%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
 
 			.feed-img {
 				width: 100%;
@@ -379,16 +373,68 @@ main {
 				background-size: cover;
 			}
 
-			.feed-area{
+			.feed-area {
 				width: 840px;
 				height: 487px;
 				border-radius: 40px;
-				background-color: #FF7950;
+				background-color: #ff7950;
+				padding: 0 110px;
+
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+
+				.text-area {
+					
+					h3 {
+						font-size: 48px;
+						color: #ffffff;
+						margin-top: 80px;
+						margin-bottom: 40px;
+					}
+
+					p {
+						font-size: 18px;
+						color: #ffffff;
+						margin-bottom: 40px;
+					}
+				}
+
+				.feed-btn {
+					width: 308px;
+					height: 100px;
+					background-color: #f2a589;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					border-radius: 40px;
+					cursor: pointer;
+
+					p {
+						font-size: 36px;
+						font-weight: bold;
+						color: #ffffff;
+						border-bottom: 4px solid #f2a589;
+						&:hover {
+							border-bottom: 4px solid #ffffff;
+							box-shadow: 0px 0px 10px 0px #f2a589;
+							transition-duration: 0.8s;
+						}
+
+						&:hover p {
+							border-bottom: 4px solid #ffffff;
+							transition-duration: 0.8s;
+						}
+					}
+				}
 			}
 		}
 
 		.help-cat {
 			width: 50%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
 
 			.help-img {
 				width: 100%;
@@ -397,6 +443,93 @@ main {
 				background-repeat: no-repeat;
 				background-size: cover;
 			}
+
+			.help-area {
+				width: 840px;
+				height: 487px;
+				border-radius: 40px;
+				background-color: #FE886D;
+				padding: 0 110px;
+
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+
+				.text-area {
+					
+					h3 {
+						font-size: 48px;
+						color: #ffffff;
+						margin-top: 80px;
+						margin-bottom: 40px;
+					}
+
+					p {
+						font-size: 18px;
+						color: #ffffff;
+						margin-bottom: 40px;
+					}
+				}
+
+				.help-btn {
+					width: 308px;
+					height: 100px;
+					background-color: #F2A589;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					border-radius: 40px;
+					cursor: pointer;
+
+					p {
+						font-size: 36px;
+						font-weight: bold;
+						color: #ffffff;
+						border-bottom: 4px solid #F2A589;
+						&:hover {
+							border-bottom: 4px solid #ffffff;
+							box-shadow: 0px 0px 10px 0px #F2A589;
+							transition-duration: 0.8s;
+						}
+
+						&:hover p {
+							border-bottom: 4px solid #ffffff;
+							transition-duration: 0.8s;
+						}
+					}
+				}
+			}
 		}
+	}
+
+	.third-section{
+		margin-top: 140px;
+		margin-bottom: 100px;
+
+		.title-area {
+			width: 428px;
+			height: 130px;
+			margin: auto;
+			position: relative;
+
+			.title-text {
+				position: absolute;
+				bottom: 0;
+				right: 0;
+				h1 {
+					color: #4f4f4f;
+					font-size: 72px;
+				}
+			}
+		}
+
+
+		.container140{
+			width: 100%;
+
+
+		}
+
+
 	}
 }

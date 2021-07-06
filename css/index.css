@@ -4,6 +4,10 @@
           box-sizing: border-box;
 }
 
+body {
+  margin: 0;
+}
+
 h1,
 h2,
 h3,
@@ -231,7 +235,7 @@ main .first-section .container170 .col .swiper-container {
 main .first-section .container170 .col .about-img {
   width: 792px !important;
   height: 675px !important;
-  border-radius: 20px;
+  border-radius: 40px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -271,7 +275,7 @@ main .first-section .container170 .col .swiper-point .swiper-pagination-bullet-a
 main .first-section .container170 .col .about-shadow {
   width: 693px;
   height: 582px;
-  border-radius: 20px;
+  border-radius: 40px;
   background-image: url("/img/first-section/米色背景.jpg");
   position: absolute;
   top: 210px;
@@ -339,17 +343,14 @@ main .first-section .container170 .col .about-us .about-btn p {
 
 main .first-section .container170 .col .about-us .about-btn p:hover {
   border-bottom: 4px solid #ffffff;
-}
-
-main .first-section .container170 .col .about-us .about-btn p:hover p {
-  border-bottom: 4px solid #ffffff;
+  -webkit-box-shadow: 0px 0px 10px 0px #ff7950;
+          box-shadow: 0px 0px 10px 0px #ff7950;
   -webkit-transition-duration: 0.8s;
           transition-duration: 0.8s;
 }
 
-main .first-section .container170 .col .about-us .about-btn p:hover {
-  -webkit-box-shadow: 0px 0px 10px 0px #ff7950;
-          box-shadow: 0px 0px 10px 0px #ff7950;
+main .first-section .container170 .col .about-us .about-btn p:hover p {
+  border-bottom: 4px solid #ffffff;
   -webkit-transition-duration: 0.8s;
           transition-duration: 0.8s;
 }
@@ -408,6 +409,16 @@ main .second-section {
 
 main .second-section .feed-cat {
   width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 main .second-section .feed-cat .feed-img {
@@ -422,11 +433,83 @@ main .second-section .feed-cat .feed-area {
   width: 840px;
   height: 487px;
   border-radius: 40px;
-  background-color: #FF7950;
+  background-color: #ff7950;
+  padding: 0 110px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .second-section .feed-cat .feed-area .text-area h3 {
+  font-size: 48px;
+  color: #ffffff;
+  margin-top: 80px;
+  margin-bottom: 40px;
+}
+
+main .second-section .feed-cat .feed-area .text-area p {
+  font-size: 18px;
+  color: #ffffff;
+  margin-bottom: 40px;
+}
+
+main .second-section .feed-cat .feed-area .feed-btn {
+  width: 308px;
+  height: 100px;
+  background-color: #f2a589;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 40px;
+  cursor: pointer;
+}
+
+main .second-section .feed-cat .feed-area .feed-btn p {
+  font-size: 36px;
+  font-weight: bold;
+  color: #ffffff;
+  border-bottom: 4px solid #f2a589;
+}
+
+main .second-section .feed-cat .feed-area .feed-btn p:hover {
+  border-bottom: 4px solid #ffffff;
+  -webkit-box-shadow: 0px 0px 10px 0px #f2a589;
+          box-shadow: 0px 0px 10px 0px #f2a589;
+  -webkit-transition-duration: 0.8s;
+          transition-duration: 0.8s;
+}
+
+main .second-section .feed-cat .feed-area .feed-btn p:hover p {
+  border-bottom: 4px solid #ffffff;
+  -webkit-transition-duration: 0.8s;
+          transition-duration: 0.8s;
 }
 
 main .second-section .help-cat {
   width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 main .second-section .help-cat .help-img {
@@ -435,5 +518,101 @@ main .second-section .help-cat .help-img {
   background-image: url("/img/second-section/cat-3.png");
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+main .second-section .help-cat .help-area {
+  width: 840px;
+  height: 487px;
+  border-radius: 40px;
+  background-color: #FE886D;
+  padding: 0 110px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .second-section .help-cat .help-area .text-area h3 {
+  font-size: 48px;
+  color: #ffffff;
+  margin-top: 80px;
+  margin-bottom: 40px;
+}
+
+main .second-section .help-cat .help-area .text-area p {
+  font-size: 18px;
+  color: #ffffff;
+  margin-bottom: 40px;
+}
+
+main .second-section .help-cat .help-area .help-btn {
+  width: 308px;
+  height: 100px;
+  background-color: #F2A589;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 40px;
+  cursor: pointer;
+}
+
+main .second-section .help-cat .help-area .help-btn p {
+  font-size: 36px;
+  font-weight: bold;
+  color: #ffffff;
+  border-bottom: 4px solid #F2A589;
+}
+
+main .second-section .help-cat .help-area .help-btn p:hover {
+  border-bottom: 4px solid #ffffff;
+  -webkit-box-shadow: 0px 0px 10px 0px #F2A589;
+          box-shadow: 0px 0px 10px 0px #F2A589;
+  -webkit-transition-duration: 0.8s;
+          transition-duration: 0.8s;
+}
+
+main .second-section .help-cat .help-area .help-btn p:hover p {
+  border-bottom: 4px solid #ffffff;
+  -webkit-transition-duration: 0.8s;
+          transition-duration: 0.8s;
+}
+
+main .third-section {
+  margin-top: 140px;
+  margin-bottom: 100px;
+}
+
+main .third-section .title-area {
+  width: 428px;
+  height: 130px;
+  margin: auto;
+  position: relative;
+}
+
+main .third-section .title-area .title-text {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+main .third-section .title-area .title-text h1 {
+  color: #4f4f4f;
+  font-size: 72px;
+}
+
+main .third-section .container140 {
+  width: 100%;
 }
 /*# sourceMappingURL=index.css.map */
