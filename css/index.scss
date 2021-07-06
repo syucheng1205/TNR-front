@@ -136,15 +136,17 @@ main {
 	}
 
 	.first-section {
+
 		.container140 {
-			.title-area {
-				margin: auto;
-				width: 428px;
-				height: 130px;
-				background-image: url(/img/deco-title.svg);
-				background-size: contain;
-				background-repeat: no-repeat;
-				background-position: center;
+
+			.title-area{
+				
+				display: flex;
+				justify-content: end;
+				align-items: flex-end;
+				h1{
+					font-size: 72px;
+				}
 			}
 		}
 	}

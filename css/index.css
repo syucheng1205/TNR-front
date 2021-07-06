@@ -153,12 +153,18 @@ main .banner .container170 .banner-btn p:hover {
 }
 
 main .first-section .container140 .title-area {
-  margin: auto;
-  width: 428px;
-  height: 130px;
-  background-image: url(/img/deco-title.svg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+main .first-section .container140 .title-area h1 {
+  font-size: 72px;
 }
 /*# sourceMappingURL=index.css.map */
