@@ -55,6 +55,8 @@ nav {
 			line-height: 50px;
 			position: fixed;
 			right: 140px;
+			
+
 		}
 
 		.menu:hover {
@@ -75,7 +77,6 @@ main {
 		padding-top: 303px;
 
 		.container170 {
-			
 			span {
 				font-size: 32px;
 				color: $color-banner-gray;
@@ -138,12 +139,9 @@ main {
 		}
 	}
 
-	.first-section{
+	.first-section {
+		.title-area {
 
-		.title-area{
-
-			
-			
 		}
 	}
 }
