@@ -418,6 +418,13 @@ main .second-section .feed-cat .feed-img {
   background-size: cover;
 }
 
+main .second-section .feed-cat .feed-area {
+  width: 840px;
+  height: 487px;
+  border-radius: 40px;
+  background-color: #FF7950;
+}
+
 main .second-section .help-cat {
   width: 50%;
 }
