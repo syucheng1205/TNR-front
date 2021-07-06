@@ -171,4 +171,116 @@ main {
 			}
 		}
 	}
+
+	.first-section {
+		margin-top: 200px; //之後要修改
+		width: 100%;
+		height: auto;
+
+		.title-area {
+			width: 428px;
+			height: 130px;
+			margin: auto;
+			position: relative;
+
+			.title-text {
+				position: absolute;
+				bottom: 0;
+				right: 0;
+				h1 {
+					color: #4f4f4f;
+					font-size: 72px;
+				}
+			}
+		}
+
+		.container170 {
+			margin-top: 100px;
+
+			.col {
+				padding: 0;
+
+				.about-img {
+					margin-right: 90px;
+					width: 793px;
+					height: 675px;
+					background-image: url("/img/first-section/cat-1.png");
+					background-repeat: no-repeat;
+					background-position: center;
+					background-size: cover;
+
+					position: relative;
+
+					.about-shadow {
+						width: 693px;
+						height: 582px;
+						background-image: url("/img/first-section/米色背景.jpg");
+
+						position: absolute;
+						top: 210px;
+						left: -110px;
+						z-index: -1;
+					}
+				}
+			}
+
+			.col {
+				padding: 0;
+
+				.about-us {
+					width: 620px;
+					margin-top: 110px;
+
+					h1 {
+						font-size: 48px;
+						color: #fe886d;
+					}
+
+					span {
+						font-size: 18px;
+						color: #4f4f4f;
+					}
+
+					.row {
+						margin: 0;
+					}
+
+					.top{
+						margin-bottom: 70px;
+					}
+
+					.bot{
+						margin-bottom: 110px;
+					}
+
+					p{
+						font-size: 24px;
+						color: #FFA183;
+					}
+
+					.about-btn {
+						margin-top: 20px;
+						margin-bottom: 230px;
+						width: 308px;
+						height: 100px;
+						background-color: $color-dark-orange;
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						border-radius: 40px;
+
+						p {
+							font-size: 36px;
+							font-weight: bold;
+							color: #ffffff;
+							border-bottom: 4px solid $color-dark-orange;
+							&:hover {
+								border-bottom: 4px solid #ffffff;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
 }
