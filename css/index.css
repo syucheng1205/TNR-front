@@ -653,4 +653,8 @@ main .third-section .container140 {
   margin-top: 100px;
   width: 100%;
 }
+
+main .third-section .container140 .news-area {
+  width: 504px;
+}
 /*# sourceMappingURL=index.css.map */
