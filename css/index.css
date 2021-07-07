@@ -495,6 +495,21 @@ main .second-section .feed-cat .feed-img {
   background-image: url("/img/second-section/cat-2.png");
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
+}
+
+main .second-section .feed-cat .feed-img .heart-1 {
+  position: absolute;
+  z-index: 1;
+  -webkit-transform: translate(1800%, 1150%);
+          transform: translate(1800%, 1150%);
+}
+
+main .second-section .feed-cat .feed-img .heart-2 {
+  position: absolute;
+  z-index: 1;
+  -webkit-transform: translate(960%, 500%);
+          transform: translate(960%, 500%);
 }
 
 main .second-section .feed-cat .feed-area {
@@ -597,6 +612,21 @@ main .second-section .help-cat .help-img {
   background-image: url("/img/second-section/cat-3.png");
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
+}
+
+main .second-section .help-cat .help-img .sos-left {
+  position: absolute;
+  z-index: 1;
+  -webkit-transform: translate(100%, 400%);
+          transform: translate(100%, 400%);
+}
+
+main .second-section .help-cat .help-img .sos-right {
+  position: absolute;
+  z-index: 1;
+  -webkit-transform: translate(300%, 100%);
+          transform: translate(300%, 100%);
 }
 
 main .second-section .help-cat .help-area {

@@ -437,8 +437,20 @@ main {
 				background-image: url("/img/second-section/cat-2.png");
 				background-repeat: no-repeat;
 				background-size: cover;
+				position: relative;
 
-				
+				.heart-1{
+					position: absolute;
+					z-index: 1;
+					transform: translate(1800%, 1150%);
+				}
+
+				.heart-2{
+					position: absolute;
+					z-index: 1;
+					transform: translate(960%, 500%);
+				}
+
 			}
 
 			.feed-area {
@@ -517,6 +529,19 @@ main {
 				background-image: url("/img/second-section/cat-3.png");
 				background-repeat: no-repeat;
 				background-size: cover;
+				position: relative;
+
+				.sos-left{
+					position: absolute;
+					z-index: 1;
+					transform: translate(100%, 400%);
+				}
+
+				.sos-right{
+					position: absolute;
+					z-index: 1;
+					transform: translate(300%, 100%);
+				}
 			}
 
 			.help-area {
