@@ -40,7 +40,7 @@ nav .nav {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 20px 140px 0 140px;
+  padding: 20px 7.3% 0;
   position: absolute;
 }
 
@@ -57,7 +57,7 @@ nav .nav .menu {
   font-size: 100px;
   line-height: 50px;
   position: fixed;
-  right: 140px;
+  right: 7.3%;
   top: 40px;
   height: 37px;
   z-index: 99;
@@ -199,7 +199,7 @@ main .banner .container170 .banner-btn:hover {
 main .banner .grass-area {
   width: 100%;
   position: relative;
-  margin-top: 230px;
+  margin-top: 217px;
 }
 
 main .banner .grass-area .grass-1 {

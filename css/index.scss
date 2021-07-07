@@ -44,7 +44,7 @@ nav {
 		width: 100%;
 		display: flex;
 		justify-content: space-between;
-		padding: 20px 140px 0 140px;
+		padding: 20px 7.3% 0 ;
 		position: absolute;
 
 		.logo {
@@ -60,7 +60,7 @@ nav {
 			font-size: 100px;
 			line-height: 50px;
 			position: fixed;
-			right: 140px;
+			right: 7.3%;
 			top: 40px;
 			height: 37px;
 			z-index: 99;
@@ -179,7 +179,7 @@ main {
 		.grass-area{
 			width: 100%;
 			position: relative;
-			margin-top: 230px;
+			margin-top: 217px;
 			.grass-1{
 				height: 190px;
 				z-index: 1;

@@ -16,6 +16,10 @@
 	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
 		integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 	<link rel="stylesheet" href="./css/odometer-theme-default.css">
+	<!-- font -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -129,7 +133,7 @@
 						</div>
 						<div class="text">
 							<h3>節育貓咪數</h3>
-							<h1 class="count" data-target="19940">0</h1>
+							<h1 class="count" data-target="19940">19,940</h1>
 						</div>
 					</div>
 					<div class="col-4 numerical-value" style="padding: 0%;">
@@ -138,7 +142,7 @@
 						</div>
 						<div class="text">
 							<h3>節育貓咪數</h3>
-							<h1 class="count" data-target="1940">0</h1>
+							<h1 class="count" data-target="1940">1,940</h1>
 						</div>
 					</div>
 					<div class="col-4 numerical-value" style="padding: 0%;">
@@ -147,7 +151,7 @@
 						</div>
 						<div class="text">
 							<h3>節育貓咪數</h3>
-							<h1 class="count" data-target="3000">0</h1>
+							<h1 class="count" data-target="3000">3,000</h1>
 						</div>
 					</div>
 				</div>
@@ -244,8 +248,29 @@
 		});
 	</script>
 	<!-- number counter -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
 	<script>
+
+
+		const counters = document.querySelectorAll(".count");
+		const speed = 200;
+
+		counters.forEach((counter) => {
+			const updateCount = () => {
+				const target = +counter.getAttribute("data-target");
+				const count = +counter.innerText;
+				const increment = Math.trunc(target / speed);
+				// console.log(increment);
+
+				if (count < target) {
+					counter.innerText = parseInt(count + increment);
+					console.log(parseInt(count + increment));
+					setTimeout(updateCount, 7);
+				} else {
+					counter.innerText = target;
+				}
+			};
+		});
 		// $(window).scroll(function () {
 		// 	var height = $(window).scrollTop();
 		// 	console.log(height);
@@ -266,33 +291,7 @@
 		// 	});
 		// 	}
 		// });
-		window.addEventListener('scroll', function () {
-
-			const scrolled = window.scrollY;
-			console.log(scrolled);
-			if (scrolled > 1900) {
-
-				const counters = document.querySelectorAll(".count");
-				const speed = 200;
-
-				counters.forEach((counter) => {
-					const updateCount = () => {
-						const target = +counter.getAttribute("data-target");
-						const count = +counter.innerText;
-						const increment = Math.trunc(target / speed);
-						// console.log(increment);
-
-						if (count < target) {
-							counter.innerText = parseInt(count + increment);
-							console.log(parseInt(count + increment));
-							setTimeout(updateCount, 7);
-						} else {
-							count = target;
-						}
-					};
-				});
-			};
-		});
+		
 	</script>
 </body>
 
