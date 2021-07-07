@@ -601,6 +601,7 @@ main {
 
 				.news-text{
 					margin-top: 70px;
+					margin-bottom: 60px;
 
 					h4{
 						font-size: 40px;
@@ -613,7 +614,38 @@ main {
 						color: #000000;
 					}
 				}
-			}					
+			}	
+			
+			.news-btn {
+				margin: auto;
+				margin-bottom: 140px;
+
+				width: 308px;
+				height: 100px;
+				background-color: #FF7950;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				border-radius: 40px;
+				cursor: pointer;
+
+				p {
+					font-size: 36px;
+					font-weight: bold;
+					color: #ffffff;
+					border-bottom: 4px solid #FF7950;
+					&:hover {
+						border-bottom: 4px solid #ffffff;
+						box-shadow: 0px 0px 10px 0px #FF7950;
+						transition-duration: 0.8s;
+					}
+
+					&:hover p {
+						border-bottom: 4px solid #ffffff;
+						transition-duration: 0.8s;
+					}
+				}
+			}
 
 		}
 
