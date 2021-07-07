@@ -4,6 +4,10 @@
           box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
 }
@@ -249,6 +253,7 @@ nav .nav .menu:hover .burger::before {
 
 .first-section .swiper-group .mySwiper .card-img:hover .img {
   -webkit-filter: contrast(0.5);
+          filter: contrast(0.5);
 }
 
 .first-section .swiper-group .mySwiper .card-img .img {
@@ -436,6 +441,26 @@ nav .nav .menu:hover .burger::before {
   position: absolute;
   right: 1%;
   top: 31%;
+}
+
+.third-section .title-area {
+  width: 428px;
+  height: 130px;
+  margin: auto;
+  margin-top: 240px;
+  margin-bottom: 110px;
+  position: relative;
+}
+
+.third-section .title-area .title-text {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.third-section .title-area .title-text h1 {
+  color: #4f4f4f;
+  font-size: 72px;
 }
 
 footer .footer-area .footer-img {

@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
 }
@@ -214,7 +218,7 @@ nav {
                     display: block;
                 }
                 &:hover .img{
-                    -webkit-filter:contrast(.5);
+                    filter:contrast(.5);
                 }
                 .img {
                     width: 400px;
@@ -379,6 +383,28 @@ nav {
     }
 
 
+}
+
+.third-section{
+
+    .title-area {
+        width: 428px;
+        height: 130px;
+        margin: auto;
+        margin-top: 240px;
+        margin-bottom: 110px;
+        position: relative;
+
+        .title-text {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            h1 {
+                color: $color-text;
+                font-size: 72px;
+            }
+        }
+    }
 }
 
 footer {
