@@ -63,13 +63,14 @@ nav {
 			right: 140px;
 			top: 40px;
 			height: 37px;
+			z-index: 99;
 
 			.burger {
 				width: 90px;
 				height: 7px;
 				border-radius: 20px;
 				background-color: $color-text;
-
+				
 				position: relative;
 
 				&::before,
@@ -174,14 +175,30 @@ main {
 				}
 			}
 		}
-		.grass-1{
-			margin-left: -170px;
-			margin-top: 42px;
+
+		.grass-area{
+			width: 100%;
+			position: relative;
+			margin-top: 30px;
+			.grass-1{
+				height: 190px;
+				z-index: 1;
+				// margin-left: -170px;
+				// margin-top: 42px;
+			}
+			.grass-2{
+				width: 22.6%;
+				height: 182px;
+				position: absolute;
+				right: 7.3%;
+				top: 52.9%;
+				z-index: 2;
+
+				// margin-top: -92px;
+				// margin-left: 1175px;
+			}
 		}
-		.grass-2{
-			margin-top: -92px;
-			margin-left: 1175px;
-		}
+		
 	}
 
 	.first-section {
@@ -376,8 +393,10 @@ main {
 
 		.grass-3{
 			position: absolute;
-			top: -126px;
+			top: -132px;
 			left: 0;
+			height: 133px;
+			width: 56.3%;
 		}
 
 		.feed-cat {
