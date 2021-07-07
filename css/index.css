@@ -222,7 +222,7 @@ main .banner .grass-area .scroll-line {
 }
 
 main .banner .grass-area .scroll-line::after {
-  content: '';
+  content: "";
   width: 1px;
   height: 100px;
   border: 1px solid #ffffff;
