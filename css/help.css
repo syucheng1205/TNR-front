@@ -216,10 +216,34 @@ nav .nav .menu:hover .burger::before {
           transform: translateY(45%);
 }
 
+.first-section .swiper-group .mySwiper .card-img {
+  position: relative;
+}
+
+.first-section .swiper-group .mySwiper .card-img:hover .play {
+  display: block;
+}
+
+.first-section .swiper-group .mySwiper .card-img:hover .img {
+  -webkit-filter: contrast(0.5);
+}
+
 .first-section .swiper-group .mySwiper .card-img .img {
   width: 400px;
   height: 300px;
   border-radius: 40px;
+}
+
+.first-section .swiper-group .mySwiper .card-img .play {
+  padding: 3px;
+  font-size: 100px;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: none;
 }
 
 .first-section .swiper-group .mySwiper .card-img .img-shadow {
