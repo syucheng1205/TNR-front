@@ -180,9 +180,31 @@ main {
 			width: 100%;
 			position: relative;
 			margin-top: 217px;
-			.grass-1 {
+
+			.scroll-line{
+				position: absolute;
+				writing-mode:vertical-lr;
+				top: -72px;
+				left: 50%;
+				transform: translateX(-50%);
+				font-size: 18px;
+				color: #ffffff;
+				display: flex;
+				align-items: center;
+
+				&::after{
+					content: '';
+					width: 1px;
+					height: 100px;
+					border: 1px solid #ffffff;
+					position: absolute;
+					top: 80px;
+				}
+			}
+
+			.grass-1{
 				height: 190px;
-				z-index: 1;
+				z-index: 1 ;
 				// margin-left: -170px;
 				// margin-top: 42px;
 			}
@@ -197,6 +219,7 @@ main {
 				// margin-top: -92px;
 				// margin-left: 1175px;
 			}
+			
 		}
 	}
 
