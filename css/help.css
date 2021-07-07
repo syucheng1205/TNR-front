@@ -252,6 +252,7 @@ nav .nav .menu:hover .burger::before {
 
 .first-section .swiper-group .mySwiper .card-img:hover .img {
   -webkit-filter: contrast(0.5);
+          filter: contrast(0.5);
 }
 
 .first-section .swiper-group .mySwiper .card-img .img {

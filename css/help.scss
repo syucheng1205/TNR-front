@@ -217,7 +217,7 @@ nav {
                     display: block;
                 }
                 &:hover .img{
-                    -webkit-filter:contrast(.5);
+                    filter:contrast(.5);
                 }
                 .img {
                     width: 400px;
