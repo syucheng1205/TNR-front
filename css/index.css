@@ -867,7 +867,19 @@ footer .footer-area .container140 .ft-top .ft-left .text-3 .fb-icon {
           align-items: center;
 }
 
-footer .footer-area .container140 .ft-top .ft-bot {
+footer .footer-area .container140 .ft-bot {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 60px;
+}
+
+footer .footer-area .container140 .ft-bot p {
+  font-size: 16px;
+  color: #ffffff;
 }
 /*# sourceMappingURL=index.css.map */
