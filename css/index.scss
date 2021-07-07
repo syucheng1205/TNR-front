@@ -1,3 +1,5 @@
+@import '_style_guide.scss';
+
 * {
 	box-sizing: border-box;
 }
@@ -10,14 +12,7 @@ body {
 	margin: 0;
 }
 
-// color
-$color-banner-gray: #707070;
-$color-banner-number: #ffa183;
-$color-light-orange: #fe886d;
-$color-dark-orange: #ff7950;
 
-$color-text: #4f4f4f;
-$color-btn-text: #ffffff;
 
 h1,
 h2,
