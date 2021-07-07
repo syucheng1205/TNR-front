@@ -20,12 +20,13 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet">
 </head>
 
 <body>
 	<!-- ≡ -->
 	<nav>
-		<div class="nav">
+		<div id="nav" class="nav">
 			<div class="logo"></div>
 			<div class="menu">
 				<div class="burger"></div>
@@ -89,7 +90,7 @@
 							</div>
 						</div>
 						<div class="swiper-pagination swiper-point"></div>
-						<img src="./img/first-section/deco-line1.png" alt="" class="deco-line1">
+						<img src="./img/first-section/deco-line1.png" class="deco-line1">
 						<div class="about-shadow"></div>
 					</div>
 					<div class="col-6 col" style="padding: 0%;">
@@ -160,9 +161,12 @@
 		</div>
 
 		<div class="second-section">
-			<img src="./img/second-section/grass-3.png" alt="" class="grass-3">
+			<img src="./img/second-section/grass-3.png" class="grass-3">
 			<div class="feed-cat">
-				<div class="feed-img"></div>
+				<div class="feed-img">
+					<img class="heart-1" src="/img/second-section/heart-1.svg">
+					<img class="heart-2" src="/img/second-section/heart2.svg">
+				</div>
 				<div class="feed-area">
 					<div class="text-area">
 						<h3>養貓咪趣</h3>
@@ -175,7 +179,11 @@
 			</div>
 
 			<div class="help-cat">
-				<div class="help-img"></div>
+				<div class="help-img">
+					<img class="sos-left" src="/img/second-section/sos-left.svg">
+					<img class="sos-right" src="/img/second-section/sos-right.svg">
+
+				</div>
 				<div class="help-area">
 					<div class="text-area">
 						<h3>救助計劃</h3>
@@ -250,7 +258,57 @@
 		<div class="footer-area">
 			<div class="footer-img" style="margin: 0; padding: 0;"></div>
 			<div class="container140">
-				
+				<div class="ft-top">
+					<div class="ft-left">
+
+						<!-- https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=cashier@tnrtw.org -->
+
+						<!-- mailto:cashier@tnrtw.org -->
+
+						<a href="mailto:cashier@tnrtw.org" target="_blank">
+							<div class="text-1">
+								<i class="fas fa-envelope" style="margin-right: 10px;"></i>
+								<p>TNR節育、醫療、助罐、對帳、收據、小額捐、贊助或是合作提案</p>
+							</div>
+						</a>
+
+
+						<a href="https://goo.gl/maps/VT5Dz9KUZ7e8nrEq7" target="_blank">
+							<div class="text-2">
+								<i class="fas fa-map-marker-alt" style="margin-right: 10px;"></i>
+								<p>105台北市松山區八德路三段74巷13弄8號1樓</p>
+							</div>
+						</a>
+						<div class="text-3">
+							<p>訂閱電子報</p>
+							<div class="contact">
+								<input class="ft-input" type="text" placeholder="請輸入 e-mail 帳號">
+
+								<button class="contact-btn">
+									<i class="fas fa-paper-plane" style="color:#ff7950;"></i>
+								</button>
+
+
+
+							</div>
+
+							<a href="https://www.facebook.com/SupportTNR/" target="_blank">
+								<div class="fb-icon">
+									<i class="fab fa-facebook-f"></i>
+								</div>
+							</a>
+						</div>
+					</div>
+					<a href="#nav">
+						<div class="ft-mouse">
+							<span>Top</span>
+						</div>
+					</a>
+				</div>
+				<div class="ft-bot">
+					<p>勸募核准文號：衛部救字第1091364516號</p>
+					<p>©2011-2021. All Rights Reserved.</p>
+				</div>
 			</div>
 		</div>
 	</footer>
@@ -320,7 +378,7 @@
 		// 	});
 		// 	}
 		// });
-		
+
 	</script>
 </body>
 

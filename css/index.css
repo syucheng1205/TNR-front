@@ -4,6 +4,10 @@
           box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
 }
@@ -18,6 +22,7 @@ p,
 a {
   margin: 0;
   font-weight: unset;
+  color: unset;
 }
 
 a:hover {
@@ -199,7 +204,7 @@ main .banner .container170 .banner-btn:hover {
 main .banner .grass-area {
   width: 100%;
   position: relative;
-  margin-top: 217px;
+  margin-top: 230px;
 }
 
 main .banner .grass-area .scroll-line {
@@ -222,7 +227,7 @@ main .banner .grass-area .scroll-line {
 }
 
 main .banner .grass-area .scroll-line::after {
-  content: '';
+  content: "";
   width: 1px;
   height: 100px;
   border: 1px solid #ffffff;
@@ -231,6 +236,7 @@ main .banner .grass-area .scroll-line::after {
 }
 
 main .banner .grass-area .grass-1 {
+  width: 100%;
   height: 190px;
   z-index: 1;
 }
@@ -331,8 +337,8 @@ main .first-section .container170 .col .about-shadow {
 main .first-section .container170 .col .deco-line1 {
   position: absolute;
   z-index: 2;
-  -webkit-transform: translate(-22%, -84%);
-          transform: translate(-22%, -84%);
+  -webkit-transform: translate(-20%, -84%);
+          transform: translate(-20%, -84%);
 }
 
 main .first-section .container170 .col .about-us {
@@ -489,6 +495,21 @@ main .second-section .feed-cat .feed-img {
   background-image: url("/img/second-section/cat-2.png");
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
+}
+
+main .second-section .feed-cat .feed-img .heart-1 {
+  position: absolute;
+  z-index: 1;
+  -webkit-transform: translate(1650%, 1060%);
+          transform: translate(1650%, 1060%);
+}
+
+main .second-section .feed-cat .feed-img .heart-2 {
+  position: absolute;
+  z-index: 1;
+  -webkit-transform: translate(890%, 460%);
+          transform: translate(890%, 460%);
 }
 
 main .second-section .feed-cat .feed-area {
@@ -591,6 +612,21 @@ main .second-section .help-cat .help-img {
   background-image: url("/img/second-section/cat-3.png");
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
+}
+
+main .second-section .help-cat .help-img .sos-left {
+  position: absolute;
+  z-index: 1;
+  -webkit-transform: translate(90%, 360%);
+          transform: translate(90%, 360%);
+}
+
+main .second-section .help-cat .help-img .sos-right {
+  position: absolute;
+  z-index: 1;
+  -webkit-transform: translate(265%, 80%);
+          transform: translate(265%, 80%);
 }
 
 main .second-section .help-cat .help-area {
@@ -742,7 +778,7 @@ main .third-section .container140 .news-area .news-text p {
 
 main .third-section .container140 .news-btn {
   margin: auto;
-  margin-bottom: 140px;
+  margin-bottom: 240px;
   width: 308px;
   height: 100px;
   background-color: #ff7950;
@@ -793,5 +829,153 @@ footer .footer-area .container140 {
   width: 100%;
   height: 310px;
   background-color: #777777;
+}
+
+footer .footer-area .container140 .ft-top {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer .footer-area .container140 .ft-top .ft-left {
+  padding-top: 45px;
+}
+
+footer .footer-area .container140 .ft-top .ft-left .text-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 20px;
+  color: #ffffff;
+}
+
+footer .footer-area .container140 .ft-top .ft-left .text-1:hover {
+  text-decoration: underline;
+}
+
+footer .footer-area .container140 .ft-top .ft-left .text-2 {
+  margin: 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 20px;
+  color: #ffffff;
+}
+
+footer .footer-area .container140 .ft-top .ft-left .text-2:hover {
+  text-decoration: underline;
+}
+
+footer .footer-area .container140 .ft-top .ft-left .text-3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 24px;
+  color: #ffffff;
+}
+
+footer .footer-area .container140 .ft-top .ft-left .text-3 .contact {
+  border-radius: 20px;
+  background-color: #ffffff;
+  padding: 0 30px;
+  margin-left: 10px;
+  margin-right: 70px;
+}
+
+footer .footer-area .container140 .ft-top .ft-left .text-3 .contact .ft-input {
+  width: 261px;
+  margin-left: 10px;
+  outline-style: none;
+  border: 0px;
+  border-radius: 20px;
+}
+
+footer .footer-area .container140 .ft-top .ft-left .text-3 .contact .contact-btn {
+  padding: 0;
+  border-radius: 20px;
+  border: none;
+  background-color: #ffffff;
+  outline: 0;
+  cursor: pointer;
+}
+
+footer .footer-area .container140 .ft-top .ft-left .text-3 .fb-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: #fe886d;
+  color: #ffffff;
+  font-size: 23px;
+  line-height: 44px;
+  text-align: center;
+}
+
+footer .footer-area .container140 .ft-top .ft-left .text-3 .fb-icon:hover {
+  -webkit-box-shadow: 0px 0px 20px 0px #ff7950;
+          box-shadow: 0px 0px 20px 0px #ff7950;
+  -webkit-transition-duration: 0.8s;
+          transition-duration: 0.8s;
+}
+
+footer .footer-area .container140 .ft-top .ft-mouse {
+  margin-top: 50px;
+  width: 164px;
+  height: 158px;
+  border-radius: 50%;
+  background-color: #4f4f4f;
+  background-image: url("/img/mouse.png");
+  background-repeat: no-repeat;
+  background-position: 45px 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+footer .footer-area .container140 .ft-top .ft-mouse span {
+  color: #ffffff;
+  font-size: 15px;
+  padding-bottom: 15px;
+}
+
+footer .footer-area .container140 .ft-top .ft-mouse:hover {
+  -webkit-box-shadow: 0px 0px 20px 0px #ffffff;
+          box-shadow: 0px 0px 20px 0px #ffffff;
+  -webkit-transition-duration: 0.8s;
+          transition-duration: 0.8s;
+}
+
+footer .footer-area .container140 .ft-bot {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 60px;
+}
+
+footer .footer-area .container140 .ft-bot p {
+  font-size: 16px;
+  color: #ffffff;
 }
 /*# sourceMappingURL=index.css.map */
