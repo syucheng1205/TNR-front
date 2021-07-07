@@ -338,8 +338,6 @@ main {
 							box-shadow: 0px 0px 10px 0px $color-dark-orange;
 							transition-duration: 0.8s;
 						}
-
-
 					}
 				}
 
@@ -623,7 +621,7 @@ main {
 
 			.news-btn {
 				margin: auto;
-				margin-bottom: 140px;
+				margin-bottom: 240px;
 
 				width: 308px;
 				height: 100px;
@@ -634,7 +632,6 @@ main {
 				border-radius: 40px;
 				cursor: pointer;
 				box-shadow: 0px 10px 30px 0px $color-dark-orange;
-
 
 				p {
 					font-size: 36px;
@@ -669,7 +666,58 @@ footer {
 			width: 100%;
 			height: 310px;
 			background-color: #777777;
+			
+			.ft-top{
+				width: 100%;
 
+				.ft-left{
+					width: 714px;
+					padding-top: 45px;
+
+					.text-1{
+						display: flex;
+						align-items: center;
+						font-size: 20px;
+						color: #ffffff;
+					}
+
+					.text-2{
+						margin: 20px 0;
+						display: flex;
+						align-items: center;
+						font-size: 20px;
+						color: #ffffff;
+					}
+
+					.text-3{
+						display: flex;
+						align-items: center;
+						font-size: 24px;
+						color: #ffffff;
+
+						.ft-input{
+							margin-left: 10px;
+							margin-right: 180px;
+							outline-style: none ;
+							border: 0px;
+							border-radius: 20px;
+							padding: 0 15px;
+						}
+
+						.fb-icon{
+							color: #ffffff;
+							font-size: 40px;
+							display: flex;
+							justify-content: center;
+							align-items: center;
+						}
+					}
+				}
+			}
+
+			.ft-bot{
+				width: 100%;
+			}
 
 		}
 	}
