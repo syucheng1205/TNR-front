@@ -168,6 +168,10 @@ nav .nav .menu:hover .burger::before {
 }
 
 .first-section .swiper-group .btns-area .btns {
+  margin-top: 50px;
+}
+
+.first-section .swiper-group .btns-area .btns:nth-child(1) {
   margin-top: 90px;
 }
 

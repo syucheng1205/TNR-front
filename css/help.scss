@@ -155,7 +155,10 @@ nav {
             display: flex;
             flex-direction: column;
             .btns{
-                margin-top: 90px;
+                margin-top: 50px;
+                &:nth-child(1){
+                    margin-top: 90px;
+                }
                 .btn-secondary {
                     width: 268px;
                     height: 101px;
