@@ -710,8 +710,8 @@ footer {
 						font-size: 20px;
 						color: $color-btn-text;
 
-						&:hover{
-							text-decoration:underline;
+						&:hover {
+							text-decoration: underline;
 						}
 					}
 
@@ -722,12 +722,10 @@ footer {
 						font-size: 20px;
 						color: $color-btn-text;
 
-						&:hover{
-							text-decoration:underline;
+						&:hover {
+							text-decoration: underline;
 						}
 					}
-
-					
 
 					.text-3 {
 						display: flex;
@@ -735,14 +733,34 @@ footer {
 						font-size: 24px;
 						color: $color-btn-text;
 
-						.ft-input {
-							margin-left: 10px;
-							margin-right: 180px;
-							outline-style: none;
-							border: 0px;
+						.contact{
 							border-radius: 20px;
-							padding: 0 15px;
+							background-color: $color-btn-text;
+							padding: 0 30px;
+							margin-left: 10px;
+							margin-right: 70px;
+
+							.ft-input {
+								width: 261px;
+								margin-left: 10px;
+								outline-style: none;
+								border: 0px;
+								border-radius: 20px;
+
+							}
+							.contact-btn{
+								padding: 0;
+								border-radius: 20px;
+								border:none;
+								background-color: $color-btn-text;
+								outline: 0;
+								cursor: pointer;
+								
+							}
+
+
 						}
+
 
 						.fb-icon {
 							width: 44px;
@@ -753,6 +771,11 @@ footer {
 							font-size: 23px;
 							line-height: 44px;
 							text-align: center;
+
+							&:hover {
+								box-shadow: 0px 0px 20px 0px $color-dark-orange;
+								transition-duration: 0.8s;
+							}
 						}
 					}
 				}
@@ -765,15 +788,20 @@ footer {
 					background-color: $color-text;
 					background-image: url("/img/mouse.png");
 					background-repeat: no-repeat;
-					background-position:45px 35px;
+					background-position: 45px 35px;
 					display: flex;
 					justify-content: center;
 					align-items: flex-end;
 
-					span{
+					span {
 						color: $color-btn-text;
 						font-size: 15px;
 						padding-bottom: 15px;
+					}
+
+					&:hover {
+						box-shadow: 0px 0px 20px 0px $color-btn-text;
+						transition-duration: 0.8s;
 					}
 				}
 			}
