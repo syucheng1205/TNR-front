@@ -345,6 +345,8 @@ main .first-section .container170 .col .about-us .about-btn {
   width: 308px;
   height: 100px;
   background-color: #ff7950;
+  -webkit-box-shadow: 0px 10px 30px 0px #ff7950;
+          box-shadow: 0px 10px 30px 0px #ff7950;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -365,16 +367,15 @@ main .first-section .container170 .col .about-us .about-btn p {
   border-bottom: 4px solid #ff7950;
 }
 
-main .first-section .container170 .col .about-us .about-btn p:hover {
+main .first-section .container170 .col .about-us .about-btn:hover p {
   border-bottom: 4px solid #ffffff;
-  -webkit-box-shadow: 0px 0px 10px 0px #ff7950;
-          box-shadow: 0px 0px 10px 0px #ff7950;
   -webkit-transition-duration: 0.8s;
           transition-duration: 0.8s;
 }
 
-main .first-section .container170 .col .about-us .about-btn p:hover p {
-  border-bottom: 4px solid #ffffff;
+main .first-section .container170 .col .about-us .about-btn:hover {
+  -webkit-box-shadow: 0px 0px 10px 0px #ff7950;
+          box-shadow: 0px 0px 10px 0px #ff7950;
   -webkit-transition-duration: 0.8s;
           transition-duration: 0.8s;
 }
@@ -510,6 +511,8 @@ main .second-section .feed-cat .feed-area .feed-btn {
           justify-content: center;
   border-radius: 40px;
   cursor: pointer;
+  -webkit-box-shadow: 0px 10px 30px 0px #f2a589;
+          box-shadow: 0px 10px 30px 0px #f2a589;
 }
 
 main .second-section .feed-cat .feed-area .feed-btn p {
@@ -519,16 +522,22 @@ main .second-section .feed-cat .feed-area .feed-btn p {
   border-bottom: 4px solid #f2a589;
 }
 
-main .second-section .feed-cat .feed-area .feed-btn p:hover {
+main .second-section .feed-cat .feed-area .feed-btn p {
+  font-size: 36px;
+  font-weight: bold;
+  color: #ffffff;
+  border-bottom: 4px solid #f2a589;
+}
+
+main .second-section .feed-cat .feed-area .feed-btn:hover p {
   border-bottom: 4px solid #ffffff;
-  -webkit-box-shadow: 0px 0px 10px 0px #f2a589;
-          box-shadow: 0px 0px 10px 0px #f2a589;
   -webkit-transition-duration: 0.8s;
           transition-duration: 0.8s;
 }
 
-main .second-section .feed-cat .feed-area .feed-btn p:hover p {
-  border-bottom: 4px solid #ffffff;
+main .second-section .feed-cat .feed-area .feed-btn:hover {
+  -webkit-box-shadow: 0px 0px 10px 0px #f2a589;
+          box-shadow: 0px 0px 10px 0px #f2a589;
   -webkit-transition-duration: 0.8s;
           transition-duration: 0.8s;
 }
@@ -604,6 +613,8 @@ main .second-section .help-cat .help-area .help-btn {
           justify-content: center;
   border-radius: 40px;
   cursor: pointer;
+  -webkit-box-shadow: 0px 10px 30px 0px #f2a589;
+          box-shadow: 0px 10px 30px 0px #f2a589;
 }
 
 main .second-section .help-cat .help-area .help-btn p {
@@ -613,16 +624,22 @@ main .second-section .help-cat .help-area .help-btn p {
   border-bottom: 4px solid #f2a589;
 }
 
-main .second-section .help-cat .help-area .help-btn p:hover {
+main .second-section .help-cat .help-area .help-btn p {
+  font-size: 36px;
+  font-weight: bold;
+  color: #ffffff;
+  border-bottom: 4px solid #f2a589;
+}
+
+main .second-section .help-cat .help-area .help-btn:hover p {
   border-bottom: 4px solid #ffffff;
-  -webkit-box-shadow: 0px 0px 10px 0px #f2a589;
-          box-shadow: 0px 0px 10px 0px #f2a589;
   -webkit-transition-duration: 0.8s;
           transition-duration: 0.8s;
 }
 
-main .second-section .help-cat .help-area .help-btn p:hover p {
-  border-bottom: 4px solid #ffffff;
+main .second-section .help-cat .help-area .help-btn:hover {
+  -webkit-box-shadow: 0px 0px 10px 0px #f2a589;
+          box-shadow: 0px 0px 10px 0px #f2a589;
   -webkit-transition-duration: 0.8s;
           transition-duration: 0.8s;
 }
@@ -712,6 +729,8 @@ main .third-section .container140 .news-btn {
           justify-content: center;
   border-radius: 40px;
   cursor: pointer;
+  -webkit-box-shadow: 0px 10px 30px 0px #ff7950;
+          box-shadow: 0px 10px 30px 0px #ff7950;
 }
 
 main .third-section .container140 .news-btn p {
@@ -721,16 +740,15 @@ main .third-section .container140 .news-btn p {
   border-bottom: 4px solid #ff7950;
 }
 
-main .third-section .container140 .news-btn p:hover {
+main .third-section .container140 .news-btn:hover p {
   border-bottom: 4px solid #ffffff;
-  -webkit-box-shadow: 0px 0px 10px 0px #ff7950;
-          box-shadow: 0px 0px 10px 0px #ff7950;
   -webkit-transition-duration: 0.8s;
           transition-duration: 0.8s;
 }
 
-main .third-section .container140 .news-btn p:hover p {
-  border-bottom: 4px solid #ffffff;
+main .third-section .container140 .news-btn:hover {
+  -webkit-box-shadow: 0px 0px 10px 0px #ff7950;
+          box-shadow: 0px 0px 10px 0px #ff7950;
   -webkit-transition-duration: 0.8s;
           transition-duration: 0.8s;
 }
