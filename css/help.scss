@@ -195,9 +195,10 @@ nav {
                         font-size: 36px;
                         &:hover {
                             background-color: $color-banner-number;
+                            border: 5px solid $color-dark-orange;
                         }
                         &:hover:nth-last-child(1) {
-                            border-radius: 0 0 20px 20px;
+                            border-radius: 0 0 30px 30px;
                         }
                     }
                 }

@@ -225,10 +225,11 @@ nav .nav .menu:hover .burger::before {
 
 .first-section .swiper-group .btns-area .btns .dropdown-menu .dropdown-item:hover {
   background-color: #ffa183;
+  border: 5px solid #ff7950;
 }
 
 .first-section .swiper-group .btns-area .btns .dropdown-menu .dropdown-item:hover:nth-last-child(1) {
-  border-radius: 0 0 20px 20px;
+  border-radius: 0 0 30px 30px;
 }
 
 .first-section .swiper-group .mySwiper {
