@@ -868,6 +868,31 @@ footer .footer-area .container140 .ft-top .ft-left .text-3 .fb-icon {
   text-align: center;
 }
 
+footer .footer-area .container140 .ft-top .ft-mouse {
+  width: 164px;
+  height: 158px;
+  border-radius: 50%;
+  background-color: #4f4f4f;
+  background-image: url("/img/mouse.png");
+  background-repeat: no-repeat;
+  background-position: 45px 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+footer .footer-area .container140 .ft-top .ft-mouse span {
+  color: #ffffff;
+  font-size: 15px;
+  padding-bottom: 15px;
+}
+
 footer .footer-area .container140 .ft-bot {
   width: 100%;
   display: -webkit-box;

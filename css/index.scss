@@ -737,12 +737,31 @@ footer {
 							width: 44px;
 							height: 44px;
 							border-radius: 50%;
-							background-color:$color-light-orange;
+							background-color: $color-light-orange;
 							color: $color-btn-text;
 							font-size: 23px;
 							line-height: 44px;
 							text-align: center;
 						}
+					}
+				}
+
+				.ft-mouse {
+					width: 164px;
+					height: 158px;
+					border-radius: 50%;
+					background-color: $color-text;
+					background-image: url("/img/mouse.png");
+					background-repeat: no-repeat;
+					background-position:45px 35px;
+					display: flex;
+					justify-content: center;
+					align-items: flex-end;
+
+					span{
+						color: $color-btn-text;
+						font-size: 15px;
+						padding-bottom: 15px;
 					}
 				}
 			}
