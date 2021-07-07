@@ -735,9 +735,10 @@ main .third-section .container140 .news-btn p:hover p {
           transition-duration: 0.8s;
 }
 
-footer .footer-area {
+footer .footer-area .footer-img {
   width: 100%;
-  height: 350px;
-  background-color: #777777;
+  height: 42px;
+  background-image: url("/img/footer-wave.png");
+  background-size: cover;
 }
 /*# sourceMappingURL=index.css.map */
