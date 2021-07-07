@@ -562,7 +562,7 @@ main .second-section .help-cat .help-area {
   width: 840px;
   height: 487px;
   border-radius: 40px;
-  background-color: #FE886D;
+  background-color: #fe886d;
   padding: 0 110px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -700,7 +700,7 @@ main .third-section .container140 .news-btn {
   margin-bottom: 140px;
   width: 308px;
   height: 100px;
-  background-color: #FF7950;
+  background-color: #ff7950;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -718,13 +718,13 @@ main .third-section .container140 .news-btn p {
   font-size: 36px;
   font-weight: bold;
   color: #ffffff;
-  border-bottom: 4px solid #FF7950;
+  border-bottom: 4px solid #ff7950;
 }
 
 main .third-section .container140 .news-btn p:hover {
   border-bottom: 4px solid #ffffff;
-  -webkit-box-shadow: 0px 0px 10px 0px #FF7950;
-          box-shadow: 0px 0px 10px 0px #FF7950;
+  -webkit-box-shadow: 0px 0px 10px 0px #ff7950;
+          box-shadow: 0px 0px 10px 0px #ff7950;
   -webkit-transition-duration: 0.8s;
           transition-duration: 0.8s;
 }

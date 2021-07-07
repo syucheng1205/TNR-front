@@ -162,11 +162,11 @@ main {
 				p {
 					font-size: 56px;
 					font-weight: bold;
-					color: #ffffff;
+					color: $color-btn-text;
 					border-bottom: 4px solid $color-dark-orange;
 				}
 				&:hover p {
-					border-bottom: 4px solid #ffffff;
+					border-bottom: 4px solid $color-btn-text;
 					transition-duration: 0.8s;
 				}
 				&:hover {
@@ -217,7 +217,7 @@ main {
 				bottom: 0;
 				right: 0;
 				h1 {
-					color: #4f4f4f;
+					color: $color-text;
 					font-size: 72px;
 				}
 			}
@@ -258,7 +258,7 @@ main {
 					.swiper-pagination-bullet {
 						width: 20px;
 						height: 20px;
-						background-color: #ffffff;
+						background-color: $color-btn-text;
 						opacity: 1;
 					}
 					.swiper-pagination-bullet-active {
@@ -293,7 +293,7 @@ main {
 
 					span {
 						font-size: 18px;
-						color: #4f4f4f;
+						color: $color-text;
 					}
 
 					.row {
@@ -310,7 +310,7 @@ main {
 
 					p {
 						font-size: 24px;
-						color: #ffa183;
+						color: $color-banner-number;
 					}
 
 					.about-btn {
@@ -328,16 +328,16 @@ main {
 						p {
 							font-size: 36px;
 							font-weight: bold;
-							color: #ffffff;
+							color: $color-btn-text;
 							border-bottom: 4px solid $color-dark-orange;
 							&:hover {
-								border-bottom: 4px solid #ffffff;
+								border-bottom: 4px solid $color-btn-text;
 								box-shadow: 0px 0px 10px 0px $color-dark-orange;
 								transition-duration: 0.8s;
 							}
 
 							&:hover p {
-								border-bottom: 4px solid #ffffff;
+								border-bottom: 4px solid $color-btn-text;
 								transition-duration: 0.8s;
 							}
 						}
@@ -357,27 +357,27 @@ main {
 					width: 133px;
 					height: 133px;
 					border-radius: 50%;
-					background-color: #fe886d;
+					background-color: $color-light-orange;
 					display: flex;
 					justify-content: center;
 					align-items: center;
 
 					i {
 						font-size: 60px;
-						color: #ffffff;
+						color: $color-btn-text;
 					}
 				}
 
 				.text {
 					h3 {
 						font-size: 32px;
-						color: #707070;
+						color: $color-banner-gray;
 						margin-left: 20px;
 						font-weight: bold;
 					}
 					h1 {
 						font-size: 96px;
-						color: #4f4f4f;
+						color: $color-text;
 						margin-left: 10px;
 					}
 				}
@@ -420,7 +420,7 @@ main {
 				width: 840px;
 				height: 487px;
 				border-radius: 40px;
-				background-color: #ff7950;
+				background-color: $color-dark-orange;
 				padding: 0 110px;
 
 				display: flex;
@@ -431,14 +431,14 @@ main {
 					
 					h3 {
 						font-size: 48px;
-						color: #ffffff;
+						color: $color-btn-text;
 						margin-top: 80px;
 						margin-bottom: 40px;
 					}
 
 					p {
 						font-size: 18px;
-						color: #ffffff;
+						color: $color-btn-text;
 						margin-bottom: 40px;
 					}
 				}
@@ -456,16 +456,16 @@ main {
 					p {
 						font-size: 36px;
 						font-weight: bold;
-						color: #ffffff;
+						color: $color-btn-text;
 						border-bottom: 4px solid #f2a589;
 						&:hover {
-							border-bottom: 4px solid #ffffff;
+							border-bottom: 4px solid $color-btn-text;
 							box-shadow: 0px 0px 10px 0px #f2a589;
 							transition-duration: 0.8s;
 						}
 
 						&:hover p {
-							border-bottom: 4px solid #ffffff;
+							border-bottom: 4px solid $color-btn-text;
 							transition-duration: 0.8s;
 						}
 					}
@@ -495,7 +495,7 @@ main {
 				width: 840px;
 				height: 487px;
 				border-radius: 40px;
-				background-color: #FE886D;
+				background-color: $color-light-orange;
 				padding: 0 110px;
 
 				display: flex;
@@ -506,14 +506,14 @@ main {
 					
 					h3 {
 						font-size: 48px;
-						color: #ffffff;
+						color:$color-btn-text;
 						margin-top: 80px;
 						margin-bottom: 40px;
 					}
 
 					p {
 						font-size: 18px;
-						color: #ffffff;
+						color:$color-btn-text;
 						margin-bottom: 40px;
 					}
 				}
@@ -531,16 +531,16 @@ main {
 					p {
 						font-size: 36px;
 						font-weight: bold;
-						color: #ffffff;
+						color:$color-btn-text;
 						border-bottom: 4px solid #F2A589;
 						&:hover {
-							border-bottom: 4px solid #ffffff;
+							border-bottom: 4px solid $color-btn-text;
 							box-shadow: 0px 0px 10px 0px #F2A589;
 							transition-duration: 0.8s;
 						}
 
 						&:hover p {
-							border-bottom: 4px solid #ffffff;
+							border-bottom: 4px solid $color-btn-text;
 							transition-duration: 0.8s;
 						}
 					}
@@ -563,7 +563,7 @@ main {
 				bottom: 0;
 				right: 0;
 				h1 {
-					color: #4f4f4f;
+					color: $color-text;
 					font-size: 72px;
 				}
 			}
@@ -622,7 +622,7 @@ main {
 
 				width: 308px;
 				height: 100px;
-				background-color: #FF7950;
+				background-color: $color-dark-orange;
 				display: flex;
 				align-items: center;
 				justify-content: center;
@@ -632,16 +632,16 @@ main {
 				p {
 					font-size: 36px;
 					font-weight: bold;
-					color: #ffffff;
-					border-bottom: 4px solid #FF7950;
+					color: $color-btn-text;
+					border-bottom: 4px solid $color-dark-orange;
 					&:hover {
-						border-bottom: 4px solid #ffffff;
-						box-shadow: 0px 0px 10px 0px #FF7950;
+						border-bottom: 4px solid $color-btn-text;
+						box-shadow: 0px 0px 10px 0px $color-dark-orange;
 						transition-duration: 0.8s;
 					}
 
 					&:hover p {
-						border-bottom: 4px solid #ffffff;
+						border-bottom: 4px solid $color-btn-text;
 						transition-duration: 0.8s;
 					}
 				}
