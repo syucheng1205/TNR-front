@@ -337,8 +337,8 @@ main .first-section .container170 .col .about-shadow {
 main .first-section .container170 .col .deco-line1 {
   position: absolute;
   z-index: 2;
-  -webkit-transform: translate(10%, -84%);
-          transform: translate(10%, -84%);
+  -webkit-transform: translate(-20%, -84%);
+          transform: translate(-20%, -84%);
 }
 
 main .first-section .container170 .col .about-us {
@@ -501,15 +501,15 @@ main .second-section .feed-cat .feed-img {
 main .second-section .feed-cat .feed-img .heart-1 {
   position: absolute;
   z-index: 1;
-  -webkit-transform: translate(1800%, 1150%);
-          transform: translate(1800%, 1150%);
+  -webkit-transform: translate(1650%, 1060%);
+          transform: translate(1650%, 1060%);
 }
 
 main .second-section .feed-cat .feed-img .heart-2 {
   position: absolute;
   z-index: 1;
-  -webkit-transform: translate(960%, 500%);
-          transform: translate(960%, 500%);
+  -webkit-transform: translate(890%, 460%);
+          transform: translate(890%, 460%);
 }
 
 main .second-section .feed-cat .feed-area {
@@ -618,15 +618,15 @@ main .second-section .help-cat .help-img {
 main .second-section .help-cat .help-img .sos-left {
   position: absolute;
   z-index: 1;
-  -webkit-transform: translate(100%, 400%);
-          transform: translate(100%, 400%);
+  -webkit-transform: translate(90%, 360%);
+          transform: translate(90%, 360%);
 }
 
 main .second-section .help-cat .help-img .sos-right {
   position: absolute;
   z-index: 1;
-  -webkit-transform: translate(300%, 100%);
-          transform: translate(300%, 100%);
+  -webkit-transform: translate(265%, 80%);
+          transform: translate(265%, 80%);
 }
 
 main .second-section .help-cat .help-area {

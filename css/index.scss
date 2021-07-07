@@ -301,7 +301,7 @@ main {
 				.deco-line1 {
 					position: absolute;
 					z-index: 2;
-					transform: translate(10%, -84%);
+					transform: translate(-20% , -84%);
 					// transform: translate(-22%, -84%);
 				}
 
@@ -437,13 +437,13 @@ main {
 				.heart-1{
 					position: absolute;
 					z-index: 1;
-					transform: translate(1800%, 1150%);
+					transform: translate(1650%, 1060%);
 				}
 
 				.heart-2{
 					position: absolute;
 					z-index: 1;
-					transform: translate(960%, 500%);
+					transform: translate(890%, 460%);
 				}
 
 			}
@@ -529,13 +529,13 @@ main {
 				.sos-left{
 					position: absolute;
 					z-index: 1;
-					transform: translate(100%, 400%);
+					transform: translate(90%,360%);
 				}
 
 				.sos-right{
 					position: absolute;
 					z-index: 1;
-					transform: translate(300%, 100%);
+					transform: translate(265%, 80%);
 				}
 			}
 
