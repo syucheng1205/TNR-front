@@ -204,6 +204,7 @@ nav .nav .menu:hover .burger::before {
 .first-section .swiper-group .btns-area .btns .dropdown-menu {
   width: 268px;
   padding-top: 20px;
+  padding-bottom: 0;
   margin-top: -30px;
   background-color: #ff7950;
   border-radius: 0 0 30px 30px;
