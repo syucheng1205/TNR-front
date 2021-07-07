@@ -157,8 +157,11 @@ nav {
             border-radius: 0 0 40px 40px;
             display: flex;
             flex-direction: column;
-            .btns {
-                margin-top: 90px;
+            .btns{
+                margin-top: 50px;
+                &:nth-child(1){
+                    margin-top: 90px;
+                }
                 .btn-secondary {
                     width: 268px;
                     height: 101px;
@@ -205,10 +208,28 @@ nav {
             height: 664px;
             transform: translateY(45%);
             .card-img {
+                position: relative;
+                &:hover .play{
+                    display: block;
+                }
+                &:hover .img{
+                    -webkit-filter:contrast(.5);
+                }
                 .img {
                     width: 400px;
                     height: 300px;
                     border-radius: 40px;
+                }
+                .play{
+                    padding: 3px;
+                    font-size: 100px;
+                    color: white;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%,-50%);
+                    display: none;
+                    
                 }
                 .img-shadow {
                     width: 400px;
@@ -220,6 +241,7 @@ nav {
                     left: 20px;
                     z-index: -1;
                 }
+                
             }
             .card-major {
                 width: 100%;
