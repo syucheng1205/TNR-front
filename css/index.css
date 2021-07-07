@@ -858,17 +858,14 @@ footer .footer-area .container140 .ft-top .ft-left .text-3 .ft-input {
 }
 
 footer .footer-area .container140 .ft-top .ft-left .text-3 .fb-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: #fe886d;
   color: #ffffff;
-  font-size: 40px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  font-size: 23px;
+  line-height: 44px;
+  text-align: center;
 }
 
 footer .footer-area .container140 .ft-bot {
