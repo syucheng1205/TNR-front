@@ -797,6 +797,12 @@ footer .footer-area .container140 {
 
 footer .footer-area .container140 .ft-top {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 footer .footer-area .container140 .ft-top .ft-left {
@@ -861,7 +867,7 @@ footer .footer-area .container140 .ft-top .ft-left .text-3 .fb-icon {
           align-items: center;
 }
 
-footer .footer-area .container140 .ft-bot {
+footer .footer-area .container140 .ft-top .ft-bot {
   width: 100%;
 }
 /*# sourceMappingURL=index.css.map */

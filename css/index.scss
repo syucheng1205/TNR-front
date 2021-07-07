@@ -692,6 +692,8 @@ footer {
 			
 			.ft-top{
 				width: 100%;
+				display: flex;
+				justify-content: space-between;
 
 				.ft-left{
 					width: 714px;
@@ -736,12 +738,17 @@ footer {
 						}
 					}
 				}
-			}
+
+			
 
 			.ft-bot{
 				width: 100%;
+
+				
 			}
 
 		}
+	}
+
 	}
 }
