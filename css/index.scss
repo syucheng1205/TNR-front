@@ -306,7 +306,8 @@ main {
 				.deco-line1 {
 					position: absolute;
 					z-index: 2;
-					transform: translate(-22%, -84%);
+					transform: translate(10%, -84%);
+					// transform: translate(-22%, -84%);
 				}
 
 				.about-us {
@@ -436,6 +437,8 @@ main {
 				background-image: url("/img/second-section/cat-2.png");
 				background-repeat: no-repeat;
 				background-size: cover;
+
+				
 			}
 
 			.feed-area {

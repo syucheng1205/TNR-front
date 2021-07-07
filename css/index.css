@@ -337,8 +337,8 @@ main .first-section .container170 .col .about-shadow {
 main .first-section .container170 .col .deco-line1 {
   position: absolute;
   z-index: 2;
-  -webkit-transform: translate(-22%, -84%);
-          transform: translate(-22%, -84%);
+  -webkit-transform: translate(10%, -84%);
+          transform: translate(10%, -84%);
 }
 
 main .first-section .container170 .col .about-us {
