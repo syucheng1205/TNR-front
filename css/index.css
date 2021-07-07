@@ -217,7 +217,7 @@ main .banner .grass-area .grass-2 {
 }
 
 main .first-section {
-  margin-top: 200px;
+  margin-top: 234px;
   width: 100%;
   height: auto;
 }
@@ -656,5 +656,41 @@ main .third-section .container140 {
 
 main .third-section .container140 .news-area {
   width: 504px;
+}
+
+main .third-section .container140 .news-area .news-img {
+  position: relative;
+}
+
+main .third-section .container140 .news-area .news-img .img {
+  width: 484px;
+  height: 361px;
+  border-radius: 40px;
+}
+
+main .third-section .container140 .news-area .news-img .img-shadow {
+  width: 484px;
+  height: 361px;
+  border-radius: 40px;
+  background-image: url("/img/first-section/米色背景.jpg");
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: -1;
+}
+
+main .third-section .container140 .news-area .news-text {
+  margin-top: 70px;
+}
+
+main .third-section .container140 .news-area .news-text h4 {
+  font-size: 40px;
+  color: #FE886D;
+  margin-bottom: 20px;
+}
+
+main .third-section .container140 .news-area .news-text p {
+  font-size: 18px;
+  color: #000000;
 }
 /*# sourceMappingURL=index.css.map */
