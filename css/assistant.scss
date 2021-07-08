@@ -38,6 +38,10 @@ a:hover {
 	padding: 0 140px;
 }
 
+.max-w {
+	max-width: 1920px;
+}
+
 .nav {
 	width: 100%;
 	display: flex;
@@ -92,15 +96,52 @@ a:hover {
 			background-color: $color-dark-orange;
 		}
 	}
-
 }
 
 .first-section {
 	width: 100%;
-
-	.first-section-img {
-		width: 1382px;
-		height: 544px;
-		background-image: url("/img/04-assistant/blue-wave.png");
+	.background {
+		.img {
+			width: 72%;
+			height: 544px;
+			background-image: url(/img/04-assistant/blue-wave.png);
+			background-repeat: no-repeat;
+			.background-title{
+				font-size: 96px;
+				padding: 0 35px;
+				color: #fff;
+				background-color: #86CEE8;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%,-50%);
+			}
+		}
+		.links {
+			position: absolute;
+			top: -82.5px;
+			right: 6.8%;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			.link {
+				width: 100px;
+				height: 100px;
+				border-radius: 50%;
+				border: 3px solid #fe886d;
+				margin-right: 57px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				color: #fe886d;
+				font-size: 48px;
+			}
+			.link-1 {
+				width: 165px;
+				height: 165px;
+				font-size: 108px;
+			}
+		}
+		
 	}
 }

@@ -37,6 +37,10 @@ a:hover {
   padding: 0 140px;
 }
 
+.max-w {
+  max-width: 1920px;
+}
+
 .nav {
   width: 100%;
   display: -webkit-box;
@@ -100,9 +104,62 @@ a:hover {
   width: 100%;
 }
 
-.first-section .first-section-img {
-  width: 1382px;
+.first-section .background .img {
+  width: 72%;
   height: 544px;
-  background-image: url("/img/04-assistant/blue-wave.png");
+  background-image: url(/img/04-assistant/blue-wave.png);
+  background-repeat: no-repeat;
+}
+
+.first-section .background .img .background-title {
+  font-size: 96px;
+  padding: 0 35px;
+  color: #fff;
+  background-color: #86CEE8;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.first-section .background .links {
+  position: absolute;
+  top: -82.5px;
+  right: 6.8%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.first-section .background .links .link {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 3px solid #fe886d;
+  margin-right: 57px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #fe886d;
+  font-size: 48px;
+}
+
+.first-section .background .links .link-1 {
+  width: 165px;
+  height: 165px;
+  font-size: 108px;
 }
 /*# sourceMappingURL=assistant.css.map */
