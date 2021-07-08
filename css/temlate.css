@@ -98,7 +98,11 @@ a:hover {
   background-color: #ff7950;
 }
 
-.nav .menu .burger-area {
+.nav .menu .active {
+  display: block;
+}
+
+.nav .burger-area {
   float: right;
   width: 960px;
   height: 1185px;
@@ -109,7 +113,7 @@ a:hover {
   display: none;
 }
 
-.nav .menu .burger-area span {
+.nav .burger-area span {
   font-size: 100px;
   color: #707070;
   float: right;
@@ -117,7 +121,7 @@ a:hover {
   right: 140px;
 }
 
-.nav .menu .burger-area .list {
+.nav .burger-area .list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -130,13 +134,13 @@ a:hover {
           align-items: center;
 }
 
-.nav .menu .burger-area .list a {
+.nav .burger-area .list a {
   font-size: 64px;
   color: #4f4f4f;
   margin-bottom: 57px;
 }
 
-.nav .menu .burger-area .list .banner-btn {
+.nav .burger-area .list .banner-btn {
   width: 381px;
   height: 130px;
   background-color: #ff7950;
@@ -157,27 +161,27 @@ a:hover {
   margin-bottom: 136px;
 }
 
-.nav .menu .burger-area .list .banner-btn p {
+.nav .burger-area .list .banner-btn p {
   font-size: 48px;
   font-weight: bold;
   color: #ffffff;
   border-bottom: 4px solid #ff7950;
 }
 
-.nav .menu .burger-area .list .banner-btn:hover p {
+.nav .burger-area .list .banner-btn:hover p {
   border-bottom: 4px solid #ffffff;
   -webkit-transition-duration: 0.8s;
           transition-duration: 0.8s;
 }
 
-.nav .menu .burger-area .list .banner-btn:hover {
+.nav .burger-area .list .banner-btn:hover {
   -webkit-box-shadow: 0px 0px 10px 0px #ff7950;
           box-shadow: 0px 0px 10px 0px #ff7950;
   -webkit-transition-duration: 0.8s;
           transition-duration: 0.8s;
 }
 
-.nav .menu .active {
+.nav .active {
   display: block;
 }
 /*# sourceMappingURL=temlate.css.map */

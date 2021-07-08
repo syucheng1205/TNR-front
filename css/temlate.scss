@@ -97,74 +97,79 @@ a:hover {
 
 		
 
-		.burger-area {
-			float: right;
-			width: 960px;
-			height: 1185px;
-			// background-color: blue;
-			background-image: url('/img/first-section/米色背景.jpg');
-			border-radius: 40px 0 40px 40px;
-			opacity: 0.8;
-			position: relative;
 		
-			span {
-				font-size: 100px;
-				color: #707070;
-				float: right;
-				position: absolute;
-				right: 140px;
-			}
-		
-			.list {
-				display: flex;
-				flex-direction: column;
-				align-items: center;
-				a {
-					font-size: 64px;
-					color: #4f4f4f;
-					margin-bottom: 57px;
-				}
-		
-				.banner-btn {
-					width: 381px;
-					height: 130px;
-					background-color: $color-dark-orange;
-					display: flex;
-					align-items: center;
-					justify-content: center;
-					border-radius: 40px;
-					box-shadow: 0px 10px 30px 0px $color-dark-orange;
-					cursor: pointer;
-					padding: 33px ;
-					margin-bottom: 136px;
-		
-					p {
-						font-size: 48px;
-						font-weight: bold;
-						color: $color-btn-text;
-						border-bottom: 4px solid $color-dark-orange;
-					}
-					&:hover p {
-						border-bottom: 4px solid $color-btn-text;
-						transition-duration: 0.8s;
-					}
-					&:hover {
-						box-shadow: 0px 0px 10px 0px $color-dark-orange;
-						transition-duration: 0.8s;
-					}
-				}
-			}
-
-			display: none;
-
-			
-		}
 
 		.active{
 			display: block;
 		}
 
 
+	}
+	.burger-area {
+		float: right;
+		width: 960px;
+		height: 1185px;
+		// background-color: blue;
+		background-image: url('/img/first-section/米色背景.jpg');
+		border-radius: 40px 0 40px 40px;
+		opacity: 0.8;
+		position: relative;
+	
+		span {
+			font-size: 100px;
+			color: #707070;
+			float: right;
+			position: absolute;
+			right: 140px;
+		}
+	
+		.list {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			a {
+				font-size: 64px;
+				color: #4f4f4f;
+				margin-bottom: 57px;
+			}
+	
+			.banner-btn {
+				width: 381px;
+				height: 130px;
+				background-color: $color-dark-orange;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				border-radius: 40px;
+				box-shadow: 0px 10px 30px 0px $color-dark-orange;
+				cursor: pointer;
+				padding: 33px ;
+				margin-bottom: 136px;
+	
+				p {
+					font-size: 48px;
+					font-weight: bold;
+					color: $color-btn-text;
+					border-bottom: 4px solid $color-dark-orange;
+				}
+				&:hover p {
+					border-bottom: 4px solid $color-btn-text;
+					transition-duration: 0.8s;
+				}
+				&:hover {
+					box-shadow: 0px 0px 10px 0px $color-dark-orange;
+					transition-duration: 0.8s;
+				}
+			}
+		}
+
+		display: none;
+
+		
+	}
+
+	.active{
+		display: block;
 	}
 
 }
