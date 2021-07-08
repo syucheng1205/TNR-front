@@ -1,4 +1,4 @@
-@import '_style_guide.scss';
+@import "_style_guide.scss";
 
 * {
 	box-sizing: border-box;
@@ -93,6 +93,7 @@ nav {
 			}
 		}
 	}
+
 }
 
 main {
@@ -299,7 +300,7 @@ main {
 				.deco-line1 {
 					position: absolute;
 					z-index: 2;
-					transform: translate(-20% , -84%);
+					transform: translate(-20%, -84%);
 					// transform: translate(-22%, -84%);
 				}
 
@@ -432,18 +433,17 @@ main {
 				background-size: cover;
 				position: relative;
 
-				.heart-1{
+				.heart-1 {
 					position: absolute;
 					z-index: 1;
 					transform: translate(1650%, 1060%);
 				}
 
-				.heart-2{
+				.heart-2 {
 					position: absolute;
 					z-index: 1;
 					transform: translate(890%, 460%);
 				}
-
 			}
 
 			.feed-area {
@@ -524,13 +524,13 @@ main {
 				background-size: cover;
 				position: relative;
 
-				.sos-left{
+				.sos-left {
 					position: absolute;
 					z-index: 1;
-					transform: translate(90%,360%);
+					transform: translate(90%, 360%);
 				}
 
-				.sos-right{
+				.sos-right {
 					position: absolute;
 					z-index: 1;
 					transform: translate(265%, 80%);
@@ -753,7 +753,7 @@ footer {
 						font-size: 24px;
 						color: $color-btn-text;
 
-						.contact{
+						.contact {
 							border-radius: 20px;
 							background-color: $color-btn-text;
 							padding: 0 30px;
@@ -766,21 +766,16 @@ footer {
 								outline-style: none;
 								border: 0px;
 								border-radius: 20px;
-
 							}
-							.contact-btn{
+							.contact-btn {
 								padding: 0;
 								border-radius: 20px;
-								border:none;
+								border: none;
 								background-color: $color-btn-text;
 								outline: 0;
 								cursor: pointer;
-								
 							}
-
-
 						}
-
 
 						.fb-icon {
 							width: 44px;
@@ -841,3 +836,5 @@ footer {
 		}
 	}
 }
+
+
