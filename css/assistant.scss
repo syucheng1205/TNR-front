@@ -10,6 +10,7 @@ html {
 
 body {
 	margin: 0;
+	height: 30000px;
 }
 
 h1,
@@ -37,61 +38,69 @@ a:hover {
 	padding: 0 140px;
 }
 
-nav {
-	.nav {
-		width: 100%;
-		display: flex;
-		justify-content: space-between;
-		padding: 20px 7.3% 0;
-		position: absolute;
+.nav {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	padding: 20px 7.3% 0;
+	margin-bottom: 180px;
 
-		.logo {
-			width: 511px;
-			height: 83.5px;
-			background-image: url("/img/logo.png");
-			background-repeat: no-repeat;
-			background-position: center;
-			background-size: cover;
-		}
+	.logo {
+		width: 511px;
+		height: 83.5px;
+		background-image: url("/img/logo.png");
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+	}
 
-		.menu {
-			font-size: 100px;
-			line-height: 50px;
-			position: fixed;
-			right: 7.3%;
-			top: 40px;
-			height: 37px;
-			z-index: 99;
+	.menu {
+		font-size: 100px;
+		line-height: 50px;
+		position: fixed;
+		right: 7.3%;
+		top: 40px;
+		height: 37px;
+		z-index: 99;
 
-			.burger {
+		.burger {
+			width: 90px;
+			height: 7px;
+			border-radius: 20px;
+			background-color: $color-text;
+
+			position: relative;
+
+			&::before,
+			&::after {
+				content: "";
 				width: 90px;
 				height: 7px;
 				border-radius: 20px;
 				background-color: $color-text;
-
-				position: relative;
-
-				&::before,
-				&::after {
-					content: "";
-					width: 90px;
-					height: 7px;
-					border-radius: 20px;
-					background-color: $color-text;
-					position: absolute;
-					top: 15px;
-				}
-
-				&::after {
-					top: 30px;
-				}
+				position: absolute;
+				top: 15px;
 			}
-			&:hover .burger,
-			&:hover .burger::after,
-			&:hover .burger::before {
-				background-color: $color-dark-orange;
+
+			&::after {
+				top: 30px;
 			}
+		}
+		&:hover .burger,
+		&:hover .burger::after,
+		&:hover .burger::before {
+			background-color: $color-dark-orange;
 		}
 	}
 
+}
+
+.first-section {
+	width: 100%;
+
+	.first-section-img {
+		width: 1382px;
+		height: 544px;
+		background-image: url("/img/04-assistant/blue-wave.png");
+	}
 }
