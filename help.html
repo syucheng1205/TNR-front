@@ -91,7 +91,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="swiper-container mySwiper">
+                <div class="swiper-container catSwiper">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <div class="card-img">
@@ -465,8 +465,8 @@
                     </div>
                 </div>
 
-                <div class="swiper-button-next my-arrow1" style="color:white;"></div>
-                <div class="swiper-button-prev my-arrow1" style="color:white;"></div>
+                <div class="swiper-button-next my-arrow1 swiper-button-white"></div>
+                <div class="swiper-button-prev my-arrow1 swiper-button-white"></div>
                 <div class="line"></div>
             </div>
         </div>
@@ -604,12 +604,12 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
     <script>
-        var my_swiper = new Swiper(".mySwiper", {
+        var my_swiper = new Swiper(".catSwiper", {
             slidesPerView: 3,
             spaceBetween: 60,
             slidesPerGroup: 3,
             pagination: {
-                el: ".swiper-pagination",
+                el: ".catSwiper .swiper-pagination",
                 clickable: true,
             },
         });
@@ -618,7 +618,7 @@
             slidesPerView: 2,
             slidesPerColumn: 2,
             pagination: {
-                el: ".swiper-pagination",
+                el: ".donateSwiper .swiper-pagination",
                 clickable: true,
             },
             navigation: {
@@ -633,7 +633,7 @@
 
             slidesPerView : 'auto', 
             pagination: {
-                el: ".swiper-pagination",
+                el: ".diarySwiper .swiper-pagination",
                 clickable: true,
             },
             navigation: {
