@@ -400,7 +400,7 @@ nav .nav .menu:hover .burger::before {
 }
 
 .second-section .text-area {
-  width: 1460px;
+  width: 76%;
   margin: auto;
   color: #707070;
   margin-top: 106px;
@@ -432,6 +432,7 @@ nav .nav .menu:hover .burger::before {
 }
 
 .second-section .anyang-img-area .anyang-img .paralysis-cat-1 {
+  width: 53.5%;
   border-radius: 30px;
   position: absolute;
   left: -1%;
@@ -439,6 +440,7 @@ nav .nav .menu:hover .burger::before {
 }
 
 .second-section .anyang-img-area .anyang-img .paralysis-cat-2 {
+  width: 35%;
   border-radius: 30px;
   position: absolute;
   right: 1%;
@@ -452,7 +454,7 @@ nav .nav .menu:hover .burger::before {
 .second-section .swiper-father .line {
   width: calc(100% - 220px);
   height: 2px;
-  background-color: #FFA183;
+  background-color: #ffa183;
   margin: auto;
   position: absolute;
   top: 50%;
@@ -463,17 +465,17 @@ nav .nav .menu:hover .burger::before {
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  background-color: #FF7950;
-  -webkit-box-shadow: 0 0 15px 0 #FF7950;
-          box-shadow: 0 0 15px 0 #FF7950;
+  background-color: #ff7950;
+  -webkit-box-shadow: 0 0 15px 0 #ff7950;
+          box-shadow: 0 0 15px 0 #ff7950;
   opacity: 0.4;
   position: absolute;
   top: 45%;
 }
 
 .second-section .swiper-father .my-arrow1:hover {
-  -webkit-box-shadow: 0 0 5px 0 #FF7950;
-          box-shadow: 0 0 5px 0 #FF7950;
+  -webkit-box-shadow: 0 0 5px 0 #ff7950;
+          box-shadow: 0 0 5px 0 #ff7950;
   opacity: 0.8;
 }
 
@@ -680,9 +682,9 @@ nav .nav .menu:hover .burger::before {
   border-radius: 50%;
   position: absolute;
   top: 42px;
-  background-color: #FF7950;
-  -webkit-box-shadow: 0 0 15px 0 #FF7950;
-          box-shadow: 0 0 15px 0 #FF7950;
+  background-color: #ff7950;
+  -webkit-box-shadow: 0 0 15px 0 #ff7950;
+          box-shadow: 0 0 15px 0 #ff7950;
 }
 
 .third-section .container140 .swiper-group .my-arrow2::after {
@@ -690,8 +692,8 @@ nav .nav .menu:hover .burger::before {
 }
 
 .third-section .container140 .swiper-group .my-arrow2:hover {
-  -webkit-box-shadow: 0 0 5px 0 #FF7950;
-          box-shadow: 0 0 5px 0 #FF7950;
+  -webkit-box-shadow: 0 0 5px 0 #ff7950;
+          box-shadow: 0 0 5px 0 #ff7950;
 }
 
 .third-section .container140 .swiper-group .arrow2-next {
@@ -745,7 +747,7 @@ nav .nav .menu:hover .burger::before {
 .third-section .container140 .swiper-group .diarySwiper .diary-text {
   margin-top: 38px;
   width: 541px;
-  color: #fff;
+  color: #ffffff;
 }
 
 .third-section .container140 .swiper-group .diarySwiper .diary-text .sub {
