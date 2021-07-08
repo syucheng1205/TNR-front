@@ -483,7 +483,6 @@ nav .nav .menu:hover .burger::before {
 }
 
 .second-section .swiper-father .donateSwiper .swiper-slide {
-  width: 821px;
   height: 340px;
   padding: 40px 0;
   display: -webkit-box;
@@ -495,6 +494,7 @@ nav .nav .menu:hover .burger::before {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding: 0 100px;
 }
 
 .second-section .swiper-father .donateSwiper .swiper-slide .donate-card .card-img {

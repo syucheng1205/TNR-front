@@ -407,13 +407,14 @@ nav {
             height: 680px;
     
             .swiper-slide {
-                width: 821px;
+                // width: 821px;
                 height: 340px;
                 padding: 40px 0;
                 display: flex;
     
                 .donate-card {
                     display: flex;
+                    padding: 0 100px;
                     
                     .card-img {
                         width: 260px;
