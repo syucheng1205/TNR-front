@@ -237,33 +237,33 @@ nav .nav .menu:hover .burger::before {
   border-radius: 0 0 30px 30px;
 }
 
-.first-section .swiper-group .mySwiper {
+.first-section .swiper-group .catSwiper {
   width: 1400px;
   height: 664px;
   -webkit-transform: translateY(45%);
           transform: translateY(45%);
 }
 
-.first-section .swiper-group .mySwiper .card-img {
+.first-section .swiper-group .catSwiper .card-img {
   position: relative;
 }
 
-.first-section .swiper-group .mySwiper .card-img:hover .play {
+.first-section .swiper-group .catSwiper .card-img:hover .play {
   display: block;
 }
 
-.first-section .swiper-group .mySwiper .card-img:hover .img {
+.first-section .swiper-group .catSwiper .card-img:hover .img {
   -webkit-filter: contrast(0.5);
           filter: contrast(0.5);
 }
 
-.first-section .swiper-group .mySwiper .card-img .img {
+.first-section .swiper-group .catSwiper .card-img .img {
   width: 400px;
   height: 300px;
   border-radius: 40px;
 }
 
-.first-section .swiper-group .mySwiper .card-img .play {
+.first-section .swiper-group .catSwiper .card-img .play {
   padding: 3px;
   font-size: 100px;
   color: #ffffff;
@@ -275,7 +275,7 @@ nav .nav .menu:hover .burger::before {
   display: none;
 }
 
-.first-section .swiper-group .mySwiper .card-img .img-shadow {
+.first-section .swiper-group .catSwiper .card-img .img-shadow {
   width: 400px;
   height: 300px;
   border-radius: 40px;
@@ -286,7 +286,7 @@ nav .nav .menu:hover .burger::before {
   z-index: -1;
 }
 
-.first-section .swiper-group .mySwiper .card-major {
+.first-section .swiper-group .catSwiper .card-major {
   width: 100%;
   margin-top: 40px;
   display: -webkit-box;
@@ -297,7 +297,7 @@ nav .nav .menu:hover .burger::before {
           justify-content: space-between;
 }
 
-.first-section .swiper-group .mySwiper .card-major div:nth-child(1) {
+.first-section .swiper-group .catSwiper .card-major div:nth-child(1) {
   width: 136px;
   height: 48px;
   font-size: 18px;
@@ -314,7 +314,7 @@ nav .nav .menu:hover .burger::before {
           justify-content: center;
 }
 
-.first-section .swiper-group .mySwiper .card-major .fb-icon {
+.first-section .swiper-group .catSwiper .card-major .fb-icon {
   width: 44px;
   height: 44px;
   color: #ffffff;
@@ -331,26 +331,26 @@ nav .nav .menu:hover .burger::before {
   border-radius: 50%;
 }
 
-.first-section .swiper-group .mySwiper .card-text {
+.first-section .swiper-group .catSwiper .card-text {
   margin: 20px 0 28px 62px;
   font-size: 24px;
   line-height: 42px;
 }
 
-.first-section .swiper-group .mySwiper .card-text .card-item {
+.first-section .swiper-group .catSwiper .card-text .card-item {
   color: #707070;
 }
 
-.first-section .swiper-group .mySwiper .card-text .card-item-vlaue {
+.first-section .swiper-group .catSwiper .card-text .card-item-vlaue {
   color: #4f4f4f;
 }
 
-.first-section .swiper-group .mySwiper .card-text .card-slash {
+.first-section .swiper-group .catSwiper .card-text .card-slash {
   margin: 0 11px;
   color: #ee8e74;
 }
 
-.first-section .swiper-group .mySwiper .btn {
+.first-section .swiper-group .catSwiper .btn {
   margin: auto;
   width: 232px;
   height: 67px;
