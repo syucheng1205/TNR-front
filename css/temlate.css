@@ -10,7 +10,7 @@ html {
 
 body {
   margin: 0;
-  height: 30000px;
+  height: 3000px;
 }
 
 h1,
@@ -75,6 +75,7 @@ a:hover {
   border-radius: 20px;
   background-color: #4f4f4f;
   position: relative;
+  display: none;
 }
 
 .nav .menu .burger::before, .nav .menu .burger::after {
@@ -176,7 +177,7 @@ a:hover {
           transition-duration: 0.8s;
 }
 
-.nav .menu .burger-area .active {
+.nav .menu .active {
   display: block;
 }
 /*# sourceMappingURL=temlate.css.map */

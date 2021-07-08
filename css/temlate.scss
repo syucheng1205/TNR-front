@@ -10,7 +10,7 @@ html {
 
 body {
 	margin: 0;
-	height: 30000px;
+	height: 3000px;
 }
 
 h1,
@@ -85,6 +85,8 @@ a:hover {
 			&::after {
 				top: 30px;
 			}
+
+			display: none;
 		}
 
 		&:hover .burger,
@@ -92,6 +94,8 @@ a:hover {
 		&:hover .burger::before {
 			background-color: $color-dark-orange;
 		}
+
+		
 
 		.burger-area {
 			float: right;
@@ -153,10 +157,14 @@ a:hover {
 
 			display: none;
 
-			.active{
-				display: block;
-			}
+			
 		}
+
+		.active{
+			display: block;
+		}
+
+
 	}
 
 }

@@ -28,9 +28,9 @@
 		<div id="nav" class="nav">
 			<div class="logo"></div>
 			<div class="menu">
-				<div class="burger"></div>
+				<div class="burger active"></div>
 				<div class="burger-area">
-					<span><i class="fas fa-times"></i></span>
+					<span class="off"><i class="fas fa-times "></i></span>
 					<div class="list">
 						<a style="margin-top: 144px;">首頁</a>
 						<a>最新消息</a>
@@ -70,11 +70,23 @@
 		});
 
 		let menu = document.querySelector('.menu')
+		let burger = document.querySelector('.burger')
 		let burger_area = document.querySelector('.burger-area')
+		let off = document.querySelector('.off')
+
 		menu.onclick = function () {
-			console.log('aa');
-			burger_area.classList.toggle('active')
+			burger_area.classList.add('active')
+			burger.classList.remove('active')
 		}
+
+		// off.onclick = function () {
+			
+		// 	burger.classList.add('active')
+		// 	burger_area.classList.remove('active')
+		// 	console.log(burger_area.classList);
+		// }
+
+
 	</script>
 </body>
 
