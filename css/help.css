@@ -450,7 +450,15 @@ nav .nav .menu:hover .burger::before {
   height: 100px;
   border-radius: 50%;
   background-color: #FF7950;
+  -webkit-box-shadow: 0 0 15px 0 #FF7950;
+          box-shadow: 0 0 15px 0 #FF7950;
   opacity: 0.4;
+}
+
+.second-section .swiper-father .my-arrow1:hover {
+  -webkit-box-shadow: 0 0 5px 0 #FF7950;
+          box-shadow: 0 0 5px 0 #FF7950;
+  opacity: 0.8;
 }
 
 .second-section .swiper-father .donateSwiper {
