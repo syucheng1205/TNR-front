@@ -374,6 +374,17 @@ nav {
     }
 
     .swiper-father{
+        position: relative;
+
+        .line{
+            width:calc(100% - 220px);
+            height: 2px;
+            background-color: #FFA183;
+            margin: auto;
+            position: absolute;
+            top: 50%;
+            left: 110px;
+        }
 
         .my-arrow1{
             width: 100px;
@@ -382,6 +393,8 @@ nav {
             background-color: #FF7950;
             box-shadow:0 0 15px 0 #FF7950;
             opacity: 0.4;
+            position: absolute;
+            top: 45%;
 
             &:hover{
                 box-shadow:0 0 5px 0 #FF7950;

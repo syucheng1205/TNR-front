@@ -445,6 +445,20 @@ nav .nav .menu:hover .burger::before {
   top: 31%;
 }
 
+.second-section .swiper-father {
+  position: relative;
+}
+
+.second-section .swiper-father .line {
+  width: calc(100% - 220px);
+  height: 2px;
+  background-color: #FFA183;
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 110px;
+}
+
 .second-section .swiper-father .my-arrow1 {
   width: 100px;
   height: 100px;
@@ -453,6 +467,8 @@ nav .nav .menu:hover .burger::before {
   -webkit-box-shadow: 0 0 15px 0 #FF7950;
           box-shadow: 0 0 15px 0 #FF7950;
   opacity: 0.4;
+  position: absolute;
+  top: 45%;
 }
 
 .second-section .swiper-father .my-arrow1:hover {
