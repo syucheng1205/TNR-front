@@ -227,8 +227,25 @@
                 </div>
             </div>
 
-            <div class="donate-area">
-                
+
+            <div class="swiper-father position-relative">
+                <div class="swiper-container donateSwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide" style="background-color: antiquewhite;">
+                            <img src="./img/03-adoptCat/yellowCat.png" alt="" class="card-img">
+                        </div>
+                        <div class="swiper-slide">Slide 2</div>
+                        <div class="swiper-slide">Slide 3</div>
+                        <div class="swiper-slide">Slide 4</div>
+                        <div class="swiper-slide">Slide 5</div>
+                        <div class="swiper-slide">Slide 6</div>
+                        <div class="swiper-slide">Slide 7</div>
+                        <div class="swiper-slide">Slide 8</div>
+                        <div class="swiper-slide">Slide 9</div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
             </div>
         </div>
 
@@ -317,7 +334,7 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
     <script>
-        var swiper = new Swiper(".mySwiper", {
+        var my_swiper = new Swiper(".mySwiper", {
             slidesPerView: 3,
             spaceBetween: 60,
             slidesPerGroup: 3,
@@ -327,7 +344,18 @@
             },
         });
 
-       
+        var donate_swiper = new Swiper(".donateSwiper", {
+            slidesPerView: 2,
+            slidesPerColumn: 2,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
     </script>
 </body>
 

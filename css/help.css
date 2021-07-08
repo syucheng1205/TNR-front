@@ -444,6 +444,22 @@ nav .nav .menu:hover .burger::before {
   top: 31%;
 }
 
+.second-section .donateSwiper {
+  margin: 0 140px;
+  height: 680px;
+}
+
+.second-section .donateSwiper .swiper-slide {
+  width: 821px;
+  height: 340px;
+}
+
+.second-section .donateSwiper .swiper-slide .card-img {
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+}
+
 .third-section .title-area {
   width: 428px;
   height: 130px;
