@@ -382,6 +382,20 @@ nav {
             
         }
     }
+    .donateSwiper{
+        margin: 0 140px;
+        height: 680px;
+        .swiper-slide{
+            width: 821px;
+            height: 340px;
+            .card-img{
+                width: 260px;
+                height: 260px;
+                border-radius: 50%;
+            }
+
+        }
+    }
 
 
 }
