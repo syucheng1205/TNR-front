@@ -705,15 +705,16 @@ nav .nav .menu:hover .burger::before {
 }
 
 .third-section .container140 .swiper-group .background {
-  width: 100%;
+  width: calc(100% - 140px);
   margin-top: -53px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: absolute;
 }
 
 .third-section .container140 .swiper-group .background .shadow {
-  width: 47%;
+  width: 43.5%;
   height: 547px;
   background-image: url("/img/first-section/米色背景.jpg");
   border-radius: 30px;
@@ -721,8 +722,8 @@ nav .nav .menu:hover .burger::before {
 }
 
 .third-section .container140 .swiper-group .background .background-text {
-  margin-left: 6%;
-  width: 47%;
+  margin-left: 5.5%;
+  width: 43.2%;
   height: 577px;
   background-color: #ffa183;
   border-radius: 30px;
@@ -730,27 +731,31 @@ nav .nav .menu:hover .burger::before {
 }
 
 .third-section .container140 .swiper-group .diarySwiper {
-  margin-top: -30%;
   margin-left: 80px;
+  margin-top: 27px;
 }
 
 .third-section .container140 .swiper-group .diarySwiper .swiper-slide {
-  width: 740px;
+  width: 47.5%;
 }
 
-.third-section .container140 .swiper-group .diarySwiper .img {
-  width: 740px;
+.third-section .container140 .swiper-group .diarySwiper .swiper-slide:nth-child(2n) {
+  margin-left: 10.5%;
+}
+
+.third-section .container140 .swiper-group .diarySwiper .swiper-slide .img {
+  width: 100%;
   height: 493px;
   border-radius: 30px;
 }
 
-.third-section .container140 .swiper-group .diarySwiper .diary-text {
+.third-section .container140 .swiper-group .diarySwiper .swiper-slide .diary-text {
   margin-top: 38px;
-  width: 541px;
-  color: #ffffff;
+  width: 73%;
+  color: #fff;
 }
 
-.third-section .container140 .swiper-group .diarySwiper .diary-text .sub {
+.third-section .container140 .swiper-group .diarySwiper .swiper-slide .diary-text .sub {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -759,22 +764,22 @@ nav .nav .menu:hover .burger::before {
           justify-content: space-between;
 }
 
-.third-section .container140 .swiper-group .diarySwiper .diary-text .sub .sub-title {
+.third-section .container140 .swiper-group .diarySwiper .swiper-slide .diary-text .sub .sub-title {
   padding: 0 6.5px;
   font-size: 24px;
   background-color: #ee815b;
 }
 
-.third-section .container140 .swiper-group .diarySwiper .diary-text .sub .date {
+.third-section .container140 .swiper-group .diarySwiper .swiper-slide .diary-text .sub .date {
   font-size: 20px;
 }
 
-.third-section .container140 .swiper-group .diarySwiper .diary-text .title {
+.third-section .container140 .swiper-group .diarySwiper .swiper-slide .diary-text .title {
   font-size: 48px;
   margin: 3px 0 40px;
 }
 
-.third-section .container140 .swiper-group .diarySwiper .diary-text .text {
+.third-section .container140 .swiper-group .diarySwiper .swiper-slide .diary-text .text {
   font-size: 18px;
 }
 
