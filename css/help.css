@@ -668,7 +668,7 @@ nav .nav .menu:hover .burger::before {
 }
 
 .third-section .container140 .swiper-group .arrow2-prev {
-  left: 86.5%;
+  left: 85.5%;
 }
 
 .third-section .container140 .swiper-group .background {
@@ -701,6 +701,10 @@ nav .nav .menu:hover .burger::before {
   margin-left: 80px;
 }
 
+.third-section .container140 .swiper-group .diarySwiper .swiper-slide {
+  width: 740px;
+}
+
 .third-section .container140 .swiper-group .diarySwiper .img {
   width: 740px;
   height: 493px;
@@ -709,7 +713,7 @@ nav .nav .menu:hover .burger::before {
 
 .third-section .container140 .swiper-group .diarySwiper .diary-text {
   margin-top: 38px;
-  margin-right: 100px;
+  width: 541px;
   color: #fff;
 }
 

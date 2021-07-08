@@ -553,14 +553,13 @@ nav {
                 }
                 &:hover{
                     box-shadow:0 0 5px 0 #FF7950;
-
                 }
             }
             .arrow2-next{
                 right: 7.3%;
             }
             .arrow2-prev{
-                left: 86.5%;
+                left: 85.5%;
             }
             .background {
                 width: 100%;
@@ -585,6 +584,9 @@ nav {
             .diarySwiper {
                 margin-top: -30%;
                 margin-left: 80px;
+                .swiper-slide{
+                    width: 740px;
+                }
                 .img {
                     width: 740px;
                     height: 493px;
@@ -592,7 +594,7 @@ nav {
                 }
                 .diary-text {
                     margin-top: 38px;
-                    margin-right: 100px;
+                    width: 541px;
                     color: #fff;
                     .sub {
                         display: flex;
