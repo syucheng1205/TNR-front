@@ -1,0 +1,97 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+  margin: 0;
+  font-weight: unset;
+  color: unset;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.container170 {
+  padding: 0 170px;
+}
+
+.container140 {
+  padding: 0 140px;
+}
+
+nav .nav {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px 7.3% 0;
+  position: absolute;
+}
+
+nav .nav .logo {
+  width: 511px;
+  height: 83.5px;
+  background-image: url("/img/logo.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+nav .nav .menu {
+  font-size: 100px;
+  line-height: 50px;
+  position: fixed;
+  right: 7.3%;
+  top: 40px;
+  height: 37px;
+  z-index: 99;
+}
+
+nav .nav .menu .burger {
+  width: 90px;
+  height: 7px;
+  border-radius: 20px;
+  background-color: #4f4f4f;
+  position: relative;
+}
+
+nav .nav .menu .burger::before, nav .nav .menu .burger::after {
+  content: "";
+  width: 90px;
+  height: 7px;
+  border-radius: 20px;
+  background-color: #4f4f4f;
+  position: absolute;
+  top: 15px;
+}
+
+nav .nav .menu .burger::after {
+  top: 30px;
+}
+
+nav .nav .menu:hover .burger,
+nav .nav .menu:hover .burger::after,
+nav .nav .menu:hover .burger::before {
+  background-color: #ff7950;
+}
+/*# sourceMappingURL=assistant.css.map */
