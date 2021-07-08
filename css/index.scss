@@ -10,6 +10,7 @@ html {
 
 body {
 	margin: 0;
+	height: 3000px;
 }
 
 h1,
@@ -84,6 +85,22 @@ nav {
 				&::after {
 					top: 30px;
 				}
+
+				// .burger-area{
+				// 	width: 960px;
+				// 	height: 1185px;
+				// 	font-size: 64px;
+				// 	color: #4F4F4F;
+				// 	background-color: #FFFFFF;
+				// 	display: flex;
+				// 	flex-direction: column;
+				// 	opacity: 0.8;
+				// 	position: absolute;
+				// 	top: 700%;
+				// 	left: -300%;
+				// }
+
+				
 			}
 			&:hover .burger,
 			&:hover .burger::after,
@@ -91,6 +108,8 @@ nav {
 				background-color: $color-dark-orange;
 			}
 		}
+
+		
 	}
 
 }

@@ -8,7 +8,7 @@
 	<title>XX頁</title>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
 		integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-	<link rel="stylesheet" href="/css/index.css">
+	<link rel="stylesheet" href="/css/temlate.css">
 	<!-- <link rel="stylesheet" href="/css/style_guild.css"> -->
 	<!-- swiper -->
 	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
@@ -29,8 +29,23 @@
 			<div class="logo"></div>
 			<div class="menu">
 				<div class="burger"></div>
+				<div class="burger-area active">
+					<span><i class="fas fa-times"></i></span>
+					<div class="list">
+						<a style="margin-top: 144px;">首頁</a>
+						<a>最新消息</a>
+						<a>養貓咪趣</a>
+						<a>救助計畫</a>
+						<a>貓貓店鋪</a>
+						<a href="" class="banner-btn hvr-bounce-in">
+							<p>立即幫助</p>
+						</a>
+					</div>
+				</div>
 			</div>
 		</div>
+		
+
 	</nav>
 
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -53,6 +68,9 @@
 				delay: 5000,
 			},
 		});
+
+		let menu = document.querySelector('.burger-area')
+		menu.classList.toggle('active')
 	</script>
 </body>
 
