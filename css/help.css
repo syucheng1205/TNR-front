@@ -474,7 +474,9 @@ nav .nav .menu:hover .burger::before {
 }
 
 .second-section .donateSwiper .swiper-slide .donate-card .card-img:hover .card-shadow {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .second-section .donateSwiper .swiper-slide .donate-card .card-img:hover .donate-img {
@@ -508,6 +510,7 @@ nav .nav .menu:hover .burger::before {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  display: none;
 }
 
 .second-section .donateSwiper .swiper-slide .donate-card .card-img .card-shadow .play {
