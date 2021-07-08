@@ -373,153 +373,166 @@ nav {
         }
     }
 
-    .donateSwiper {
-        margin: 0 140px;
-        height: 680px;
+    .swiper-father{
 
-        .swiper-slide {
-            width: 821px;
-            height: 340px;
-            padding: 40px 0;
-            display: flex;
-
-            .donate-card {
-                display: flex;
-                
-                .card-img {
-                    width: 260px;
-                    height: 260px;
-                    border-radius: 50%;
-                    margin-right: 40px;
-                    position: relative;
+        .my-arrow1{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: #FF7950;
+            opacity: 0.4;
+        }
+        
+        .donateSwiper {
+            margin: 0 140px;
+            height: 680px;
     
-                    &:hover .card-shadow {
-                        display: flex;
-                    }
-
-                    &:hover .donate-img {
-                        filter: contrast(0.5);
-                    }
-
-                    .donate-img {
+            .swiper-slide {
+                width: 821px;
+                height: 340px;
+                padding: 40px 0;
+                display: flex;
+    
+                .donate-card {
+                    display: flex;
+                    
+                    .card-img {
                         width: 260px;
                         height: 260px;
                         border-radius: 50%;
-                    }
-
-                    .card-shadow {
-                        width: 260px;
-                        height: 260px;
-                        border-radius: 50%;
-
-                        position: absolute;
-                        top: 0;
-                        left: 0;
-
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: center;
-                        align-items: center;
-
-                        display: none;
-
-                        .play {
-                            padding: 3px;
-                            font-size: 50px;
-                            margin-bottom: 20px;
-                            color: $color-btn-text;
-
+                        margin-right: 40px;
+                        position: relative;
+        
+                        &:hover .card-shadow {
+                            display: flex;
                         }
-
-                        .shadow-text {
-                            width: 177px;
-                            height: 43px;
-                            border-radius: 20px;
-                            padding: 5px 10px;
-                            font-size: 24px;
-                            text-align: center;
-                            line-height: 34px;
-                            color: $color-btn-text;
-                            background-color: $color-banner-gray;
-
-                            span {
-                                color: $color-dark-orange;
+    
+                        &:hover .donate-img {
+                            filter: contrast(0.5);
+                        }
+    
+                        .donate-img {
+                            width: 260px;
+                            height: 260px;
+                            border-radius: 50%;
+                        }
+    
+                        .card-shadow {
+                            width: 260px;
+                            height: 260px;
+                            border-radius: 50%;
+    
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+    
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+    
+                            display: none;
+    
+                            .play {
+                                padding: 3px;
+                                font-size: 50px;
+                                margin-bottom: 20px;
+                                color: $color-btn-text;
+    
+                            }
+    
+                            .shadow-text {
+                                width: 177px;
+                                height: 43px;
+                                border-radius: 20px;
+                                padding: 5px 10px;
+                                font-size: 24px;
+                                text-align: center;
+                                line-height: 34px;
+                                color: $color-btn-text;
+                                background-color: $color-banner-gray;
+    
+                                span {
+                                    color: $color-dark-orange;
+                                }
                             }
                         }
                     }
-                }
-
-                .donate-area {
-                    .donate-number {
-                        display: flex;
-                        justify-content: space-between;
-                        align-items: center;
-
-                        p {
-                            font-size: 18px;
-                            color: $color-banner-gray;
-                            margin-right: 180px;
-                            border-style: solid;
-                            border-radius: 20px;
-                            padding: 10px 10px;
-                            border-color: #f2a589;
-                        }
-
-                        .fb-icon {
-                            width: 44px;
-                            height: 44px;
-                            color: $color-btn-text;
-                            background-color: #6d9ffe;
+    
+                    .donate-area {
+                        .donate-number {
                             display: flex;
-                            justify-content: center;
+                            justify-content: space-between;
                             align-items: center;
-                            border-radius: 50%;
+    
+                            p {
+                                font-size: 18px;
+                                color: $color-banner-gray;
+                                margin-right: 180px;
+                                border-style: solid;
+                                border-radius: 20px;
+                                padding: 10px 10px;
+                                border-color: #f2a589;
+                            }
+    
+                            .fb-icon {
+                                width: 44px;
+                                height: 44px;
+                                color: $color-btn-text;
+                                background-color: #6d9ffe;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                border-radius: 50%;
+                            }
                         }
-                    }
-
-                    .donate-title {
-                        margin-top: 20px;
-                        margin-bottom: 10px;
-                        margin-left: 20px;
-                        h6 {
-                            color: $color-banner-gray;
-                            font-size: 24px;
-                            font-weight: bold;
+    
+                        .donate-title {
+                            margin-top: 20px;
+                            margin-bottom: 10px;
+                            margin-left: 20px;
+                            h6 {
+                                color: $color-banner-gray;
+                                font-size: 24px;
+                                font-weight: bold;
+                            }
                         }
-                    }
-
-                    .donate-text {
-                        margin-left: 20px;
-                        h6 {
-                            font-size: 24px;
-                            color: $color-text;
+    
+                        .donate-text {
+                            margin-left: 20px;
+                            h6 {
+                                font-size: 24px;
+                                color: $color-text;
+                            }
                         }
-                    }
-
-                    .donate-btn {
-                        margin-left: 20px;
-                        margin-top: 60px;
-
-                        .btn {
-                            width: 232px;
-                            height: 67px;
-                            background-color: $color-dark-orange;
-                            border-radius: 40px;
-                            color: $color-btn-text;
-                            font-size: 32px;
-                            display: flex;
-                            justify-content: center;
-                            align-items: center;
+    
+                        .donate-btn {
+                            margin-left: 20px;
+                            margin-top: 60px;
+    
+                            .btn {
+                                width: 232px;
+                                height: 67px;
+                                background-color: $color-dark-orange;
+                                border-radius: 40px;
+                                color: $color-btn-text;
+                                font-size: 32px;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                            }
                         }
                     }
                 }
             }
         }
     }
+
 }
 
 .third-section {
     margin-bottom: 240px;
+
     .title-area {
         width: 428px;
         height: 130px;
@@ -553,7 +566,6 @@ nav {
                 }
                 &:hover{
                     box-shadow:0 0 5px 0 #FF7950;
-
                 }
             }
             .arrow2-next{
