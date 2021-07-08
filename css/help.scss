@@ -5,7 +5,7 @@
 }
 
 html {
-	scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -161,9 +161,9 @@ nav {
             border-radius: 0 0 40px 40px;
             display: flex;
             flex-direction: column;
-            .btns{
+            .btns {
                 margin-top: 50px;
-                &:nth-child(1){
+                &:nth-child(1) {
                     margin-top: 90px;
                 }
                 .btn-secondary {
@@ -180,7 +180,8 @@ nav {
                     justify-content: center;
                     align-items: center;
                 }
-                .btn-secondary.focus, .btn-secondary:focus {
+                .btn-secondary.focus,
+                .btn-secondary:focus {
                     box-shadow: none;
                 }
                 .dropdown-menu {
@@ -214,27 +215,26 @@ nav {
             transform: translateY(45%);
             .card-img {
                 position: relative;
-                &:hover .play{
+                &:hover .play {
                     display: block;
                 }
-                &:hover .img{
-                    filter:contrast(.5);
+                &:hover .img {
+                    filter: contrast(0.5);
                 }
                 .img {
                     width: 400px;
                     height: 300px;
                     border-radius: 40px;
                 }
-                .play{
+                .play {
                     padding: 3px;
                     font-size: 100px;
                     color: white;
                     position: absolute;
                     top: 50%;
                     left: 50%;
-                    transform: translate(-50%,-50%);
+                    transform: translate(-50%, -50%);
                     display: none;
-                    
                 }
                 .img-shadow {
                     width: 400px;
@@ -246,7 +246,6 @@ nav {
                     left: 20px;
                     z-index: -1;
                 }
-                
             }
             .card-major {
                 width: 100%;
@@ -366,42 +365,110 @@ nav {
 
             position: relative;
 
-            .paralysis-cat-1{
+            .paralysis-cat-1 {
                 border-radius: 30px;
                 position: absolute;
                 left: -1%;
                 top: 8%;
             }
 
-            .paralysis-cat-2{
+            .paralysis-cat-2 {
                 border-radius: 30px;
                 position: absolute;
-                right:  1%;
+                right: 1%;
                 top: 31%;
             }
-            
         }
     }
-    .donateSwiper{
+
+    .donateSwiper {
         margin: 0 140px;
         height: 680px;
-        .swiper-slide{
+
+        .swiper-slide {
             width: 821px;
             height: 340px;
-            .card-img{
+            padding: 40px 0;
+            display: flex;
+
+            .card-img {
                 width: 260px;
                 height: 260px;
                 border-radius: 50%;
+                margin-right: 40px;
+
+                
             }
 
+            .donate-area {
+                .donate-number {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    p {
+                        font-size: 18px;
+                        color: #707070;
+                        margin-right: 180px;
+                        border-style: solid;
+                        border-radius: 20px;
+                        padding: 10px 10px;
+                        border-color: #f2a589;
+                    }
+
+                    .fb-icon {
+                        width: 44px;
+                        height: 44px;
+                        color: #ffffff;
+                        background-color: #6d9ffe;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        border-radius: 50%;
+                    }
+                }
+
+                .donate-title {
+                    margin-top: 20px;
+                    margin-bottom: 10px;
+                    margin-left: 20px;
+                    h6 {
+                        color: #707070;
+                        font-size: 24px;
+                        font-weight: bold;
+                    }
+                }
+
+                .donate-text {
+                    margin-left: 20px;
+                    h6 {
+                        font-size: 24px;
+                        color: #4f4f4f;
+                    }
+                }
+
+                .donate-btn {
+                    margin-left: 20px;
+                    margin-top: 60px;
+
+                    .btn {
+                        width: 232px;
+                        height: 67px;
+                        background-color: $color-dark-orange;
+                        border-radius: 40px;
+                        color: #ffffff;
+                        font-size: 32px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                }
+            }
         }
     }
-
-
 }
 
-.third-section{
-
+.third-section {
     .title-area {
         width: 428px;
         height: 130px;
@@ -423,142 +490,137 @@ nav {
 }
 
 footer {
-	.footer-area {
-		.footer-img {
-			width: 100%;
-			height: 42px;
-			background-image: url("/img/footer-wave.png");
-			background-repeat: no-repeat;
-			background-size: cover;
-		}
+    .footer-area {
+        .footer-img {
+            width: 100%;
+            height: 42px;
+            background-image: url("/img/footer-wave.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
 
-		.container140 {
-			width: 100%;
-			background-color: #777777;
+        .container140 {
+            width: 100%;
+            background-color: #777777;
 
-			.ft-top {
-				width: 100%;
-				display: flex;
-				justify-content: space-between;
+            .ft-top {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
 
-				.ft-left {
-					// width: 714px;
-					padding-top: 80px;
+                .ft-left {
+                    // width: 714px;
+                    padding-top: 80px;
 
-					.text-1 {
-						display: flex;
-						align-items: center;
-						font-size: 20px;
-						color: $color-btn-text;
+                    .text-1 {
+                        display: flex;
+                        align-items: center;
+                        font-size: 20px;
+                        color: $color-btn-text;
 
-						&:hover {
-							text-decoration: underline;
-						}
-					}
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
 
-					.text-2 {
-						margin: 20px 0;
-						display: flex;
-						align-items: center;
-						font-size: 20px;
-						color: $color-btn-text;
+                    .text-2 {
+                        margin: 20px 0;
+                        display: flex;
+                        align-items: center;
+                        font-size: 20px;
+                        color: $color-btn-text;
 
-						&:hover {
-							text-decoration: underline;
-						}
-					}
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
 
-					.text-3 {
-						display: flex;
-						align-items: center;
-						font-size: 24px;
-						color: $color-btn-text;
+                    .text-3 {
+                        display: flex;
+                        align-items: center;
+                        font-size: 24px;
+                        color: $color-btn-text;
 
-						.contact{
-							border-radius: 20px;
-							background-color: $color-btn-text;
-							padding: 0 30px;
-							margin-left: 10px;
-							margin-right: 70px;
+                        .contact {
+                            border-radius: 20px;
+                            background-color: $color-btn-text;
+                            padding: 0 30px;
+                            margin-left: 10px;
+                            margin-right: 70px;
 
-							.ft-input {
-								width: 261px;
-								margin-left: 10px;
-								outline-style: none;
-								border: 0px;
-								border-radius: 20px;
+                            .ft-input {
+                                width: 261px;
+                                margin-left: 10px;
+                                outline-style: none;
+                                border: 0px;
+                                border-radius: 20px;
+                            }
+                            .contact-btn {
+                                padding: 0;
+                                border-radius: 20px;
+                                border: none;
+                                background-color: $color-btn-text;
+                                outline: 0;
+                                cursor: pointer;
+                            }
+                        }
 
-							}
-							.contact-btn{
-								padding: 0;
-								border-radius: 20px;
-								border:none;
-								background-color: $color-btn-text;
-								outline: 0;
-								cursor: pointer;
-								
-							}
+                        .fb-icon {
+                            width: 44px;
+                            height: 44px;
+                            border-radius: 50%;
+                            background-color: $color-light-orange;
+                            color: $color-btn-text;
+                            font-size: 23px;
+                            line-height: 44px;
+                            text-align: center;
 
+                            &:hover {
+                                box-shadow: 0px 0px 20px 0px $color-dark-orange;
+                                transition-duration: 0.8s;
+                            }
+                        }
+                    }
+                }
 
-						}
+                .ft-mouse {
+                    margin-top: 70px;
+                    width: 164px;
+                    height: 158px;
+                    border-radius: 50%;
+                    background-color: $color-text;
+                    background-image: url("/img/mouse.png");
+                    background-repeat: no-repeat;
+                    background-position: 45px 35px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: flex-end;
 
+                    span {
+                        color: $color-btn-text;
+                        font-size: 15px;
+                        padding-bottom: 15px;
+                    }
 
-						.fb-icon {
-							width: 44px;
-							height: 44px;
-							border-radius: 50%;
-							background-color: $color-light-orange;
-							color: $color-btn-text;
-							font-size: 23px;
-							line-height: 44px;
-							text-align: center;
+                    &:hover {
+                        box-shadow: 0px 0px 20px 0px $color-btn-text;
+                        transition-duration: 0.8s;
+                    }
+                }
+            }
 
-							&:hover {
-								box-shadow: 0px 0px 20px 0px $color-dark-orange;
-								transition-duration: 0.8s;
-							}
-						}
-					}
-				}
+            .ft-bot {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                margin-top: 60px;
+                padding-bottom: 80px;
 
-				.ft-mouse {
-					margin-top: 70px;
-					width: 164px;
-					height: 158px;
-					border-radius: 50%;
-					background-color: $color-text;
-					background-image: url("/img/mouse.png");
-					background-repeat: no-repeat;
-					background-position: 45px 35px;
-					display: flex;
-					justify-content: center;
-					align-items: flex-end;
-
-					span {
-						color: $color-btn-text;
-						font-size: 15px;
-						padding-bottom: 15px;
-					}
-
-					&:hover {
-						box-shadow: 0px 0px 20px 0px $color-btn-text;
-						transition-duration: 0.8s;
-					}
-				}
-			}
-
-			.ft-bot {
-				width: 100%;
-				display: flex;
-				justify-content: space-between;
-				margin-top: 60px;
-				padding-bottom: 80px;
-
-				p {
-					font-size: 16px;
-					color: $color-btn-text;
-				}
-			}
-		}
-	}
+                p {
+                    font-size: 16px;
+                    color: $color-btn-text;
+                }
+            }
+        }
+    }
 }
