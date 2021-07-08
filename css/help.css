@@ -266,7 +266,7 @@ nav .nav .menu:hover .burger::before {
 .first-section .swiper-group .mySwiper .card-img .play {
   padding: 3px;
   font-size: 100px;
-  color: white;
+  color: #ffffff;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -517,7 +517,7 @@ nav .nav .menu:hover .burger::before {
   padding: 3px;
   font-size: 50px;
   margin-bottom: 20px;
-  color: white;
+  color: #ffffff;
 }
 
 .second-section .donateSwiper .swiper-slide .donate-card .card-img .card-shadow .shadow-text {

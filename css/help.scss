@@ -12,14 +12,6 @@ body {
     margin: 0;
 }
 
-// color
-// $color-banner-gray: #707070;
-// $color-banner-number: #ffa183;
-// $color-light-orange: #fe886d;
-// $color-dark-orange: #ff7950;
-
-// $color-text: #4f4f4f;
-// $color-btn-text: #ffffff;
 
 h1,
 h2,
@@ -156,7 +148,7 @@ nav {
         .btns-area {
             width: 21%;
             height: 752px;
-            background-color: #ffa183;
+            background-color: $color-banner-number;
             margin-top: 212px;
             border-radius: 0 0 40px 40px;
             display: flex;
@@ -170,10 +162,10 @@ nav {
                     width: 268px;
                     height: 101px;
                     border-radius: 30px;
-                    background-color: #ff7950;
-                    border-color: #ff7950;
+                    background-color: $color-dark-orange;
+                    border-color: $color-dark-orange;
                     font-size: 36px;
-                    color: #ffffff;
+                    color: $color-btn-text;
                     cursor: pointer;
                     margin-left: 60px;
                     display: flex;
@@ -189,12 +181,12 @@ nav {
                     padding-top: 20px;
                     padding-bottom: 0;
                     margin-top: -30px;
-                    background-color: #ff7950;
+                    background-color: $color-dark-orange;
                     border-radius: 0 0 30px 30px;
                     border: none;
                     z-index: 0;
                     .dropdown-item {
-                        color: #ffffff;
+                        color: $color-btn-text;
                         display: flex;
                         justify-content: center;
                         font-size: 36px;
@@ -229,7 +221,7 @@ nav {
                 .play {
                     padding: 3px;
                     font-size: 100px;
-                    color: white;
+                    color: $color-btn-text;
                     position: absolute;
                     top: 50%;
                     left: 50%;
@@ -265,7 +257,7 @@ nav {
                 .fb-icon {
                     width: 44px;
                     height: 44px;
-                    color: #ffffff;
+                    color: $color-btn-text;
                     background-color: #6d9ffe;
                     display: flex;
                     justify-content: center;
@@ -278,10 +270,10 @@ nav {
                 font-size: 24px;
                 line-height: 42px;
                 .card-item {
-                    color: #707070;
+                    color: $color-banner-gray;
                 }
                 .card-item-vlaue {
-                    color: #4f4f4f;
+                    color: $color-text;
                 }
                 .card-slash {
                     margin: 0 11px;
@@ -294,7 +286,7 @@ nav {
                 height: 67px;
                 background-color: $color-dark-orange;
                 border-radius: 40px;
-                color: #ffffff;
+                color: $color-btn-text;
                 font-size: 32px;
                 display: flex;
                 justify-content: center;
@@ -337,7 +329,7 @@ nav {
     .text-area {
         width: 1460px;
         margin: auto;
-        color: #707070;
+        color: $color-banner-gray;
         margin-top: 106px;
         margin-bottom: 135px;
 
@@ -347,7 +339,7 @@ nav {
 
             span {
                 font-size: 48px;
-                background-color: #ff7950;
+                background-color: $color-dark-orange;
             }
         }
     }
@@ -435,7 +427,7 @@ nav {
                             padding: 3px;
                             font-size: 50px;
                             margin-bottom: 20px;
-                            color: white;
+                            color: $color-btn-text;
 
                         }
 
@@ -447,11 +439,11 @@ nav {
                             font-size: 24px;
                             text-align: center;
                             line-height: 34px;
-                            color: #ffffff;
-                            background-color: #707070;
+                            color: $color-btn-text;
+                            background-color: $color-banner-gray;
 
                             span {
-                                color: #ff7950;
+                                color: $color-dark-orange;
                             }
                         }
                     }
@@ -465,7 +457,7 @@ nav {
 
                         p {
                             font-size: 18px;
-                            color: #707070;
+                            color: $color-banner-gray;
                             margin-right: 180px;
                             border-style: solid;
                             border-radius: 20px;
@@ -476,7 +468,7 @@ nav {
                         .fb-icon {
                             width: 44px;
                             height: 44px;
-                            color: #ffffff;
+                            color: $color-btn-text;
                             background-color: #6d9ffe;
                             display: flex;
                             justify-content: center;
@@ -490,7 +482,7 @@ nav {
                         margin-bottom: 10px;
                         margin-left: 20px;
                         h6 {
-                            color: #707070;
+                            color: $color-banner-gray;
                             font-size: 24px;
                             font-weight: bold;
                         }
@@ -500,7 +492,7 @@ nav {
                         margin-left: 20px;
                         h6 {
                             font-size: 24px;
-                            color: #4f4f4f;
+                            color: $color-text;
                         }
                     }
 
@@ -513,7 +505,7 @@ nav {
                             height: 67px;
                             background-color: $color-dark-orange;
                             border-radius: 40px;
-                            color: #ffffff;
+                            color: $color-btn-text;
                             font-size: 32px;
                             display: flex;
                             justify-content: center;
@@ -567,7 +559,6 @@ footer {
                 justify-content: space-between;
 
                 .ft-left {
-                    // width: 714px;
                     padding-top: 80px;
 
                     .text-1 {
