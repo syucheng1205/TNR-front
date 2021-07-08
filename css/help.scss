@@ -391,76 +391,134 @@ nav {
             padding: 40px 0;
             display: flex;
 
-            .card-img {
-                width: 260px;
-                height: 260px;
-                border-radius: 50%;
-                margin-right: 40px;
-
+            .donate-card {
+                display: flex;
                 
-            }
-
-            .donate-area {
-                .donate-number {
-                    display: flex;
-                    justify-content: space-between;
-                    align-items: center;
-
-                    p {
-                        font-size: 18px;
-                        color: #707070;
-                        margin-right: 180px;
-                        border-style: solid;
-                        border-radius: 20px;
-                        padding: 10px 10px;
-                        border-color: #f2a589;
+                .card-img {
+                    width: 260px;
+                    height: 260px;
+                    border-radius: 50%;
+                    margin-right: 40px;
+                    position: relative;
+    
+                    &:hover .card-shadow {
+                        display: block;
                     }
 
-                    .fb-icon {
-                        width: 44px;
-                        height: 44px;
-                        color: #ffffff;
-                        background-color: #6d9ffe;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
+                    &:hover .donate-img {
+                        filter: contrast(0.5);
+                    }
+
+                    .donate-img {
+                        width: 260px;
+                        height: 260px;
                         border-radius: 50%;
                     }
-                }
 
-                .donate-title {
-                    margin-top: 20px;
-                    margin-bottom: 10px;
-                    margin-left: 20px;
-                    h6 {
-                        color: #707070;
-                        font-size: 24px;
-                        font-weight: bold;
-                    }
-                }
+                    .card-shadow {
+                        width: 260px;
+                        height: 260px;
+                        border-radius: 50%;
 
-                .donate-text {
-                    margin-left: 20px;
-                    h6 {
-                        font-size: 24px;
-                        color: #4f4f4f;
-                    }
-                }
+                        position: absolute;
+                        top: 0;
+                        left: 0;
 
-                .donate-btn {
-                    margin-left: 20px;
-                    margin-top: 60px;
-
-                    .btn {
-                        width: 232px;
-                        height: 67px;
-                        background-color: $color-dark-orange;
-                        border-radius: 40px;
-                        color: #ffffff;
-                        font-size: 32px;
                         display: flex;
+                        flex-direction: column;
                         justify-content: center;
                         align-items: center;
+
+                        // display: none;
+
+                        .play {
+                            padding: 3px;
+                            font-size: 50px;
+                            margin-bottom: 20px;
+                            color: white;
+
+                        }
+
+                        .shadow-text {
+                            width: 177px;
+                            height: 43px;
+                            border-radius: 20px;
+                            padding: 5px 10px;
+                            font-size: 24px;
+                            text-align: center;
+                            line-height: 34px;
+                            color: #ffffff;
+                            background-color: #707070;
+
+                            span {
+                                color: #ff7950;
+                            }
+                        }
+                    }
+                }
+
+                .donate-area {
+                    .donate-number {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+
+                        p {
+                            font-size: 18px;
+                            color: #707070;
+                            margin-right: 180px;
+                            border-style: solid;
+                            border-radius: 20px;
+                            padding: 10px 10px;
+                            border-color: #f2a589;
+                        }
+
+                        .fb-icon {
+                            width: 44px;
+                            height: 44px;
+                            color: #ffffff;
+                            background-color: #6d9ffe;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            border-radius: 50%;
+                        }
+                    }
+
+                    .donate-title {
+                        margin-top: 20px;
+                        margin-bottom: 10px;
+                        margin-left: 20px;
+                        h6 {
+                            color: #707070;
+                            font-size: 24px;
+                            font-weight: bold;
+                        }
+                    }
+
+                    .donate-text {
+                        margin-left: 20px;
+                        h6 {
+                            font-size: 24px;
+                            color: #4f4f4f;
+                        }
+                    }
+
+                    .donate-btn {
+                        margin-left: 20px;
+                        margin-top: 60px;
+
+                        .btn {
+                            width: 232px;
+                            height: 67px;
+                            background-color: $color-dark-orange;
+                            border-radius: 40px;
+                            color: #ffffff;
+                            font-size: 32px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                        }
                     }
                 }
             }

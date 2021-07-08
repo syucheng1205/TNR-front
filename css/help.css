@@ -459,14 +459,81 @@ nav .nav .menu:hover .burger::before {
   display: flex;
 }
 
-.second-section .donateSwiper .swiper-slide .card-img {
+.second-section .donateSwiper .swiper-slide .donate-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.second-section .donateSwiper .swiper-slide .donate-card .card-img {
   width: 260px;
   height: 260px;
   border-radius: 50%;
   margin-right: 40px;
+  position: relative;
 }
 
-.second-section .donateSwiper .swiper-slide .donate-area .donate-number {
+.second-section .donateSwiper .swiper-slide .donate-card .card-img:hover .card-shadow {
+  display: block;
+}
+
+.second-section .donateSwiper .swiper-slide .donate-card .card-img:hover .donate-img {
+  -webkit-filter: contrast(0.5);
+          filter: contrast(0.5);
+}
+
+.second-section .donateSwiper .swiper-slide .donate-card .card-img .donate-img {
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+}
+
+.second-section .donateSwiper .swiper-slide .donate-card .card-img .card-shadow {
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.second-section .donateSwiper .swiper-slide .donate-card .card-img .card-shadow .play {
+  padding: 3px;
+  font-size: 50px;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.second-section .donateSwiper .swiper-slide .donate-card .card-img .card-shadow .shadow-text {
+  width: 177px;
+  height: 43px;
+  border-radius: 20px;
+  padding: 5px 10px;
+  font-size: 24px;
+  text-align: center;
+  line-height: 34px;
+  color: #ffffff;
+  background-color: #707070;
+}
+
+.second-section .donateSwiper .swiper-slide .donate-card .card-img .card-shadow .shadow-text span {
+  color: #ff7950;
+}
+
+.second-section .donateSwiper .swiper-slide .donate-card .donate-area .donate-number {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -478,7 +545,7 @@ nav .nav .menu:hover .burger::before {
           align-items: center;
 }
 
-.second-section .donateSwiper .swiper-slide .donate-area .donate-number p {
+.second-section .donateSwiper .swiper-slide .donate-card .donate-area .donate-number p {
   font-size: 18px;
   color: #707070;
   margin-right: 180px;
@@ -488,7 +555,7 @@ nav .nav .menu:hover .burger::before {
   border-color: #f2a589;
 }
 
-.second-section .donateSwiper .swiper-slide .donate-area .donate-number .fb-icon {
+.second-section .donateSwiper .swiper-slide .donate-card .donate-area .donate-number .fb-icon {
   width: 44px;
   height: 44px;
   color: #ffffff;
@@ -505,33 +572,33 @@ nav .nav .menu:hover .burger::before {
   border-radius: 50%;
 }
 
-.second-section .donateSwiper .swiper-slide .donate-area .donate-title {
+.second-section .donateSwiper .swiper-slide .donate-card .donate-area .donate-title {
   margin-top: 20px;
   margin-bottom: 10px;
   margin-left: 20px;
 }
 
-.second-section .donateSwiper .swiper-slide .donate-area .donate-title h6 {
+.second-section .donateSwiper .swiper-slide .donate-card .donate-area .donate-title h6 {
   color: #707070;
   font-size: 24px;
   font-weight: bold;
 }
 
-.second-section .donateSwiper .swiper-slide .donate-area .donate-text {
+.second-section .donateSwiper .swiper-slide .donate-card .donate-area .donate-text {
   margin-left: 20px;
 }
 
-.second-section .donateSwiper .swiper-slide .donate-area .donate-text h6 {
+.second-section .donateSwiper .swiper-slide .donate-card .donate-area .donate-text h6 {
   font-size: 24px;
   color: #4f4f4f;
 }
 
-.second-section .donateSwiper .swiper-slide .donate-area .donate-btn {
+.second-section .donateSwiper .swiper-slide .donate-card .donate-area .donate-btn {
   margin-left: 20px;
   margin-top: 60px;
 }
 
-.second-section .donateSwiper .swiper-slide .donate-area .donate-btn .btn {
+.second-section .donateSwiper .swiper-slide .donate-card .donate-area .donate-btn .btn {
   width: 232px;
   height: 67px;
   background-color: #ff7950;
