@@ -327,7 +327,7 @@ nav {
     }
 
     .text-area {
-        width: 1460px;
+        width: 76%;
         margin: auto;
         color: $color-banner-gray;
         margin-top: 106px;
@@ -358,6 +358,9 @@ nav {
             position: relative;
 
             .paralysis-cat-1 {
+                // width: 1027px;
+                // height: 727px;
+                width: 53.5%;
                 border-radius: 30px;
                 position: absolute;
                 left: -1%;
@@ -365,6 +368,8 @@ nav {
             }
 
             .paralysis-cat-2 {
+                width: 35%;
+                // height: 676px;
                 border-radius: 30px;
                 position: absolute;
                 right: 1%;
@@ -379,7 +384,7 @@ nav {
         .line{
             width:calc(100% - 220px);
             height: 2px;
-            background-color: #FFA183;
+            background-color: $color-banner-number;
             margin: auto;
             position: absolute;
             top: 50%;
@@ -390,14 +395,14 @@ nav {
             width: 100px;
             height: 100px;
             border-radius: 50%;
-            background-color: #FF7950;
-            box-shadow:0 0 15px 0 #FF7950;
+            background-color: $color-dark-orange;
+            box-shadow:0 0 15px 0 $color-dark-orange;
             opacity: 0.4;
             position: absolute;
             top: 45%;
 
             &:hover{
-                box-shadow:0 0 5px 0 #FF7950;
+                box-shadow:0 0 5px 0 $color-dark-orange;
                 opacity: 0.8;
             }
         }
@@ -407,13 +412,14 @@ nav {
             height: 680px;
     
             .swiper-slide {
-                width: 821px;
+                // width: 821px;
                 height: 340px;
                 padding: 40px 0;
                 display: flex;
     
                 .donate-card {
                     display: flex;
+                    padding: 0 100px;
                     
                     .card-img {
                         width: 260px;
@@ -487,7 +493,7 @@ nav {
                             p {
                                 font-size: 18px;
                                 color: $color-banner-gray;
-                                margin-right: 180px;
+                                // margin-right: 180px;
                                 border-style: solid;
                                 border-radius: 20px;
                                 padding: 10px 10px;
@@ -576,13 +582,13 @@ nav {
                 border-radius: 50%;
                 position: absolute;
                 top: 42px;
-                background-color: #FF7950;
-                box-shadow:0 0 15px 0 #FF7950;
+                background-color: $color-dark-orange;
+                box-shadow:0 0 15px 0 $color-dark-orange;
                 &::after{
                     font-size: 12px;
                 }
                 &:hover{
-                    box-shadow:0 0 5px 0 #FF7950;
+                    box-shadow:0 0 5px 0 $color-dark-orange;
                 }
             }
             .arrow2-next{
@@ -607,7 +613,7 @@ nav {
                     margin-left: 5.5%;
                     width: 43.2%;
                     height: 577px;
-                    background-color: #ffa183;
+                    background-color: $color-banner-number;
                     border-radius: 30px;
                     z-index: -1;
                 }
