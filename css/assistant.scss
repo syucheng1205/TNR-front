@@ -143,52 +143,58 @@ a:hover {
 			}
 		}
 	}
+
 	.helpSwiper {
 		margin-top: -139px;
-		margin-left: 13.5%;
-		background-color: antiquewhite;
-
-		.can-slide{
-			margin: 0 3.5%;
-			// margin: 0 60px;
-		}
+		// margin-left: 13.5%;
+		// background-color: antiquewhite;
 
 		.donate-can-card {
 			width: 462px;
 			background-image: url("/img/first-section/米色背景.jpg");
 			border-radius: 40px;
+			position: relative;
 
-			.donate-can-img{
+			.donate-can-img {
 				padding: 30px 30px 0;
 				position: relative;
+				top: 40px;
 
-				.card-shadow{
+				&:hover .card-shadow {
+					display: flex;
+				}
+
+				&:hover .donate-img {
+					filter: contrast(0.5);
+				}
+
+				.card-shadow {
 					position: absolute;
 					bottom: 0%;
 
 					color: #ffffff;
-					background-color: rgba(252, 161, 131 ,0.7 );
+					background-color: rgba(252, 161, 131, 0.7);
 					font-size: 32px;
-					border-radius: 0 0 40px 40px ;
+					border-radius: 0 0 40px 40px;
 					display: flex;
 					justify-content: center;
 					align-items: center;
 					padding: 15px 100px;
 
-					span{
+					span {
 						font-size: 32px;
-						padding:0 3px;
+						padding: 0 3px;
 						background-color: #fd6739;
 					}
+
+					display: none;
 				}
 			}
-
-			
 
 			.bg-text {
 				border-radius: 0 0 40px 40px;
 				background-color: #ffa183;
-				padding: 30px;
+				padding: 60px 30px;
 
 				.text-area {
 					.donate-number {
@@ -240,7 +246,6 @@ a:hover {
 
 							margin: auto;
 						}
-
 					}
 				}
 			}
