@@ -279,8 +279,8 @@ a:hover {
 
 	.applySwiper {
 		margin-top: -682px;
-		margin-left: 585px;
-		padding-left: 648px;
+		margin-left: 31.5%;
+		padding-left: 35%;
 		height: 800px;
 		.my-bullet {
 			width: 375px;
@@ -289,6 +289,7 @@ a:hover {
 			display: flex;
 			align-items: center;
 			justify-content: flex-end;
+
 			&::after {
 				width: 55px;
 				height: 55px;
@@ -313,10 +314,9 @@ a:hover {
 			&:nth-child(4)::after {
 				content: "4";
 			}
-
-			.swiper-pagination-bullet-active {
-				background-color: yellow !important;
-			}
+		}
+		.my-bullet-active{
+			background-color: yellowgreen;
 		}
 		.swiper-pagination {
 			display: flex;

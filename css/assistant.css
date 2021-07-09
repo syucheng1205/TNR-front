@@ -332,8 +332,8 @@ a:hover {
 
 .second-section .applySwiper {
   margin-top: -682px;
-  margin-left: 585px;
-  padding-left: 648px;
+  margin-left: 31.5%;
+  padding-left: 35%;
   height: 800px;
 }
 
@@ -387,8 +387,8 @@ a:hover {
   content: "4";
 }
 
-.second-section .applySwiper .my-bullet .swiper-pagination-bullet-active {
-  background-color: yellow !important;
+.second-section .applySwiper .my-bullet-active {
+  background-color: yellowgreen;
 }
 
 .second-section .applySwiper .swiper-pagination {
