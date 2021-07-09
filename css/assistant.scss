@@ -289,7 +289,6 @@ a:hover {
 			display: flex;
 			align-items: center;
 			justify-content: flex-end;
-
 			&::after {
 				width: 55px;
 				height: 55px;
@@ -338,7 +337,7 @@ a:hover {
 			}
 			p{
 				font-size: 18px;
-				padding:50px 60px;
+				padding:50px 140px 0 0;
 				color: #4F4F4F;
 			}
 		}

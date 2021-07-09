@@ -350,6 +350,7 @@ a:hover {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  cursor: pointer;
 }
 
 .second-section .applySwiper .my-bullet::after {
@@ -417,7 +418,7 @@ a:hover {
 
 .second-section .applySwiper .text-area p {
   font-size: 18px;
-  padding: 50px 60px;
+  padding: 50px 140px 0 0;
   color: #4F4F4F;
 }
 
