@@ -144,6 +144,10 @@ a:hover {
   margin-bottom: 6%;
 }
 
+.nav .burger-area .list a:hover {
+  color: #ffffff;
+}
+
 .nav .burger-area .list .nav-btn {
   width: 381px;
   height: 130px;
