@@ -162,4 +162,10 @@ a:hover {
   height: 165px;
   font-size: 108px;
 }
+
+.first-section .helpSwiper {
+  margin-top: -139px;
+  margin-left: 260px;
+  background-color: antiquewhite;
+}
 /*# sourceMappingURL=assistant.css.map */
