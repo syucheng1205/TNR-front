@@ -10,7 +10,6 @@ html {
 
 body {
 	margin: 0;
-	height: 30000px;
 }
 
 h1,
@@ -171,7 +170,9 @@ a:hover {
 				.card-shadow {
 					position: absolute;
 					bottom: 0%;
+					left: 6.6%;
 
+					width: 87%;
 					color: #ffffff;
 					background-color: rgba(252, 161, 131, 0.7);
 					font-size: 32px;
@@ -246,6 +247,11 @@ a:hover {
 
 							margin: auto;
 						}
+
+						&:hover p {
+							border-bottom: 4px solid $color-btn-text;
+							transition-duration: 0.8s;
+						}
 					}
 				}
 			}
@@ -269,6 +275,232 @@ a:hover {
 			h1 {
 				color: $color-text;
 				font-size: 72px;
+			}
+		}
+	}
+}
+
+.third-section {
+	margin-top: 250px;
+
+	.title-area {
+		width: 428px;
+		height: 130px;
+		margin: auto;
+		position: relative;
+
+		.title-text {
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			h1 {
+				color: $color-text;
+				font-size: 72px;
+			}
+		}
+	}
+}
+
+.roll {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+.fourth-section {
+	width: 100%;
+	height: 100vh;
+	background-image: url("/img/04-assistant/loveCat.png");
+	position: relative;
+
+	.thank-card {
+		position: relative;
+
+		.heart-img {
+			position: absolute;
+			top: 130px;
+			right: 16%;
+		}
+
+		.text-area {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+
+			position: absolute;
+			top: 450px;
+			right: 25%;
+
+			h5 {
+				color: #ffffff;
+				font-size: 32px;
+			}
+
+			.thank-btn {
+				margin-top: 40px;
+				// margin-left: 50px;
+
+				.btn {
+					width: 232px;
+					height: 67px;
+					// background-color: $color-dark-orange;
+					background-color: #fe886d;
+					border-radius: 40px;
+					color: $color-btn-text;
+					font-size: 24px;
+					font-weight: bold;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+
+					&:hover p {
+						border-bottom: 4px solid $color-btn-text;
+						transition-duration: 0.8s;
+					}
+					&:hover {
+						box-shadow: 0px 0px 10px 0px $color-dark-orange;
+						transition-duration: 0.8s;
+					}
+				}
+			}
+		}
+	}
+}
+
+footer {
+	.footer-area {
+		margin-top: 200px;
+		.footer-img {
+			width: 100%;
+			height: 42px;
+			background-image: url("/img/footer-wave.png");
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+
+		.container140 {
+			width: 100%;
+			background-color: #777777;
+
+			.ft-top {
+				width: 100%;
+				display: flex;
+				justify-content: space-between;
+
+				.ft-left {
+					// width: 714px;
+					padding-top: 80px;
+
+					.text-1 {
+						display: flex;
+						align-items: center;
+						font-size: 20px;
+						color: $color-btn-text;
+
+						&:hover {
+							text-decoration: underline;
+						}
+					}
+
+					.text-2 {
+						margin: 20px 0;
+						display: flex;
+						align-items: center;
+						font-size: 20px;
+						color: $color-btn-text;
+
+						&:hover {
+							text-decoration: underline;
+						}
+					}
+
+					.text-3 {
+						display: flex;
+						align-items: center;
+						font-size: 24px;
+						color: $color-btn-text;
+
+						.contact {
+							border-radius: 20px;
+							background-color: $color-btn-text;
+							padding: 0 30px;
+							margin-left: 10px;
+							margin-right: 70px;
+
+							.ft-input {
+								width: 261px;
+								margin-left: 10px;
+								outline-style: none;
+								border: 0px;
+								border-radius: 20px;
+							}
+							.contact-btn {
+								padding: 0;
+								border-radius: 20px;
+								border: none;
+								background-color: $color-btn-text;
+								outline: 0;
+								cursor: pointer;
+							}
+						}
+
+						.fb-icon {
+							width: 44px;
+							height: 44px;
+							border-radius: 50%;
+							background-color: $color-light-orange;
+							color: $color-btn-text;
+							font-size: 23px;
+							line-height: 44px;
+							text-align: center;
+
+							&:hover {
+								box-shadow: 0px 0px 20px 0px $color-dark-orange;
+								transition-duration: 0.8s;
+							}
+						}
+					}
+				}
+
+				.ft-mouse {
+					margin-top: 70px;
+					width: 164px;
+					height: 158px;
+					border-radius: 50%;
+					background-color: $color-text;
+					background-image: url("/img/mouse.png");
+					background-repeat: no-repeat;
+					background-position: 45px 35px;
+					display: flex;
+					justify-content: center;
+					align-items: flex-end;
+
+					span {
+						color: $color-btn-text;
+						font-size: 15px;
+						padding-bottom: 15px;
+					}
+
+					&:hover {
+						box-shadow: 0px 0px 20px 0px $color-btn-text;
+						transition-duration: 0.8s;
+					}
+				}
+			}
+
+			.ft-bot {
+				width: 100%;
+				display: flex;
+				justify-content: space-between;
+				margin-top: 60px;
+				padding-bottom: 80px;
+
+				p {
+					font-size: 16px;
+					color: $color-btn-text;
+				}
 			}
 		}
 	}

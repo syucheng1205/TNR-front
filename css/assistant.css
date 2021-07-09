@@ -10,7 +10,6 @@ html {
 
 body {
   margin: 0;
-  height: 30000px;
 }
 
 h1,
@@ -195,6 +194,8 @@ a:hover {
 .first-section .helpSwiper .donate-can-card .donate-can-img .card-shadow {
   position: absolute;
   bottom: 0%;
+  left: 6.6%;
+  width: 87%;
   color: #ffffff;
   background-color: rgba(252, 161, 131, 0.7);
   font-size: 32px;
@@ -290,6 +291,12 @@ a:hover {
   margin: auto;
 }
 
+.first-section .helpSwiper .donate-can-card .bg-text .text-area .donate-btn:hover p {
+  border-bottom: 4px solid #ffffff;
+  -webkit-transition-duration: 0.8s;
+          transition-duration: 0.8s;
+}
+
 .second-section {
   margin-top: 250px;
 }
@@ -310,5 +317,277 @@ a:hover {
 .second-section .title-area .title-text h1 {
   color: #4f4f4f;
   font-size: 72px;
+}
+
+.third-section {
+  margin-top: 250px;
+}
+
+.third-section .title-area {
+  width: 428px;
+  height: 130px;
+  margin: auto;
+  position: relative;
+}
+
+.third-section .title-area .title-text {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.third-section .title-area .title-text h1 {
+  color: #4f4f4f;
+  font-size: 72px;
+}
+
+.roll {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.fourth-section {
+  width: 100%;
+  height: 100vh;
+  background-image: url("/img/04-assistant/loveCat.png");
+  position: relative;
+}
+
+.fourth-section .thank-card {
+  position: relative;
+}
+
+.fourth-section .thank-card .heart-img {
+  position: absolute;
+  top: 130px;
+  right: 16%;
+}
+
+.fourth-section .thank-card .text-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: 450px;
+  right: 25%;
+}
+
+.fourth-section .thank-card .text-area h5 {
+  color: #ffffff;
+  font-size: 32px;
+}
+
+.fourth-section .thank-card .text-area .thank-btn {
+  margin-top: 40px;
+}
+
+.fourth-section .thank-card .text-area .thank-btn .btn {
+  width: 232px;
+  height: 67px;
+  background-color: #fe886d;
+  border-radius: 40px;
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.fourth-section .thank-card .text-area .thank-btn .btn:hover p {
+  border-bottom: 4px solid #ffffff;
+  -webkit-transition-duration: 0.8s;
+          transition-duration: 0.8s;
+}
+
+.fourth-section .thank-card .text-area .thank-btn .btn:hover {
+  -webkit-box-shadow: 0px 0px 10px 0px #ff7950;
+          box-shadow: 0px 0px 10px 0px #ff7950;
+  -webkit-transition-duration: 0.8s;
+          transition-duration: 0.8s;
+}
+
+footer .footer-area {
+  margin-top: 200px;
+}
+
+footer .footer-area .footer-img {
+  width: 100%;
+  height: 42px;
+  background-image: url("/img/footer-wave.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+footer .footer-area .container140 {
+  width: 100%;
+  background-color: #777777;
+}
+
+footer .footer-area .container140 .ft-top {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer .footer-area .container140 .ft-top .ft-left {
+  padding-top: 80px;
+}
+
+footer .footer-area .container140 .ft-top .ft-left .text-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 20px;
+  color: #ffffff;
+}
+
+footer .footer-area .container140 .ft-top .ft-left .text-1:hover {
+  text-decoration: underline;
+}
+
+footer .footer-area .container140 .ft-top .ft-left .text-2 {
+  margin: 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 20px;
+  color: #ffffff;
+}
+
+footer .footer-area .container140 .ft-top .ft-left .text-2:hover {
+  text-decoration: underline;
+}
+
+footer .footer-area .container140 .ft-top .ft-left .text-3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 24px;
+  color: #ffffff;
+}
+
+footer .footer-area .container140 .ft-top .ft-left .text-3 .contact {
+  border-radius: 20px;
+  background-color: #ffffff;
+  padding: 0 30px;
+  margin-left: 10px;
+  margin-right: 70px;
+}
+
+footer .footer-area .container140 .ft-top .ft-left .text-3 .contact .ft-input {
+  width: 261px;
+  margin-left: 10px;
+  outline-style: none;
+  border: 0px;
+  border-radius: 20px;
+}
+
+footer .footer-area .container140 .ft-top .ft-left .text-3 .contact .contact-btn {
+  padding: 0;
+  border-radius: 20px;
+  border: none;
+  background-color: #ffffff;
+  outline: 0;
+  cursor: pointer;
+}
+
+footer .footer-area .container140 .ft-top .ft-left .text-3 .fb-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: #fe886d;
+  color: #ffffff;
+  font-size: 23px;
+  line-height: 44px;
+  text-align: center;
+}
+
+footer .footer-area .container140 .ft-top .ft-left .text-3 .fb-icon:hover {
+  -webkit-box-shadow: 0px 0px 20px 0px #ff7950;
+          box-shadow: 0px 0px 20px 0px #ff7950;
+  -webkit-transition-duration: 0.8s;
+          transition-duration: 0.8s;
+}
+
+footer .footer-area .container140 .ft-top .ft-mouse {
+  margin-top: 70px;
+  width: 164px;
+  height: 158px;
+  border-radius: 50%;
+  background-color: #4f4f4f;
+  background-image: url("/img/mouse.png");
+  background-repeat: no-repeat;
+  background-position: 45px 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+footer .footer-area .container140 .ft-top .ft-mouse span {
+  color: #ffffff;
+  font-size: 15px;
+  padding-bottom: 15px;
+}
+
+footer .footer-area .container140 .ft-top .ft-mouse:hover {
+  -webkit-box-shadow: 0px 0px 20px 0px #ffffff;
+          box-shadow: 0px 0px 20px 0px #ffffff;
+  -webkit-transition-duration: 0.8s;
+          transition-duration: 0.8s;
+}
+
+footer .footer-area .container140 .ft-bot {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 60px;
+  padding-bottom: 80px;
+}
+
+footer .footer-area .container140 .ft-bot p {
+  font-size: 16px;
+  color: #ffffff;
 }
 /*# sourceMappingURL=assistant.css.map */
