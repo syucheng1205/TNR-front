@@ -128,8 +128,15 @@ a:hover {
 				font-size: 64px;
 				color: #4f4f4f;
 				margin-bottom: 6%;
+				cursor: pointer; 
+				border-bottom: 4px solid transparent;
+					padding-bottom: 10px;
+
 				&:hover {
 					color: $color-btn-text;
+					border-bottom: 4px solid $color-btn-text;
+					padding-bottom: 10px;
+					transition-duration: 0.3s;
 				}
 			}
 
