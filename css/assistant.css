@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -115,7 +116,7 @@ a:hover {
   font-size: 96px;
   padding: 0 35px;
   color: #fff;
-  background-color: #86CEE8;
+  background-color: #86cee8;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -167,6 +168,118 @@ a:hover {
   margin-top: -139px;
   margin-left: 13.5%;
   background-color: antiquewhite;
+}
+
+.first-section .helpSwiper .can-slide {
+  margin: 0 3.5%;
+}
+
+.first-section .helpSwiper .donate-can-card {
+  width: 462px;
+  background-image: url("/img/first-section/米色背景.jpg");
+  border-radius: 40px;
+}
+
+.first-section .helpSwiper .donate-can-card .donate-can-img {
+  padding: 30px 30px 0;
+  position: relative;
+}
+
+.first-section .helpSwiper .donate-can-card .donate-can-img .card-shadow {
+  position: absolute;
+  bottom: 0%;
+  color: #ffffff;
+  background-color: rgba(252, 161, 131, 0.7);
+  font-size: 32px;
+  border-radius: 0 0 40px 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 15px 100px;
+}
+
+.first-section .helpSwiper .donate-can-card .donate-can-img .card-shadow span {
+  font-size: 32px;
+  padding: 0 3px;
+  background-color: #fd6739;
+}
+
+.first-section .helpSwiper .donate-can-card .bg-text {
+  border-radius: 0 0 40px 40px;
+  background-color: #ffa183;
+  padding: 30px;
+}
+
+.first-section .helpSwiper .donate-can-card .bg-text .text-area .donate-number {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 20px 0;
+}
+
+.first-section .helpSwiper .donate-can-card .bg-text .text-area .donate-number p {
+  font-size: 18px;
+  color: #ffffff;
+  border-style: solid;
+  border-radius: 20px;
+  padding: 10px 30px;
+  border-color: #ffffff;
+}
+
+.first-section .helpSwiper .donate-can-card .bg-text .text-area .donate-number .fb-icon {
+  width: 44px;
+  height: 44px;
+  color: #ffffff;
+  background-color: #6d9ffe;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+}
+
+.first-section .helpSwiper .donate-can-card .bg-text .text-area h6 {
+  font-size: 24px;
+  color: #ffffff;
+  margin-bottom: 20px;
+  margin-left: 54px;
+}
+
+.first-section .helpSwiper .donate-can-card .bg-text .text-area .donate-btn .btn {
+  width: 232px;
+  height: 67px;
+  background-color: #ff7950;
+  border-radius: 40px;
+  color: #ffffff;
+  font-size: 32px;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
 }
 
 .second-section {

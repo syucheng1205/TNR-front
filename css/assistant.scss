@@ -106,15 +106,15 @@ a:hover {
 			height: 544px;
 			background-image: url(/img/04-assistant/blue-wave.png);
 			background-repeat: no-repeat;
-			.background-title{
+			.background-title {
 				font-size: 96px;
 				padding: 0 35px;
 				color: #fff;
-				background-color: #86CEE8;
+				background-color: #86cee8;
 				position: absolute;
 				top: 50%;
 				left: 50%;
-				transform: translate(-50%,-50%);
+				transform: translate(-50%, -50%);
 			}
 		}
 		.links {
@@ -142,16 +142,113 @@ a:hover {
 				font-size: 108px;
 			}
 		}
-		
 	}
-	.helpSwiper{
+	.helpSwiper {
 		margin-top: -139px;
 		margin-left: 13.5%;
 		background-color: antiquewhite;
+
+		.can-slide{
+			margin: 0 3.5%;
+			// margin: 0 60px;
+		}
+
+		.donate-can-card {
+			width: 462px;
+			background-image: url("/img/first-section/米色背景.jpg");
+			border-radius: 40px;
+
+			.donate-can-img{
+				padding: 30px 30px 0;
+				position: relative;
+
+				.card-shadow{
+					position: absolute;
+					bottom: 0%;
+
+					color: #ffffff;
+					background-color: rgba(252, 161, 131 ,0.7 );
+					font-size: 32px;
+					border-radius: 0 0 40px 40px ;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					padding: 15px 100px;
+
+					span{
+						font-size: 32px;
+						padding:0 3px;
+						background-color: #fd6739;
+					}
+				}
+			}
+
+			
+
+			.bg-text {
+				border-radius: 0 0 40px 40px;
+				background-color: #ffa183;
+				padding: 30px;
+
+				.text-area {
+					.donate-number {
+						display: flex;
+						justify-content: space-between;
+						align-items: center;
+						margin: 20px 0;
+
+						p {
+							font-size: 18px;
+							color: $color-btn-text;
+							border-style: solid;
+							border-radius: 20px;
+							padding: 10px 30px;
+							border-color: $color-btn-text;
+						}
+
+						.fb-icon {
+							width: 44px;
+							height: 44px;
+							color: $color-btn-text;
+							background-color: #6d9ffe;
+							display: flex;
+							justify-content: center;
+							align-items: center;
+							border-radius: 50%;
+						}
+					}
+
+					h6 {
+						font-size: 24px;
+						color: #ffffff;
+						margin-bottom: 20px;
+						margin-left: 54px;
+					}
+
+					.donate-btn {
+						.btn {
+							width: 232px;
+							height: 67px;
+							background-color: $color-dark-orange;
+							border-radius: 40px;
+							color: $color-btn-text;
+							font-size: 32px;
+							font-weight: bold;
+							display: flex;
+							justify-content: center;
+							align-items: center;
+
+							margin: auto;
+						}
+
+					}
+				}
+			}
+		}
 	}
 }
 
-.second-section{
+.second-section {
 	margin-top: 250px;
 
 	.title-area {
@@ -171,4 +268,3 @@ a:hover {
 		}
 	}
 }
-
