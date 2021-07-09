@@ -163,6 +163,12 @@ a:hover {
   font-size: 108px;
 }
 
+.first-section .helpSwiper {
+  margin-top: -139px;
+  margin-left: 13.5%;
+  background-color: antiquewhite;
+}
+
 .second-section {
   margin-top: 250px;
 }
