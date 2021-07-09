@@ -38,80 +38,137 @@ a:hover {
 	padding: 0 140px;
 }
 
-nav {
-	.nav {
-		width: 100%;
-		display: flex;
-		justify-content: space-between;
-		padding: 20px 7.3% 0;
+.nav {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	padding: 20px 7.3% 0;
+	margin-bottom: 180px;
 
-		.logo {
-			width: 511px;
-			height: 83.5px;
-			background-image: url("/img/logo.png");
-			background-repeat: no-repeat;
-			background-position: center;
-			background-size: cover;
-		}
+	.logo {
+		width: 511px;
+		height: 83.5px;
+		background-image: url("/img/logo.png");
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+	}
 
-		.menu {
-			font-size: 100px;
-			line-height: 50px;
-			position: fixed;
-			right: 7.3%;
-			top: 40px;
-			height: 37px;
-			z-index: 99;
+	.menu {
+		font-size: 100px;
+		line-height: 50px;
+		position: fixed;
+		right: 7.3%;
+		top: 40px;
+		height: 37px;
+		z-index: 99;
 
-			.burger {
+		.burger {
+			width: 90px;
+			height: 7px;
+			border-radius: 20px;
+			background-color: $color-text;
+
+			position: relative;
+
+			&::before,
+			&::after {
+				content: "";
 				width: 90px;
 				height: 7px;
 				border-radius: 20px;
 				background-color: $color-text;
-
-				position: relative;
-
-				&::before,
-				&::after {
-					content: "";
-					width: 90px;
-					height: 7px;
-					border-radius: 20px;
-					background-color: $color-text;
-					position: absolute;
-					top: 15px;
-				}
-
-				&::after {
-					top: 30px;
-				}
-
-				// .burger-area{
-				// 	width: 960px;
-				// 	height: 1185px;
-				// 	font-size: 64px;
-				// 	color: #4F4F4F;
-				// 	background-color: #FFFFFF;
-				// 	display: flex;
-				// 	flex-direction: column;
-				// 	opacity: 0.8;
-				// 	position: absolute;
-				// 	top: 700%;
-				// 	left: -300%;
-				// }
-
-				
+				position: absolute;
+				top: 15px;
 			}
-			&:hover .burger,
-			&:hover .burger::after,
-			&:hover .burger::before {
+
+			&::after {
+				top: 30px;
+			}
+
+			display: none;
+		}
+
+		&:hover .burger,
+		&:hover .burger::after,
+		&:hover .burger::before {
+			background-color: $color-dark-orange;
+		}
+
+		.active {
+			display: block;
+		}
+	}
+	.burger-area {
+		float: right;
+		width: 960px;
+		height: 100vh;
+		background-image: url("/img/first-section/米色背景.jpg");
+		border-radius: 40px 0 40px 40px;
+		opacity: 0.8;
+		position: fixed;
+		top: 0;
+		right: 0;
+		z-index: 99;
+
+		span {
+			font-size: 100px;
+			color: #707070;
+			float: right;
+			position: absolute;
+			right: 140px;
+		}
+
+		.list {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+
+			a {
+				font-size: 64px;
+				color: #4f4f4f;
+				margin-bottom: 6%;
+				&:hover {
+					color: $color-btn-text;
+				}
+			}
+
+			.nav-btn {
+				width: 381px;
+				height: 130px;
 				background-color: $color-dark-orange;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				border-radius: 40px;
+				box-shadow: 0px 10px 30px 0px $color-dark-orange;
+				cursor: pointer;
+				padding: 33px;
+				margin-bottom: 136px;
+
+				p {
+					font-size: 48px;
+					font-weight: bold;
+					color: $color-btn-text;
+					border-bottom: 4px solid $color-dark-orange;
+				}
+				&:hover p {
+					border-bottom: 4px solid $color-btn-text;
+					transition-duration: 0.8s;
+				}
+				&:hover {
+					box-shadow: 0px 0px 10px 0px $color-dark-orange;
+					transition-duration: 0.8s;
+				}
 			}
 		}
 
-		
+		display: none;
 	}
 
+	.active {
+		display: block;
+	}
 }
 
 main {
@@ -854,5 +911,3 @@ footer {
 		}
 	}
 }
-
-

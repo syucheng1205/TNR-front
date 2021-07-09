@@ -38,7 +38,7 @@ a:hover {
   padding: 0 140px;
 }
 
-nav .nav {
+.nav {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -47,9 +47,10 @@ nav .nav {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 20px 7.3% 0;
+  margin-bottom: 180px;
 }
 
-nav .nav .logo {
+.nav .logo {
   width: 511px;
   height: 83.5px;
   background-image: url("/img/logo.png");
@@ -58,7 +59,7 @@ nav .nav .logo {
   background-size: cover;
 }
 
-nav .nav .menu {
+.nav .menu {
   font-size: 100px;
   line-height: 50px;
   position: fixed;
@@ -68,15 +69,16 @@ nav .nav .menu {
   z-index: 99;
 }
 
-nav .nav .menu .burger {
+.nav .menu .burger {
   width: 90px;
   height: 7px;
   border-radius: 20px;
   background-color: #4f4f4f;
   position: relative;
+  display: none;
 }
 
-nav .nav .menu .burger::before, nav .nav .menu .burger::after {
+.nav .menu .burger::before, .nav .menu .burger::after {
   content: "";
   width: 90px;
   height: 7px;
@@ -86,14 +88,108 @@ nav .nav .menu .burger::before, nav .nav .menu .burger::after {
   top: 15px;
 }
 
-nav .nav .menu .burger::after {
+.nav .menu .burger::after {
   top: 30px;
 }
 
-nav .nav .menu:hover .burger,
-nav .nav .menu:hover .burger::after,
-nav .nav .menu:hover .burger::before {
+.nav .menu:hover .burger,
+.nav .menu:hover .burger::after,
+.nav .menu:hover .burger::before {
   background-color: #ff7950;
+}
+
+.nav .menu .active {
+  display: block;
+}
+
+.nav .burger-area {
+  float: right;
+  width: 960px;
+  height: 100vh;
+  background-image: url("/img/first-section/米色背景.jpg");
+  border-radius: 40px 0 40px 40px;
+  opacity: 0.8;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 99;
+  display: none;
+}
+
+.nav .burger-area span {
+  font-size: 100px;
+  color: #707070;
+  float: right;
+  position: absolute;
+  right: 140px;
+}
+
+.nav .burger-area .list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav .burger-area .list a {
+  font-size: 64px;
+  color: #4f4f4f;
+  margin-bottom: 6%;
+}
+
+.nav .burger-area .list a:hover {
+  color: #ffffff;
+}
+
+.nav .burger-area .list .nav-btn {
+  width: 381px;
+  height: 130px;
+  background-color: #ff7950;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 40px;
+  -webkit-box-shadow: 0px 10px 30px 0px #ff7950;
+          box-shadow: 0px 10px 30px 0px #ff7950;
+  cursor: pointer;
+  padding: 33px;
+  margin-bottom: 136px;
+}
+
+.nav .burger-area .list .nav-btn p {
+  font-size: 48px;
+  font-weight: bold;
+  color: #ffffff;
+  border-bottom: 4px solid #ff7950;
+}
+
+.nav .burger-area .list .nav-btn:hover p {
+  border-bottom: 4px solid #ffffff;
+  -webkit-transition-duration: 0.8s;
+          transition-duration: 0.8s;
+}
+
+.nav .burger-area .list .nav-btn:hover {
+  -webkit-box-shadow: 0px 0px 10px 0px #ff7950;
+          box-shadow: 0px 0px 10px 0px #ff7950;
+  -webkit-transition-duration: 0.8s;
+          transition-duration: 0.8s;
+}
+
+.nav .active {
+  display: block;
 }
 
 main .banner {
