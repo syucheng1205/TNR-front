@@ -39,7 +39,7 @@ a:hover {
   padding: 0 140px;
 }
 
-.nav {
+.my-nav {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -48,10 +48,9 @@ a:hover {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 20px 7.3% 0;
-  margin-bottom: 180px;
 }
 
-.nav .logo {
+.my-nav .logo {
   width: 511px;
   height: 83.5px;
   background-image: url("/img/logo.png");
@@ -60,7 +59,7 @@ a:hover {
   background-size: cover;
 }
 
-.nav .menu {
+.my-nav .menu {
   font-size: 100px;
   line-height: 50px;
   position: fixed;
@@ -70,7 +69,7 @@ a:hover {
   z-index: 99;
 }
 
-.nav .menu .burger {
+.my-nav .menu .burger {
   width: 90px;
   height: 7px;
   border-radius: 20px;
@@ -79,7 +78,7 @@ a:hover {
   display: none;
 }
 
-.nav .menu .burger::before, .nav .menu .burger::after {
+.my-nav .menu .burger::before, .my-nav .menu .burger::after {
   content: "";
   width: 90px;
   height: 7px;
@@ -89,21 +88,21 @@ a:hover {
   top: 15px;
 }
 
-.nav .menu .burger::after {
+.my-nav .menu .burger::after {
   top: 30px;
 }
 
-.nav .menu:hover .burger,
-.nav .menu:hover .burger::after,
-.nav .menu:hover .burger::before {
+.my-nav .menu:hover .burger,
+.my-nav .menu:hover .burger::after,
+.my-nav .menu:hover .burger::before {
   background-color: #ff7950;
 }
 
-.nav .menu .active {
+.my-nav .menu .active {
   display: block;
 }
 
-.nav .burger-area {
+.my-nav .burger-area {
   float: right;
   width: 960px;
   height: 100vh;
@@ -117,7 +116,7 @@ a:hover {
   display: none;
 }
 
-.nav .burger-area span {
+.my-nav .burger-area span {
   font-size: 100px;
   color: #707070;
   float: right;
@@ -125,7 +124,7 @@ a:hover {
   right: 140px;
 }
 
-.nav .burger-area .list {
+.my-nav .burger-area .list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -138,17 +137,17 @@ a:hover {
           align-items: center;
 }
 
-.nav .burger-area .list a {
+.my-nav .burger-area .list a {
   font-size: 64px;
   color: #4f4f4f;
   margin-bottom: 6%;
 }
 
-.nav .burger-area .list a:hover {
+.my-nav .burger-area .list a:hover {
   color: #ffffff;
 }
 
-.nav .burger-area .list .nav-btn {
+.my-nav .burger-area .list .nav-btn {
   width: 381px;
   height: 130px;
   background-color: #ff7950;
@@ -169,27 +168,27 @@ a:hover {
   margin-bottom: 136px;
 }
 
-.nav .burger-area .list .nav-btn p {
+.my-nav .burger-area .list .nav-btn p {
   font-size: 48px;
   font-weight: bold;
   color: #ffffff;
   border-bottom: 4px solid #ff7950;
 }
 
-.nav .burger-area .list .nav-btn:hover p {
+.my-nav .burger-area .list .nav-btn:hover p {
   border-bottom: 4px solid #ffffff;
   -webkit-transition-duration: 0.8s;
           transition-duration: 0.8s;
 }
 
-.nav .burger-area .list .nav-btn:hover {
+.my-nav .burger-area .list .nav-btn:hover {
   -webkit-box-shadow: 0px 0px 10px 0px #ff7950;
           box-shadow: 0px 0px 10px 0px #ff7950;
   -webkit-transition-duration: 0.8s;
           transition-duration: 0.8s;
 }
 
-.nav .active {
+.my-nav .active {
   display: block;
 }
 /*# sourceMappingURL=temlate.css.map */
