@@ -127,10 +127,14 @@ a:hover {
 			display: flex;
 			flex-direction: column;
 			align-items: center;
+
 			a {
 				font-size: 64px;
 				color: #4f4f4f;
 				margin-bottom: 6%;
+				&:hover{
+					color: $color-btn-text;
+				}
 			}
 	
 			.nav-btn {
