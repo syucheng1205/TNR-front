@@ -330,6 +330,16 @@ a:hover {
   left: 0;
 }
 
+.second-section .background .line {
+  width: 129px;
+  height: 5px;
+  border-radius: 5px;
+  background-color: #EE8E74;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 .second-section .applySwiper {
   margin-top: -682px;
   margin-left: 31.5%;
