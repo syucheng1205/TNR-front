@@ -138,7 +138,7 @@
 			</div>
 		</div>
 
-		<div class="third-section" style="margin-top: 250px;">
+		<!-- <div class="third-section" style="margin-top: 250px;">
 			<div class="title-area">
 				<div class="title-img">
 					<img src="/img/deco-title.svg">
@@ -147,7 +147,70 @@
 					<h1>貓貓日記</h1>
 				</div>
 			</div>
-		</div>
+		</div> -->
+
+		<div class="third-section">
+            <div class="title-area mt-200">
+                <div class="title-img">
+                    <img src="/img/deco-title.svg">
+                </div>
+                <div class="title-text">
+                    <h1>貓貓日記</h1>
+                </div>
+            </div>
+            <div class="container140 position-relative">
+                <div class="swiper-group">
+                    <img src="./img/03-adoptCat/pencil.png" alt="" class="img">
+                    <div class="background">
+                        <div class="shadow"></div>
+                        <div class="background-text"></div>
+                    </div>
+                    <div class="swiper-container diarySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="./img/second-section/cat-2.png" alt="" class="img">
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="diary-text">
+                                    <div class="sub">
+                                        <span class="sub-title">助養日記</span>
+                                        <span class="date">2021.07.03(sat)</span>
+                                    </div>
+                                    <div class="title">一場生命的延續</div>
+                                    <div class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor
+                                        eius aut quibusdam dolorum error iure adipisci, molestiae nihil aperiam
+                                        doloribus nesciunt voluptas harum accusantium totam explicabo at vel. Officia,
+                                        expedita?</div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./img/second-section/cat-2.png" alt="" class="img">
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="diary-text">
+                                    <div class="sub">
+                                        <span class="sub-title">助養日記</span>
+                                        <span class="date">2021.07.03(sat)</span>
+                                    </div>
+                                    <div class="title">一場生命的延續</div>
+                                    <div class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor
+                                        eius aut quibusdam dolorum error iure adipisci, molestiae nihil aperiam
+                                        doloribus nesciunt voluptas harum accusantium totam explicabo at vel. Officia,
+                                        expedita?</div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">Slide 5</div>
+                            <div class="swiper-slide">Slide 6</div>
+                            <div class="swiper-slide">Slide 7</div>
+                            <div class="swiper-slide">Slide 8</div>
+                            <div class="swiper-slide">Slide 9</div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next swiper-button-white my-arrow2 arrow2-next"></div>
+                    <div class="swiper-button-prev swiper-button-white my-arrow2 arrow2-prev"></div>
+                </div>
+            </div>
+        </div>
 
 		<div class="fourth-section roll" style="margin-top: 250px;">
 
@@ -198,9 +261,6 @@
 								<button class="contact-btn">
 									<i class="fas fa-paper-plane" style="color:#ff7950;"></i>
 								</button>
-
-
-
 							</div>
 
 							<a href="https://www.facebook.com/SupportTNR/" target="_blank">
@@ -245,6 +305,46 @@
 				clickable: true,
 			},
 		});
+
+		var my_swiper = new Swiper(".catSwiper", {
+            slidesPerView: 3,
+            spaceBetween: 60,
+            slidesPerGroup: 3,
+            pagination: {
+                el: ".catSwiper .swiper-pagination",
+                clickable: true,
+            },
+        });
+
+        var donate_swiper = new Swiper(".donateSwiper", {
+            slidesPerView: 2,
+            slidesPerColumn: 2,
+            pagination: {
+                el: ".donateSwiper .swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-father .swiper-button-next",
+                prevEl: ".swiper-father .swiper-button-prev",
+            },
+        });
+
+        var diary_swiper = new Swiper(".diarySwiper", {
+            slidesPerView: 2,
+            slidesPerGroup: 2,
+
+            slidesPerView : 'auto', 
+            pagination: {
+                el: ".diarySwiper .swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-group .swiper-button-next",
+                prevEl: ".swiper-group .swiper-button-prev",
+            },
+        });
+
+
 	</script>
 </body>
 
