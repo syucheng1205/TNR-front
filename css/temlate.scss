@@ -28,6 +28,7 @@ a {
 
 a:hover {
 	text-decoration: none;
+	cursor: pointer; 
 }
 
 .container170 {
@@ -132,7 +133,7 @@ a:hover {
 				margin-bottom: 6%;
 			}
 	
-			.banner-btn {
+			.nav-btn {
 				width: 381px;
 				height: 130px;
 				background-color: $color-dark-orange;
