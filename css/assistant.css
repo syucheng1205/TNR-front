@@ -389,6 +389,7 @@ a:hover {
 
 .second-section .applySwiper .my-bullet-active {
   background-color: yellowgreen;
+  border-radius: 40px;
 }
 
 .second-section .applySwiper .swiper-pagination {
