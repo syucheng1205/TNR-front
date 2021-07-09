@@ -145,3 +145,25 @@ a:hover {
 		
 	}
 }
+
+.second-section{
+	margin-top: 250px;
+
+	.title-area {
+		width: 428px;
+		height: 130px;
+		margin: auto;
+		position: relative;
+
+		.title-text {
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			h1 {
+				color: $color-text;
+				font-size: 72px;
+			}
+		}
+	}
+}
+

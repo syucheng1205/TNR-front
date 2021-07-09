@@ -162,4 +162,26 @@ a:hover {
   height: 165px;
   font-size: 108px;
 }
+
+.second-section {
+  margin-top: 250px;
+}
+
+.second-section .title-area {
+  width: 428px;
+  height: 130px;
+  margin: auto;
+  position: relative;
+}
+
+.second-section .title-area .title-text {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.second-section .title-area .title-text h1 {
+  color: #4f4f4f;
+  font-size: 72px;
+}
 /*# sourceMappingURL=assistant.css.map */
