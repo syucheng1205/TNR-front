@@ -138,7 +138,7 @@ a:hover {
 				color: $color-light-orange;
 				font-size: 48px;
 			}
-			.link-1 {
+			.active {
 				width: 165px;
 				height: 165px;
 				font-size: 108px;
@@ -147,7 +147,7 @@ a:hover {
 	}
 	.helpSwiper {
 		margin-top: -139px;
-		// margin-left: 13.5%;
+		margin-left: 13.5%;
 		.donate-can-card {
 			width: 462px;
 			background-image: url("/img/first-section/米色背景.jpg");
@@ -155,22 +155,17 @@ a:hover {
 			position: relative;
 
 			.donate-can-img {
-				padding: 0 30px ;
+				padding: 30px 30px 0 ;
 				position: relative;
-				top: 40px;
-
 				&:hover .card-shadow {
 					display: flex;
 				}
-
 				&:hover .donate-img {
 					filter: contrast(0.5);
 				}
-
 				.card-shadow {
 					position: absolute;
 					bottom: 0%;
-					left: 6.6%;
 					width: 87%;
 					color: $color-btn-text;
 					background-color: rgba(252, 161, 131, 0.7);
@@ -179,14 +174,12 @@ a:hover {
 					display: flex;
 					justify-content: center;
 					align-items: center;
-					padding: 15px 100px;
-
+					padding: 15px 0;
 					span {
 						font-size: 32px;
-						padding: 0 3px;
+						padding: 0 10px;
 						background-color: #fd6739;
 					}
-
 					display: none;
 				}
 			}
@@ -195,7 +188,7 @@ a:hover {
 				border-radius: 0 0 40px 40px;
 				background-color: #ffa183;
 				padding: 20px 30px;
-
+				margin-top: -30px;
 				.text-area {
 					.donate-number {
 						display: flex;
