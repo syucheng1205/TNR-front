@@ -108,7 +108,7 @@ a:hover {
 			.background-title {
 				font-size: 96px;
 				padding: 0 35px;
-				color: #fff;
+				color:$color-btn-text;
 				background-color: #86cee8;
 				position: absolute;
 				top: 50%;
@@ -127,12 +127,12 @@ a:hover {
 				width: 100px;
 				height: 100px;
 				border-radius: 50%;
-				border: 3px solid #fe886d;
+				border: 3px solid $color-light-orange;
 				margin-right: 57px;
 				display: flex;
 				align-items: center;
 				justify-content: center;
-				color: #fe886d;
+				color: $color-light-orange;
 				font-size: 48px;
 			}
 			.link-1 {
@@ -173,7 +173,7 @@ a:hover {
 					left: 6.6%;
 
 					width: 87%;
-					color: #ffffff;
+					color: $color-btn-text;
 					background-color: rgba(252, 161, 131, 0.7);
 					font-size: 32px;
 					border-radius: 0 0 40px 40px;
@@ -227,7 +227,7 @@ a:hover {
 
 					h6 {
 						font-size: 24px;
-						color: #ffffff;
+						color: $color-btn-text;
 						margin-bottom: 20px;
 						margin-left: 54px;
 					}
@@ -334,7 +334,7 @@ a:hover {
 			right: 25%;
 
 			h5 {
-				color: #ffffff;
+				color: $color-btn-text;
 				font-size: 32px;
 			}
 
@@ -346,7 +346,7 @@ a:hover {
 					width: 232px;
 					height: 67px;
 					// background-color: $color-dark-orange;
-					background-color: #fe886d;
+					background-color: $color-light-orange;
 					border-radius: 40px;
 					color: $color-btn-text;
 					font-size: 24px;
