@@ -33,7 +33,7 @@
 					<span class="off"><i class="fas fa-times "></i></span>
 					<div class="list">
 						<a style="margin-top: 144px;">首頁</a>
-						<a>最新消息</a>
+						<a href="#">最新消息</a>
 						<a>養貓咪趣</a>
 						<a>救助計畫</a>
 						<a>貓貓店鋪</a>
@@ -75,8 +75,10 @@
 		let off = document.querySelectorAll('.off')
 		off.forEach(e =>{
 			e.addEventListener('click', function () {
+				console.log(e);
 				burger.classList.toggle('active');
 				burger_area.classList.toggle('active');
+				event.stopPropagation()
 			})
 		})
 		
