@@ -404,6 +404,23 @@ a:hover {
   font-weight: bold;
 }
 
+.second-section .applySwiper .text-area h3 {
+  color: #4F4F4F;
+  font-size: 48px;
+}
+
+.second-section .applySwiper .text-area h3 span {
+  color: #FE886D;
+  font-size: 56px;
+  margin-right: 10px;
+}
+
+.second-section .applySwiper .text-area p {
+  font-size: 18px;
+  padding: 50px 60px;
+  color: #4F4F4F;
+}
+
 .roll {
   background-repeat: no-repeat;
   background-size: cover;
