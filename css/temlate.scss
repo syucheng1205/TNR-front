@@ -39,12 +39,13 @@ a:hover {
 	padding: 0 140px;
 }
 
-.nav {
+.my-nav {
 	width: 100%;
 	display: flex;
 	justify-content: space-between;
 	padding: 20px 7.3% 0;
-	margin-bottom: 180px;
+	// position: absolute;  //首頁
+	// margin-bottom: 180px;  //其他頁面
 
 	.logo {
 		width: 511px;
