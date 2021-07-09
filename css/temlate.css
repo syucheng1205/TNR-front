@@ -28,6 +28,7 @@ a {
 
 a:hover {
   text-decoration: none;
+  cursor: pointer;
 }
 
 .container170 {
@@ -141,6 +142,10 @@ a:hover {
   font-size: 64px;
   color: #4f4f4f;
   margin-bottom: 57px;
+}
+
+.nav .burger-area .list a:hover {
+  color: #ffffff;
 }
 
 .nav .burger-area .list .banner-btn {
