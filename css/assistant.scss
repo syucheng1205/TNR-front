@@ -148,8 +148,6 @@ a:hover {
 	.helpSwiper {
 		margin-top: -139px;
 		// margin-left: 13.5%;
-		// background-color: antiquewhite;
-
 		.donate-can-card {
 			width: 462px;
 			background-image: url("/img/first-section/米色背景.jpg");
@@ -157,7 +155,7 @@ a:hover {
 			position: relative;
 
 			.donate-can-img {
-				padding: 30px 30px 0;
+				padding: 0 30px ;
 				position: relative;
 				top: 40px;
 
@@ -173,7 +171,6 @@ a:hover {
 					position: absolute;
 					bottom: 0%;
 					left: 6.6%;
-
 					width: 87%;
 					color: $color-btn-text;
 					background-color: rgba(252, 161, 131, 0.7);
@@ -197,7 +194,7 @@ a:hover {
 			.bg-text {
 				border-radius: 0 0 40px 40px;
 				background-color: #ffa183;
-				padding: 60px 30px;
+				padding: 20px 30px;
 
 				.text-area {
 					.donate-number {
