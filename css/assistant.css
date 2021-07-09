@@ -179,7 +179,7 @@ a:hover {
 }
 
 .first-section .helpSwiper .donate-can-card .donate-can-img {
-  padding: 30px 30px 0;
+  padding: 0 30px;
   position: relative;
   top: 40px;
 }
@@ -226,7 +226,7 @@ a:hover {
 .first-section .helpSwiper .donate-can-card .bg-text {
   border-radius: 0 0 40px 40px;
   background-color: #ffa183;
-  padding: 60px 30px;
+  padding: 20px 30px;
 }
 
 .first-section .helpSwiper .donate-can-card .bg-text .text-area .donate-number {
