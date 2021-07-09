@@ -40,6 +40,10 @@ a:hover {
   padding: 0 140px;
 }
 
+.mt-200 {
+  margin-top: 200px !important;
+}
+
 nav .nav {
   width: 100%;
   display: -webkit-box;
@@ -100,10 +104,6 @@ nav .nav .menu:hover .burger::before {
 
 .first-section {
   position: relative;
-}
-
-.first-section .mt-200 {
-  margin-top: 200px !important;
 }
 
 .first-section .title-area {

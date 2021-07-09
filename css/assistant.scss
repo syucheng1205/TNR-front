@@ -37,6 +37,9 @@ a:hover {
 .container140 {
 	padding: 0 140px;
 }
+.mt-200 {
+	margin-top: 200px;
+}
 
 .max-w {
 	max-width: 1920px;
@@ -106,15 +109,15 @@ a:hover {
 			height: 544px;
 			background-image: url(/img/04-assistant/blue-wave.png);
 			background-repeat: no-repeat;
-			.background-title{
+			.background-title {
 				font-size: 96px;
 				padding: 0 35px;
 				color: #fff;
-				background-color: #86CEE8;
+				background-color: #86cee8;
 				position: absolute;
 				top: 50%;
 				left: 50%;
-				transform: translate(-50%,-50%);
+				transform: translate(-50%, -50%);
 			}
 		}
 		.links {
@@ -142,24 +145,22 @@ a:hover {
 				font-size: 108px;
 			}
 		}
-		
 	}
-	.helpSwiper{
+	.helpSwiper {
 		margin-top: -139px;
 		margin-left: 13.5%;
 		background-color: antiquewhite;
 	}
 }
 
-.second-section{
+.second-section {
 	margin-top: 250px;
-
 	.title-area {
 		width: 428px;
 		height: 130px;
 		margin: auto;
 		position: relative;
-
+		margin-bottom: 200px;
 		.title-text {
 			position: absolute;
 			bottom: 0;
@@ -170,5 +171,66 @@ a:hover {
 			}
 		}
 	}
-}
+	.background {
+		img:nth-child(2) {
+			position: absolute;
+			top: -168px;
+			left: 0;
+		}
+	}
+	.applySwiper{
+		margin-top: -682px;
+		margin-left: 585px;
+		padding-left: 648px;
+		height: 800px;
+		.my-bullet{
+			width: 375px;
+			color: white;
+			margin-bottom: 42px;
+			display: flex;
+			align-items: center;
+			justify-content: flex-end;
+			&::after{
+				width: 55px;
+				height: 55px;
+				border-radius: 50%;
+				color: #EE8E74;
+				border: 2px solid #EE8E74;
+				background-color: #fff;
+				margin-left: 20px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+			&:nth-child(1)::after{
+				content: '1';
+			}
+			&:nth-child(2)::after{
+				content: '2';
+			}
+			&:nth-child(3)::after{
+				content: '3';
+			}
+			&:nth-child(4)::after{
+				content: '4';
+			}
+			
+			.swiper-pagination-bullet-active{
+				background-color: yellow !important;
+			}
+		}
+		.swiper-pagination{	
+			display: flex;
+			flex-direction: column;
+			top: 0;
+			font-size: 36px;
+			font-weight: bold;
+		}
+	}
 
+
+
+
+
+
+}

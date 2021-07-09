@@ -37,6 +37,10 @@ a:hover {
   padding: 0 140px;
 }
 
+.mt-200 {
+  margin-top: 200px;
+}
+
 .max-w {
   max-width: 1920px;
 }
@@ -115,7 +119,7 @@ a:hover {
   font-size: 96px;
   padding: 0 35px;
   color: #fff;
-  background-color: #86CEE8;
+  background-color: #86cee8;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -178,6 +182,7 @@ a:hover {
   height: 130px;
   margin: auto;
   position: relative;
+  margin-bottom: 200px;
 }
 
 .second-section .title-area .title-text {
@@ -189,5 +194,85 @@ a:hover {
 .second-section .title-area .title-text h1 {
   color: #4f4f4f;
   font-size: 72px;
+}
+
+.second-section .background img:nth-child(2) {
+  position: absolute;
+  top: -168px;
+  left: 0;
+}
+
+.second-section .applySwiper {
+  margin-top: -682px;
+  margin-left: 585px;
+  padding-left: 648px;
+  height: 800px;
+}
+
+.second-section .applySwiper .my-bullet {
+  width: 375px;
+  color: white;
+  margin-bottom: 42px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.second-section .applySwiper .my-bullet::after {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  color: #EE8E74;
+  border: 2px solid #EE8E74;
+  background-color: #fff;
+  margin-left: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.second-section .applySwiper .my-bullet:nth-child(1)::after {
+  content: '1';
+}
+
+.second-section .applySwiper .my-bullet:nth-child(2)::after {
+  content: '2';
+}
+
+.second-section .applySwiper .my-bullet:nth-child(3)::after {
+  content: '3';
+}
+
+.second-section .applySwiper .my-bullet:nth-child(4)::after {
+  content: '4';
+}
+
+.second-section .applySwiper .my-bullet .swiper-pagination-bullet-active {
+  background-color: yellow !important;
+}
+
+.second-section .applySwiper .swiper-pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  top: 0;
+  font-size: 36px;
+  font-weight: bold;
 }
 /*# sourceMappingURL=assistant.css.map */
