@@ -105,14 +105,14 @@ a:hover {
 .nav .burger-area {
   float: right;
   width: 960px;
-  height: 1185px;
+  height: 100vh;
   background-image: url("/img/first-section/米色背景.jpg");
   border-radius: 40px 0 40px 40px;
   opacity: 0.8;
   position: fixed;
   top: 0;
   right: 0;
-  z-index: 9999;
+  z-index: 99;
   display: none;
 }
 
@@ -140,7 +140,7 @@ a:hover {
 .nav .burger-area .list a {
   font-size: 64px;
   color: #4f4f4f;
-  margin-bottom: 57px;
+  margin-bottom: 6%;
 }
 
 .nav .burger-area .list .banner-btn {
