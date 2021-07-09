@@ -584,22 +584,56 @@ a:hover {
 }
 
 .fourth-section .container140 .swiper-group .diarySwiper .swiper-slide .diary-text .sub .sub-title {
-  padding: 0 6.5px;
-  font-size: 24px;
+  padding: 6px 15.8px;
+  font-size: 18px;
   background-color: #ee815b;
 }
 
 .fourth-section .container140 .swiper-group .diarySwiper .swiper-slide .diary-text .sub .date {
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .fourth-section .container140 .swiper-group .diarySwiper .swiper-slide .diary-text .title {
   font-size: 48px;
-  margin: 3px 0 40px;
+  margin: 10px 0 40px;
 }
 
 .fourth-section .container140 .swiper-group .diarySwiper .swiper-slide .diary-text .text {
   font-size: 18px;
+}
+
+.fourth-section .container140 .swiper-group .my-arrow2 {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #ff7950;
+  -webkit-box-shadow: 0 0 15px 0 #ff7950;
+          box-shadow: 0 0 15px 0 #ff7950;
+  opacity: 0.4;
+  position: absolute;
+  top: 45%;
+}
+
+.fourth-section .container140 .swiper-group .my-arrow2:hover {
+  -webkit-box-shadow: 0 0 5px 0 #ff7950;
+          box-shadow: 0 0 5px 0 #ff7950;
+  opacity: 0.8;
+}
+
+.fourth-section .background {
+  margin-top: -189px;
+}
+
+.fourth-section .background img:nth-child(1) {
+  position: absolute;
+  left: 23.2%;
+}
+
+.fourth-section .background img:nth-child(2) {
+  margin-top: 19px;
+  margin-left: calc(100% - 491px);
+  position: relative;
+  z-index: 1;
 }
 
 footer .footer-area {
