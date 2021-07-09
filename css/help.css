@@ -53,6 +53,7 @@ nav .nav {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 20px 7.3% 0;
+  margin-bottom: 180px;
 }
 
 nav .nav .logo {
