@@ -313,6 +313,7 @@ a:hover {
 			}
 			&:nth-child(1)::after {
 				content: "1";
+
 			}
 			&:nth-child(2)::after {
 				content: "2";
@@ -473,17 +474,17 @@ a:hover {
 							display: flex;
 							justify-content: space-between;
 							.sub-title {
-								padding: 0 6.5px;
-								font-size: 24px;
+								padding: 6px 15.8px;
+								font-size: 18px;
 								background-color: #ee815b;
 							}
 							.date {
-								font-size: 20px;
+								font-size: 18px;
 							}
 						}
 						.title {
 							font-size: 48px;
-							margin: 3px 0 40px;
+							margin: 10px 0 40px;
 						}
 						.text {
 							font-size: 18px;
@@ -491,6 +492,34 @@ a:hover {
 					}
 				}
 			}
+			.my-arrow2{
+				width: 100px;
+				height: 100px;
+				border-radius: 50%;
+				background-color: $color-dark-orange;
+				box-shadow:0 0 15px 0 $color-dark-orange;
+				opacity: 0.4;
+				position: absolute;
+				top: 45%;
+	
+				&:hover{
+					box-shadow:0 0 5px 0 $color-dark-orange;
+					opacity: 0.8;
+				}
+			}
+		}
+	}
+	.background{
+		margin-top: -189px;
+		img:nth-child(1){
+			position: absolute;
+			left: 23.2%;
+		}
+		img:nth-child(2){
+			margin-top: 19px;
+			margin-left: calc(100% - 491px);
+			position: relative;
+			z-index: 1;
 		}
 	}
 }
