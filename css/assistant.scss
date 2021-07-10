@@ -148,7 +148,7 @@ a:hover {
 	.helpSwiper {
 		margin-top: -14.2vw;
 		.donate-can-card {
-			// width: 462px; 
+
 			background-image: url("/img/first-section/米色背景.jpg");
 			border-radius: 40px;
 			position: relative;
@@ -221,7 +221,7 @@ a:hover {
 						font-size: 24px;
 						color: $color-btn-text;
 						margin-bottom: 20px;
-						margin-left: 54px;
+						padding: 0 54px;
 					}
 
 					.donate-btn {
@@ -271,16 +271,13 @@ a:hover {
 		}
 	}
 	.background {
-		img:nth-child(1) {
-			width: ;
-		}
 		img:nth-child(2) {
 			position: absolute;
 			top: -168px;
 			left: 0;
 		}
 		.line{
-			width: 150px;
+			width: 7.85%;
 			height: 5px;
 			border-radius: 5px;
 			background-color: #EE8E74;
@@ -291,7 +288,7 @@ a:hover {
 	}
 
 	.applySwiper {
-		margin-top: -682px;
+		margin-top: -580px;
 		margin-left: 31.5%;
 		padding-left: 35%;
 		height: 800px;
@@ -658,6 +655,45 @@ footer {
 				p {
 					font-size: 16px;
 					color: $color-btn-text;
+				}
+			}
+		}
+	}
+}
+
+@media(max-width: 1864px){
+	.second-section{
+		.background{
+			.line{
+				left: 55%;
+			}
+		}
+		.applySwiper {
+
+		}
+	}
+}
+@media(max-width: 1688px){
+	.second-section{
+		.background{
+			.line{
+				left: 62%;
+				top: 35%;
+			}
+		}
+		.applySwiper {
+			margin-left: 10%;
+			.swiper-slide{
+				height: max-content;
+				width: max-content;
+				.text-area{
+					background-color: rgba(0, 0, 0,0.5);
+					border-radius: 20px;
+					padding: 50px 100px;	
+					h3,p{
+						color: #fff;
+
+					}
 				}
 			}
 		}
