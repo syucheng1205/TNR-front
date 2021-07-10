@@ -103,7 +103,7 @@
 								<div class="swiper-slide about-img about-img-1"></div>
 							</div>
 						</div>
-						<div class="swiper-pagination swiper-point"></div>
+						<div class="about-swiper-pagination swiper-point"></div>
 						<img src="./img/first-section/deco-line1.png" class="deco-line1">
 						<div class="about-shadow"></div>
 					</div>
@@ -142,32 +142,42 @@
 			</div>
 
 			<div class="container140">
-				<div class="row">
-					<div class="col-4 numerical-value" style="padding: 0%;">
-						<div class="icon">
-							<i class="fas fa-hand-holding-heart"></i>
+				<div class="swiper-container num-Swiper">
+					<div class="swiper-wrapper disabled">
+						<div class="swiper-slide">
+							<div class="numerical-value" style="padding: 0%;">
+								<div class="icon">
+									<i class="fas fa-hand-holding-heart"></i>
+								</div>
+								<div class="text">
+									<h3>節育貓咪數</h3>
+									<h1 class="count" data-target="19940">19,940</h1>
+								</div>
+							</div>
 						</div>
-						<div class="text">
-							<h3>節育貓咪數</h3>
-							<h1 class="count" data-target="19940">19,940</h1>
+
+						<div class="swiper-slide">
+							<div class="numerical-value" style="padding: 0%;">
+								<div class="icon">
+									<i class="fas fa-hand-holding-heart"></i>
+								</div>
+								<div class="text">
+									<h3>節育貓咪數</h3>
+									<h1 class="count" data-target="19940">19,940</h1>
+								</div>
+							</div>
 						</div>
-					</div>
-					<div class="col-4 numerical-value" style="padding: 0%;">
-						<div class="icon">
-							<i class="fas fa-hand-holding-heart"></i>
-						</div>
-						<div class="text">
-							<h3>節育貓咪數</h3>
-							<h1 class="count" data-target="1940">1,940</h1>
-						</div>
-					</div>
-					<div class="col-4 numerical-value" style="padding: 0%;">
-						<div class="icon">
-							<i class="fas fa-hand-holding-heart"></i>
-						</div>
-						<div class="text">
-							<h3>節育貓咪數</h3>
-							<h1 class="count" data-target="3000">3,000</h1>
+
+						<div class="swiper-slide">
+							<div class="numerical-value" style="padding: 0%;">
+								<div class="icon">
+									<i class="fas fa-hand-holding-heart"></i>
+								</div>
+								<div class="text">
+									<h3>節育貓咪數</h3>
+									<h1 class="count" data-target="19940">19,940</h1>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -323,6 +333,8 @@
 		</div>
 	</footer>
 
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
 		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
 		crossorigin="anonymous"></script>
@@ -334,13 +346,24 @@
 		crossorigin="anonymous"></script>
 	<!-- swiper -->
 	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+
 	<script>
 		var swiper = new Swiper(".mySwiper", {
 			pagination: {
-				el: ".swiper-pagination",
+				el: ".about-swiper-pagination",
 			},
 			autoplay: {
 				delay: 5000,
+			},
+		});
+
+		var num_swiper = new Swiper(".num-Swiper", {
+			slidesPerView: 3,
+			spaceBetween: 30,
+			pagination: {
+				el: ".swiper-pagination",
+				clickable: true,
 			},
 		});
 
