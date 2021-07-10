@@ -249,7 +249,7 @@
 			</div>
 
 			<div class="background position-relative">
-				<img src="./img/04-assistant/apply-catchcat.png">
+				<img src="./img/04-assistant/catchCAt.png">
 				<img src="./img/04-assistant/sleepingCAt.png">
 				<div class="line"></div>
 			</div>
@@ -464,14 +464,20 @@
 			breakpoints: {
 				// when window width is >= 320px
 				577: {
+					slidesPerView: 3,
+					spaceBetween: 60,
+				},
+			},
+			breakpoints: {
+				1830: {
 					slidesPerView: 4,
-					spaceBetween: 60
+					spaceBetween: 60,
 				},
 			}
 			});
 
 		var swiper = new Swiper(".applySwiper", {
-			spaceBetween: 1000,
+			spaceBetween: 500,
 			pagination: {
 				el: ".applySwiper .swiper-pagination",
 				clickable: true,

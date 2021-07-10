@@ -271,7 +271,7 @@ a:hover {
   font-size: 24px;
   color: #ffffff;
   margin-bottom: 20px;
-  margin-left: 54px;
+  padding: 0 54px;
 }
 
 .first-section .helpSwiper .donate-can-card .bg-text .text-area .donate-btn .btn {
@@ -331,7 +331,7 @@ a:hover {
 }
 
 .second-section .background .line {
-  width: 150px;
+  width: 7.85%;
   height: 5px;
   border-radius: 5px;
   background-color: #EE8E74;
@@ -341,7 +341,7 @@ a:hover {
 }
 
 .second-section .applySwiper {
-  margin-top: -682px;
+  margin-top: -580px;
   margin-left: 31.5%;
   padding-left: 35%;
   height: 800px;
@@ -800,6 +800,38 @@ footer .footer-area .container140 .ft-bot {
 footer .footer-area .container140 .ft-bot p {
   font-size: 16px;
   color: #ffffff;
+}
+
+@media (max-width: 1864px) {
+  .second-section .background .line {
+    left: 55%;
+  }
+}
+
+@media (max-width: 1688px) {
+  .second-section .background .line {
+    left: 62%;
+    top: 35%;
+  }
+  .second-section .applySwiper {
+    margin-left: 10%;
+  }
+  .second-section .applySwiper .swiper-slide {
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+  }
+  .second-section .applySwiper .swiper-slide .text-area {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    padding: 50px 100px;
+  }
+  .second-section .applySwiper .swiper-slide .text-area h3, .second-section .applySwiper .swiper-slide .text-area p {
+    color: #fff;
+  }
 }
 
 @media (max-width: 576px) {
