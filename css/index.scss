@@ -520,18 +520,24 @@ main {
 				background-image: url("/img/second-section/cat-2.png");
 				background-repeat: no-repeat;
 				background-size: cover;
-				position: relative;
+				display: flex;
+				flex-direction: column-reverse;
+				justify-content:flex-end;
+				align-items: flex-end;
+				
 
 				.heart-1 {
-					position: absolute;
-					z-index: 1;
-					transform: translate(1650%, 1060%);
+					width: 47px;
+					height: 47px;
+					margin-right: 14%;
+					
 				}
 
 				.heart-2 {
-					position: absolute;
-					z-index: 1;
-					transform: translate(890%, 460%);
+					width: 90px;
+					height: 90px;
+					margin-top: 43%;
+					margin-right: 5.5%;
 				}
 			}
 
@@ -539,11 +545,11 @@ main {
 				position: absolute;
 				top: 680px;
 
-				width: 840px;
-				height: 487px;
+				width: 43.75%;
 				border-radius: 40px;
 				background-color: $color-dark-orange;
 				padding: 0 110px;
+				padding-bottom: 50px;
 
 				display: flex;
 				flex-direction: column;
@@ -626,15 +632,15 @@ main {
 				}
 			}
 
-			.help-area {
+			.feed-area {
 				position: absolute;
 				top: 680px;
 
-				width: 840px;
-				height: 487px;
+				width: 85.75%;
 				border-radius: 40px;
-				background-color: $color-light-orange;
+				background-color: $color-dark-orange;
 				padding: 0 110px;
+				padding-bottom: 50px;
 
 				display: flex;
 				flex-direction: column;
@@ -655,7 +661,7 @@ main {
 					}
 				}
 
-				.help-btn {
+				.feed-btn {
 					width: 308px;
 					height: 100px;
 					background-color: #f2a589;
@@ -923,5 +929,18 @@ footer {
 				}
 			}
 		}
+	}
+}
+
+
+@media(max-width:1390px){
+	.grass-3{
+		position: unset;
+		width: 100%;
+	}
+
+	.second-section{
+		display: flex;
+		flex-direction: column;
 	}
 }

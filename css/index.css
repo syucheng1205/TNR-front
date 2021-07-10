@@ -603,31 +603,42 @@ main .second-section .feed-cat .feed-img {
   background-image: url("/img/second-section/cat-2.png");
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
 main .second-section .feed-cat .feed-img .heart-1 {
-  position: absolute;
-  z-index: 1;
-  -webkit-transform: translate(1650%, 1060%);
-          transform: translate(1650%, 1060%);
+  width: 47px;
+  height: 47px;
+  margin-right: 14%;
 }
 
 main .second-section .feed-cat .feed-img .heart-2 {
-  position: absolute;
-  z-index: 1;
-  -webkit-transform: translate(890%, 460%);
-          transform: translate(890%, 460%);
+  width: 90px;
+  height: 90px;
+  margin-top: 43%;
+  margin-right: 5.5%;
 }
 
 main .second-section .feed-cat .feed-area {
   position: absolute;
   top: 680px;
-  width: 840px;
-  height: 487px;
+  width: 43.75%;
   border-radius: 40px;
   background-color: #ff7950;
   padding: 0 110px;
+  padding-bottom: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -737,14 +748,14 @@ main .second-section .help-cat .help-img .sos-right {
           transform: translate(265%, 80%);
 }
 
-main .second-section .help-cat .help-area {
+main .second-section .help-cat .feed-area {
   position: absolute;
   top: 680px;
-  width: 840px;
-  height: 487px;
+  width: 85.75%;
   border-radius: 40px;
-  background-color: #fe886d;
+  background-color: #ff7950;
   padding: 0 110px;
+  padding-bottom: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -757,20 +768,20 @@ main .second-section .help-cat .help-area {
           align-items: center;
 }
 
-main .second-section .help-cat .help-area .text-area h3 {
+main .second-section .help-cat .feed-area .text-area h3 {
   font-size: 48px;
   color: #ffffff;
   margin-top: 80px;
   margin-bottom: 40px;
 }
 
-main .second-section .help-cat .help-area .text-area p {
+main .second-section .help-cat .feed-area .text-area p {
   font-size: 18px;
   color: #ffffff;
   margin-bottom: 40px;
 }
 
-main .second-section .help-cat .help-area .help-btn {
+main .second-section .help-cat .feed-area .feed-btn {
   width: 308px;
   height: 100px;
   background-color: #f2a589;
@@ -789,27 +800,27 @@ main .second-section .help-cat .help-area .help-btn {
           box-shadow: 0px 10px 30px 0px #f2a589;
 }
 
-main .second-section .help-cat .help-area .help-btn p {
+main .second-section .help-cat .feed-area .feed-btn p {
   font-size: 36px;
   font-weight: bold;
   color: #ffffff;
   border-bottom: 4px solid #f2a589;
 }
 
-main .second-section .help-cat .help-area .help-btn p {
+main .second-section .help-cat .feed-area .feed-btn p {
   font-size: 36px;
   font-weight: bold;
   color: #ffffff;
   border-bottom: 4px solid #f2a589;
 }
 
-main .second-section .help-cat .help-area .help-btn:hover p {
+main .second-section .help-cat .feed-area .feed-btn:hover p {
   border-bottom: 4px solid #ffffff;
   -webkit-transition-duration: 0.8s;
           transition-duration: 0.8s;
 }
 
-main .second-section .help-cat .help-area .help-btn:hover {
+main .second-section .help-cat .feed-area .feed-btn:hover {
   -webkit-box-shadow: 0px 0px 10px 0px #f2a589;
           box-shadow: 0px 0px 10px 0px #f2a589;
   -webkit-transition-duration: 0.8s;
@@ -1085,5 +1096,21 @@ footer .footer-area .container140 .ft-bot {
 footer .footer-area .container140 .ft-bot p {
   font-size: 16px;
   color: #ffffff;
+}
+
+@media (max-width: 1390px) {
+  .grass-3 {
+    position: unset;
+    width: 100%;
+  }
+  .second-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 /*# sourceMappingURL=index.css.map */
