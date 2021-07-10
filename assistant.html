@@ -113,7 +113,7 @@
 
 						</div>
 					</div>
-					
+
 					<div class="swiper-slide">
 						<div class="donate-can-card">
 							<div class="donate-can-img">
@@ -303,7 +303,7 @@
 		<div class="third-section roll">
 			<div class="thank-card">
 				<div class="heart-img">
-					<img src="/img/04-assistant/Heart.png">
+					<img src="/img/04-assistant/Heart.png" class="img">
 				</div>
 				<div class="text-area">
 					<h5>謝謝你們的愛心，有你們真好</h5>
@@ -453,14 +453,22 @@
 	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 	<script>
 		var swiper = new Swiper(".helpSwiper", {
-			slidesPerView: 4,
-			spaceBetween: 500,
-			freeMode: true,
+			slidesPerView: 2,
+			spaceBetween: 20,
+			initialSlide :1,
+			centeredSlides: true,
 			pagination: {
 				el: ".helpSwiper .swiper-pagination",
 				clickable: true,
 			},
-		});
+			breakpoints: {
+				// when window width is >= 320px
+				577: {
+					slidesPerView: 4,
+					spaceBetween: 60
+				},
+			}
+			});
 
 		var swiper = new Swiper(".applySwiper", {
 			spaceBetween: 1000,

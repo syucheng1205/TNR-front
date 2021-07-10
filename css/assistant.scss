@@ -114,9 +114,9 @@ a:hover {
 				color: $color-btn-text;
 				background-color: #86cee8;
 				position: absolute;
-				top: 50%;
+				top: 16% ;
 				left: 50%;
-				transform: translate(-50%, -50%);
+				transform: translateX(-50%);
 			}
 		}
 		.links {
@@ -146,17 +146,17 @@ a:hover {
 		}
 	}
 	.helpSwiper {
-		margin-top: -139px;
-		margin-left: 13.5%;
+		margin-top: -14.2vw;
 		.donate-can-card {
-			width: 462px;
+			// width: 462px; 
 			background-image: url("/img/first-section/米色背景.jpg");
 			border-radius: 40px;
 			position: relative;
-
 			.donate-can-img {
 				padding: 30px 30px 0;
 				position: relative;
+				cursor: pointer;
+
 				&:hover .card-shadow {
 					display: flex;
 				}
@@ -187,14 +187,14 @@ a:hover {
 			.bg-text {
 				border-radius: 0 0 40px 40px;
 				background-color: #ffa183;
-				padding: 20px 30px;
+				padding: 54px 30px 20px;
 				margin-top: -30px;
 				.text-area {
 					.donate-number {
 						display: flex;
 						justify-content: space-between;
 						align-items: center;
-						margin: 20px 0;
+						margin-bottom: 20px;
 
 						p {
 							font-size: 18px;
@@ -253,12 +253,13 @@ a:hover {
 
 .second-section {
 	margin-top: 250px;
+	height: 100vh;
 	.title-area {
 		width: 428px;
 		height: 130px;
 		margin: auto;
 		position: relative;
-		margin-bottom: 200px;
+		margin-bottom: 7.2%;
 		.title-text {
 			position: absolute;
 			bottom: 0;
@@ -270,12 +271,14 @@ a:hover {
 		}
 	}
 	.background {
+		img:nth-child(1) {
+			width: ;
+		}
 		img:nth-child(2) {
 			position: absolute;
 			top: -168px;
 			left: 0;
 		}
-
 		.line{
 			width: 150px;
 			height: 5px;
@@ -657,6 +660,48 @@ footer {
 					color: $color-btn-text;
 				}
 			}
+		}
+	}
+}
+
+@media(max-width: 576px){
+	.first-section {
+		.background {
+			.img {
+				width: 72%;
+				height: 40.7vw;
+				.background-title {
+					font-size: 96px;
+					padding: 0 35px;
+					position: absolute;
+					top: 16% ;
+					left: 50%;
+					transform: translateX(-50%);
+				}
+			}
+			.links {
+				top: -82.5px;
+				right: 50%;
+				transform: translateX(50%);
+				.link {
+					width: 48px;
+					height: 48px;
+					margin-right: 38px;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					color: $color-light-orange;
+					font-size: 24px;
+				}
+				.active {
+					width: 94px;
+					height: 94px;
+					font-size: 48px;
+				}
+			}
+		}
+		.helpSwiper{
+			margin-left: unset;
 		}
 	}
 }

@@ -121,10 +121,10 @@ a:hover {
   color: #ffffff;
   background-color: #86cee8;
   position: absolute;
-  top: 50%;
+  top: 16%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 .first-section .background .links {
@@ -168,12 +168,10 @@ a:hover {
 }
 
 .first-section .helpSwiper {
-  margin-top: -139px;
-  margin-left: 13.5%;
+  margin-top: -14.2vw;
 }
 
 .first-section .helpSwiper .donate-can-card {
-  width: 462px;
   background-image: url("/img/first-section/米色背景.jpg");
   border-radius: 40px;
   position: relative;
@@ -182,6 +180,7 @@ a:hover {
 .first-section .helpSwiper .donate-can-card .donate-can-img {
   padding: 30px 30px 0;
   position: relative;
+  cursor: pointer;
 }
 
 .first-section .helpSwiper .donate-can-card .donate-can-img:hover .card-shadow {
@@ -225,7 +224,7 @@ a:hover {
 .first-section .helpSwiper .donate-can-card .bg-text {
   border-radius: 0 0 40px 40px;
   background-color: #ffa183;
-  padding: 20px 30px;
+  padding: 54px 30px 20px;
   margin-top: -30px;
 }
 
@@ -239,7 +238,7 @@ a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 20px 0;
+  margin-bottom: 20px;
 }
 
 .first-section .helpSwiper .donate-can-card .bg-text .text-area .donate-number p {
@@ -303,6 +302,7 @@ a:hover {
 
 .second-section {
   margin-top: 250px;
+  height: 100vh;
 }
 
 .second-section .title-area {
@@ -310,7 +310,7 @@ a:hover {
   height: 130px;
   margin: auto;
   position: relative;
-  margin-bottom: 200px;
+  margin-bottom: 7.2%;
 }
 
 .second-section .title-area .title-text {
@@ -800,5 +800,51 @@ footer .footer-area .container140 .ft-bot {
 footer .footer-area .container140 .ft-bot p {
   font-size: 16px;
   color: #ffffff;
+}
+
+@media (max-width: 576px) {
+  .first-section .background .img {
+    width: 72%;
+    height: 40.7vw;
+  }
+  .first-section .background .img .background-title {
+    font-size: 96px;
+    padding: 0 35px;
+    position: absolute;
+    top: 16%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  .first-section .background .links {
+    top: -82.5px;
+    right: 50%;
+    -webkit-transform: translateX(50%);
+            transform: translateX(50%);
+  }
+  .first-section .background .links .link {
+    width: 48px;
+    height: 48px;
+    margin-right: 38px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    color: #fe886d;
+    font-size: 24px;
+  }
+  .first-section .background .links .active {
+    width: 94px;
+    height: 94px;
+    font-size: 48px;
+  }
+  .first-section .helpSwiper {
+    margin-left: unset;
+  }
 }
 /*# sourceMappingURL=assistant.css.map */
