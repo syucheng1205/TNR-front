@@ -387,8 +387,8 @@ main .first-section .container170 .col .swiper-container {
 }
 
 main .first-section .container170 .col .about-img {
-  width: 792px !important;
-  height: 675px !important;
+  width: 792px;
+  height: 675px;
   border-radius: 40px;
   background-repeat: no-repeat;
   background-position: center;
@@ -1115,11 +1115,18 @@ footer .footer-area .container140 .ft-bot p {
   .banner {
     display: none;
   }
-  main .first-section {
-    display: none;
-  }
   main .first-section .title-area {
-    margin: 0;
+    width: 146px;
+    height: 46px;
+    margin: auto;
+  }
+  main .first-section .title-area .title-img img {
+    width: 71px;
+    height: 31px;
+  }
+  main .first-section .title-area .title-text h1 {
+    color: #4f4f4f;
+    font-size: 24px;
   }
   main .first-section .container170 .row {
     display: -webkit-box;
