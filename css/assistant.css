@@ -34,7 +34,7 @@ a:hover {
 }
 
 .container140 {
-  padding: 0 140px;
+  padding: 0 7.3%;
 }
 
 .mt-200 {
@@ -171,30 +171,34 @@ a:hover {
   margin-top: -14.2vw;
 }
 
-.first-section .helpSwiper .donate-can-card {
+.first-section .helpSwiper .swiper-slide {
+  width: 462px !important;
+}
+
+.first-section .helpSwiper .swiper-slide .donate-can-card {
   background-image: url("/img/first-section/米色背景.jpg");
   border-radius: 40px;
   position: relative;
 }
 
-.first-section .helpSwiper .donate-can-card .donate-can-img {
+.first-section .helpSwiper .swiper-slide .donate-can-card .donate-can-img {
   padding: 30px 30px 0;
   position: relative;
   cursor: pointer;
 }
 
-.first-section .helpSwiper .donate-can-card .donate-can-img:hover .card-shadow {
+.first-section .helpSwiper .swiper-slide .donate-can-card .donate-can-img:hover .card-shadow {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.first-section .helpSwiper .donate-can-card .donate-can-img:hover .donate-img {
+.first-section .helpSwiper .swiper-slide .donate-can-card .donate-can-img:hover .donate-img {
   -webkit-filter: contrast(0.5);
           filter: contrast(0.5);
 }
 
-.first-section .helpSwiper .donate-can-card .donate-can-img .card-shadow {
+.first-section .helpSwiper .swiper-slide .donate-can-card .donate-can-img .card-shadow {
   position: absolute;
   bottom: 0%;
   width: 87%;
@@ -215,20 +219,20 @@ a:hover {
   display: none;
 }
 
-.first-section .helpSwiper .donate-can-card .donate-can-img .card-shadow span {
+.first-section .helpSwiper .swiper-slide .donate-can-card .donate-can-img .card-shadow span {
   font-size: 32px;
   padding: 0 10px;
   background-color: #fd6739;
 }
 
-.first-section .helpSwiper .donate-can-card .bg-text {
+.first-section .helpSwiper .swiper-slide .donate-can-card .bg-text {
   border-radius: 0 0 40px 40px;
   background-color: #ffa183;
   padding: 54px 30px 20px;
   margin-top: -30px;
 }
 
-.first-section .helpSwiper .donate-can-card .bg-text .text-area .donate-number {
+.first-section .helpSwiper .swiper-slide .donate-can-card .bg-text .text-area .donate-number {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -241,7 +245,7 @@ a:hover {
   margin-bottom: 20px;
 }
 
-.first-section .helpSwiper .donate-can-card .bg-text .text-area .donate-number p {
+.first-section .helpSwiper .swiper-slide .donate-can-card .bg-text .text-area .donate-number p {
   font-size: 18px;
   color: #ffffff;
   border-style: solid;
@@ -250,7 +254,7 @@ a:hover {
   border-color: #ffffff;
 }
 
-.first-section .helpSwiper .donate-can-card .bg-text .text-area .donate-number .fb-icon {
+.first-section .helpSwiper .swiper-slide .donate-can-card .bg-text .text-area .donate-number .fb-icon {
   width: 44px;
   height: 44px;
   color: #ffffff;
@@ -267,14 +271,14 @@ a:hover {
   border-radius: 50%;
 }
 
-.first-section .helpSwiper .donate-can-card .bg-text .text-area h6 {
+.first-section .helpSwiper .swiper-slide .donate-can-card .bg-text .text-area h6 {
   font-size: 24px;
   color: #ffffff;
   margin-bottom: 20px;
   padding: 0 54px;
 }
 
-.first-section .helpSwiper .donate-can-card .bg-text .text-area .donate-btn .btn {
+.first-section .helpSwiper .swiper-slide .donate-can-card .bg-text .text-area .donate-btn .btn {
   width: 232px;
   height: 67px;
   background-color: #ff7950;
@@ -294,7 +298,7 @@ a:hover {
   margin: auto;
 }
 
-.first-section .helpSwiper .donate-can-card .bg-text .text-area .donate-btn:hover p {
+.first-section .helpSwiper .swiper-slide .donate-can-card .bg-text .text-area .donate-btn:hover p {
   border-bottom: 4px solid #ffffff;
   -webkit-transition-duration: 0.8s;
           transition-duration: 0.8s;
@@ -334,7 +338,7 @@ a:hover {
   width: 7.85%;
   height: 5px;
   border-radius: 5px;
-  background-color: #EE8E74;
+  background-color: #ee8e74;
   position: absolute;
   top: 50%;
   left: 53%;
@@ -416,12 +420,12 @@ a:hover {
 }
 
 .second-section .applySwiper .text-area h3 {
-  color: #4F4F4F;
+  color: #4f4f4f;
   font-size: 48px;
 }
 
 .second-section .applySwiper .text-area h3 span {
-  color: #FE886D;
+  color: #fe886d;
   font-size: 56px;
   margin-right: 10px;
 }
@@ -429,7 +433,7 @@ a:hover {
 .second-section .applySwiper .text-area p {
   font-size: 18px;
   padding: 50px 140px 0 0;
-  color: #4F4F4F;
+  color: #4f4f4f;
 }
 
 .roll {
@@ -542,21 +546,13 @@ a:hover {
 
 .fourth-section .shadow {
   width: 18.5%;
-  height: 333px;
+  height: 17.3vw;
   background-image: url("/img/first-section/米色背景.jpg");
   border-radius: 30px;
 }
 
-.fourth-section .container140 .swiper-group .background-text {
-  margin-top: -218px;
-  width: 50%;
-  height: 670px;
-  background-color: #ffa183;
-  border-radius: 20px 0 0 20px;
-}
-
 .fourth-section .container140 .swiper-group .diarySwiper {
-  margin-top: -670px;
+  margin-top: -14%;
 }
 
 .fourth-section .container140 .swiper-group .diarySwiper .swiper-slide {
@@ -565,13 +561,16 @@ a:hover {
 
 .fourth-section .container140 .swiper-group .diarySwiper .swiper-slide .img {
   width: 100%;
-  height: 670px;
+  height: 34.9vw;
   border-radius: 0 20px 20px 0;
 }
 
 .fourth-section .container140 .swiper-group .diarySwiper .swiper-slide .diary-text {
-  padding: 120px 100px 0;
+  padding: 14.6% 12.3% 0px;
+  height: 34.9vw;
   color: #fff;
+  background-color: #ffa183;
+  border-radius: 20px 0 0 20px;
 }
 
 .fourth-section .container140 .swiper-group .diarySwiper .swiper-slide .diary-text .sub {
@@ -595,7 +594,7 @@ a:hover {
 
 .fourth-section .container140 .swiper-group .diarySwiper .swiper-slide .diary-text .title {
   font-size: 48px;
-  margin: 10px 0 40px;
+  margin: 10px 0 6.5%;
 }
 
 .fourth-section .container140 .swiper-group .diarySwiper .swiper-slide .diary-text .text {
@@ -625,8 +624,9 @@ a:hover {
 }
 
 .fourth-section .background img:nth-child(1) {
-  position: absolute;
+  position: relative;
   left: 23.2%;
+  z-index: 1;
 }
 
 .fourth-section .background img:nth-child(2) {
@@ -829,21 +829,22 @@ footer .footer-area .container140 .ft-bot p {
     border-radius: 20px;
     padding: 50px 100px;
   }
-  .second-section .applySwiper .swiper-slide .text-area h3, .second-section .applySwiper .swiper-slide .text-area p {
+  .second-section .applySwiper .swiper-slide .text-area h3,
+  .second-section .applySwiper .swiper-slide .text-area p {
     color: #fff;
   }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 1260px) {
   .first-section .background .img {
-    width: 72%;
+    width: 100%;
     height: 40.7vw;
   }
   .first-section .background .img .background-title {
-    font-size: 96px;
-    padding: 0 35px;
+    font-size: 72px;
+    padding: 0 14px;
     position: absolute;
-    top: 16%;
+    top: 23%;
     left: 50%;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
@@ -853,30 +854,6 @@ footer .footer-area .container140 .ft-bot p {
     right: 50%;
     -webkit-transform: translateX(50%);
             transform: translateX(50%);
-  }
-  .first-section .background .links .link {
-    width: 48px;
-    height: 48px;
-    margin-right: 38px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    color: #fe886d;
-    font-size: 24px;
-  }
-  .first-section .background .links .active {
-    width: 94px;
-    height: 94px;
-    font-size: 48px;
-  }
-  .first-section .helpSwiper {
-    margin-left: unset;
   }
 }
 /*# sourceMappingURL=assistant.css.map */

@@ -326,9 +326,6 @@
 			<div class="shadow"></div>
 			<div class="container140 position-relative">
 				<div class="swiper-group">
-					<div>
-						<div class="background-text"></div>
-					</div>
 					<div class="swiper-container diarySwiper">
 						<div class="swiper-wrapper">
 							<div class="swiper-slide">
@@ -341,10 +338,13 @@
 									<div class="text">
 										Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor
 										eius aut quibusdam dolorum error iure adipisci, molestiae nihil aperiam
-										doloribus nesciunt voluptas harum accusantium totam explicabo at vel. Officia,
-										expedita?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates
+										doloribus nesciunt voluptas harum accusantium totam explicabo at vel.
+										Officia,
+										expedita?Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+										Voluptates
 										numquam eaque velit perspiciatis nesciunt corrupti nostrum dolores deleniti
-										repellat. Autem, saepe placeat at ad laudantium commodi non mollitia praesentium
+										repellat. Autem, saepe placeat at ad laudantium commodi non mollitia
+										praesentium
 										sequi!
 									</div>
 								</div>
@@ -453,9 +453,10 @@
 	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 	<script>
 		var swiper = new Swiper(".helpSwiper", {
+			width: 1920,
 			slidesPerView: 2,
 			spaceBetween: 20,
-			initialSlide :1,
+			initialSlide: 1,
 			centeredSlides: true,
 			pagination: {
 				el: ".helpSwiper .swiper-pagination",
@@ -465,16 +466,18 @@
 				// when window width is >= 320px
 				577: {
 					slidesPerView: 3,
-					spaceBetween: 60,
+					spaceBetween: 20,
 				},
 			},
 			breakpoints: {
-				1830: {
+				// when window width is >= 320px
+				1600: {
+
 					slidesPerView: 4,
 					spaceBetween: 60,
 				},
-			}
-			});
+			},
+		});
 
 		var swiper = new Swiper(".applySwiper", {
 			spaceBetween: 500,
