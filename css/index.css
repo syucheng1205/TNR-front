@@ -1115,6 +1115,9 @@ footer .footer-area .container140 .ft-bot p {
   .banner {
     display: none;
   }
+  main .first-section {
+    display: none;
+  }
   main .first-section .title-area {
     width: 146px;
     height: 46px;
@@ -1223,7 +1226,7 @@ footer .footer-area .container140 .ft-bot p {
     margin: 0;
   }
   main .third-section .title-area {
-    width: 146px;
+    width: 25.34%;
     height: 46px;
   }
   main .third-section .title-area .title-img img {
@@ -1261,13 +1264,13 @@ footer .footer-area .container140 .ft-bot p {
     font-size: 24px;
   }
   footer .footer-area .container140 {
-    padding: 0 40px;
+    padding: 0 6.9%;
   }
   footer .footer-area .container140 .ft-top {
     position: relative;
   }
   footer .footer-area .container140 .ft-top .ft-left {
-    padding-top: 40px;
+    padding-top: 6.9%;
   }
   footer .footer-area .container140 .ft-top .ft-left .text-1 {
     -webkit-box-align: unset;
