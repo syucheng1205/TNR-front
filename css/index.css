@@ -1248,6 +1248,7 @@ footer .footer-area .container140 .ft-bot p {
   main .third-section .container140 .news-btn {
     width: 168px;
     height: 55px;
+    margin-bottom: 60px;
   }
   main .third-section .container140 .news-btn p {
     font-size: 24px;
@@ -1290,7 +1291,7 @@ footer .footer-area .container140 .ft-bot p {
     background-position: 20px 0px;
     position: absolute;
     top: 40%;
-    right: 0;
+    right: -20px;
   }
   footer .footer-area .container140 .ft-top .ft-mouse span {
     font-size: 10px;
