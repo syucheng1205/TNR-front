@@ -30,7 +30,7 @@ a:hover {
 }
 
 .container170 {
-  padding: 0 170px;
+  padding: 0 8.87%;
 }
 
 .container140 {
@@ -832,6 +832,14 @@ footer .footer-area .container140 .ft-bot p {
   .second-section .applySwiper .swiper-slide .text-area h3,
   .second-section .applySwiper .swiper-slide .text-area p {
     color: #fff;
+  }
+}
+
+@media (max-width: 1600px) {
+  .fourth-section .container140 .swiper-group .my-arrow2 {
+    width: 60px;
+    height: 60px;
+    --swiper-navigation-size: 10px;
   }
 }
 

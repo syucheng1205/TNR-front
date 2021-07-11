@@ -514,7 +514,6 @@ a:hover {
 			position: relative;
 			left: 23.2%;
 			z-index: 1;
-			
 		}
 		img:nth-child(2) {
 			margin-top: 19px;
@@ -694,6 +693,20 @@ footer {
 					p {
 						color: #fff;
 					}
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 1600px) {
+	.fourth-section {
+		.container140 {
+			.swiper-group {
+				.my-arrow2 {
+					width: 60px;
+					height: 60px;
+					--swiper-navigation-size: 10px;
 				}
 			}
 		}
