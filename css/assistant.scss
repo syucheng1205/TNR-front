@@ -30,11 +30,11 @@ a:hover {
 }
 
 .container170 {
-	padding: 0 170px;
+	padding: 0 8.87%;
 }
 
 .container140 {
-	padding: 0 140px;
+	padding: 0 7.3%;
 }
 .mt-200 {
 	margin-top: 200px;
@@ -114,7 +114,7 @@ a:hover {
 				color: $color-btn-text;
 				background-color: #86cee8;
 				position: absolute;
-				top: 16% ;
+				top: 16%;
 				left: 50%;
 				transform: translateX(-50%);
 			}
@@ -147,102 +147,104 @@ a:hover {
 	}
 	.helpSwiper {
 		margin-top: -14.2vw;
-		.donate-can-card {
-
-			background-image: url("/img/first-section/米色背景.jpg");
-			border-radius: 40px;
-			position: relative;
-			.donate-can-img {
-				padding: 30px 30px 0;
+		.swiper-slide {
+			width: 462px !important;
+			.donate-can-card {
+				background-image: url("/img/first-section/米色背景.jpg");
+				border-radius: 40px;
 				position: relative;
-				cursor: pointer;
+				.donate-can-img {
+					padding: 30px 30px 0;
+					position: relative;
+					cursor: pointer;
 
-				&:hover .card-shadow {
-					display: flex;
-				}
-				&:hover .donate-img {
-					filter: contrast(0.5);
-				}
-				.card-shadow {
-					position: absolute;
-					bottom: 0%;
-					width: 87%;
-					color: $color-btn-text;
-					background-color: rgba(252, 161, 131, 0.7);
-					font-size: 32px;
-					border-radius: 0 0 40px 40px;
-					display: flex;
-					justify-content: center;
-					align-items: center;
-					padding: 15px 0;
-					span {
-						font-size: 32px;
-						padding: 0 10px;
-						background-color: #fd6739;
-					}
-					display: none;
-				}
-			}
-
-			.bg-text {
-				border-radius: 0 0 40px 40px;
-				background-color: #ffa183;
-				padding: 54px 30px 20px;
-				margin-top: -30px;
-				.text-area {
-					.donate-number {
+					&:hover .card-shadow {
 						display: flex;
-						justify-content: space-between;
-						align-items: center;
-						margin-bottom: 20px;
-
-						p {
-							font-size: 18px;
-							color: $color-btn-text;
-							border-style: solid;
-							border-radius: 20px;
-							padding: 10px 30px;
-							border-color: $color-btn-text;
-						}
-
-						.fb-icon {
-							width: 44px;
-							height: 44px;
-							color: $color-btn-text;
-							background-color: #6d9ffe;
-							display: flex;
-							justify-content: center;
-							align-items: center;
-							border-radius: 50%;
-						}
 					}
-
-					h6 {
-						font-size: 24px;
+					&:hover .donate-img {
+						filter: contrast(0.5);
+					}
+					.card-shadow {
+						position: absolute;
+						bottom: 0%;
+						width: 87%;
 						color: $color-btn-text;
-						margin-bottom: 20px;
-						padding: 0 54px;
-					}
-
-					.donate-btn {
-						.btn {
-							width: 232px;
-							height: 67px;
-							background-color: $color-dark-orange;
-							border-radius: 40px;
-							color: $color-btn-text;
+						background-color: rgba(252, 161, 131, 0.7);
+						font-size: 32px;
+						border-radius: 0 0 40px 40px;
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						padding: 15px 0;
+						span {
 							font-size: 32px;
-							font-weight: bold;
-							display: flex;
-							justify-content: center;
-							align-items: center;
+							padding: 0 10px;
+							background-color: #fd6739;
+						}
+						display: none;
+					}
+				}
 
-							margin: auto;
+				.bg-text {
+					border-radius: 0 0 40px 40px;
+					background-color: #ffa183;
+					padding: 54px 30px 20px;
+					margin-top: -30px;
+					.text-area {
+						.donate-number {
+							display: flex;
+							justify-content: space-between;
+							align-items: center;
+							margin-bottom: 20px;
+
+							p {
+								font-size: 18px;
+								color: $color-btn-text;
+								border-style: solid;
+								border-radius: 20px;
+								padding: 10px 30px;
+								border-color: $color-btn-text;
+							}
+
+							.fb-icon {
+								width: 44px;
+								height: 44px;
+								color: $color-btn-text;
+								background-color: #6d9ffe;
+								display: flex;
+								justify-content: center;
+								align-items: center;
+								border-radius: 50%;
+							}
 						}
 
-						&:hover p {
-							border-bottom: 4px solid $color-btn-text;
-							transition-duration: 0.8s;
+						h6 {
+							font-size: 24px;
+							color: $color-btn-text;
+							margin-bottom: 20px;
+							padding: 0 54px;
+						}
+
+						.donate-btn {
+							.btn {
+								width: 232px;
+								height: 67px;
+								background-color: $color-dark-orange;
+								border-radius: 40px;
+								color: $color-btn-text;
+								font-size: 32px;
+								font-weight: bold;
+								display: flex;
+								justify-content: center;
+								align-items: center;
+
+								margin: auto;
+							}
+
+							&:hover p {
+								border-bottom: 4px solid $color-btn-text;
+								transition-duration: 0.8s;
+							}
 						}
 					}
 				}
@@ -276,11 +278,11 @@ a:hover {
 			top: -168px;
 			left: 0;
 		}
-		.line{
+		.line {
 			width: 7.85%;
 			height: 5px;
 			border-radius: 5px;
-			background-color: #EE8E74;
+			background-color: #ee8e74;
 			position: absolute;
 			top: 50%;
 			left: 53%;
@@ -313,7 +315,6 @@ a:hover {
 			}
 			&:nth-child(1)::after {
 				content: "1";
-
 			}
 			&:nth-child(2)::after {
 				content: "2";
@@ -325,7 +326,7 @@ a:hover {
 				content: "4";
 			}
 		}
-		.my-bullet-active{
+		.my-bullet-active {
 			background-color: yellowgreen;
 			border-radius: 40px;
 		}
@@ -337,20 +338,20 @@ a:hover {
 			font-weight: bold;
 		}
 
-		.text-area{
-			h3{
-				color: #4F4F4F;
+		.text-area {
+			h3 {
+				color: #4f4f4f;
 				font-size: 48px;
-				span{
-					color: #FE886D;
+				span {
+					color: #fe886d;
 					font-size: 56px;
 					margin-right: 10px;
 				}
 			}
-			p{
+			p {
 				font-size: 18px;
-				padding:50px 140px 0 0;
-				color: #4F4F4F;
+				padding: 50px 140px 0 0;
+				color: #4f4f4f;
 			}
 		}
 	}
@@ -445,31 +446,28 @@ a:hover {
 	}
 	.shadow {
 		width: 18.5%;
-		height: 333px;
+		height: 17.3vw;
 		background-image: url("/img/first-section/米色背景.jpg");
 		border-radius: 30px;
 	}
 	.container140 {
 		.swiper-group {
-			.background-text {
-				margin-top: -218px;
-				width: 50%;
-				height: 670px;
-				background-color: $color-banner-number;
-				border-radius: 20px 0 0 20px;
-			}
 			.diarySwiper {
-				margin-top: -670px;
+				margin-top: -14%;
 				.swiper-slide {
 					width: 50%;
 					.img {
 						width: 100%;
-						height: 670px;
+						height: 34.9vw;
 						border-radius: 0 20px 20px 0;
 					}
 					.diary-text {
-						padding: 120px 100px 0;
+						padding: 14.6% 12.3% 0px;
+						height: 34.9vw;
 						color: #fff;
+						background-color: $color-banner-number;
+						border-radius: 20px 0 0 20px;
+
 						.sub {
 							display: flex;
 							justify-content: space-between;
@@ -482,9 +480,10 @@ a:hover {
 								font-size: 18px;
 							}
 						}
+
 						.title {
 							font-size: 48px;
-							margin: 10px 0 40px;
+							margin: 10px 0 6.5%;
 						}
 						.text {
 							font-size: 18px;
@@ -492,30 +491,32 @@ a:hover {
 					}
 				}
 			}
-			.my-arrow2{
+			.my-arrow2 {
 				width: 100px;
 				height: 100px;
 				border-radius: 50%;
 				background-color: $color-dark-orange;
-				box-shadow:0 0 15px 0 $color-dark-orange;
+				box-shadow: 0 0 15px 0 $color-dark-orange;
 				opacity: 0.4;
 				position: absolute;
 				top: 45%;
-	
-				&:hover{
-					box-shadow:0 0 5px 0 $color-dark-orange;
+
+				&:hover {
+					box-shadow: 0 0 5px 0 $color-dark-orange;
 					opacity: 0.8;
 				}
 			}
 		}
 	}
-	.background{
+	.background {
 		margin-top: -189px;
-		img:nth-child(1){
-			position: absolute;
+		img:nth-child(1) {
+			position: relative;
 			left: 23.2%;
+			z-index: 1;
+			
 		}
-		img:nth-child(2){
+		img:nth-child(2) {
 			margin-top: 19px;
 			margin-left: calc(100% - 491px);
 			position: relative;
@@ -661,56 +662,54 @@ footer {
 	}
 }
 
-@media(max-width: 1864px){
-	.second-section{
-		.background{
-			.line{
+@media (max-width: 1864px) {
+	.second-section {
+		.background {
+			.line {
 				left: 55%;
 			}
 		}
 		.applySwiper {
-
 		}
 	}
 }
-@media(max-width: 1688px){
-	.second-section{
-		.background{
-			.line{
+@media (max-width: 1688px) {
+	.second-section {
+		.background {
+			.line {
 				left: 62%;
 				top: 35%;
 			}
 		}
 		.applySwiper {
 			margin-left: 10%;
-			.swiper-slide{
+			.swiper-slide {
 				height: max-content;
 				width: max-content;
-				.text-area{
-					background-color: rgba(0, 0, 0,0.5);
+				.text-area {
+					background-color: rgba(0, 0, 0, 0.5);
 					border-radius: 20px;
-					padding: 50px 100px;	
-					h3,p{
+					padding: 50px 100px;
+					h3,
+					p {
 						color: #fff;
-
 					}
 				}
 			}
 		}
 	}
 }
-
-@media(max-width: 576px){
+@media (max-width: 1260px) {
 	.first-section {
 		.background {
 			.img {
-				width: 72%;
+				width: 100%;
 				height: 40.7vw;
 				.background-title {
-					font-size: 96px;
-					padding: 0 35px;
+					font-size: 72px;
+					padding: 0 14px;
 					position: absolute;
-					top: 16% ;
+					top: 23%;
 					left: 50%;
 					transform: translateX(-50%);
 				}
@@ -719,25 +718,7 @@ footer {
 				top: -82.5px;
 				right: 50%;
 				transform: translateX(50%);
-				.link {
-					width: 48px;
-					height: 48px;
-					margin-right: 38px;
-					display: flex;
-					align-items: center;
-					justify-content: center;
-					color: $color-light-orange;
-					font-size: 24px;
-				}
-				.active {
-					width: 94px;
-					height: 94px;
-					font-size: 48px;
-				}
 			}
-		}
-		.helpSwiper{
-			margin-left: unset;
 		}
 	}
 }
