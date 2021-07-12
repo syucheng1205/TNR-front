@@ -848,8 +848,7 @@ footer {
 						font-size: 24px;
 						color: $color-btn-text;
 						a {
-							&:hover{
-
+							&:hover {
 								text-decoration: underline;
 								color: white;
 							}
@@ -941,13 +940,93 @@ footer {
 
 @media (max-width: 576px) {
 	.nav {
-		display: none;
-	}
-	.banner {
-		display: none;
+		.logo {
+			width: 90px;
+			height: 90px;
+			background-image: url("/img/logo-head.png");
+		}
+
+		.burger-area {
+			width: 576px;
+			height: unset;
+			span {
+				right: 50px;
+			}
+			.list {
+				a {
+					font-size: 32px;
+					margin-bottom: 3%;
+				}
+				.nav-btn {
+					width: 290px;
+					height: 90px;
+					margin-bottom: 30px;
+					p {
+						font-size: 32px;
+					}
+				}
+			}
+		}
 	}
 
 	main {
+		.banner {
+			// display: none;
+			padding-top: 150px;
+			height: 952px;
+			.container170 {
+				margin: auto;
+				padding: 114px 0 ;
+				padding-left: 90px;
+				width: 418px;
+				height: 539px;
+				background-color: rgba(255,255,255,0.5);
+				border-radius: 40px;
+				span {
+					font-size: 18px;
+				}
+
+				.mid {
+					.area-top,
+					.area-bot {
+						display: flex;
+						align-items: center;
+						h1{
+							
+							font-size: 32px;
+						}
+						h3{
+							font-size: 24px;
+						}
+					}
+					div:nth-child(2) {
+						margin-left: 15px;
+					}
+				}
+
+				.bot{
+					h1{
+						font-size: 70px;
+					}
+					h2{
+						font-size: 40px;
+					}
+				}
+
+				.banner-btn{
+					width: 260px;
+					height: 70px;
+					p{
+						font-size: 24px;
+					}
+				}
+			}
+
+			.grass-area{
+				display: none;
+			}
+		}
+
 		.first-section {
 			display: none;
 			.title-area {
@@ -960,7 +1039,7 @@ footer {
 						height: 31px;
 					}
 				}
-	
+
 				.title-text {
 					h1 {
 						color: $color-text;
@@ -973,7 +1052,6 @@ footer {
 				.row {
 					display: flex;
 					flex-direction: column;
-					
 				}
 				.about-us {
 					.top {
@@ -1153,7 +1231,6 @@ footer {
 								.contact-btn {
 									display: none;
 								}
-
 							}
 						}
 					}
@@ -1177,7 +1254,7 @@ footer {
 					justify-content: space-around;
 					padding-bottom: 30px;
 					margin-top: 80px;
-					
+
 					p {
 						font-size: 12px;
 					}
