@@ -176,11 +176,11 @@ nav .nav .menu:hover .burger::before {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 0 5%;
+  padding: 0 3.75%;
 }
 
 .first-section .swiper-group .btns-area .btns {
-  width: 268px;
+  width: 14.2vw;
   margin-top: 50px;
   height: 101px;
   position: relative;
@@ -221,10 +221,16 @@ nav .nav .menu:hover .burger::before {
   color: #fff;
   z-index: 1;
   position: relative;
+  background-color: #ff7950;
+}
+
+.first-section .swiper-group .btns-area .btns ul li:nth-last-child(1) {
+  border-radius: 0 0 30px 30px;
 }
 
 .first-section .swiper-group .btns-area .btns ul li:hover {
   background-color: #ffa183;
+  border-radius: unset;
 }
 
 .first-section .swiper-group .btns-area .btns ul li:hover:nth-last-child(1) {
@@ -236,6 +242,7 @@ nav .nav .menu:hover .burger::before {
   height: 664px;
   -webkit-transform: translateY(45%);
           transform: translateY(45%);
+  margin-left: 3.12%;
 }
 
 .first-section .swiper-group .catSwiper .card-img {
@@ -937,11 +944,5 @@ footer .footer-area .container140 .ft-bot {
 footer .footer-area .container140 .ft-bot p {
   font-size: 16px;
   color: #ffffff;
-}
-
-@media (max-width: 1769px) {
-  .first-section .swiper-group .dropdown-menu {
-    width: 15% !important;
-  }
 }
 /*# sourceMappingURL=help.css.map */

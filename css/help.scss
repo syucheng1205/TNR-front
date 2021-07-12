@@ -160,9 +160,9 @@ nav {
             border-radius: 0 0 40px 40px;
             display: flex;
             flex-direction: column;
-            padding: 0 5%;
+            padding: 0 3.75%;
             .btns {
-                width: 268px;
+                width: 14.2vw;
                 margin-top: 50px;
                 height: 101px;
                 position: relative;
@@ -197,8 +197,13 @@ nav {
                         color: #fff;
                         z-index: 1;
                         position: relative;
+                        background-color: $color-dark-orange;
+                        &:nth-last-child(1){
+                            border-radius: 0 0 30px 30px;
+                        }
                         &:hover {
                             background-color: $color-banner-number;
+                            border-radius: unset;
                         }
                         &:hover:nth-last-child(1) {
                             border-radius: 0 0 30px 30px;
@@ -211,6 +216,7 @@ nav {
             width: 1400px;
             height: 664px;
             transform: translateY(45%);
+            margin-left: 3.12%;
             .card-img {
                 position: relative;
                 &:hover .play {
@@ -800,12 +806,10 @@ footer {
     }
 }
 
-@media (max-width: 1769px) {
+@media (max-width: 1200px) {
     .first-section {
-        .swiper-group {
-            .dropdown-menu {
-                width: 15% !important;
-            }
-        }
+        
     }
 }
+
+
