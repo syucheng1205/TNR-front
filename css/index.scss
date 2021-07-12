@@ -43,7 +43,8 @@ a:hover {
 	display: flex;
 	justify-content: space-between;
 	padding: 20px 7.3% 0;
-	position: absolute;
+	position: absolute;  //首頁
+	// margin-bottom: 180px;  //其他頁面
 
 	.logo {
 		width: 511px;
