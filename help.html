@@ -613,7 +613,7 @@
         });
 
         var donate_swiper = new Swiper(".donateSwiper", {
-            slidesPerView: 2,
+            slidesPerView: 1,
             slidesPerColumn: 2,
             pagination: {
                 el: ".donateSwiper .swiper-pagination",
@@ -623,6 +623,14 @@
                 nextEl: ".swiper-father .swiper-button-next",
                 prevEl: ".swiper-father .swiper-button-prev",
             },
+            breakpoints:{
+                1500:{
+                    slidesPerView: 2,
+                    slidesPerColumn: 2,
+
+                }
+
+            }
         });
 
         var diary_swiper = new Swiper(".diarySwiper", {

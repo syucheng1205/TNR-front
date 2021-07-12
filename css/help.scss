@@ -422,17 +422,15 @@ nav {
         .donateSwiper {
             margin: 0 140px;
             height: 680px;
-
             .swiper-slide {
                 // width: 821px;
                 height: 340px;
                 padding: 40px 0;
                 display: flex;
-
+                justify-content: center;
                 .donate-card {
                     display: flex;
-                    padding: 0 100px;
-
+                    justify-content: center;
                     .card-img {
                         width: 260px;
                         height: 260px;
@@ -805,6 +803,9 @@ footer {
         }
     }
 }
+
+
+
 
 @media (max-width: 1200px) {
     .first-section {
