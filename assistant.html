@@ -28,7 +28,21 @@
 		<div id="nav" class="nav">
 			<div class="logo"></div>
 			<div class="menu">
-				<div class="burger"></div>
+				<div class="burger active"></div>
+				<div class="burger-area">
+					<span class="off"><i class="fas fa-times "></i></span>
+					<div class="list">
+						<a style="margin-top: 140px;">首頁</a>
+						<a>最新消息</a>
+						<a>養貓咪趣</a>
+						<a>救助計畫</a>
+						<a>貓貓店鋪</a>
+						<div href="" class="nav-btn">
+							<p>會員登入</p>
+							<!-- <p>會員登出</p> -->
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</nav>
@@ -512,6 +526,24 @@
 			},
 		});
 
+
+		let menu = document.querySelector('.menu')
+		let burger = document.querySelector('.burger')
+		let burger_area = document.querySelector('.burger-area')
+		let off = document.querySelector('.off')
+
+		menu.addEventListener('click', function () {
+			// console.log(123);
+			burger.classList.remove('active');
+			burger_area.classList.add('active');
+		});
+
+		off.addEventListener('click', function () {
+			burger.classList.add('active');
+			burger_area.classList.remove('active');
+			// 停止事件，否則會一起觸發上面的事件
+			event.stopPropagation()
+		})
 	</script>
 </body>
 
