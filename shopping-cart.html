@@ -25,25 +25,22 @@
 
 <body>
 	<nav>
-		<div id="nav" class="my-nav">
+		<div id="nav" class="nav">
 			<div class="logo"></div>
-			<div class="search active">
-				<i class="fas fa-search"></i>
-			</div>
-			<div class="menu off">
+			<div class="menu">
 				<div class="burger active"></div>
 				<div class="burger-area">
 					<span class="off"><i class="fas fa-times "></i></span>
 					<div class="list">
-						<a style="margin-top: 144px;">首頁</a>
-						<a href="#">最新消息</a>
+						<a style="margin-top: 140px;">首頁</a>
+						<a>最新消息</a>
 						<a>養貓咪趣</a>
 						<a>救助計畫</a>
 						<a>貓貓店鋪</a>
-						<a href="" class="nav-btn">
+						<div href="" class="nav-btn">
 							<p>會員登入</p>
 							<!-- <p>會員登出</p> -->
-						</a>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -427,19 +424,22 @@
 		});
 
 
+		let menu = document.querySelector('.menu')
 		let burger = document.querySelector('.burger')
 		let burger_area = document.querySelector('.burger-area')
-		let off = document.querySelectorAll('.off')
-		let search = document.querySelector('.search')
-		console.log(search);
-		off.forEach(e => {
-			e.addEventListener('click', function () {
-				console.log(e);
-				burger.classList.toggle('active');
-				burger_area.classList.toggle('active');
-				event.stopPropagation()
-				search.classList.toggle('active');
-			})
+		let off = document.querySelector('.off')
+
+		menu.addEventListener('click', function () {
+			// console.log(123);
+			burger.classList.remove('active');
+			burger_area.classList.add('active');
+		});
+
+		off.addEventListener('click', function () {
+			burger.classList.add('active');
+			burger_area.classList.remove('active');
+			// 停止事件，否則會一起觸發上面的事件
+			event.stopPropagation()
 		})
 
 	</script>
