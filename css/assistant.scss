@@ -196,7 +196,7 @@
 		transform: translateY(-560px);
 		margin-left: 31.5%;
 		padding-left: 35%;
-		height: 800px;
+		height: 50vh;
 		.my-bullet {
 			width: 375px;
 			color: white;
@@ -260,7 +260,7 @@
 			}
 			p {
 				font-size: 18px;
-				padding: 50px 140px 0 0;
+				padding: 50px 21.78% 0 0;
 				color: #4f4f4f;
 			}
 		}
@@ -485,20 +485,22 @@
 			img:nth-child(2) {
 				left: 41%;
 				transform: translateX(-50%);
+				top: 0;
 			}
 			.line {
 				display: none;
 			}
-
 		}
 	
 		.applySwiper {
-			transform: translateY(0px);
+			transform: translateY(169px);
 			margin-left: unset;
-			margin: auto;
 			padding-left: unset;
-			width: 722px;
+
+			height: 52vw;
+
 			img{
+				width: 48.6vw;
 				display: block;
 				border-radius: 20px;
 			}
@@ -515,7 +517,7 @@
 				}
 				p {
 					font-size: 18px;
-					padding: 50px 140px 0 0;
+					padding: unset;
 					color: #4f4f4f;
 				}
 			}
