@@ -179,7 +179,7 @@
 			position: absolute;
 			top: -168px;
 			left: 0;
-			z-index: 1;
+			z-index: 2;
 		}
 		.line {
 			width: 7.85%;
@@ -193,7 +193,7 @@
 	}
 
 	.applySwiper {
-		margin-top: -560px;
+		transform: translateY(-560px);
 		margin-left: 31.5%;
 		padding-left: 35%;
 		height: 800px;
@@ -483,7 +483,7 @@
 				display: none;
 			}
 			img:nth-child(2) {
-				left: 40%;
+				left: 41%;
 				transform: translateX(-50%);
 			}
 			.line {
@@ -493,54 +493,14 @@
 		}
 	
 		.applySwiper {
-			margin-top: -560px;
-			margin-left: 31.5%;
-			padding-left: 35%;
-			height: 800px;
-			.my-bullet {
-				width: 375px;
-				color: white;
-				margin-bottom: 42px;
-				display: flex;
-				align-items: center;
-				justify-content: flex-end;
-				cursor: pointer;
-	
-				&::after {
-					width: 55px;
-					height: 55px;
-					border-radius: 50%;
-					color: #ee8e74;
-					border: 2px solid #ee8e74;
-					background-color: #fff;
-					margin-left: 20px;
-					display: flex;
-					align-items: center;
-					justify-content: center;
-				}
-				&:nth-child(1)::after {
-					content: "1";
-				}
-				&:nth-child(2)::after {
-					content: "2";
-				}
-				&:nth-child(3)::after {
-					content: "3";
-				}
-				&:nth-child(4)::after {
-					content: "4";
-				}
-			}
-			.my-bullet-active {
-				background-color: yellowgreen;
-				border-radius: 40px;
-			}
-			.swiper-pagination {
-				display: flex;
-				flex-direction: column;
-				top: 0;
-				font-size: 36px;
-				font-weight: bold;
+			transform: translateY(0px);
+			margin-left: unset;
+			margin: auto;
+			padding-left: unset;
+			width: 722px;
+			img{
+				display: block;
+				border-radius: 20px;
 			}
 	
 			.text-area {
@@ -558,6 +518,9 @@
 					padding: 50px 140px 0 0;
 					color: #4f4f4f;
 				}
+			}
+			.swiper-pagination{
+				display: none;
 			}
 		}
 	}

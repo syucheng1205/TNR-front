@@ -227,7 +227,7 @@
   position: absolute;
   top: -168px;
   left: 0;
-  z-index: 1;
+  z-index: 2;
 }
 
 .second-section .background .line {
@@ -241,7 +241,8 @@
 }
 
 .second-section .applySwiper {
-  margin-top: -560px;
+  -webkit-transform: translateY(-560px);
+          transform: translateY(-560px);
   margin-left: 31.5%;
   padding-left: 35%;
   height: 800px;
@@ -567,7 +568,7 @@
     display: none;
   }
   .second-section .background img:nth-child(2) {
-    left: 40%;
+    left: 41%;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
   }
@@ -575,71 +576,16 @@
     display: none;
   }
   .second-section .applySwiper {
-    margin-top: -560px;
-    margin-left: 31.5%;
-    padding-left: 35%;
-    height: 800px;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    margin-left: unset;
+    margin: auto;
+    padding-left: unset;
+    width: 722px;
   }
-  .second-section .applySwiper .my-bullet {
-    width: 375px;
-    color: white;
-    margin-bottom: 42px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-    cursor: pointer;
-  }
-  .second-section .applySwiper .my-bullet::after {
-    width: 55px;
-    height: 55px;
-    border-radius: 50%;
-    color: #ee8e74;
-    border: 2px solid #ee8e74;
-    background-color: #fff;
-    margin-left: 20px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .second-section .applySwiper .my-bullet:nth-child(1)::after {
-    content: "1";
-  }
-  .second-section .applySwiper .my-bullet:nth-child(2)::after {
-    content: "2";
-  }
-  .second-section .applySwiper .my-bullet:nth-child(3)::after {
-    content: "3";
-  }
-  .second-section .applySwiper .my-bullet:nth-child(4)::after {
-    content: "4";
-  }
-  .second-section .applySwiper .my-bullet-active {
-    background-color: yellowgreen;
-    border-radius: 40px;
-  }
-  .second-section .applySwiper .swiper-pagination {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    top: 0;
-    font-size: 36px;
-    font-weight: bold;
+  .second-section .applySwiper img {
+    display: block;
+    border-radius: 20px;
   }
   .second-section .applySwiper .text-area h3 {
     color: #4f4f4f;
@@ -654,6 +600,9 @@
     font-size: 18px;
     padding: 50px 140px 0 0;
     color: #4f4f4f;
+  }
+  .second-section .applySwiper .swiper-pagination {
+    display: none;
   }
 }
 
