@@ -553,6 +553,23 @@ main {
 	}
 }
 
+@media(max-width: 1740px){
+	main{
+		.third-section{
+			.container140{
+				.news{
+					width: 504px;
+					display: flex;
+					flex-direction: column;
+					justify-content: center;
+					align-items: center;
+					margin: auto;
+				}
+			}
+		}
+	}
+}
+
 @media (max-width: 1700px) {
 	main {
 		.banner {
