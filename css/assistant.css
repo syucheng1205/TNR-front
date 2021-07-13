@@ -912,6 +912,18 @@ footer .footer-area .container140 .ft-bot p {
 }
 
 @media (max-width: 1688px) {
+  .second-section .title-area {
+    width: 400px;
+    height: 100px;
+  }
+  .second-section .title-area .title-text {
+    position: absolute;
+    bottom: 0;
+    right: 10%;
+  }
+  .second-section .title-area .title-text h1 {
+    font-size: 48px;
+  }
   .second-section .background .line {
     left: 62%;
     top: 35%;
@@ -936,9 +948,24 @@ footer .footer-area .container140 .ft-bot p {
   .second-section .applySwiper .swiper-slide .text-area p {
     color: #fff;
   }
+  .fourth-section .title-area {
+    width: 400px;
+    height: 100px;
+  }
+  .fourth-section .title-area .title-text {
+    position: absolute;
+    bottom: 0;
+    right: 10%;
+  }
+  .fourth-section .title-area .title-text h1 {
+    font-size: 48px;
+  }
 }
 
 @media (max-width: 1600px) {
+  .third-section .thank-card .text-area {
+    right: 25%;
+  }
   .fourth-section .container140 .swiper-group .my-arrow2 {
     width: 60px;
     height: 60px;
@@ -966,9 +993,41 @@ footer .footer-area .container140 .ft-bot p {
     -webkit-transform: translateX(50%);
             transform: translateX(50%);
   }
+  .second-section .title-area {
+    width: 300px;
+    height: 100px;
+    margin-bottom: 20%;
+  }
+  .second-section .title-area .title-text {
+    position: absolute;
+    bottom: 0;
+    right: -8%;
+  }
+  .second-section .title-area .title-text h1 {
+    font-size: 40px;
+  }
+  .third-section .thank-card .text-area {
+    right: 30%;
+  }
+  .fourth-section .title-area {
+    width: 300px;
+    height: 100px;
+    margin-bottom: 20%;
+  }
+  .fourth-section .title-area .title-text {
+    position: absolute;
+    bottom: 0;
+    right: -8%;
+  }
+  .fourth-section .title-area .title-text h1 {
+    font-size: 40px;
+  }
 }
 
 @media (max-width: 1120px) {
+  .first-section .helpSwiper .swiper-slide .donate-can-card .bg-text .text-area .donate-number p {
+    font-size: 12px;
+  }
   .first-section .helpSwiper .swiper-slide .donate-can-card .bg-text .text-area p {
     font-size: 12px;
   }
@@ -978,6 +1037,34 @@ footer .footer-area .container140 .ft-bot p {
   .first-section .helpSwiper .swiper-slide .donate-can-card .bg-text .text-area .donate-btn .btn {
     width: 111px;
     height: 35px;
+  }
+}
+
+@media (max-width: 650px) {
+  .first-section .background .links .link {
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+  }
+  .first-section .background .links .active {
+    width: 100px;
+    height: 100px;
+    font-size: 48px;
+  }
+  .first-section .background .img .background-title {
+    font-size: 30px;
+  }
+  .third-section .thank-card .text-area {
+    top: 480px;
+    right: 57%;
+  }
+  .third-section .thank-card .text-area h5 {
+    font-size: 15px;
+  }
+  .third-section .thank-card .text-area .thank-btn .btn {
+    width: 75px;
+    height: 25px;
+    font-size: 12px;
   }
 }
 
@@ -1005,6 +1092,9 @@ footer .footer-area .container140 .ft-bot p {
   }
   .nav .burger-area .list .nav-btn p {
     font-size: 32px;
+  }
+  .first-section .background .img .background-title {
+    font-size: 30px;
   }
   footer .footer-area .container140 {
     padding: 0 6.9%;
