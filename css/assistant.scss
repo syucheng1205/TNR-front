@@ -415,7 +415,6 @@ a:hover {
 		.my-bullet-active {
 			background-color: yellowgreen;
 			border-radius: 40px;
-
 		}
 		.swiper-pagination {
 			display: flex;
@@ -761,6 +760,18 @@ footer {
 }
 @media (max-width: 1688px) {
 	.second-section {
+		.title-area {
+			width: 400px;
+			height: 100px;
+			.title-text {
+				position: absolute;
+				bottom: 0;
+				right: 10%;
+				h1 {
+					font-size: 48px;
+				}
+			}
+		}
 		.background {
 			.line {
 				left: 62%;
@@ -784,9 +795,32 @@ footer {
 			}
 		}
 	}
+
+	.fourth-section{
+		.title-area {
+			width: 400px;
+			height: 100px;
+			.title-text {
+				position: absolute;
+				bottom: 0;
+				right: 10%;
+				h1 {
+					font-size: 48px;
+				}
+			}
+		}
+	}
 }
 
 @media (max-width: 1600px) {
+	.third-section{
+		.thank-card{
+			.text-area{
+				right: 25%;
+			}
+		}
+	}
+
 	.fourth-section {
 		.container140 {
 			.swiper-group {
@@ -801,6 +835,7 @@ footer {
 }
 @media (max-width: 1260px) {
 	.first-section {
+			
 		.background {
 			.img {
 				width: 100%;
@@ -821,29 +856,117 @@ footer {
 			}
 		}
 	}
+
+	.second-section{
+		.title-area {
+			width: 300px;
+			height: 100px;
+			margin-bottom: 20%;
+			.title-text {
+				position: absolute;
+				bottom: 0;
+				right: -8%;
+				h1 {
+					font-size: 40px;
+				}
+			}
+		}
+	}
+
+	.third-section{
+		.thank-card{
+			.text-area{
+				right: 30%;
+			}
+		}
+	}
+
+	.fourth-section{
+		.title-area {
+			width: 300px;
+			height: 100px;
+			margin-bottom: 20%;
+			.title-text {
+				position: absolute;
+				bottom: 0;
+				right: -8%;
+				h1 {
+					font-size: 40px;
+				}
+			}
+		}
+	}
 }
 
-@media(max-width:1120px){
-	.first-section{
-		.helpSwiper{
-			.swiper-slide{
-				.donate-can-card{
-					
-					.bg-text{
-						.text-area{
-							p{
+@media (max-width: 1120px) {
+	.first-section {
+		
+		.helpSwiper {
+			.swiper-slide {
+				.donate-can-card {
+					.bg-text {
+						.text-area {
+							.donate-number{
+								p{
+									font-size: 12px;
+								}
+							}
+							p {
 								font-size: 12px;
 							}
-							h6{
+							h6 {
 								font-size: 15px;
 							}
-							.donate-btn{
-								.btn{
+							.donate-btn {
+								.btn {
 									width: 111px;
 									height: 35px;
 								}
 							}
 						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media(max-width:650px){
+	.first-section{
+		.background{
+			.links{
+				.link{
+					width: 50px;
+					height: 50px;
+					font-size: 20px;
+				}
+				.active{
+					width: 100px;
+					height: 100px;
+					font-size: 48px;
+				}
+			}
+			.img{
+				.background-title{
+					font-size: 30px;
+				}
+			}
+		}
+	}
+
+	.third-section{
+		.thank-card{
+			.text-area{
+				top: 480px;
+				right: 57%;
+				h5{
+					font-size: 15px;
+				}
+				.thank-btn{
+					.btn{
+						width: 75px;
+						height: 25px;
+						font-size: 12px;
 					}
 				}
 			}
@@ -877,6 +1000,16 @@ footer {
 					p {
 						font-size: 32px;
 					}
+				}
+			}
+		}
+	}
+
+	.first-section{
+		.background{
+			.img{
+				.background-title{
+					font-size: 30px;
 				}
 			}
 		}

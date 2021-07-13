@@ -22,6 +22,7 @@ p,
 a {
   margin: 0;
   font-weight: unset;
+  color: unset;
 }
 
 ul,
@@ -856,6 +857,11 @@ footer .footer-area .container140 .ft-top .ft-left .text-3 {
           align-items: center;
   font-size: 24px;
   color: #ffffff;
+}
+
+footer .footer-area .container140 .ft-top .ft-left .text-3 a:hover {
+  text-decoration: underline;
+  color: white;
 }
 
 footer .footer-area .container140 .ft-top .ft-left .text-3 .contact {
