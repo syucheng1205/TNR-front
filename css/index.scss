@@ -578,6 +578,33 @@ main {
 	}
 }
 
+@media (max-width: 1000px) {
+	main {
+		.second-section {
+			.cat {
+				.text-contain {
+					bottom: -340px;
+					.text-area {
+						h3 {
+							font-size: 40px;
+						}
+						p {
+							font-size: 15px;
+						}
+					}
+					.cat-btn {
+						width: 60%;
+						height: 70px;
+						p {
+							font-size: 30px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
 @media (max-width: 992px) {
 	main {
 		.banner {
@@ -636,6 +663,7 @@ main {
 					.col {
 						.about-us {
 							margin-top: 50px;
+							padding: 0;
 							h1 {
 								font-size: 32px;
 								margin-bottom: 30px;
@@ -664,6 +692,14 @@ main {
 			}
 		}
 
+		.second-section {
+			.cat {
+				.text-contain {
+					bottom: -270px;
+				}
+			}
+		}
+
 		.third-section {
 			.title-area {
 				width: 350px;
@@ -678,7 +714,24 @@ main {
 	}
 }
 
-
+@media (max-width: 800px) {
+	main {
+		.first-section {
+			.container170 {
+				.row {
+					.col {
+						.about-us {
+							padding: 0% 50px;
+							h1 {
+								margin: 0;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
 
 @media (max-width: 576px) {
 	main {
