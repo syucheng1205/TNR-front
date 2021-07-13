@@ -1038,6 +1038,13 @@ footer .footer-area .container140 .ft-bot p {
     width: 111px;
     height: 35px;
   }
+  .third-section .thank-card .heart-img {
+    right: 12%;
+  }
+  .third-section .thank-card .text-area {
+    top: 480px;
+    right: 29%;
+  }
 }
 
 @media (max-width: 650px) {
@@ -1054,9 +1061,12 @@ footer .footer-area .container140 .ft-bot p {
   .first-section .background .img .background-title {
     font-size: 30px;
   }
+  .third-section .thank-card .heart-img {
+    right: -8%;
+  }
   .third-section .thank-card .text-area {
     top: 480px;
-    right: 57%;
+    right: 35%;
   }
   .third-section .thank-card .text-area h5 {
     font-size: 15px;

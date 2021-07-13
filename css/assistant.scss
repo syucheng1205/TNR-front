@@ -904,6 +904,7 @@ footer {
 		.helpSwiper {
 			.swiper-slide {
 				.donate-can-card {
+					
 					.bg-text {
 						.text-area {
 							.donate-number{
@@ -926,6 +927,19 @@ footer {
 						}
 					}
 				}
+			}
+		}
+	}
+
+	.third-section{
+		.thank-card{
+			.heart-img{
+				right: 12%;
+			}
+			.text-area{
+				top: 480px;
+				right: 29%;
+				
 			}
 		}
 	}
@@ -956,9 +970,12 @@ footer {
 
 	.third-section{
 		.thank-card{
+			.heart-img{
+				right: -8%;
+			}
 			.text-area{
 				top: 480px;
-				right: 57%;
+				right: 35%;
 				h5{
 					font-size: 15px;
 				}

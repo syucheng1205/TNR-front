@@ -42,13 +42,13 @@ a:hover {
 	padding: 0 140px;
 }
 
-.my-nav {
+.nav {
 	width: 100%;
 	display: flex;
 	justify-content: space-between;
 	padding: 20px 7.3% 0;
 	// position: absolute;  //首頁
-	margin-bottom: 180px; //其他頁面
+	margin-bottom: 180px;  //其他頁面
 
 	.logo {
 		width: 511px;
@@ -58,12 +58,7 @@ a:hover {
 		background-position: center;
 		background-size: cover;
 	}
-	.search {
-		font-size: 48px;
-		margin-right: 137px;
-		color: #4f4f4f;
-		display: none;
-	}
+
 	.menu {
 		font-size: 100px;
 		line-height: 50px;
@@ -72,12 +67,15 @@ a:hover {
 		top: 40px;
 		height: 37px;
 		z-index: 99;
+
 		.burger {
 			width: 90px;
 			height: 7px;
 			border-radius: 20px;
 			background-color: $color-text;
+
 			position: relative;
+
 			&::before,
 			&::after {
 				content: "";
@@ -95,16 +93,19 @@ a:hover {
 
 			display: none;
 		}
+
 		&:hover .burger,
 		&:hover .burger::after,
 		&:hover .burger::before {
 			background-color: $color-dark-orange;
 		}
+
 		.active {
 			display: block;
 		}
 	}
 	.burger-area {
+		float: right;
 		width: 960px;
 		height: 100vh;
 		background-image: url("/img/first-section/米色背景.jpg");
@@ -114,6 +115,7 @@ a:hover {
 		top: 0;
 		right: 0;
 		z-index: 99;
+
 		span {
 			font-size: 100px;
 			color: #707070;
@@ -121,18 +123,28 @@ a:hover {
 			position: absolute;
 			right: 140px;
 		}
+
 		.list {
 			display: flex;
 			flex-direction: column;
 			align-items: center;
+
 			a {
 				font-size: 64px;
 				color: #4f4f4f;
 				margin-bottom: 6%;
+				cursor: pointer;
+				border-bottom: 4px solid transparent;
+				padding-bottom: 10px;
+
 				&:hover {
 					color: $color-btn-text;
+					border-bottom: 4px solid $color-btn-text;
+					padding-bottom: 10px;
+					transition-duration: 0.3s;
 				}
 			}
+
 			.nav-btn {
 				width: 381px;
 				height: 130px;
@@ -145,6 +157,7 @@ a:hover {
 				cursor: pointer;
 				padding: 33px;
 				margin-bottom: 136px;
+
 				p {
 					font-size: 48px;
 					font-weight: bold;
@@ -161,8 +174,10 @@ a:hover {
 				}
 			}
 		}
+
 		display: none;
 	}
+
 	.active {
 		display: block;
 	}
@@ -459,6 +474,103 @@ footer {
 				p {
 					font-size: 16px;
 					color: $color-btn-text;
+				}
+			}
+		}
+	}
+}
+
+
+@media (max-width: 576px){
+	.nav {
+		.logo {
+			width: 90px;
+			height: 90px;
+			background-image: url("/img/logo-head.png");
+		}
+
+		.burger-area {
+			width: 576px;
+			height: unset;
+			span {
+				right: 50px;
+			}
+			.list {
+				a {
+					font-size: 32px;
+					margin-bottom: 3%;
+				}
+				.nav-btn {
+					width: 290px;
+					height: 90px;
+					margin-bottom: 30px;
+					p {
+						font-size: 32px;
+					}
+				}
+			}
+		}
+	}
+
+	footer {
+		.footer-area {
+			// display: none;
+			.container140 {
+				padding: 0 6.9%;
+
+				.ft-top {
+					position: relative;
+					.ft-left {
+						padding-top: 6.9%;
+						.text-1 {
+							align-items: unset;
+							line-height: 20px;
+						}
+
+						.text-3 {
+							a {
+								cursor: pointer;
+								&:hover {
+									text-decoration: underline;
+									color: white;
+								}
+							}
+							.contact {
+								margin-right: 0px;
+								padding: 0;
+								.ft-input {
+									display: none;
+								}
+								.contact-btn {
+									display: none;
+								}
+							}
+						}
+					}
+					.ft-mouse {
+						width: 100px;
+						height: 100px;
+						background-position: 20px 0px;
+						// margin-top: 160px;
+						position: absolute;
+						top: 40%;
+						right: -20px;
+
+						span {
+							font-size: 10px;
+							padding: 0;
+						}
+					}
+				}
+
+				.ft-bot {
+					justify-content: space-around;
+					padding-bottom: 30px;
+					margin-top: 80px;
+
+					p {
+						font-size: 12px;
+					}
 				}
 			}
 		}
