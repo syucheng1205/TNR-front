@@ -434,6 +434,7 @@ a:hover {
   position: absolute;
   top: -168px;
   left: 0;
+  z-index: 1;
 }
 
 .second-section .background .line {
@@ -520,6 +521,12 @@ a:hover {
   top: 0;
   font-size: 36px;
   font-weight: bold;
+}
+
+.second-section .applySwiper img {
+  position: absolute;
+  z-index: -1;
+  display: none;
 }
 
 .second-section .applySwiper .text-area h3 {
@@ -911,54 +918,9 @@ footer .footer-area .container140 .ft-bot p {
   }
 }
 
-@media (max-width: 1688px) {
-  .second-section .title-area {
-    width: 400px;
-    height: 100px;
-  }
-  .second-section .title-area .title-text {
-    position: absolute;
-    bottom: 0;
-    right: 10%;
-  }
-  .second-section .title-area .title-text h1 {
-    font-size: 48px;
-  }
+@media (max-width: 1766px) {
   .second-section .background .line {
-    left: 62%;
-    top: 35%;
-  }
-  .second-section .applySwiper {
-    margin-left: 10%;
-  }
-  .second-section .applySwiper .swiper-slide {
-    height: -webkit-max-content;
-    height: -moz-max-content;
-    height: max-content;
-    width: -webkit-max-content;
-    width: -moz-max-content;
-    width: max-content;
-  }
-  .second-section .applySwiper .swiper-slide .text-area {
-    background-color: rgba(0, 0, 0, 0.5);
-    border-radius: 20px;
-    padding: 50px 100px;
-  }
-  .second-section .applySwiper .swiper-slide .text-area h3,
-  .second-section .applySwiper .swiper-slide .text-area p {
-    color: #fff;
-  }
-  .fourth-section .title-area {
-    width: 400px;
-    height: 100px;
-  }
-  .fourth-section .title-area .title-text {
-    position: absolute;
-    bottom: 0;
-    right: 10%;
-  }
-  .fourth-section .title-area .title-text h1 {
-    font-size: 48px;
+    left: 58%;
   }
 }
 
@@ -970,6 +932,101 @@ footer .footer-area .container140 .ft-bot p {
     width: 60px;
     height: 60px;
     --swiper-navigation-size: 10px;
+  }
+}
+
+@media (max-width: 1486px) {
+  .second-section .background img:nth-child(1) {
+    display: none;
+  }
+  .second-section .background img:nth-child(2) {
+    left: 40%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  .second-section .background .line {
+    display: none;
+  }
+  .second-section .applySwiper {
+    margin-top: -560px;
+    margin-left: 31.5%;
+    padding-left: 35%;
+    height: 800px;
+  }
+  .second-section .applySwiper .my-bullet {
+    width: 375px;
+    color: white;
+    margin-bottom: 42px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    cursor: pointer;
+  }
+  .second-section .applySwiper .my-bullet::after {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    color: #ee8e74;
+    border: 2px solid #ee8e74;
+    background-color: #fff;
+    margin-left: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .second-section .applySwiper .my-bullet:nth-child(1)::after {
+    content: "1";
+  }
+  .second-section .applySwiper .my-bullet:nth-child(2)::after {
+    content: "2";
+  }
+  .second-section .applySwiper .my-bullet:nth-child(3)::after {
+    content: "3";
+  }
+  .second-section .applySwiper .my-bullet:nth-child(4)::after {
+    content: "4";
+  }
+  .second-section .applySwiper .my-bullet-active {
+    background-color: yellowgreen;
+    border-radius: 40px;
+  }
+  .second-section .applySwiper .swiper-pagination {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    top: 0;
+    font-size: 36px;
+    font-weight: bold;
+  }
+  .second-section .applySwiper .text-area h3 {
+    color: #4f4f4f;
+    font-size: 48px;
+  }
+  .second-section .applySwiper .text-area h3 span {
+    color: #fe886d;
+    font-size: 56px;
+    margin-right: 10px;
+  }
+  .second-section .applySwiper .text-area p {
+    font-size: 18px;
+    padding: 50px 140px 0 0;
+    color: #4f4f4f;
   }
 }
 
