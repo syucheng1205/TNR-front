@@ -10,7 +10,6 @@ html {
 
 body {
   margin: 0;
-  height: 3000px;
 }
 
 h1,
@@ -315,7 +314,7 @@ main .banner .grass-area .scroll-line {
   -webkit-writing-mode: vertical-lr;
       -ms-writing-mode: tb-lr;
           writing-mode: vertical-lr;
-  top: -72px;
+  top: -3.75vw;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
@@ -980,6 +979,12 @@ footer .footer-area .container140 .ft-bot p {
 }
 
 @media (max-width: 1700px) {
+  main .banner {
+    height: 1100px;
+  }
+  main .banner .grass-area {
+    margin-top: 75px;
+  }
   main .first-section .container170 .row {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -995,6 +1000,31 @@ footer .footer-area .container140 .ft-bot p {
 }
 
 @media (max-width: 992px) {
+  main .banner {
+    height: 1000px;
+  }
+  main .banner .grass-area {
+    margin-top: 50px;
+  }
+  main .banner .container170 .mid {
+    margin-top: 50px;
+  }
+  main .banner .container170 .mid .area-top h1,
+  main .banner .container170 .mid .area-bot h1 {
+    font-size: 60px;
+  }
+  main .banner .container170 .mid .area-top h3,
+  main .banner .container170 .mid .area-bot h3 {
+    font-size: 32px;
+    line-height: 32px;
+  }
+  main .first-section .title-area {
+    width: 350px;
+    height: 120px;
+  }
+  main .first-section .title-area .title-text h1 {
+    font-size: 48px;
+  }
   main .first-section .container170 .row .swiper-container {
     width: 79.9vw;
   }
@@ -1012,6 +1042,36 @@ footer .footer-area .container140 .ft-bot p {
     left: -60px;
     width: 69.8vw;
     height: 58.7vw;
+  }
+  main .first-section .container170 .row .col .about-us {
+    margin-top: 50px;
+  }
+  main .first-section .container170 .row .col .about-us h1 {
+    font-size: 32px;
+    margin-bottom: 30px;
+  }
+  main .first-section .container170 .row .col .about-us span {
+    font-size: 15px;
+  }
+  main .first-section .container170 .row .col .about-us p {
+    font-size: 20px;
+  }
+  main .first-section .container170 .row .col .about-us .about-btn {
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    width: 200px;
+    height: 80px;
+  }
+  main .first-section .container170 .row .col .about-us .about-btn p {
+    font-size: 24px;
+  }
+  main .third-section .title-area {
+    width: 350px;
+    height: 120px;
+  }
+  main .third-section .title-area .title-text h1 {
+    font-size: 48px;
   }
 }
 
@@ -1049,7 +1109,6 @@ footer .footer-area .container140 .ft-bot p {
     padding: 114px 0;
     padding-left: 90px;
     width: 418px;
-    height: 539px;
     background-color: rgba(255, 255, 255, 0.5);
     border-radius: 40px;
   }
@@ -1089,9 +1148,6 @@ footer .footer-area .container140 .ft-bot p {
   main .banner .container170 .banner-btn p {
     font-size: 24px;
   }
-  main .banner .grass-area {
-    display: none;
-  }
   main .first-section .title-area {
     width: 146px;
     height: 46px;
@@ -1119,9 +1175,6 @@ footer .footer-area .container140 .ft-bot p {
   }
   main .first-section .container170 .about-us .top span {
     font-size: 15px;
-  }
-  main .first-section .container140 {
-    display: none;
   }
   main .second-section {
     -webkit-box-orient: vertical;
