@@ -10,6 +10,7 @@ html {
 
 body {
   margin: 0;
+  height: 3000px;
 }
 
 h1,
@@ -381,6 +382,56 @@ footer .footer-area .container140 .ft-bot p {
   color: #ffffff;
 }
 
+@media (max-width: 935px) {
+  footer .footer-area .container140 .ft-top .ft-left .text-1 {
+    font-size: 18px;
+  }
+  footer .footer-area .container140 .ft-top .ft-left .text-3 {
+    font-size: 20px;
+  }
+  footer .footer-area .container140 .ft-top .ft-left .text-3 .contact {
+    margin-right: 20px;
+  }
+  footer .footer-area .container140 .ft-top .ft-left .text-3 .contact .ft-input {
+    width: 175px;
+  }
+  footer .footer-area .container140 .ft-top .ft-mouse {
+    margin-top: 110px;
+    width: 135px;
+    height: 129px;
+    background-position: 30px 9px;
+  }
+  footer .footer-area .container140 .ft-bot {
+    margin-top: 20px;
+    padding-bottom: 40px;
+  }
+}
+
+@media (max-width: 800px) {
+  footer .footer-area .container140 .ft-top .ft-left .text-1 {
+    font-size: 18px;
+  }
+  footer .footer-area .container140 .ft-top .ft-left .text-3 {
+    font-size: 20px;
+  }
+  footer .footer-area .container140 .ft-top .ft-left .text-3 .contact {
+    display: none;
+  }
+  footer .footer-area .container140 .ft-top .ft-left .text-3 .fb-icon {
+    margin-left: 50px;
+  }
+  footer .footer-area .container140 .ft-top .ft-mouse {
+    margin-top: 110px;
+    width: 135px;
+    height: 129px;
+    background-position: 30px 9px;
+  }
+  footer .footer-area .container140 .ft-bot {
+    margin-top: 20px;
+    padding-bottom: 40px;
+  }
+}
+
 @media (max-width: 576px) {
   .nav .logo {
     width: 90px;
@@ -443,7 +494,7 @@ footer .footer-area .container140 .ft-bot p {
     height: 100px;
     background-position: 20px 0px;
     position: absolute;
-    top: 40%;
+    top: 17%;
     right: -20px;
   }
   footer .footer-area .container140 .ft-top .ft-mouse span {
