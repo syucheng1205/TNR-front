@@ -478,44 +478,50 @@ main {
 			margin-top: 100px;
 			width: 100%;
 
-			.news-area {
-				width: 504px;
-
-				.news-img {
-					position: relative;
-
-					.img {
-						width: 484px;
-						height: 361px;
-						border-radius: 40px;
-					}
-
-					.img-shadow {
-						width: 484px;
-						height: 361px;
-						border-radius: 40px;
-						background-image: url("/img/first-section/米色背景.jpg");
-
-						position: absolute;
-						top: 20px;
-						left: 20px;
-						z-index: -1;
-					}
+			.news {
+				col:nth-child(3) {
+					margin: auto;
 				}
 
-				.news-text {
-					margin-top: 70px;
-					margin-bottom: 60px;
+				.news-area {
+					width: 504px;
 
-					h4 {
-						font-size: 40px;
-						color: #fe886d;
-						margin-bottom: 20px;
+					.news-img {
+						position: relative;
+
+						.img {
+							width: 484px;
+							height: 361px;
+							border-radius: 40px;
+						}
+
+						.img-shadow {
+							width: 484px;
+							height: 361px;
+							border-radius: 40px;
+							background-image: url("/img/first-section/米色背景.jpg");
+
+							position: absolute;
+							top: 20px;
+							left: 20px;
+							z-index: -1;
+						}
 					}
 
-					p {
-						font-size: 18px;
-						color: #000000;
+					.news-text {
+						margin-top: 70px;
+						margin-bottom: 60px;
+
+						h4 {
+							font-size: 40px;
+							color: #fe886d;
+							margin-bottom: 20px;
+						}
+
+						p {
+							font-size: 18px;
+							color: #000000;
+						}
 					}
 				}
 			}
@@ -553,17 +559,24 @@ main {
 	}
 }
 
-@media(max-width: 1740px){
-	main{
-		.third-section{
-			.container140{
-				.news{
-					width: 504px;
+@media (max-width: 1740px) {
+	main {
+		.third-section {
+			.container140 {
+				.news {
+					// width: 504px;
 					display: flex;
-					flex-direction: column;
+					// flex-direction: column;
 					justify-content: center;
 					align-items: center;
 					margin: auto;
+
+					
+
+					.col {
+						display: flex;
+						justify-content: center;
+					}
 				}
 			}
 		}
@@ -595,16 +608,36 @@ main {
 	}
 }
 
-@media(max-width:1439px){
-	main{
-		.first-section{
-			.container140{
-				.numerical{
+@media (max-width: 1439px) {
+	main {
+		.first-section {
+			.container140 {
+				.numerical {
 					display: flex;
 					flex-direction: column;
 					justify-content: center;
 					align-items: center;
-					
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 1200px) {
+	main {
+		.third-section {
+			.container140 {
+				.news {
+					// width: 504px;
+					display: flex;
+					// flex-direction: column;
+					justify-content: center;
+					align-items: center;
+					margin: auto;
+					.col {
+						display: flex;
+						justify-content: center;
+					}
 				}
 			}
 		}
