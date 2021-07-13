@@ -10,7 +10,6 @@ html {
 
 body {
 	margin: 0;
-	height: 3000px;
 }
 
 h1,
@@ -266,7 +265,7 @@ main {
 			.scroll-line {
 				position: absolute;
 				writing-mode: vertical-lr;
-				top: -72px;
+				top: -3.75vw;
 				left: 50%;
 				transform: translateX(-50%);
 				font-size: 18px;
@@ -841,6 +840,12 @@ footer {
 
 @media (max-width: 1700px) {
 	main {
+		.banner{
+			height: 1100px;
+			.grass-area{
+				margin-top: 75px;
+			}
+		}
 		.first-section {
 			.container170 {
 				.row {
@@ -860,7 +865,40 @@ footer {
 
 @media (max-width: 992px) {
 	main {
+		.banner{
+			height: 1000px;
+	.grass-area{
+		margin-top: 50px;
+		
+	}
+			.container170{
+				
+				.mid{
+					margin-top: 50px;
+					.area-top,
+					.area-bot{
+						h1{
+							font-size: 60px;
+						}
+						h3{
+							font-size: 32px;
+							line-height: 32px;
+						}
+					}
+				}
+			}
+		}
+
 		.first-section {
+			.title-area{
+				width: 350px;
+				height: 120px;
+				.title-text{
+					h1{
+						font-size: 48px;
+					}
+				}
+			}
 			.container170 {
 				.row {
 					.swiper-container {
@@ -881,6 +919,46 @@ footer {
 						left: -60px;
 						width: 69.8vw;
 						height: 58.7vw;
+					}
+
+					.col{
+						.about-us{
+							margin-top: 50px;
+							h1{
+								font-size: 32px;
+								margin-bottom: 30px;
+							}
+							span{
+								font-size: 15px;
+							}
+
+							p{
+								font-size: 20px;
+							}
+
+							.about-btn{
+								margin: auto;
+								margin-top: 50px;
+								margin-bottom: 100px;
+								width: 200px;
+								height: 80px;
+								p{
+									font-size: 24px;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+
+		.third-section{
+			.title-area{
+				width: 350px;
+				height: 120px;
+				.title-text{
+					h1{
+						font-size: 48px;
 					}
 				}
 			}
@@ -921,15 +999,14 @@ footer {
 
 	main {
 		.banner {
-			// display: none;
 			padding-top: 150px;
 			height: 952px;
+			
 			.container170 {
 				margin: auto;
 				padding: 114px 0;
 				padding-left: 90px;
 				width: 418px;
-				height: 539px;
 				background-color: rgba(255, 255, 255, 0.5);
 				border-radius: 40px;
 				span {
@@ -971,13 +1048,10 @@ footer {
 				}
 			}
 
-			.grass-area {
-				display: none;
-			}
+			
 		}
 
 		.first-section {
-
 			.title-area {
 				width: 146px;
 				height: 46px;
@@ -1014,9 +1088,10 @@ footer {
 				}
 			}
 			.container140 {
-				display: none;
+				// display: none;
 			}
 		}
+
 		.second-section {
 			flex-direction: column;
 			.grass-3 {
@@ -1198,3 +1273,4 @@ footer {
 		}
 	}
 }
+
