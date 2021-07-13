@@ -508,144 +508,55 @@ main {
 			width: 56.3%;
 		}
 
-		.feed-cat {
+		.cat {
 			width: 50%;
 			display: flex;
 			flex-direction: column;
 			align-items: center;
-
-			.feed-img {
+			background-image: url("/img/second-section/cat-2.png");
+			background-repeat: no-repeat;
+			background-size: cover;
+			&:nth-child(3){
+				background-image: url("/img/second-section/cat-3.png");
+			}
+			.imgs {
 				width: 100%;
-				height: 775px;
-				background-image: url("/img/second-section/cat-2.png");
-				background-repeat: no-repeat;
-				background-size: cover;
-				display: flex;
-				flex-direction: column-reverse;
-				justify-content: flex-end;
-				align-items: flex-end;
+				height: 40.4vw;
+				position: relative;
 
 				.heart-1 {
+					position: absolute;
 					width: 47px;
 					height: 47px;
-					margin-right: 14%;
+					right: 14.3%;
+					bottom: 29.6%;
 				}
 
 				.heart-2 {
+					position: absolute;
 					width: 90px;
 					height: 90px;
-					margin-top: 43%;
-					margin-right: 5.5%;
+					right: 7%;
+					bottom: 36%;
 				}
 			}
 
-			.feed-area {
+			.text-contain {
 				position: absolute;
-				top: 680px;
-
-				width: 43.75%;
+				bottom: -304px;
+				left: 50%;
+				transform: translateX(-50%);
 				border-radius: 40px;
 				background-color: $color-dark-orange;
-				padding: 0 110px;
-				padding-bottom: 50px;
-
-				display: flex;
-				flex-direction: column;
-				align-items: center;
-
-				.text-area {
-					h3 {
-						font-size: 48px;
-						color: $color-btn-text;
-						margin-top: 80px;
-						margin-bottom: 40px;
-					}
-
-					p {
-						font-size: 18px;
-						color: $color-btn-text;
-						margin-bottom: 40px;
-					}
-				}
-
-				.feed-btn {
-					width: 308px;
-					height: 100px;
-					background-color: #f2a589;
-					display: flex;
-					align-items: center;
-					justify-content: center;
-					border-radius: 40px;
-					cursor: pointer;
-					box-shadow: 0px 10px 30px 0px #f2a589;
-					p {
-						font-size: 36px;
-						font-weight: bold;
-						color: $color-btn-text;
-						border-bottom: 4px solid #f2a589;
-					}
-					p {
-						font-size: 36px;
-						font-weight: bold;
-						color: $color-btn-text;
-						border-bottom: 4px solid #f2a589;
-					}
-					&:hover p {
-						border-bottom: 4px solid $color-btn-text;
-						transition-duration: 0.8s;
-					}
-					&:hover {
-						box-shadow: 0px 0px 10px 0px #f2a589;
-						transition-duration: 0.8s;
-					}
-				}
-			}
-		}
-
-		.help-cat {
-			width: 50%;
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-			position: relative;
-
-			.help-img {
-				width: 100%;
-				height: 775px;
-				background-image: url("/img/second-section/cat-3.png");
-				background-repeat: no-repeat;
-				background-size: cover;
-				display: flex;
-				justify-content: start;
-
-				.sos-left {
-					width: 151px;
-					height: 72px;
-					margin-top: 258px;
-					margin-left: 14%;
-				}
-
-				.sos-right {
-					width: 101px;
-					height: 127px;
-					margin-top: 100px;
-					padding-right: 3%;
-				}
-			}
-
-			.feed-area {
-				position: absolute;
-				top: 680px;
-
 				width: 85.75%;
-				border-radius: 40px;
-				background-color: $color-dark-orange;
-				padding: 0 110px;
+				padding: 0 11.5%;
 				padding-bottom: 50px;
-
 				display: flex;
 				flex-direction: column;
 				align-items: center;
+				&:nth-child(1){
+					background-color: #FE886D;
+				}
 
 				.text-area {
 					h3 {
@@ -661,9 +572,8 @@ main {
 						margin-bottom: 40px;
 					}
 				}
-
-				.feed-btn {
-					width: 308px;
+				.cat-btn {
+					width: 78%;
 					height: 100px;
 					background-color: #f2a589;
 					display: flex;
@@ -672,19 +582,13 @@ main {
 					border-radius: 40px;
 					cursor: pointer;
 					box-shadow: 0px 10px 30px 0px #f2a589;
+					color: #fff;
+					p {
+						font-size: 36px;
+						font-weight: bold;
+						border-bottom: 4px solid transparent;
+					}
 
-					p {
-						font-size: 36px;
-						font-weight: bold;
-						color: $color-btn-text;
-						border-bottom: 4px solid #f2a589;
-					}
-					p {
-						font-size: 36px;
-						font-weight: bold;
-						color: $color-btn-text;
-						border-bottom: 4px solid #f2a589;
-					}
 					&:hover p {
 						border-bottom: 4px solid $color-btn-text;
 						transition-duration: 0.8s;
@@ -1107,82 +1011,69 @@ footer {
 				display: none;
 			}
 		}
+.second-section {
+	flex-direction: column;
+		.grass-3 {
+			position: unset;
+			width: 100%;
+		}
 
-		.second-section {
-			display: flex;
-			flex-direction: column;
-
-			.grass-3 {
-				position: unset;
-				width: 100%;
-			}
-
-			.feed-cat {
-				width: 100%;
-				.feed-img {
-					height: 40.4vw;
-					margin-bottom: 350px;
+		.cat {
+			width: 100%;
+			margin-bottom: 267px;
+			.imgs {
+				height: 83.4vw;
+				.heart-1 {
+					position: absolute;
+					width: 47px;
+					height: 47px;
+					right: 14.3%;
+					bottom: 29.6%;
 				}
-				.feed-area {
-					top: 550px;
-					width: 86%;
-					padding: 0 40px;
-					.text-area {
-						h3 {
-							font-size: 32px;
-							margin-top: 30px;
-						}
-						p {
-							font-size: 15px;
-						}
-					}
-					.feed-btn {
-						width: 40.45%;
-						height: 55px;
-						margin-bottom: 30px;
-						p {
-							font-size: 24px;
-						}
-					}
+				.heart-2 {
+					position: absolute;
+					width: 90px;
+					height: 90px;
+					right: 7%;
+					bottom: 36%;
 				}
 			}
 
-			.help-cat {
-				width: 100%;
-				.help-img {
-					height: 469px;
-					margin-bottom: 350px;
-					.sos-left {
-						display: none;
+			.text-contain {
+				bottom: -187px;
+				width: 88.2%;
+				padding: 0 7%;
+				padding-bottom: 31px;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				&:nth-child(1){
+					background-color: #FE886D;
+				}
+
+				.text-area {
+					h3 {
+						font-size: 32px;
+						margin-top: 30px;
+						margin-bottom: 16.3px;
 					}
-					.sos-right {
-						display: none;
+
+					p {
+						margin-bottom: 15px;
+						font-size: 15px;
 					}
 				}
-				.feed-area {
-					top: 420px;
-					width: 86%;
-					padding: 0 40px;
-					.text-area {
-						h3 {
-							font-size: 32px;
-							margin-top: 30px;
-						}
-						p {
-							font-size: 15px;
-						}
-					}
-					.feed-btn {
-						width: 40.45%;
-						height: 55px;
-						margin-bottom: 30px;
-						p {
-							font-size: 24px;
-						}
+				.cat-btn {
+					width: 40.45%;
+					height: 55px;
+					p {
+						font-size: 24px;
 					}
 				}
 			}
 		}
+
+	}
 
 		.third-section {
 			margin: 0;
