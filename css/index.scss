@@ -578,6 +578,22 @@ main {
 	}
 }
 
+@media(max-width:1439px){
+	main{
+		.first-section{
+			.container140{
+				.numerical{
+					display: flex;
+					flex-direction: column;
+					justify-content: center;
+					align-items: center;
+					
+				}
+			}
+		}
+	}
+}
+
 @media (max-width: 1000px) {
 	main {
 		.second-section {

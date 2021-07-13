@@ -632,6 +632,24 @@ main .third-section .container140 .news-btn:hover {
   }
 }
 
+@media (max-width: 1439px) {
+  main .first-section .container140 .numerical {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 @media (max-width: 1000px) {
   main .second-section .cat .text-contain {
     bottom: -340px;
