@@ -387,7 +387,6 @@ main .first-section .container170 .col .swiper-container {
 }
 
 main .first-section .container170 .col .about-img {
-  width: 792px;
   height: 675px;
   border-radius: 40px;
   background-repeat: no-repeat;
@@ -635,8 +634,7 @@ main .second-section .cat .text-contain {
   border-radius: 40px;
   background-color: #ff7950;
   width: 85.75%;
-  padding: 0 11.5%;
-  padding-bottom: 50px;
+  padding: 0 11.5% 5.3%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -650,20 +648,20 @@ main .second-section .cat .text-contain {
 }
 
 main .second-section .cat .text-contain:nth-child(1) {
-  background-color: #FE886D;
+  background-color: #fe886d;
 }
 
 main .second-section .cat .text-contain .text-area h3 {
   font-size: 48px;
   color: #ffffff;
-  margin-top: 80px;
-  margin-bottom: 40px;
+  margin-top: 13.4%;
+  margin-bottom: 6.7%;
 }
 
 main .second-section .cat .text-contain .text-area p {
   font-size: 18px;
   color: #ffffff;
-  margin-bottom: 40px;
+  margin-bottom: 6.7%;
 }
 
 main .second-section .cat .text-contain .cat-btn {
@@ -706,7 +704,7 @@ main .second-section .cat .text-contain .cat-btn:hover {
 }
 
 main .third-section {
-  margin-top: 740px;
+  margin-top: 543px;
 }
 
 main .third-section .title-area {
@@ -990,9 +988,6 @@ footer .footer-area .container140 .ft-bot p {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
   }
   main .first-section .container170 .row .about-us-swiper-area .deco-line1 {
     bottom: 6%;
@@ -1000,6 +995,12 @@ footer .footer-area .container140 .ft-bot p {
 }
 
 @media (max-width: 992px) {
+  main .first-section .container170 .row .swiper-container {
+    width: 79.9vw;
+  }
+  main .first-section .container170 .row .about-img {
+    height: 68vw;
+  }
   main .first-section .container170 .row .swiper-point {
     margin-left: 0px;
   }
@@ -1009,6 +1010,8 @@ footer .footer-area .container140 .ft-bot p {
   }
   main .first-section .container170 .row .about-shadow {
     left: -60px;
+    width: 69.8vw;
+    height: 58.7vw;
   }
 }
 
@@ -1087,9 +1090,6 @@ footer .footer-area .container140 .ft-bot p {
     font-size: 24px;
   }
   main .banner .grass-area {
-    display: none;
-  }
-  main .first-section {
     display: none;
   }
   main .first-section .title-area {
@@ -1171,7 +1171,7 @@ footer .footer-area .container140 .ft-bot p {
             align-items: center;
   }
   main .second-section .cat .text-contain:nth-child(1) {
-    background-color: #FE886D;
+    background-color: #fe886d;
   }
   main .second-section .cat .text-contain .text-area h3 {
     font-size: 32px;

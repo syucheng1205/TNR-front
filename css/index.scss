@@ -43,7 +43,7 @@ a:hover {
 	display: flex;
 	justify-content: space-between;
 	padding: 20px 7.3% 0;
-	position: absolute;  //首頁
+	position: absolute; //首頁
 	// margin-bottom: 180px;  //其他頁面
 
 	.logo {
@@ -330,13 +330,11 @@ main {
 		.container170 {
 			margin-top: 100px;
 			.col {
-				// padding: 0;
 				.swiper-container {
 					width: 792px;
 					height: 675px;
 				}
 				.about-img {
-					width: 792px;
 					height: 675px;
 					border-radius: 40px;
 					background-repeat: no-repeat;
@@ -516,7 +514,7 @@ main {
 			background-image: url("/img/second-section/cat-2.png");
 			background-repeat: no-repeat;
 			background-size: cover;
-			&:nth-child(3){
+			&:nth-child(3) {
 				background-image: url("/img/second-section/cat-3.png");
 			}
 			.imgs {
@@ -549,27 +547,26 @@ main {
 				border-radius: 40px;
 				background-color: $color-dark-orange;
 				width: 85.75%;
-				padding: 0 11.5%;
-				padding-bottom: 50px;
+				padding: 0 11.5% 5.3%;
 				display: flex;
 				flex-direction: column;
 				align-items: center;
-				&:nth-child(1){
-					background-color: #FE886D;
+				&:nth-child(1) {
+					background-color: #fe886d;
 				}
 
 				.text-area {
 					h3 {
 						font-size: 48px;
 						color: $color-btn-text;
-						margin-top: 80px;
-						margin-bottom: 40px;
+						margin-top: 13.4%;
+						margin-bottom: 6.7%;
 					}
 
 					p {
 						font-size: 18px;
 						color: $color-btn-text;
-						margin-bottom: 40px;
+						margin-bottom: 6.7%;
 					}
 				}
 				.cat-btn {
@@ -603,8 +600,7 @@ main {
 	}
 
 	.third-section {
-		margin-top: 740px;
-
+		margin-top: 543px;
 		.title-area {
 			width: 428px;
 			height: 130px;
@@ -850,7 +846,7 @@ footer {
 				.row {
 					display: flex;
 					flex-direction: column;
-					align-items: center;
+
 					.about-us-swiper-area {
 						.deco-line1 {
 							bottom: 6%;
@@ -861,12 +857,20 @@ footer {
 		}
 	}
 }
+
 @media (max-width: 992px) {
 	main {
 		.first-section {
 			.container170 {
 				.row {
-					.swiper-point{
+					.swiper-container {
+						width: 79.9vw;
+					}
+					.about-img {
+						height: 68vw;
+				
+					}
+					.swiper-point {
 						margin-left: 0px;
 					}
 					.deco-line1 {
@@ -875,6 +879,8 @@ footer {
 					}
 					.about-shadow {
 						left: -60px;
+						width: 69.8vw;
+						height: 58.7vw;
 					}
 				}
 			}
@@ -971,7 +977,7 @@ footer {
 		}
 
 		.first-section {
-			display: none;
+
 			.title-area {
 				width: 146px;
 				height: 46px;
@@ -1011,69 +1017,68 @@ footer {
 				display: none;
 			}
 		}
-.second-section {
-	flex-direction: column;
-		.grass-3 {
-			position: unset;
-			width: 100%;
-		}
-
-		.cat {
-			width: 100%;
-			margin-bottom: 267px;
-			.imgs {
-				height: 83.4vw;
-				.heart-1 {
-					position: absolute;
-					width: 47px;
-					height: 47px;
-					right: 14.3%;
-					bottom: 29.6%;
-				}
-				.heart-2 {
-					position: absolute;
-					width: 90px;
-					height: 90px;
-					right: 7%;
-					bottom: 36%;
-				}
+		.second-section {
+			flex-direction: column;
+			.grass-3 {
+				position: unset;
+				width: 100%;
 			}
 
-			.text-contain {
-				bottom: -187px;
-				width: 88.2%;
-				padding: 0 7%;
-				padding-bottom: 31px;
-				display: flex;
-				flex-direction: column;
-				align-items: center;
-				&:nth-child(1){
-					background-color: #FE886D;
-				}
-
-				.text-area {
-					h3 {
-						font-size: 32px;
-						margin-top: 30px;
-						margin-bottom: 16.3px;
+			.cat {
+				width: 100%;
+				margin-bottom: 267px;
+				.imgs {
+					height: 83.4vw;
+					.heart-1 {
+						position: absolute;
+						width: 47px;
+						height: 47px;
+						right: 14.3%;
+						bottom: 29.6%;
 					}
-
-					p {
-						margin-bottom: 15px;
-						font-size: 15px;
+					.heart-2 {
+						position: absolute;
+						width: 90px;
+						height: 90px;
+						right: 7%;
+						bottom: 36%;
 					}
 				}
-				.cat-btn {
-					width: 40.45%;
-					height: 55px;
-					p {
-						font-size: 24px;
+
+				.text-contain {
+					bottom: -187px;
+					width: 88.2%;
+					padding: 0 7%;
+					padding-bottom: 31px;
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					&:nth-child(1) {
+						background-color: #fe886d;
+					}
+
+					.text-area {
+						h3 {
+							font-size: 32px;
+							margin-top: 30px;
+							margin-bottom: 16.3px;
+						}
+
+						p {
+							margin-bottom: 15px;
+							font-size: 15px;
+						}
+					}
+					.cat-btn {
+						width: 40.45%;
+						height: 55px;
+						p {
+							font-size: 24px;
+						}
 					}
 				}
 			}
 		}
-
-	}
 
 		.third-section {
 			margin: 0;
@@ -1112,7 +1117,6 @@ footer {
 							font-size: 32px;
 						}
 						p {
-							// display: none;
 							padding-right: 90px;
 							font-size: 15px;
 						}
