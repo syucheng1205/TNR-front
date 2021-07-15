@@ -223,13 +223,6 @@
   font-size: 72px;
 }
 
-.second-section .background img:nth-child(2) {
-  position: absolute;
-  top: -168px;
-  left: 0;
-  z-index: 2;
-}
-
 .second-section .background .line {
   width: 7.85%;
   height: 5px;
@@ -241,11 +234,11 @@
 }
 
 .second-section .applySwiper {
-  -webkit-transform: translateY(-560px);
-          transform: translateY(-560px);
-  margin-left: 31.5%;
-  padding-left: 35%;
-  height: 50vh;
+  margin-top: -231px;
+}
+
+.second-section .applySwiper .swiper-slide {
+  width: 100%;
 }
 
 .second-section .applySwiper .my-bullet {
@@ -317,7 +310,7 @@
   font-weight: bold;
 }
 
-.second-section .applySwiper img {
+.second-section .applySwiper .rwd-img {
   position: absolute;
   z-index: -1;
   display: none;

@@ -175,12 +175,6 @@
 		}
 	}
 	.background {
-		img:nth-child(2) {
-			position: absolute;
-			top: -168px;
-			left: 0;
-			z-index: 2;
-		}
 		.line {
 			width: 7.85%;
 			height: 5px;
@@ -193,10 +187,14 @@
 	}
 
 	.applySwiper {
-		transform: translateY(-560px);
-		margin-left: 31.5%;
-		padding-left: 35%;
-		height: 50vh;
+		// margin-left: 31.5%;
+		// padding-left: 35%;
+		// height: 50vh;
+		margin-top: -231px;
+		// z-index: -1;
+		.swiper-slide{
+			width: 100%;
+		}
 		.my-bullet {
 			width: 375px;
 			color: white;
@@ -243,7 +241,7 @@
 			font-weight: bold;
 		}
 
-		img{
+		.rwd-img{
 			position: absolute;
 			z-index: -1;
 			display: none;
