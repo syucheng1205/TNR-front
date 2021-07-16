@@ -636,10 +636,12 @@ main .third-section .container140 .news-btn:hover {
   main .banner {
     height: 1100px;
   }
-  main .banner .container170 .mid .area-top h1, main .banner .container170 .mid .area-bot h1 {
+  main .banner .container170 .mid .area-top h1,
+  main .banner .container170 .mid .area-bot h1 {
     font-size: 100px;
   }
-  main .banner .container170 .mid .area-top h3, main .banner .container170 .mid .area-bot h3 {
+  main .banner .container170 .mid .area-top h3,
+  main .banner .container170 .mid .area-bot h3 {
     font-size: 40px;
   }
   main .banner .container170 .bot h1 {
@@ -674,10 +676,12 @@ main .third-section .container140 .news-btn:hover {
 }
 
 @media (max-width: 1200px) {
-  main .banner .container170 .mid .area-top h1, main .banner .container170 .mid .area-bot h1 {
+  main .banner .container170 .mid .area-top h1,
+  main .banner .container170 .mid .area-bot h1 {
     font-size: 80px;
   }
-  main .banner .container170 .mid .area-top h3, main .banner .container170 .mid .area-bot h3 {
+  main .banner .container170 .mid .area-top h3,
+  main .banner .container170 .mid .area-bot h3 {
     font-size: 32px;
   }
   main .banner .container170 .bot h1 {
@@ -774,24 +778,69 @@ main .third-section .container140 .news-btn:hover {
 }
 
 @media (max-width: 800px) {
-  main .first-section .container170 .row .col .about-us {
-    width: unset;
-    padding: 0% 50px;
+  main .banner {
+    padding-top: 170px;
+    height: 952px;
   }
-  main .first-section .container170 .row .col .about-us h1 {
+  main .banner .container170 {
+    margin: auto;
+    padding: 60px 0;
+    padding-left: 18%;
+    width: 70%;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 40px;
+  }
+  main .banner .container170 span {
+    font-size: 18px;
+  }
+  main .banner .container170 .mid {
+    margin-top: 20px;
+  }
+  main .banner .container170 .mid .area-top,
+  main .banner .container170 .mid .area-bot {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  main .banner .container170 .mid .area-top h1,
+  main .banner .container170 .mid .area-bot h1 {
+    font-size: 32px;
+  }
+  main .banner .container170 .mid .area-top h3,
+  main .banner .container170 .mid .area-bot h3 {
+    font-size: 24px;
     margin: 0;
+  }
+  main .banner .container170 .mid div:nth-child(2) {
+    margin-left: 15px;
+  }
+  main .banner .container170 .bot h1 {
+    font-size: 70px;
+  }
+  main .banner .container170 .bot h2 {
+    font-size: 40px;
+  }
+  main .banner .container170 .banner-btn {
+    width: 260px;
+    height: 70px;
+  }
+  main .banner .container170 .banner-btn p {
+    font-size: 24px;
   }
 }
 
 @media (max-width: 576px) {
   main .banner {
-    padding-top: 150px;
-    height: 952px;
+    padding-top: 170px;
+    height: 900px;
   }
   main .banner .container170 {
     margin: auto;
-    padding: 114px 0;
-    padding-left: 90px;
+    padding: 60px 0;
+    padding-left: 100px;
     width: 418px;
     background-color: rgba(255, 255, 255, 0.5);
     border-radius: 40px;

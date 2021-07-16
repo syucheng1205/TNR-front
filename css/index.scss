@@ -577,27 +577,28 @@ main {
 	main {
 		.banner {
 			height: 1100px;
-			.container170{
-				.mid{
-					.area-top,.area-bot{
-						h1{
+			.container170 {
+				.mid {
+					.area-top,
+					.area-bot {
+						h1 {
 							font-size: 100px;
 						}
-						h3{
+						h3 {
 							font-size: 40px;
 						}
 					}
 				}
-				.bot{
-					h1{
+				.bot {
+					h1 {
 						font-size: 150px;
 					}
 				}
-				.banner-btn{
+				.banner-btn {
 					width: 360px;
 					height: 100px;
 					margin-top: 20px;
-					p{
+					p {
 						font-size: 50px;
 					}
 				}
@@ -624,27 +625,29 @@ main {
 @media (max-width: 1200px) {
 	main {
 		.banner {
-			.container170{
-				.mid{
-					.area-top,.area-bot{
-						h1{
+			.container170 {
+				.mid {
+					.area-top,
+					.area-bot {
+						h1 {
 							font-size: 80px;
 						}
-						h3{
+						h3 {
 							font-size: 32px;
+							
 						}
 					}
 				}
-				.bot{
-					h1{
+				.bot {
+					h1 {
 						font-size: 150px;
 					}
 				}
-				.banner-btn{
+				.banner-btn {
 					width: 360px;
 					height: 100px;
 					margin-top: 20px;
-					p{
+					p {
 						font-size: 50px;
 					}
 				}
@@ -674,7 +677,7 @@ main {
 	main {
 		.banner {
 			height: 1000px;
-			
+
 			.container170 {
 				.mid {
 					.area-top,
@@ -762,17 +765,54 @@ main {
 
 @media (max-width: 800px) {
 	main {
-		.first-section {
+		.banner {
+			padding-top: 170px;
+			height: 952px;
+
 			.container170 {
-				.row {
-					.col {
-						.about-us {
-							width: unset;
-							padding: 0% 50px;
-							h1 {
-								margin: 0;
-							}
+				margin: auto;
+				padding: 60px 0;
+				padding-left: 18%;
+				width: 70%;
+				background-color: rgba(255, 255, 255, 0.5);
+				border-radius: 40px;
+				span {
+					font-size: 18px;
+				}
+
+				.mid {
+					margin-top: 20px;
+					.area-top,
+					.area-bot {
+						display: flex;
+						align-items: center;
+						h1 {
+							font-size: 32px;
 						}
+						h3 {
+							font-size: 24px;
+							margin: 0;
+						}
+					}
+					div:nth-child(2) {
+						margin-left: 15px;
+					}
+				}
+
+				.bot {
+					h1 {
+						font-size: 70px;
+					}
+					h2 {
+						font-size: 40px;
+					}
+				}
+
+				.banner-btn {
+					width: 260px;
+					height: 70px;
+					p {
+						font-size: 24px;
 					}
 				}
 			}
@@ -783,13 +823,13 @@ main {
 @media (max-width: 576px) {
 	main {
 		.banner {
-			padding-top: 150px;
-			height: 952px;
+			padding-top: 170px;
+			height: 900px;
 
 			.container170 {
 				margin: auto;
-				padding: 114px 0;
-				padding-left: 90px;
+				padding: 60px 0;
+				padding-left: 100px;
 				width: 418px;
 				background-color: rgba(255, 255, 255, 0.5);
 				border-radius: 40px;
@@ -991,4 +1031,3 @@ main {
 		}
 	}
 }
-

@@ -374,6 +374,36 @@ footer {
 }
 
 @media(max-width:800px){
+	.nav {
+		.logo {
+			width: 90px;
+			height: 83px;
+			background-image: url("/img/logo-head.png");
+		}
+
+		.burger-area {
+			width: 576px;
+			height: unset;
+			span {
+				right: 50px;
+			}
+			.list {
+				a {
+					font-size: 32px;
+					margin-bottom: 3%;
+				}
+				.nav-btn {
+					width: 290px;
+					height: 90px;
+					margin-bottom: 30px;
+					p {
+						font-size: 32px;
+					}
+				}
+			}
+		}
+	}
+
 	footer {
 		.footer-area {
 			.container140 {
@@ -410,35 +440,7 @@ footer {
 }
 
 @media (max-width: 576px) {
-	.nav {
-		.logo {
-			width: 90px;
-			height: 90px;
-			background-image: url("/img/logo-head.png");
-		}
-
-		.burger-area {
-			width: 576px;
-			height: unset;
-			span {
-				right: 50px;
-			}
-			.list {
-				a {
-					font-size: 32px;
-					margin-bottom: 3%;
-				}
-				.nav-btn {
-					width: 290px;
-					height: 90px;
-					margin-bottom: 30px;
-					p {
-						font-size: 32px;
-					}
-				}
-			}
-		}
-	}
+	
 
 	footer {
 		.footer-area {
