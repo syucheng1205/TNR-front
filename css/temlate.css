@@ -409,6 +409,30 @@ footer .footer-area .container140 .ft-bot p {
 }
 
 @media (max-width: 800px) {
+  .nav .logo {
+    width: 90px;
+    height: 83px;
+    background-image: url("/img/logo-head.png");
+  }
+  .nav .burger-area {
+    width: 576px;
+    height: unset;
+  }
+  .nav .burger-area span {
+    right: 50px;
+  }
+  .nav .burger-area .list a {
+    font-size: 32px;
+    margin-bottom: 3%;
+  }
+  .nav .burger-area .list .nav-btn {
+    width: 290px;
+    height: 90px;
+    margin-bottom: 30px;
+  }
+  .nav .burger-area .list .nav-btn p {
+    font-size: 32px;
+  }
   footer .footer-area .container140 .ft-top .ft-left .text-1 {
     font-size: 18px;
   }
@@ -434,30 +458,6 @@ footer .footer-area .container140 .ft-bot p {
 }
 
 @media (max-width: 576px) {
-  .nav .logo {
-    width: 90px;
-    height: 90px;
-    background-image: url("/img/logo-head.png");
-  }
-  .nav .burger-area {
-    width: 576px;
-    height: unset;
-  }
-  .nav .burger-area span {
-    right: 50px;
-  }
-  .nav .burger-area .list a {
-    font-size: 32px;
-    margin-bottom: 3%;
-  }
-  .nav .burger-area .list .nav-btn {
-    width: 290px;
-    height: 90px;
-    margin-bottom: 30px;
-  }
-  .nav .burger-area .list .nav-btn p {
-    font-size: 32px;
-  }
   footer .footer-area .container140 {
     padding: 0 6.9%;
   }
