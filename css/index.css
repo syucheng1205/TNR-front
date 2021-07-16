@@ -839,17 +839,67 @@ main .third-section .container140 .news-btn:hover {
   main .banner .container170 .banner-btn p {
     font-size: 24px;
   }
-}
-
-@media (max-width: 640px) {
+  main .second-section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main .second-section .grass-3 {
+    width: 60vw;
+  }
+  main .second-section .cat {
+    width: 100%;
+    margin-bottom: 267px;
+  }
+  main .second-section .cat .imgs {
+    height: 83.4vw;
+  }
+  main .second-section .cat .imgs .heart-1 {
+    position: absolute;
+    width: 47px;
+    height: 47px;
+    right: 14.3%;
+    bottom: 29.6%;
+  }
+  main .second-section .cat .imgs .heart-2 {
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    right: 7%;
+    bottom: 36%;
+  }
   main .second-section .cat .text-contain {
-    bottom: -290px;
+    bottom: -210px;
+    width: 70%;
+    padding: 0 7%;
+    padding-bottom: 31px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  main .second-section .cat .text-contain:nth-child(1) {
+    background-color: #fe886d;
   }
   main .second-section .cat .text-contain .text-area h3 {
     font-size: 32px;
+    margin-top: 30px;
+    margin-bottom: 16.3px;
   }
   main .second-section .cat .text-contain .text-area p {
+    margin-bottom: 15px;
     font-size: 15px;
+  }
+  main .second-section .cat .text-contain .cat-btn {
+    width: 40.45%;
+    height: 55px;
   }
   main .second-section .cat .text-contain .cat-btn p {
     font-size: 24px;
@@ -932,72 +982,6 @@ main .third-section .container140 .news-btn:hover {
   }
   main .first-section .container170 .about-us .top span {
     font-size: 15px;
-  }
-  main .second-section {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  main .second-section .grass-3 {
-    position: unset;
-    width: 100%;
-  }
-  main .second-section .cat {
-    width: 100%;
-    margin-bottom: 267px;
-  }
-  main .second-section .cat .imgs {
-    height: 83.4vw;
-  }
-  main .second-section .cat .imgs .heart-1 {
-    position: absolute;
-    width: 47px;
-    height: 47px;
-    right: 14.3%;
-    bottom: 29.6%;
-  }
-  main .second-section .cat .imgs .heart-2 {
-    position: absolute;
-    width: 90px;
-    height: 90px;
-    right: 7%;
-    bottom: 36%;
-  }
-  main .second-section .cat .text-contain {
-    bottom: -187px;
-    width: 88.2%;
-    padding: 0 7%;
-    padding-bottom: 31px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  main .second-section .cat .text-contain:nth-child(1) {
-    background-color: #fe886d;
-  }
-  main .second-section .cat .text-contain .text-area h3 {
-    font-size: 32px;
-    margin-top: 30px;
-    margin-bottom: 16.3px;
-  }
-  main .second-section .cat .text-contain .text-area p {
-    margin-bottom: 15px;
-    font-size: 15px;
-  }
-  main .second-section .cat .text-contain .cat-btn {
-    width: 40.45%;
-    height: 55px;
-  }
-  main .second-section .cat .text-contain .cat-btn p {
-    font-size: 24px;
   }
   main .third-section {
     margin: 0;

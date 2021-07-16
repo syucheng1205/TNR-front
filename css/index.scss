@@ -835,24 +835,60 @@ main {
 				}
 			}
 		}
-	}
-}
 
-@media (max-width: 640px) {
-	main{
-		.second-section {
+		.second-section{
+			flex-direction: column;
+			.grass-3{
+				width: 60vw;
+			}
 			.cat {
+				width: 100%;
+				margin-bottom: 267px;
+				.imgs {
+					height: 83.4vw;
+					.heart-1 {
+						position: absolute;
+						width: 47px;
+						height: 47px;
+						right: 14.3%;
+						bottom: 29.6%;
+					}
+					.heart-2 {
+						position: absolute;
+						width: 90px;
+						height: 90px;
+						right: 7%;
+						bottom: 36%;
+					}
+				}
+
 				.text-contain {
-					bottom: -290px;
+					bottom: -210px;
+					width: 70%;
+					padding: 0 7%;
+					padding-bottom: 31px;
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					&:nth-child(1) {
+						background-color: #fe886d;
+					}
+
 					.text-area {
 						h3 {
 							font-size: 32px;
+							margin-top: 30px;
+							margin-bottom: 16.3px;
 						}
+
 						p {
+							margin-bottom: 15px;
 							font-size: 15px;
 						}
 					}
 					.cat-btn {
+						width: 40.45%;
+						height: 55px;
 						p {
 							font-size: 24px;
 						}
@@ -957,68 +993,6 @@ main {
 			}
 		}
 
-		.second-section {
-			flex-direction: column;
-			.grass-3 {
-				position: unset;
-				width: 100%;
-			}
-
-			.cat {
-				width: 100%;
-				margin-bottom: 267px;
-				.imgs {
-					height: 83.4vw;
-					.heart-1 {
-						position: absolute;
-						width: 47px;
-						height: 47px;
-						right: 14.3%;
-						bottom: 29.6%;
-					}
-					.heart-2 {
-						position: absolute;
-						width: 90px;
-						height: 90px;
-						right: 7%;
-						bottom: 36%;
-					}
-				}
-
-				.text-contain {
-					bottom: -187px;
-					width: 88.2%;
-					padding: 0 7%;
-					padding-bottom: 31px;
-					display: flex;
-					flex-direction: column;
-					align-items: center;
-					&:nth-child(1) {
-						background-color: #fe886d;
-					}
-
-					.text-area {
-						h3 {
-							font-size: 32px;
-							margin-top: 30px;
-							margin-bottom: 16.3px;
-						}
-
-						p {
-							margin-bottom: 15px;
-							font-size: 15px;
-						}
-					}
-					.cat-btn {
-						width: 40.45%;
-						height: 55px;
-						p {
-							font-size: 24px;
-						}
-					}
-				}
-			}
-		}
 
 		.third-section {
 			margin: 0;
