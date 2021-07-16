@@ -108,13 +108,13 @@ main .banner .container170 .banner-btn:hover {
           transition-duration: 0.8s;
 }
 
-main .banner .grass-area {
+main .grass-area {
   width: 100%;
   position: relative;
-  margin-top: 230px;
+  top: -90px;
 }
 
-main .banner .grass-area .scroll-line {
+main .grass-area .scroll-line {
   position: absolute;
   -webkit-writing-mode: vertical-lr;
       -ms-writing-mode: tb-lr;
@@ -133,7 +133,7 @@ main .banner .grass-area .scroll-line {
           align-items: center;
 }
 
-main .banner .grass-area .scroll-line::after {
+main .grass-area .scroll-line::after {
   content: "";
   width: 1px;
   height: 100px;
@@ -142,13 +142,13 @@ main .banner .grass-area .scroll-line::after {
   top: 80px;
 }
 
-main .banner .grass-area .grass-1 {
+main .grass-area .grass-1 {
   width: 100%;
   height: 190px;
   z-index: 1;
 }
 
-main .banner .grass-area .grass-2 {
+main .grass-area .grass-2 {
   width: 22.6%;
   height: 182px;
   position: absolute;
@@ -636,12 +636,27 @@ main .third-section .container140 .news-btn:hover {
   main .banner {
     height: 1100px;
   }
-  main .banner .grass-area {
-    margin-top: 75px;
+}
+
+@media (max-width: 1439px) {
+  main .first-section .container140 .numerical {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
-@media (max-width: 1700px) and (max-width: 1200px) {
+@media (max-width: 1200px) {
   main .third-section .container140 .news {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -664,7 +679,7 @@ main .third-section .container140 .news-btn:hover {
   }
 }
 
-@media (max-width: 1700px) and (max-width: 992px) {
+@media (max-width: 992px) {
   main .first-section .container170 .about-us-swiper-area .swiper-container {
     width: 80vw;
     height: 68.2vw;
@@ -698,12 +713,9 @@ main .third-section .container140 .news-btn:hover {
   }
 }
 
-@media (max-width: 1700px) and (max-width: 992px) {
+@media (max-width: 992px) {
   main .banner {
     height: 1000px;
-  }
-  main .banner .grass-area {
-    margin-top: 50px;
   }
   main .banner .container170 .mid {
     margin-top: 50px;
@@ -778,7 +790,7 @@ main .third-section .container140 .news-btn:hover {
   }
 }
 
-@media (max-width: 1700px) and (max-width: 800px) {
+@media (max-width: 800px) {
   main .first-section .container170 .row .col .about-us {
     width: unset;
     padding: 0% 50px;
@@ -788,7 +800,7 @@ main .third-section .container140 .news-btn:hover {
   }
 }
 
-@media (max-width: 1700px) and (max-width: 576px) {
+@media (max-width: 576px) {
   main .banner {
     padding-top: 150px;
     height: 952px;
