@@ -448,7 +448,7 @@ main {
 	}
 
 	.third-section {
-		margin-top: 543px;
+		margin-top: 490px;
 		.title-area {
 			width: 428px;
 			height: 130px;
@@ -551,113 +551,6 @@ main {
 	}
 }
 
-@media (max-width: 1740px) {
-	main {
-		.third-section {
-			.container140 {
-				.news {
-					// width: 504px;
-					display: flex;
-					flex-direction: column;
-					justify-content: center;
-					align-items: center;
-					margin: auto;
-					.col {
-						display: flex;
-						justify-content: center;
-					}
-				}
-			}
-		}
-	}
-}
-
-@media (max-width: 1700px) {
-	main {
-		.banner {
-			height: 1100px;
-			.container170 {
-				.mid {
-					.area-top,
-					.area-bot {
-						h1 {
-							font-size: 100px;
-						}
-						h3 {
-							font-size: 40px;
-						}
-					}
-				}
-				.bot {
-					h1 {
-						font-size: 150px;
-					}
-				}
-				.banner-btn {
-					width: 360px;
-					height: 100px;
-					margin-top: 20px;
-					p {
-						font-size: 50px;
-					}
-				}
-			}
-		}
-
-		.first-section {
-			.container170 {
-				.about-us {
-					margin-top: 3%;
-					.top,
-					.bot {
-						h1 {
-							font-size: 48px;
-						}
-						span {
-							font-size: 18px;
-						}
-					}
-					p {
-						font-size: 18px;
-					}
-				}
-			}
-		}
-	}
-}
-
-@media (max-width: 1439px) {
-	main {
-		.first-section {
-			.container170 {
-				.about-us {
-					.top,
-					.bot {
-						h1 {
-							font-size: 40px;
-						}
-						span {
-							font-size: 16px;
-						}
-					}
-					p {
-						font-size: 18px;
-					}
-				}
-			}
-
-			.container140 {
-				.numerical {
-					display: flex;
-					flex-direction: column;
-					justify-content: center;
-					align-items: center;
-				}
-			}
-		}
-	}
-}
-
 @media (max-width: 1200px) {
 	main {
 		.banner {
@@ -688,10 +581,12 @@ main {
 				}
 			}
 		}
+
+		
 	}
 }
 
-@media (max-width: 995px) {
+@media (max-width: 991px) {
 	main {
 		.banner {
 			height: 1000px;
@@ -781,7 +676,7 @@ main {
 	}
 }
 
-@media (max-width: 800px) {
+@media (max-width: 768px) {
 	main {
 		.banner {
 			padding-top: 170px;
@@ -836,9 +731,9 @@ main {
 			}
 		}
 
-		.second-section{
+		.second-section {
 			flex-direction: column;
-			.grass-3{
+			.grass-3 {
 				width: 60vw;
 			}
 			.cat {
@@ -895,6 +790,10 @@ main {
 					}
 				}
 			}
+		}
+
+		.third-section {
+			margin-top: 10vw;
 		}
 	}
 }
@@ -992,7 +891,6 @@ main {
 				// display: none;
 			}
 		}
-
 
 		.third-section {
 			margin: 0;
