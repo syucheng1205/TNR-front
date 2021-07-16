@@ -231,7 +231,7 @@ main {
 				}
 
 				.bot {
-					margin-bottom: 16%;
+					margin-bottom: 10%;
 				}
 
 				p {
@@ -558,11 +558,10 @@ main {
 				.news {
 					// width: 504px;
 					display: flex;
-					// flex-direction: column;
+					flex-direction: column;
 					justify-content: center;
 					align-items: center;
 					margin: auto;
-
 					.col {
 						display: flex;
 						justify-content: center;
@@ -604,12 +603,49 @@ main {
 				}
 			}
 		}
+
+		.first-section {
+			.container170 {
+				.about-us {
+					margin-top: 3%;
+					.top,
+					.bot {
+						h1 {
+							font-size: 48px;
+						}
+						span {
+							font-size: 18px;
+						}
+					}
+					p {
+						font-size: 18px;
+					}
+				}
+			}
+		}
 	}
 }
 
 @media (max-width: 1439px) {
 	main {
 		.first-section {
+			.container170 {
+				.about-us {
+					.top,
+					.bot {
+						h1 {
+							font-size: 40px;
+						}
+						span {
+							font-size: 16px;
+						}
+					}
+					p {
+						font-size: 18px;
+					}
+				}
+			}
+
 			.container140 {
 				.numerical {
 					display: flex;
@@ -634,7 +670,6 @@ main {
 						}
 						h3 {
 							font-size: 32px;
-							
 						}
 					}
 				}
@@ -653,27 +688,10 @@ main {
 				}
 			}
 		}
-
-		.third-section {
-			.container140 {
-				.news {
-					// width: 504px;
-					display: flex;
-					// flex-direction: column;
-					justify-content: center;
-					align-items: center;
-					margin: auto;
-					.col {
-						display: flex;
-						justify-content: center;
-					}
-				}
-			}
-		}
 	}
 }
 
-@media (max-width: 991px) {
+@media (max-width: 995px) {
 	main {
 		.banner {
 			height: 1000px;
@@ -729,7 +747,7 @@ main {
 		.second-section {
 			.cat {
 				.text-contain {
-					bottom: -340px;
+					bottom: -290px;
 					.text-area {
 						h3 {
 							font-size: 40px;
@@ -813,6 +831,31 @@ main {
 					height: 70px;
 					p {
 						font-size: 24px;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 640px) {
+	main{
+		.second-section {
+			.cat {
+				.text-contain {
+					bottom: -290px;
+					.text-area {
+						h3 {
+							font-size: 32px;
+						}
+						p {
+							font-size: 15px;
+						}
+					}
+					.cat-btn {
+						p {
+							font-size: 24px;
+						}
 					}
 				}
 			}

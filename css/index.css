@@ -270,7 +270,7 @@ main .first-section .container170 .about-us .top {
 }
 
 main .first-section .container170 .about-us .bot {
-  margin-bottom: 16%;
+  margin-bottom: 10%;
 }
 
 main .first-section .container170 .about-us p {
@@ -614,6 +614,10 @@ main .third-section .container140 .news-btn:hover {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -655,9 +659,34 @@ main .third-section .container140 .news-btn:hover {
   main .banner .container170 .banner-btn p {
     font-size: 50px;
   }
+  main .first-section .container170 .about-us {
+    margin-top: 3%;
+  }
+  main .first-section .container170 .about-us .top h1,
+  main .first-section .container170 .about-us .bot h1 {
+    font-size: 48px;
+  }
+  main .first-section .container170 .about-us .top span,
+  main .first-section .container170 .about-us .bot span {
+    font-size: 18px;
+  }
+  main .first-section .container170 .about-us p {
+    font-size: 18px;
+  }
 }
 
 @media (max-width: 1439px) {
+  main .first-section .container170 .about-us .top h1,
+  main .first-section .container170 .about-us .bot h1 {
+    font-size: 40px;
+  }
+  main .first-section .container170 .about-us .top span,
+  main .first-section .container170 .about-us .bot span {
+    font-size: 16px;
+  }
+  main .first-section .container170 .about-us p {
+    font-size: 18px;
+  }
   main .first-section .container140 .numerical {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -695,29 +724,9 @@ main .third-section .container140 .news-btn:hover {
   main .banner .container170 .banner-btn p {
     font-size: 50px;
   }
-  main .third-section .container140 .news {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin: auto;
-  }
-  main .third-section .container140 .news .col {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
 }
 
-@media (max-width: 991px) {
+@media (max-width: 995px) {
   main .banner {
     height: 1000px;
   }
@@ -753,7 +762,7 @@ main .third-section .container140 .news-btn:hover {
     margin-top: -55vw;
   }
   main .second-section .cat .text-contain {
-    bottom: -340px;
+    bottom: -290px;
   }
   main .second-section .cat .text-contain .text-area h3 {
     font-size: 40px;
@@ -828,6 +837,21 @@ main .third-section .container140 .news-btn:hover {
     height: 70px;
   }
   main .banner .container170 .banner-btn p {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 640px) {
+  main .second-section .cat .text-contain {
+    bottom: -290px;
+  }
+  main .second-section .cat .text-contain .text-area h3 {
+    font-size: 32px;
+  }
+  main .second-section .cat .text-contain .text-area p {
+    font-size: 15px;
+  }
+  main .second-section .cat .text-contain .cat-btn p {
     font-size: 24px;
   }
 }
