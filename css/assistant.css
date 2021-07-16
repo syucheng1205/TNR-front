@@ -227,8 +227,13 @@
   z-index: 2;
 }
 
+.second-section .decorationCat:hover + .applySwiper .swiper-slide .left-photo {
+  -webkit-filter: brightness(0.75);
+          filter: brightness(0.75);
+}
+
 .second-section .applySwiper {
-  margin-top: -231px;
+  margin-top: -232px;
 }
 
 .second-section .applySwiper .swiper-slide {
@@ -265,12 +270,17 @@
 
 .second-section .applySwiper .swiper-slide .left-photo {
   height: 40.06vw;
+  mix-blend-mode: darken;
+}
+
+.second-section .applySwiper .swiper-slide .left-photo:hover {
+  -webkit-filter: brightness(0.75);
+          filter: brightness(0.75);
 }
 
 .second-section .applySwiper .my-bullet {
-  width: 375px;
+  padding: 1.35vw 0;
   color: white;
-  margin-bottom: 42px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -322,9 +332,16 @@
   content: "4";
 }
 
-.second-section .applySwiper .my-bullet-active {
-  background-color: yellowgreen;
-  border-radius: 40px;
+.second-section .applySwiper .my-bullet:hover::after {
+  color: #fff;
+  border: 2px solid #ee8e74;
+  background-color: #ee8e74;
+}
+
+.second-section .applySwiper .my-bullet-active::after {
+  color: #fff;
+  border: 2px solid #ee8e74;
+  background-color: #ee8e74;
 }
 
 .second-section .applySwiper .swiper-pagination {
@@ -344,9 +361,13 @@
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
-  left: 40%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  left: 28%;
+  height: 40.06vw;
+}
+
+.second-section .applySwiper .swiper-pagination:hover + .swiper-wrapper .swiper-slide .left-photo {
+  -webkit-filter: brightness(0.75);
+          filter: brightness(0.75);
 }
 
 .second-section .applySwiper .rwd-img {

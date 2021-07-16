@@ -176,19 +176,19 @@
 	.decorationCat {
 		position: relative;
 		z-index: 2;
+		&:hover + .applySwiper .swiper-slide .left-photo{
+			filter: brightness(0.75);
+		}
 	}
 
 	.applySwiper {
-		// margin-left: 31.5%;
-		// padding-left: 35%;
-		// height: 50vh;
-		margin-top: -231px;
-		
+		margin-top: -232px;
 		.swiper-slide{
 			width: max-content;
 			height: 40.06vw;
 			align-items: center;
 			position: relative;
+
 
 			.line {
 				width: 11%;
@@ -208,12 +208,16 @@
 			}
 			.left-photo{
 				height: 40.06vw;
+				mix-blend-mode: darken;
+				&:hover{
+					filter: brightness(0.75);
+				}
 			}
 		}
+
 		.my-bullet {
-			width: 375px;
+			padding: 1.35vw 0;
 			color: white;
-			margin-bottom: 42px;
 			display: flex;
 			align-items: center;
 			justify-content: flex-end;
@@ -229,7 +233,7 @@
 				color: #ee8e74;
 				border: 2px solid #ee8e74;
 				background-color: #fff;
-				margin-left: 20px;
+				margin-left:20px;
 				display: flex;
 				align-items: center;
 				justify-content: center;
@@ -246,11 +250,19 @@
 			&:nth-child(4)::after {
 				content: "4";
 			}
+			&:hover::after {
+				color: #fff;
+				border: 2px solid #ee8e74;
+				background-color: #ee8e74;
+			}
 
 		}
 		.my-bullet-active {
-			background-color: yellowgreen;
-			border-radius: 40px;
+			&::after{
+				color: #fff;
+				border: 2px solid #ee8e74;
+				background-color: #ee8e74;
+			}
 		}
 		.swiper-pagination {
 			display: flex;
@@ -260,9 +272,14 @@
 			font-weight: bold;
 			justify-content: center;
 			width: max-content;
-			left: 40%;
-			transform: translateX(-50%);
+			left: 28%;
+			height: 40.06vw;
+			&:hover + .swiper-wrapper .swiper-slide .left-photo{
+				filter: brightness(0.75);
+			}
 		}
+		
+
 
 		.rwd-img{
 			position: absolute;
