@@ -231,7 +231,7 @@ main {
 				}
 
 				.bot {
-					margin-bottom: 16%;
+					margin-bottom: 10%;
 				}
 
 				p {
@@ -558,11 +558,10 @@ main {
 				.news {
 					// width: 504px;
 					display: flex;
-					// flex-direction: column;
+					flex-direction: column;
 					justify-content: center;
 					align-items: center;
 					margin: auto;
-
 					.col {
 						display: flex;
 						justify-content: center;
@@ -604,12 +603,49 @@ main {
 				}
 			}
 		}
+
+		.first-section {
+			.container170 {
+				.about-us {
+					margin-top: 3%;
+					.top,
+					.bot {
+						h1 {
+							font-size: 48px;
+						}
+						span {
+							font-size: 18px;
+						}
+					}
+					p {
+						font-size: 18px;
+					}
+				}
+			}
+		}
 	}
 }
 
 @media (max-width: 1439px) {
 	main {
 		.first-section {
+			.container170 {
+				.about-us {
+					.top,
+					.bot {
+						h1 {
+							font-size: 40px;
+						}
+						span {
+							font-size: 16px;
+						}
+					}
+					p {
+						font-size: 18px;
+					}
+				}
+			}
+
 			.container140 {
 				.numerical {
 					display: flex;
@@ -634,7 +670,6 @@ main {
 						}
 						h3 {
 							font-size: 32px;
-							
 						}
 					}
 				}
@@ -653,27 +688,10 @@ main {
 				}
 			}
 		}
-
-		.third-section {
-			.container140 {
-				.news {
-					// width: 504px;
-					display: flex;
-					// flex-direction: column;
-					justify-content: center;
-					align-items: center;
-					margin: auto;
-					.col {
-						display: flex;
-						justify-content: center;
-					}
-				}
-			}
-		}
 	}
 }
 
-@media (max-width: 991px) {
+@media (max-width: 995px) {
 	main {
 		.banner {
 			height: 1000px;
@@ -729,7 +747,7 @@ main {
 		.second-section {
 			.cat {
 				.text-contain {
-					bottom: -340px;
+					bottom: -290px;
 					.text-area {
 						h3 {
 							font-size: 40px;
@@ -813,6 +831,67 @@ main {
 					height: 70px;
 					p {
 						font-size: 24px;
+					}
+				}
+			}
+		}
+
+		.second-section{
+			flex-direction: column;
+			.grass-3{
+				width: 60vw;
+			}
+			.cat {
+				width: 100%;
+				margin-bottom: 267px;
+				.imgs {
+					height: 83.4vw;
+					.heart-1 {
+						position: absolute;
+						width: 47px;
+						height: 47px;
+						right: 14.3%;
+						bottom: 29.6%;
+					}
+					.heart-2 {
+						position: absolute;
+						width: 90px;
+						height: 90px;
+						right: 7%;
+						bottom: 36%;
+					}
+				}
+
+				.text-contain {
+					bottom: -210px;
+					width: 70%;
+					padding: 0 7%;
+					padding-bottom: 31px;
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					&:nth-child(1) {
+						background-color: #fe886d;
+					}
+
+					.text-area {
+						h3 {
+							font-size: 32px;
+							margin-top: 30px;
+							margin-bottom: 16.3px;
+						}
+
+						p {
+							margin-bottom: 15px;
+							font-size: 15px;
+						}
+					}
+					.cat-btn {
+						width: 40.45%;
+						height: 55px;
+						p {
+							font-size: 24px;
+						}
 					}
 				}
 			}
@@ -914,68 +993,6 @@ main {
 			}
 		}
 
-		.second-section {
-			flex-direction: column;
-			.grass-3 {
-				position: unset;
-				width: 100%;
-			}
-
-			.cat {
-				width: 100%;
-				margin-bottom: 267px;
-				.imgs {
-					height: 83.4vw;
-					.heart-1 {
-						position: absolute;
-						width: 47px;
-						height: 47px;
-						right: 14.3%;
-						bottom: 29.6%;
-					}
-					.heart-2 {
-						position: absolute;
-						width: 90px;
-						height: 90px;
-						right: 7%;
-						bottom: 36%;
-					}
-				}
-
-				.text-contain {
-					bottom: -187px;
-					width: 88.2%;
-					padding: 0 7%;
-					padding-bottom: 31px;
-					display: flex;
-					flex-direction: column;
-					align-items: center;
-					&:nth-child(1) {
-						background-color: #fe886d;
-					}
-
-					.text-area {
-						h3 {
-							font-size: 32px;
-							margin-top: 30px;
-							margin-bottom: 16.3px;
-						}
-
-						p {
-							margin-bottom: 15px;
-							font-size: 15px;
-						}
-					}
-					.cat-btn {
-						width: 40.45%;
-						height: 55px;
-						p {
-							font-size: 24px;
-						}
-					}
-				}
-			}
-		}
 
 		.third-section {
 			margin: 0;
