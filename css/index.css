@@ -636,6 +636,23 @@ main .third-section .container140 .news-btn:hover {
   main .banner {
     height: 1100px;
   }
+  main .banner .container170 .mid .area-top h1, main .banner .container170 .mid .area-bot h1 {
+    font-size: 100px;
+  }
+  main .banner .container170 .mid .area-top h3, main .banner .container170 .mid .area-bot h3 {
+    font-size: 40px;
+  }
+  main .banner .container170 .bot h1 {
+    font-size: 150px;
+  }
+  main .banner .container170 .banner-btn {
+    width: 360px;
+    height: 100px;
+    margin-top: 20px;
+  }
+  main .banner .container170 .banner-btn p {
+    font-size: 50px;
+  }
 }
 
 @media (max-width: 1439px) {
@@ -657,6 +674,23 @@ main .third-section .container140 .news-btn:hover {
 }
 
 @media (max-width: 1200px) {
+  main .banner .container170 .mid .area-top h1, main .banner .container170 .mid .area-bot h1 {
+    font-size: 80px;
+  }
+  main .banner .container170 .mid .area-top h3, main .banner .container170 .mid .area-bot h3 {
+    font-size: 32px;
+  }
+  main .banner .container170 .bot h1 {
+    font-size: 150px;
+  }
+  main .banner .container170 .banner-btn {
+    width: 360px;
+    height: 100px;
+    margin-top: 20px;
+  }
+  main .banner .container170 .banner-btn p {
+    font-size: 50px;
+  }
   main .third-section .container140 .news {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -679,7 +713,26 @@ main .third-section .container140 .news-btn:hover {
   }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 991px) {
+  main .banner {
+    height: 1000px;
+  }
+  main .banner .container170 .mid .area-top h1,
+  main .banner .container170 .mid .area-bot h1 {
+    font-size: 60px;
+  }
+  main .banner .container170 .mid .area-top h3,
+  main .banner .container170 .mid .area-bot h3 {
+    font-size: 32px;
+    line-height: 32px;
+  }
+  main .first-section .title-area {
+    width: 350px;
+    height: 120px;
+  }
+  main .first-section .title-area .title-text h1 {
+    font-size: 48px;
+  }
   main .first-section .container170 .about-us-swiper-area .swiper-container {
     width: 80vw;
     height: 68.2vw;
@@ -710,76 +763,6 @@ main .third-section .container140 .news-btn:hover {
   }
   main .second-section .cat .text-contain .cat-btn p {
     font-size: 30px;
-  }
-}
-
-@media (max-width: 992px) {
-  main .banner {
-    height: 1000px;
-  }
-  main .banner .container170 .mid {
-    margin-top: 50px;
-  }
-  main .banner .container170 .mid .area-top h1,
-  main .banner .container170 .mid .area-bot h1 {
-    font-size: 60px;
-  }
-  main .banner .container170 .mid .area-top h3,
-  main .banner .container170 .mid .area-bot h3 {
-    font-size: 32px;
-    line-height: 32px;
-  }
-  main .first-section .title-area {
-    width: 350px;
-    height: 120px;
-  }
-  main .first-section .title-area .title-text h1 {
-    font-size: 48px;
-  }
-  main .first-section .container170 .row .swiper-container {
-    width: 79.9vw;
-  }
-  main .first-section .container170 .row .about-img {
-    height: 68vw;
-  }
-  main .first-section .container170 .row .swiper-point {
-    margin-left: 0px;
-  }
-  main .first-section .container170 .row .deco-line1 {
-    bottom: 6%;
-    left: -3%;
-  }
-  main .first-section .container170 .row .about-shadow {
-    left: -60px;
-    width: 69.8vw;
-    height: 58.7vw;
-  }
-  main .first-section .container170 .row .col .about-us {
-    margin-top: 50px;
-    padding: 0;
-  }
-  main .first-section .container170 .row .col .about-us h1 {
-    font-size: 32px;
-    margin-bottom: 30px;
-  }
-  main .first-section .container170 .row .col .about-us span {
-    font-size: 15px;
-  }
-  main .first-section .container170 .row .col .about-us p {
-    font-size: 20px;
-  }
-  main .first-section .container170 .row .col .about-us .about-btn {
-    margin: auto;
-    margin-top: 50px;
-    margin-bottom: 100px;
-    width: 200px;
-    height: 80px;
-  }
-  main .first-section .container170 .row .col .about-us .about-btn p {
-    font-size: 24px;
-  }
-  main .second-section .cat .text-contain {
-    bottom: -270px;
   }
   main .third-section .title-area {
     width: 350px;
