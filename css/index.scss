@@ -83,16 +83,32 @@ main {
 			}
 		}
 	}
-	.grass-area {
-		width: 100%;
+
+	.grass-group {
 		position: relative;
-		// top: -5vw;
-		top: -90px;
+		.grass-area {
+			position: relative;
+			.grass-1,
+			.grass-3 {
+				width: 100vw;
+				height: 9.9vw;
+				position: absolute;
+				top: -5vw;
+			}
+		}
+
+		.grass-2 {
+			width: 20vw;
+			height: 10vw;
+			position: absolute;
+			right: 2vw;
+			top: -3vw;
+		}
 
 		.scroll-line {
 			position: absolute;
 			writing-mode: vertical-lr;
-			top: -3.75vw;
+			top: -8.75vw;
 			left: 50%;
 			transform: translateX(-50%);
 			font-size: 18px;
@@ -109,26 +125,51 @@ main {
 				top: 80px;
 			}
 		}
-
-		.grass-1 {
-			width: 100%;
-			height: 190px;
-			z-index: 1;
-			// margin-left: -170px;
-			// margin-top: 42px;
-		}
-		.grass-2 {
-			width: 22.6%;
-			height: 182px;
-			position: absolute;
-			right: 7.3%;
-			top: 52.9%;
-			z-index: 2;
-
-			// margin-top: -92px;
-			// margin-left: 1175px;
-		}
 	}
+
+	// .grass-area {
+	// 	width: 100%;
+	// 	position: relative;
+	// 	top: -90px;
+
+	// 	.scroll-line {
+	// 		position: absolute;
+	// 		writing-mode: vertical-lr;
+	// 		top: -4.75vw;
+	// 		left: 50%;
+	// 		transform: translateX(-50%);
+	// 		font-size: 18px;
+	// 		color: #ffffff;
+	// 		display: flex;
+	// 		align-items: center;
+
+	// 		&::after {
+	// 			content: "";
+	// 			width: 1px;
+	// 			height: 100px;
+	// 			border: 1px solid #ffffff;
+	// 			position: absolute;
+	// 			top: 80px;
+	// 		}
+	// 	}
+	// 	.grass-1{
+	// 		width: 100%;
+	// 		height: 190px;
+	// 	}
+
+	// 	.grass-2 {
+	// width: 434px;
+	// height: 182px;
+	// 		position: absolute;
+	// 		right: 7.3%;
+	// 		top: 52.9%;
+	// 		z-index: 2;
+	// 	}
+
+	// 	.grass-3{
+	// 		display: none;
+	// 	}
+	// }
 
 	.first-section {
 		margin-top: 234px; //之後要修改
@@ -241,7 +282,7 @@ main {
 
 				.about-btn {
 					margin-top: 3%;
-					width: 44.25%;
+					width: 308px;
 					height: 14.5%;
 					background-color: $color-dark-orange;
 					box-shadow: 0px 10px 30px 0px $color-dark-orange;
@@ -448,7 +489,7 @@ main {
 	}
 
 	.third-section {
-		margin-top: 543px;
+		margin-top: 490px;
 		.title-area {
 			width: 428px;
 			height: 130px;
@@ -551,113 +592,6 @@ main {
 	}
 }
 
-@media (max-width: 1740px) {
-	main {
-		.third-section {
-			.container140 {
-				.news {
-					// width: 504px;
-					display: flex;
-					flex-direction: column;
-					justify-content: center;
-					align-items: center;
-					margin: auto;
-					.col {
-						display: flex;
-						justify-content: center;
-					}
-				}
-			}
-		}
-	}
-}
-
-@media (max-width: 1700px) {
-	main {
-		.banner {
-			height: 1100px;
-			.container170 {
-				.mid {
-					.area-top,
-					.area-bot {
-						h1 {
-							font-size: 100px;
-						}
-						h3 {
-							font-size: 40px;
-						}
-					}
-				}
-				.bot {
-					h1 {
-						font-size: 150px;
-					}
-				}
-				.banner-btn {
-					width: 360px;
-					height: 100px;
-					margin-top: 20px;
-					p {
-						font-size: 50px;
-					}
-				}
-			}
-		}
-
-		.first-section {
-			.container170 {
-				.about-us {
-					margin-top: 3%;
-					.top,
-					.bot {
-						h1 {
-							font-size: 48px;
-						}
-						span {
-							font-size: 18px;
-						}
-					}
-					p {
-						font-size: 18px;
-					}
-				}
-			}
-		}
-	}
-}
-
-@media (max-width: 1439px) {
-	main {
-		.first-section {
-			.container170 {
-				.about-us {
-					.top,
-					.bot {
-						h1 {
-							font-size: 40px;
-						}
-						span {
-							font-size: 16px;
-						}
-					}
-					p {
-						font-size: 18px;
-					}
-				}
-			}
-
-			.container140 {
-				.numerical {
-					display: flex;
-					flex-direction: column;
-					justify-content: center;
-					align-items: center;
-				}
-			}
-		}
-	}
-}
-
 @media (max-width: 1200px) {
 	main {
 		.banner {
@@ -691,7 +625,7 @@ main {
 	}
 }
 
-@media (max-width: 995px) {
+@media (max-width: 991px) {
 	main {
 		.banner {
 			height: 1000px;
@@ -711,6 +645,45 @@ main {
 				}
 			}
 		}
+
+		.grass-group {
+			.grass-area {
+				.grass-1,
+				.grass-3 {
+					width: 80vw;
+					transform: scale3d(-1.5, 1.5, 1);
+					top: -10vw;
+				}
+			}
+
+			.grass-2 {
+				width: 30vw;
+				height: 14vw;
+				right: 0;
+				top: -9vw;
+			}
+
+			.scroll-line{
+				top: -22vw;
+			}
+		}
+
+		// .grass-area{
+		// 	.grass-1{
+		// 		display: none;
+		// 	}
+		// 	.grass-2{
+		// 		width: 326px;
+		// 		height: 138px;
+		// 	}
+
+		// 	.grass-3{
+		// 		width: 100%;
+		// 		height: 20vw;
+		// 		display: block;
+		// 		transform: scaleX(-1);
+		// 	}
+		// }
 
 		.first-section {
 			.title-area {
@@ -739,6 +712,18 @@ main {
 						width: 70vw;
 						height: 58.6vw;
 						margin-top: -55vw;
+					}
+				}
+				.about-us {
+					h1 {
+						font-size: 40px;
+					}
+					p {
+						font-size: 20px;
+					}
+					.about-btn {
+						margin: auto;
+						margin-top: 5%;
 					}
 				}
 			}
@@ -781,7 +766,7 @@ main {
 	}
 }
 
-@media (max-width: 800px) {
+@media (max-width: 768px) {
 	main {
 		.banner {
 			padding-top: 170px;
@@ -836,9 +821,16 @@ main {
 			}
 		}
 
-		.second-section{
+		 .grass-group{
+			 .scroll-line{
+				 top: -25vw;
+			 }
+		 }
+			 
+
+		.second-section {
 			flex-direction: column;
-			.grass-3{
+			.grass-3 {
 				width: 60vw;
 			}
 			.cat {
@@ -896,6 +888,10 @@ main {
 				}
 			}
 		}
+
+		.third-section {
+			margin-top: 10vw;
+		}
 	}
 }
 
@@ -952,6 +948,12 @@ main {
 			}
 		}
 
+		.grass-group{
+			.scroll-line{
+				top: -31vw;
+			}
+		}
+
 		.first-section {
 			.title-area {
 				width: 146px;
@@ -978,11 +980,15 @@ main {
 					flex-direction: column;
 				}
 				.about-us {
-					.top {
+					.top,
+					.bot {
 						h1 {
 							font-size: 32px;
 						}
 						span {
+							font-size: 15px;
+						}
+						p {
 							font-size: 15px;
 						}
 					}
@@ -992,7 +998,6 @@ main {
 				// display: none;
 			}
 		}
-
 
 		.third-section {
 			margin: 0;
@@ -1011,28 +1016,29 @@ main {
 					}
 				}
 			}
-
 			.container140 {
 				padding: 0 90px;
 				margin-top: 30px;
-				.news-area {
-					.news-img {
-						.img {
-							width: 77.4%;
-							height: 291px;
+				.news {
+					.news-area {
+						.news-img {
+							.img {
+								width: 77.4%;
+								height: 291px;
+							}
+							.img-shadow {
+								width: 78.6%;
+								height: 300px;
+							}
 						}
-						.img-shadow {
-							width: 78.6%;
-							height: 300px;
-						}
-					}
-					.news-text {
-						h4 {
-							font-size: 32px;
-						}
-						p {
-							padding-right: 90px;
-							font-size: 15px;
+						.news-text {
+							h4 {
+								font-size: 32px;
+							}
+							p {
+								padding-right: 90px;
+								font-size: 15px;
+							}
 						}
 					}
 				}
