@@ -410,14 +410,15 @@ main .third-section {
 main .third-section .heart-pic {
   position: relative;
   left: 50%;
+  top: 50%;
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
-  -webkit-transform: translateX(-20%);
-          transform: translateX(-20%);
+  -webkit-transform: translate(-20%, -50%);
+          transform: translate(-20%, -50%);
 }
 
 main .third-section .heart-pic img {
@@ -443,7 +444,7 @@ main .third-section .heart-pic .heart-texts {
       -ms-flex-direction: column;
           flex-direction: column;
   position: absolute;
-  bottom: 50%;
+  bottom: 47%;
   right: 50%;
   -webkit-transform: translate(56%, 50%);
           transform: translate(56%, 50%);
@@ -476,12 +477,12 @@ main .third-section .heart-pic .heart-texts .thank-btn {
   background-color: #fe886d;
   border-radius: 40px;
   margin-top: 30px;
-}
-
-main .third-section .heart-pic .heart-texts .thank-btn:hover {
-  border-bottom: 4px solid #ffffff;
-  -webkit-transition-duration: 0.8s;
-          transition-duration: 0.8s;
+  width: 190px;
+  max-width: 190px;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 main .third-section .heart-pic .heart-texts .thank-btn:hover {
@@ -492,13 +493,17 @@ main .third-section .heart-pic .heart-texts .thank-btn:hover {
 }
 
 main .third-section .heart-pic .heart-texts .thank-btn .btn {
-  width: 190px;
-  max-width: 190px;
-  text-align: center;
+  border-bottom: 4px solid transparent;
   padding: 0px 5px;
   color: #ffffff;
   font-size: 24px;
   font-weight: bold;
+}
+
+main .third-section .heart-pic .heart-texts .thank-btn:hover .btn {
+  -webkit-transition-duration: 0.8s;
+          transition-duration: 0.8s;
+  border-bottom: 4px solid #fff;
 }
 
 main .fourth-section {
@@ -625,6 +630,18 @@ main .fourth-section .background img:nth-child(1) {
 @media (max-width: 1600px) {
   main .third-section .thank-card .text-area {
     right: 25%;
+  }
+  main .third-section .heart-pic .heart-texts .text {
+    display: none;
+  }
+  main .third-section .heart-pic .heart-texts .phone-text {
+    display: block;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    color: #ffffff;
+    font-size: 32px;
+    text-align: center;
   }
   main .fourth-section .container140 .swiper-group .my-arrow2 {
     width: 60px;
