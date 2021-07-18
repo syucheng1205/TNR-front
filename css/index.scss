@@ -126,13 +126,16 @@ main {
 		.grass-3 {
 			display: none;
 		}
+
+		.grass-4{
+			display: none;
+		}
 	}
 
 	.first-section {
 		margin-top: 234px; //之後要修改
 		width: 100%;
 		height: auto;
-
 		.title-area {
 			width: 428px;
 			height: 130px;
@@ -154,6 +157,7 @@ main {
 			margin-top: 100px;
 			margin-bottom: 230px;
 			.about-us-swiper-area {
+				
 				.swiper-container {
 					width: 41.25vw;
 					height: 35.2vw;
@@ -184,8 +188,8 @@ main {
 					justify-content: space-between;
 					align-items: center;
 					width: 92px;
-					padding-top: 50px;
-					margin-left: -72px;
+					padding-top: 1vw;
+					margin-left: -4vw;
 					.swiper-pagination-bullet {
 						width: 20px;
 						height: 20px;
@@ -216,7 +220,7 @@ main {
 				}
 
 				span {
-					font-size: 18px;
+					font-size: 20px;
 					color: $color-text;
 				}
 
@@ -579,6 +583,20 @@ main {
 				}
 			}
 		}
+
+		.first-section{
+			.container170{
+				.about-us-swiper-area{
+					.swiper-container{
+						margin-top: 150px;
+					}
+					.swiper-point{
+						padding-top: 20px;
+						margin-left: -40px;
+					}
+				}
+			}
+		}
 	}
 }
 
@@ -614,11 +632,24 @@ main {
 
 			.grass-3 {
 				position: absolute;
-				top: 1vw;
+				top: -10vw;
 				width: 100%;
 				height: 20vw;
 				display: block;
 				transform: scaleX(-1);
+			}
+
+			.grass-4{
+				position: absolute;
+				top: 50px;
+				display: block;
+				width: 100%;
+				height: 50px;
+				background-color:#FFA183;
+			}
+
+			.scroll-line{
+				top: -10.75vw;
 			}
 		}
 
@@ -637,6 +668,7 @@ main {
 					.swiper-container {
 						width: 80vw;
 						height: 68.2vw;
+						margin-top: 0;
 					}
 					.about-img {
 						height: 68.2vw;
@@ -674,15 +706,12 @@ main {
 						h3 {
 							font-size: 40px;
 						}
-						p {
-							font-size: 15px;
-						}
 					}
 					.cat-btn {
 						width: 60%;
 						height: 70px;
 						p {
-							font-size: 30px;
+							font-size: 24px;
 						}
 					}
 				}
@@ -758,16 +787,16 @@ main {
 			}
 		}
 
-		.grass-group {
+		.grass-area {
 			.scroll-line {
-				top: -25vw;
+				top: -15vw;
 			}
 		}
 
 		.second-section {
 			flex-direction: column;
 			.grass-3 {
-				width: 60vw;
+				width: 100vw;
 			}
 			.cat {
 				width: 100%;
@@ -832,6 +861,9 @@ main {
 }
 
 @media (max-width: 576px) {
+	.container170{
+		padding: 0 20px;
+	}
 	main {
 		.banner {
 			padding-top: 170px;
@@ -884,13 +916,8 @@ main {
 			}
 		}
 
-		.grass-group {
-			.scroll-line {
-				top: -31vw;
-			}
-		}
-
 		.first-section {
+			margin-top: 110px;
 			.title-area {
 				width: 146px;
 				height: 46px;
@@ -911,6 +938,18 @@ main {
 			}
 
 			.container170 {
+				margin-top: 50px;
+				.about-us-swiper-area{
+					.swiper-container{
+						margin-right: unset;
+					}
+					.swiper-point{
+						margin-left: 24px;
+					}
+					.about-shadow{
+						margin-left: unset;
+					}
+				}
 				.row {
 					display: flex;
 					flex-direction: column;

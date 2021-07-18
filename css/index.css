@@ -160,6 +160,10 @@ main .grass-area .grass-3 {
   display: none;
 }
 
+main .grass-area .grass-4 {
+  display: none;
+}
+
 main .first-section {
   margin-top: 234px;
   width: 100%;
@@ -224,8 +228,8 @@ main .first-section .container170 .about-us-swiper-area .swiper-point {
       -ms-flex-align: center;
           align-items: center;
   width: 92px;
-  padding-top: 50px;
-  margin-left: -72px;
+  padding-top: 1vw;
+  margin-left: -4vw;
 }
 
 main .first-section .container170 .about-us-swiper-area .swiper-point .swiper-pagination-bullet {
@@ -260,7 +264,7 @@ main .first-section .container170 .about-us h1 {
 }
 
 main .first-section .container170 .about-us span {
-  font-size: 18px;
+  font-size: 20px;
   color: #4f4f4f;
 }
 
@@ -632,6 +636,13 @@ main .third-section .container140 .news-btn:hover {
   main .banner .container170 .banner-btn p {
     font-size: 50px;
   }
+  main .first-section .container170 .about-us-swiper-area .swiper-container {
+    margin-top: 150px;
+  }
+  main .first-section .container170 .about-us-swiper-area .swiper-point {
+    padding-top: 20px;
+    margin-left: -40px;
+  }
 }
 
 @media (max-width: 991px) {
@@ -656,12 +667,23 @@ main .third-section .container140 .news-btn:hover {
   }
   main .grass-area .grass-3 {
     position: absolute;
-    top: 1vw;
+    top: -10vw;
     width: 100%;
     height: 20vw;
     display: block;
     -webkit-transform: scaleX(-1);
             transform: scaleX(-1);
+  }
+  main .grass-area .grass-4 {
+    position: absolute;
+    top: 50px;
+    display: block;
+    width: 100%;
+    height: 50px;
+    background-color: #FFA183;
+  }
+  main .grass-area .scroll-line {
+    top: -10.75vw;
   }
   main .first-section .title-area {
     width: 350px;
@@ -673,6 +695,7 @@ main .third-section .container140 .news-btn:hover {
   main .first-section .container170 .about-us-swiper-area .swiper-container {
     width: 80vw;
     height: 68.2vw;
+    margin-top: 0;
   }
   main .first-section .container170 .about-us-swiper-area .about-img {
     height: 68.2vw;
@@ -701,15 +724,12 @@ main .third-section .container140 .news-btn:hover {
   main .second-section .cat .text-contain .text-area h3 {
     font-size: 40px;
   }
-  main .second-section .cat .text-contain .text-area p {
-    font-size: 15px;
-  }
   main .second-section .cat .text-contain .cat-btn {
     width: 60%;
     height: 70px;
   }
   main .second-section .cat .text-contain .cat-btn p {
-    font-size: 30px;
+    font-size: 24px;
   }
   main .third-section .title-area {
     width: 350px;
@@ -773,8 +793,8 @@ main .third-section .container140 .news-btn:hover {
   main .banner .container170 .banner-btn p {
     font-size: 24px;
   }
-  main .grass-group .scroll-line {
-    top: -25vw;
+  main .grass-area .scroll-line {
+    top: -15vw;
   }
   main .second-section {
     -webkit-box-orient: vertical;
@@ -783,7 +803,7 @@ main .third-section .container140 .news-btn:hover {
             flex-direction: column;
   }
   main .second-section .grass-3 {
-    width: 60vw;
+    width: 100vw;
   }
   main .second-section .cat {
     width: 100%;
@@ -847,6 +867,9 @@ main .third-section .container140 .news-btn:hover {
 }
 
 @media (max-width: 576px) {
+  .container170 {
+    padding: 0 20px;
+  }
   main .banner {
     padding-top: 170px;
     height: 900px;
@@ -895,8 +918,8 @@ main .third-section .container140 .news-btn:hover {
   main .banner .container170 .banner-btn p {
     font-size: 24px;
   }
-  main .grass-group .scroll-line {
-    top: -31vw;
+  main .first-section {
+    margin-top: 110px;
   }
   main .first-section .title-area {
     width: 146px;
@@ -910,6 +933,18 @@ main .third-section .container140 .news-btn:hover {
   main .first-section .title-area .title-text h1 {
     color: #4f4f4f;
     font-size: 24px;
+  }
+  main .first-section .container170 {
+    margin-top: 50px;
+  }
+  main .first-section .container170 .about-us-swiper-area .swiper-container {
+    margin-right: unset;
+  }
+  main .first-section .container170 .about-us-swiper-area .swiper-point {
+    margin-left: 24px;
+  }
+  main .first-section .container170 .about-us-swiper-area .about-shadow {
+    margin-left: unset;
   }
   main .first-section .container170 .row {
     display: -webkit-box;
