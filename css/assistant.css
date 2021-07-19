@@ -779,19 +779,19 @@ main .fourth-section .background img:nth-child(1) {
   main .first-section .helpSwiper .swiper-wrapper .swiper-slide .donate-can-card .bg-text .text-area h6:nth-last-child(1) {
     margin-bottom: 15px;
   }
-  main .third-section .thank-card .heart-img {
-    right: -8%;
+  main .third-section .heart-pic img {
+    width: 238px;
+    height: 225px;
   }
-  main .third-section .thank-card .text-area {
-    top: 480px;
-    right: 35%;
-  }
-  main .third-section .thank-card .text-area h5 {
+  main .third-section .heart-pic .heart-texts .phone-text {
     font-size: 15px;
   }
-  main .third-section .thank-card .text-area .thank-btn .btn {
-    width: 75px;
+  main .third-section .heart-pic .heart-texts .thank-btn {
+    width: 72px;
     height: 25px;
+    margin-top: 10px;
+  }
+  main .third-section .heart-pic .heart-texts .thank-btn .btn {
     font-size: 12px;
   }
 }
