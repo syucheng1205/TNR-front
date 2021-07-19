@@ -10,7 +10,6 @@ html {
 
 body {
   margin: 0;
-  height: 3000px;
 }
 
 h1,
@@ -120,8 +119,7 @@ li {
 
 .nav .burger-area {
   float: right;
-  width: 960px;
-  height: 100vh;
+  width: 60vw;
   background-image: url("/img/first-section/米色背景.jpg");
   border-radius: 40px 0 40px 40px;
   opacity: 0.8;
@@ -154,7 +152,7 @@ li {
 }
 
 .nav .burger-area .list a {
-  font-size: 64px;
+  font-size: 60px;
   color: #4f4f4f;
   margin-bottom: 6%;
   cursor: pointer;
@@ -172,7 +170,6 @@ li {
 
 .nav .burger-area .list .nav-btn {
   width: 381px;
-  height: 130px;
   background-color: #ff7950;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -187,8 +184,8 @@ li {
   -webkit-box-shadow: 0px 10px 30px 0px #ff7950;
           box-shadow: 0px 10px 30px 0px #ff7950;
   cursor: pointer;
-  padding: 33px;
-  margin-bottom: 136px;
+  padding: 30px;
+  margin-bottom: 3vw;
 }
 
 .nav .burger-area .list .nav-btn p {
@@ -408,7 +405,7 @@ footer .footer-area .container140 .ft-bot p {
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 768px) {
   .nav .logo {
     width: 90px;
     height: 83px;
@@ -459,7 +456,7 @@ footer .footer-area .container140 .ft-bot p {
 
 @media (max-width: 576px) {
   footer .footer-area .container140 {
-    padding: 0 6.9%;
+    padding: 0 40px;
   }
   footer .footer-area .container140 .ft-top {
     position: relative;

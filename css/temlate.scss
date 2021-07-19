@@ -10,7 +10,6 @@ html {
 
 body {
 	margin: 0;
-	height: 3000px;
 }
 
 h1,
@@ -118,8 +117,8 @@ li {
 	}
 	.burger-area {
 		float: right;
-		width: 960px;
-		height: 100vh;
+		width: 60vw;
+		// height: 100vh;
 		background-image: url("/img/first-section/米色背景.jpg");
 		border-radius: 40px 0 40px 40px;
 		opacity: 0.8;
@@ -142,7 +141,7 @@ li {
 			align-items: center;
 
 			a {
-				font-size: 64px;
+				font-size: 60px;
 				color: #4f4f4f;
 				margin-bottom: 6%;
 				cursor: pointer;
@@ -159,7 +158,6 @@ li {
 
 			.nav-btn {
 				width: 381px;
-				height: 130px;
 				background-color: $color-dark-orange;
 				display: flex;
 				align-items: center;
@@ -167,8 +165,8 @@ li {
 				border-radius: 40px;
 				box-shadow: 0px 10px 30px 0px $color-dark-orange;
 				cursor: pointer;
-				padding: 33px;
-				margin-bottom: 136px;
+				padding: 30px;
+				margin-bottom: 3vw;
 
 				p {
 					font-size: 48px;
@@ -374,7 +372,7 @@ footer {
 	}
 }
 
-@media(max-width:800px){
+@media(max-width:768px){
 	.nav {
 		.logo {
 			width: 90px;
@@ -445,9 +443,8 @@ footer {
 
 	footer {
 		.footer-area {
-			// display: none;
 			.container140 {
-				padding: 0 6.9%;
+				padding: 0 40px;
 
 				.ft-top {
 					position: relative;
