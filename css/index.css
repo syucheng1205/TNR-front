@@ -330,9 +330,8 @@ main .first-section .container140 .numerical {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 main .first-section .container140 .numerical .numerical-value {
@@ -604,6 +603,10 @@ main .third-section .container140 .news .news-area .news-text p {
   color: #000000;
 }
 
+main .third-section .container140 .news .news-area .news-text span {
+  display: none;
+}
+
 main .third-section .container140 .news-btn {
   margin: auto;
   margin-bottom: 240px;
@@ -666,6 +669,32 @@ main .third-section .container140 .news-btn:hover {
   }
 }
 
+@media (max-width: 1500px) {
+  main .first-section .container140 .numerical .numerical-value .icon {
+    width: 100px;
+    height: 100px;
+    margin-top: 8px;
+  }
+  main .first-section .container140 .numerical .numerical-value .icon .steri-cat {
+    width: 50px;
+    height: 50px;
+  }
+  main .first-section .container140 .numerical .numerical-value .icon .medi-sup {
+    width: 60px;
+    height: 60px;
+  }
+  main .first-section .container140 .numerical .numerical-value .text {
+    margin: 0;
+  }
+  main .first-section .container140 .numerical .numerical-value .text h1 {
+    font-size: 72px;
+  }
+  main .first-section .container140 .numerical .numerical-value .text h3 {
+    font-size: 26px;
+    margin-left: 14px;
+  }
+}
+
 @media (max-width: 1200px) {
   main .banner .container170 .mid .area-top h1,
   main .banner .container170 .mid .area-bot h1 {
@@ -692,6 +721,12 @@ main .third-section .container140 .news-btn:hover {
   main .first-section .container170 .about-us-swiper-area .swiper-point {
     padding-top: 20px;
     margin-left: -20px;
+  }
+  main .first-section .container140 .numerical .numerical-value .text h1 {
+    font-size: 60px;
+  }
+  main .first-section .container140 .numerical .numerical-value .text h3 {
+    font-size: 24px;
   }
 }
 
@@ -774,6 +809,54 @@ main .third-section .container140 .news-btn:hover {
   main .first-section .container170 .about-us .about-btn {
     margin: auto;
     margin-top: 5%;
+  }
+  main .first-section .container140 .numerical {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  main .first-section .container140 .numerical .numerical-value {
+    margin-bottom: 100px;
+  }
+  main .first-section .container140 .numerical .numerical-value .icon {
+    width: 133px;
+    height: 133px;
+  }
+  main .first-section .container140 .numerical .numerical-value .icon .steri-cat {
+    width: unset;
+    height: unset;
+  }
+  main .first-section .container140 .numerical .numerical-value .icon .medi-sup {
+    width: unset;
+    height: unset;
+  }
+  main .first-section .container140 .numerical .numerical-value .text h1 {
+    font-size: 96px;
+  }
+  main .first-section .container140 .numerical .numerical-value .text h3 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-left: 20px;
+  }
+  main .first-section .container140 .numerical .value-2 {
+    margin-right: 40px;
+  }
+  main .first-section .container140 .numerical .value-2 .text {
+    margin-left: 10px;
+  }
+  main .first-section .container140 .numerical .value-3 {
+    margin-right: 40px;
+    margin-bottom: 0;
+  }
+  main .first-section .container140 .numerical .value-3 .text {
+    margin-left: 10px;
   }
   main .second-section .cat .imgs .heart-1 {
     width: 40px;
@@ -937,6 +1020,9 @@ main .third-section .container140 .news-btn:hover {
   .container170 {
     padding: 0 20px;
   }
+  .container140 {
+    padding: 0 40px;
+  }
   main .banner {
     padding-top: 170px;
     height: 900px;
@@ -1053,13 +1139,15 @@ main .third-section .container140 .news-btn:hover {
     font-size: 24px;
   }
   main .third-section .container140 {
-    padding: 0 90px;
     margin-top: 30px;
   }
   main .third-section .container140 .news {
     -webkit-box-align: unset;
         -ms-flex-align: unset;
             align-items: unset;
+  }
+  main .third-section .container140 .news .news-area {
+    width: unset;
   }
   main .third-section .container140 .news .news-area .news-img .img {
     width: 77.4%;
