@@ -764,7 +764,7 @@ main .fourth-section .background img:nth-child(1) {
   main .first-section .helpSwiper .swiper-wrapper .swiper-slide .donate-can-card .bg-text {
     padding: 10px 10px 20px;
     margin-top: unset;
-    border-radius: 20px;
+    border-radius: 0 0 20px 20px;
   }
   main .first-section .helpSwiper .swiper-wrapper .swiper-slide .donate-can-card .bg-text .text-area .donate-number {
     margin-bottom: 8px;
