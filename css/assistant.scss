@@ -704,23 +704,23 @@ main {
 				}
 			}
 		}
-
 		.third-section {
-			.thank-card {
-				.heart-img {
-					right: -8%;
+			.heart-pic{
+				img{
+					width: 238px;
+					height: 225px;
 				}
-				.text-area {
-					top: 480px;
-					right: 35%;
-					h5 {
-						font-size: 15px;
+				.heart-texts{
+					.phone-text{
+						font-size: 15px ;
 					}
-					.thank-btn {
-						.btn {
-							width: 75px;
-							height: 25px;
+					.thank-btn{
+						width: 72px;
+						height: 25px;
+						margin-top: 10px;
+						.btn{
 							font-size: 12px;
+
 						}
 					}
 				}
