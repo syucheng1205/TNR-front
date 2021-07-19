@@ -396,8 +396,6 @@ main {
 					}
 				}
 				.cat-btn {
-					width: 78%;
-					height: 100px;
 					background-color: #f2a589;
 					display: flex;
 					align-items: center;
@@ -406,6 +404,7 @@ main {
 					cursor: pointer;
 					box-shadow: 0px 10px 30px 0px #f2a589;
 					color: #fff;
+					padding: 20px 80px;
 					p {
 						font-size: 36px;
 						font-weight: bold;
@@ -747,6 +746,7 @@ main {
 					.about-btn {
 						margin: auto;
 						margin-top: 5%;
+						padding: 20px 50px;
 					}
 				}
 			}
@@ -819,8 +819,7 @@ main {
 						}
 					}
 					.cat-btn {
-						width: 60%;
-						height: 70px;
+						padding: 20px 60px;
 						p {
 							font-size: 24px;
 						}
@@ -956,8 +955,6 @@ main {
 						}
 					}
 					.cat-btn {
-						width: 40.45%;
-						height: 55px;
 						p {
 							font-size: 24px;
 						}
@@ -1054,6 +1051,7 @@ main {
 
 			.container170 {
 				margin-top: 50px;
+				margin-bottom: 100px;
 				padding: 0 20px;
 				.about-us-swiper-area {
 					.swiper-container {
@@ -1083,6 +1081,20 @@ main {
 						p {
 							font-size: 15px;
 						}
+					}
+
+					.about-btn{
+						margin-top: 10%;
+					}
+				}
+			}
+		}
+
+		.second-section{
+			.cat{
+				.text-contain{
+					.cat-btn{
+						padding: 8px 40px;
 					}
 				}
 			}

@@ -488,8 +488,6 @@ main .second-section .cat .text-contain .text-area p {
 }
 
 main .second-section .cat .text-contain .cat-btn {
-  width: 78%;
-  height: 100px;
   background-color: #f2a589;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -505,6 +503,7 @@ main .second-section .cat .text-contain .cat-btn {
   -webkit-box-shadow: 0px 10px 30px 0px #f2a589;
           box-shadow: 0px 10px 30px 0px #f2a589;
   color: #fff;
+  padding: 20px 80px;
 }
 
 main .second-section .cat .text-contain .cat-btn p {
@@ -809,6 +808,7 @@ main .third-section .container140 .news-btn:hover {
   main .first-section .container170 .about-us .about-btn {
     margin: auto;
     margin-top: 5%;
+    padding: 20px 50px;
   }
   main .first-section .container140 .numerical {
     -webkit-box-orient: vertical;
@@ -874,8 +874,7 @@ main .third-section .container140 .news-btn:hover {
     font-size: 40px;
   }
   main .second-section .cat .text-contain .cat-btn {
-    width: 60%;
-    height: 70px;
+    padding: 20px 60px;
   }
   main .second-section .cat .text-contain .cat-btn p {
     font-size: 24px;
@@ -1004,10 +1003,6 @@ main .third-section .container140 .news-btn:hover {
     margin-bottom: 15px;
     font-size: 15px;
   }
-  main .second-section .cat .text-contain .cat-btn {
-    width: 40.45%;
-    height: 55px;
-  }
   main .second-section .cat .text-contain .cat-btn p {
     font-size: 24px;
   }
@@ -1089,6 +1084,7 @@ main .third-section .container140 .news-btn:hover {
   }
   main .first-section .container170 {
     margin-top: 50px;
+    margin-bottom: 100px;
     padding: 0 20px;
   }
   main .first-section .container170 .about-us-swiper-area .swiper-container {
@@ -1123,6 +1119,12 @@ main .third-section .container140 .news-btn:hover {
   main .first-section .container170 .about-us .top p,
   main .first-section .container170 .about-us .bot p {
     font-size: 15px;
+  }
+  main .first-section .container170 .about-us .about-btn {
+    margin-top: 10%;
+  }
+  main .second-section .cat .text-contain .cat-btn {
+    padding: 8px 40px;
   }
   main .third-section {
     margin: 0;
