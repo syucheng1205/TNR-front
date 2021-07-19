@@ -4,10 +4,11 @@ main .first-section {
 }
 
 main .first-section .background .img {
-  width: 72%;
-  height: 544px;
+  width: 74.8vw;
+  height: 28.35vw;
   background-image: url(/img/04-assistant/blue-wave.png);
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 main .first-section .background .img .background-title {
@@ -718,6 +719,9 @@ main .fourth-section .background img:nth-child(1) {
 }
 
 @media (max-width: 650px) {
+  main .first-section .background .img {
+    height: 40.7vw;
+  }
   main .first-section .background .links .link {
     width: 50px;
     height: 50px;
@@ -730,6 +734,50 @@ main .fourth-section .background img:nth-child(1) {
   }
   main .first-section .background .img .background-title {
     font-size: 30px;
+  }
+  main .first-section .helpSwiper .swiper-wrapper .swiper-slide {
+    width: 238px !important;
+  }
+  main .first-section .helpSwiper .swiper-wrapper .swiper-slide .donate-can-card {
+    border-radius: 20px;
+  }
+  main .first-section .helpSwiper .swiper-wrapper .swiper-slide .donate-can-card .donate-can-img {
+    padding: 10px;
+  }
+  main .first-section .helpSwiper .swiper-wrapper .swiper-slide .donate-can-card .donate-can-img img {
+    width: 218px;
+    height: 145px;
+  }
+  main .first-section .helpSwiper .swiper-wrapper .swiper-slide .donate-can-card .donate-can-img .card-shadow {
+    padding: 6px 0;
+    width: 92%;
+    bottom: 6%;
+    border-radius: 20px;
+  }
+  main .first-section .helpSwiper .swiper-wrapper .swiper-slide .donate-can-card .donate-can-img .card-shadow .shadow-text {
+    font-size: 18px;
+  }
+  main .first-section .helpSwiper .swiper-wrapper .swiper-slide .donate-can-card .donate-can-img .card-shadow .shadow-text span {
+    font-size: 20px;
+    padding: 0 5px;
+  }
+  main .first-section .helpSwiper .swiper-wrapper .swiper-slide .donate-can-card .bg-text {
+    padding: 10px 10px 20px;
+    margin-top: unset;
+    border-radius: 20px;
+  }
+  main .first-section .helpSwiper .swiper-wrapper .swiper-slide .donate-can-card .bg-text .text-area .donate-number {
+    margin-bottom: 8px;
+  }
+  main .first-section .helpSwiper .swiper-wrapper .swiper-slide .donate-can-card .bg-text .text-area .donate-number p {
+    padding: 5px 11px;
+  }
+  main .first-section .helpSwiper .swiper-wrapper .swiper-slide .donate-can-card .bg-text .text-area h6 {
+    padding: unset;
+    margin-bottom: 8px;
+  }
+  main .first-section .helpSwiper .swiper-wrapper .swiper-slide .donate-can-card .bg-text .text-area h6:nth-last-child(1) {
+    margin-bottom: 15px;
   }
   main .third-section .thank-card .heart-img {
     right: -8%;
@@ -748,9 +796,9 @@ main .fourth-section .background img:nth-child(1) {
   }
 }
 
-@media (max-width: 576px) {
-  main .first-section .background .img .background-title {
-    font-size: 30px;
+@media (max-width: 577px) {
+  main .container170 {
+    padding: 0 40px;
   }
 }
 /*# sourceMappingURL=assistant.css.map */
