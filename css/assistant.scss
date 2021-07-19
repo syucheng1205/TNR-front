@@ -4,10 +4,11 @@ main {
 		width: 100%;
 		.background {
 			.img {
-				width: 72%;
-				height: 544px;
+				width: 74.8vw;
+				height: 28.35vw;;
 				background-image: url(/img/04-assistant/blue-wave.png);
 				background-repeat: no-repeat;
+				background-size: cover;
 				.background-title {
 					font-size: 96px;
 					padding: 0 35px;
@@ -629,6 +630,9 @@ main {
 	@media (max-width: 650px) {
 		.first-section {
 			.background {
+				.img{
+					height: 40.7vw;
+				}
 				.links {
 					.link {
 						width: 50px;
@@ -644,6 +648,58 @@ main {
 				.img {
 					.background-title {
 						font-size: 30px;
+					}
+				}
+			}
+			.helpSwiper{
+				.swiper-wrapper{
+					.swiper-slide{
+						width: 238px !important; 
+						.donate-can-card{
+							border-radius: 20px;
+							.donate-can-img{
+								padding: 10px;
+								img{
+									width: 218px;
+									height: 145px;
+								}
+								.card-shadow{
+									padding: 6px 0;
+									width: 92%;
+									bottom: 6%;
+									border-radius: 20px;
+									.shadow-text{
+										font-size: 18px;
+										span{
+											font-size: 20px;
+											padding: 0 5px;
+										}
+									}
+								}
+							}
+							.bg-text{
+								padding: 10px 10px 20px;
+								margin-top: unset;
+								border-radius: 20px;
+								.text-area{
+									.donate-number{
+										margin-bottom: 8px;
+										p {
+											padding: 5px 11px;
+										}
+									} 
+									h6{
+										padding: unset;
+										margin-bottom: 8px;
+										&:nth-last-child(1){
+											margin-bottom: 15px;
+
+										}
+									}
+								}
+								
+							}
+						}
 					}
 				}
 			}
@@ -672,15 +728,10 @@ main {
 		}
 	}
 
-	@media (max-width: 576px) {
-		.first-section {
-			.background {
-				.img {
-					.background-title {
-						font-size: 30px;
-					}
-				}
-			}
+	@media (max-width: 577px) {
+		.container170{
+			padding: 0 40px;
 		}
+		
 	}
 }
