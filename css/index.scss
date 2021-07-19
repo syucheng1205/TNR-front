@@ -271,9 +271,9 @@ main {
 		}
 
 		.container140 {
-			.numerical{
+			.numerical {
 				display: flex;
-				justify-content: space-between;
+				justify-content: space-around;
 				.numerical-value {
 					display: flex;
 					.icon {
@@ -284,21 +284,21 @@ main {
 						display: flex;
 						justify-content: center;
 						align-items: center;
-						.steri-cat{
+						.steri-cat {
 							margin-top: -6px;
 							margin-left: 2px;
 						}
-						.medi-sup{
+						.medi-sup {
 							margin-top: 7px;
 							margin-left: 3px;
 						}
-	
+
 						i {
 							font-size: 60px;
 							color: $color-btn-text;
 						}
 					}
-	
+
 					.text {
 						margin-left: 10px;
 						h3 {
@@ -316,43 +316,6 @@ main {
 					}
 				}
 			}
-			// .num-Swiper {
-			// 	.disabled {
-			// 		transform: translate3d(0px, 0, 0) !important;
-			// 	}
-
-			// 	.numerical-value {
-			// 		display: flex;
-			// 		.icon {
-			// 			width: 133px;
-			// 			height: 133px;
-			// 			border-radius: 50%;
-			// 			background-color: $color-light-orange;
-			// 			display: flex;
-			// 			justify-content: center;
-			// 			align-items: center;
-
-			// 			i {
-			// 				font-size: 60px;
-			// 				color: $color-btn-text;
-			// 			}
-			// 		}
-
-			// 		.text {
-			// 			h3 {
-			// 				font-size: 32px;
-			// 				color: $color-banner-gray;
-			// 				margin-left: 20px;
-			// 				font-weight: bold;
-			// 			}
-			// 			h1 {
-			// 				font-size: 96px;
-			// 				color: $color-text;
-			// 				margin-left: 10px;
-			// 			}
-			// 		}
-			// 	}
-			// }
 		}
 	}
 
@@ -527,6 +490,9 @@ main {
 							font-size: 18px;
 							color: #000000;
 						}
+						span{
+							display: none;
+						}
 					}
 				}
 			}
@@ -572,13 +538,49 @@ main {
 					flex-direction: column;
 					justify-content: center;
 					align-items: center;
-					.news-area{
-						.news-img{
-							.img{
+					.news-area {
+						.news-img {
+							.img {
 								width: 96%;
 							}
-							.img-shadow{
+							.img-shadow {
 								width: 96%;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 1500px) {
+	main {
+		.first-section {
+			.container140 {
+				.numerical {
+					.numerical-value {
+						.icon {
+							width: 100px;
+							height: 100px;
+							margin-top: 8px;
+							.steri-cat {
+								width: 50px;
+								height: 50px;
+							}
+							.medi-sup {
+								width: 60px;
+								height: 60px;
+							}
+						}
+						.text {
+							margin: 0;
+							h1 {
+								font-size: 72px;
+							}
+							h3 {
+								font-size: 26px;
+								margin-left: 14px;
 							}
 						}
 					}
@@ -631,8 +633,20 @@ main {
 					}
 				}
 			}
-
-			
+			.container140 {
+				.numerical {
+					.numerical-value {
+						.text {
+							h1 {
+								font-size: 60px;
+							}
+							h3 {
+								font-size: 24px;
+							}
+						}
+					}
+				}
+			}
 		}
 	}
 }
@@ -733,6 +747,52 @@ main {
 					.about-btn {
 						margin: auto;
 						margin-top: 5%;
+					}
+				}
+			}
+			.container140 {
+				.numerical {
+					flex-direction: column;
+					justify-content: center;
+					align-items: center;
+					.numerical-value {
+						margin-bottom: 100px;
+						.icon {
+							width: 133px;
+							height: 133px;
+							.steri-cat {
+								width: unset;
+								height: unset;
+							}
+							.medi-sup {
+								width: unset;
+								height: unset;
+							}
+						}
+						.text {
+							h1 {
+								font-size: 96px;
+							}
+							h3 {
+								font-size: 32px;
+								font-weight: bold;
+								margin-left: 20px;
+							}
+						}
+					}
+
+					.value-2{
+						margin-right: 40px;
+						.text{
+							margin-left: 10px;
+						}
+					}
+					.value-3{
+						margin-right: 40px;
+						margin-bottom: 0;
+						.text{
+							margin-left: 10px;
+						}
 					}
 				}
 			}
@@ -908,7 +968,6 @@ main {
 
 		.third-section {
 			margin-top: 10vw;
-			
 		}
 	}
 }
@@ -916,6 +975,9 @@ main {
 @media (max-width: 576px) {
 	.container170 {
 		padding: 0 20px;
+	}
+	.container140{
+		padding: 0 40px;
 	}
 	main {
 		.banner {
@@ -1044,11 +1106,11 @@ main {
 				}
 			}
 			.container140 {
-				padding: 0 90px;
 				margin-top: 30px;
 				.news {
 					align-items: unset;
 					.news-area {
+						width: unset;
 						.news-img {
 							.img {
 								width: 77.4%;

@@ -10,7 +10,6 @@ html {
 
 body {
   margin: 0;
-  height: 3000px;
 }
 
 h1,
@@ -457,7 +456,7 @@ footer .footer-area .container140 .ft-bot p {
 
 @media (max-width: 576px) {
   footer .footer-area .container140 {
-    padding: 0 6.9%;
+    padding: 0 40px;
   }
   footer .footer-area .container140 .ft-top {
     position: relative;
