@@ -444,7 +444,7 @@ main {
 		}
 
 		.container140 {
-			margin-top: 100px;
+			margin-top: 150px;
 			width: 100%;
 
 			.news {
@@ -480,11 +480,17 @@ main {
 							font-size: 40px;
 							color: #fe886d;
 							margin-bottom: 20px;
+							overflow: hidden;
+							text-overflow: ellipsis;
+							display: -webkit-box;
+							-webkit-line-clamp: 1;
+							-webkit-box-orient: vertical;
 						}
 
 						p {
 							font-size: 18px;
 							color: #000000;
+							-webkit-line-clamp: 3;
 						}
 						.date {
 							display: none;
@@ -526,9 +532,9 @@ main {
 	}
 }
 
-@media (max-width: 1800px){
-	main{
-		.third-section{
+@media (max-width: 1800px) {
+	main {
+		.third-section {
 			.container140 {
 				.news {
 					display: flex;
@@ -550,6 +556,7 @@ main {
 							}
 						}
 						.news-text {
+							padding: unset;
 							margin: 0;
 							width: 100%;
 							display: flex;
@@ -557,10 +564,18 @@ main {
 							justify-content: space-between;
 							h4 {
 								font-size: 32px;
-								color: #FE886D;;
+								color: #fe886d;
 								margin: 0;
 							}
-							
+
+							p {
+								overflow: hidden;
+								text-overflow: ellipsis;
+								display: -webkit-box;
+								-webkit-line-clamp: 3;
+								-webkit-box-orient: vertical;
+							}
+
 							.date {
 								display: unset;
 								color: #4f4f4f;
@@ -586,7 +601,7 @@ main {
 						}
 						.news-text {
 							margin-top: 5vw;
-							
+
 							span {
 								font-size: 15px;
 								display: block;
@@ -895,7 +910,7 @@ main {
 				}
 			}
 
-			.container140{
+			.container140 {
 				.news {
 					display: flex;
 					flex-direction: column;
@@ -923,10 +938,10 @@ main {
 							justify-content: space-between;
 							h4 {
 								font-size: 24px;
-								color: #FE886D;;
+								color: #fe886d;
 								margin: 0;
 							}
-							
+
 							.date {
 								display: unset;
 								color: #4f4f4f;
@@ -953,11 +968,11 @@ main {
 						}
 						.news-text {
 							margin-top: 5vw;
-							
-							h4{
+
+							h4 {
 								font-size: 32px;
 							}
-							
+
 							span {
 								font-size: 15px;
 								display: block;
@@ -1090,6 +1105,10 @@ main {
 					}
 				}
 			}
+		}
+
+		.third-section {
+			margin-top: 50px;
 		}
 	}
 }
@@ -1244,6 +1263,7 @@ main {
 			}
 
 			.container140 {
+				margin-top: 50px;
 				.news {
 					display: flex;
 					flex-direction: column;
@@ -1273,6 +1293,7 @@ main {
 								font-size: 20px;
 								color: #4f4f4f;
 								margin: 0;
+								-webkit-line-clamp: 3;
 							}
 							p {
 								display: none;
@@ -1304,7 +1325,7 @@ main {
 							margin-top: 40px;
 							h4 {
 								font-size: 32px;
-								color: #FE886D;
+								color: #fe886d;
 							}
 							p {
 								display: none;

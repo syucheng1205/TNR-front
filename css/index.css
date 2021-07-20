@@ -548,7 +548,7 @@ main .third-section .title-area .title-text h1 {
 }
 
 main .third-section .container140 {
-  margin-top: 100px;
+  margin-top: 150px;
   width: 100%;
 }
 
@@ -590,11 +590,17 @@ main .third-section .container140 .news .news-area .news-text h4 {
   font-size: 40px;
   color: #fe886d;
   margin-bottom: 20px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
 }
 
 main .third-section .container140 .news .news-area .news-text p {
   font-size: 18px;
   color: #000000;
+  -webkit-line-clamp: 3;
 }
 
 main .third-section .container140 .news .news-area .news-text .date {
@@ -672,6 +678,7 @@ main .third-section .container140 .news-btn:hover {
     display: none;
   }
   main .third-section .container140 .news .news-area .news-text {
+    padding: unset;
     margin: 0;
     width: 100%;
     display: -webkit-box;
@@ -687,8 +694,15 @@ main .third-section .container140 .news-btn:hover {
   }
   main .third-section .container140 .news .news-area .news-text h4 {
     font-size: 32px;
-    color: #FE886D;
+    color: #fe886d;
     margin: 0;
+  }
+  main .third-section .container140 .news .news-area .news-text p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
   }
   main .third-section .container140 .news .news-area .news-text .date {
     display: unset;
@@ -994,7 +1008,7 @@ main .third-section .container140 .news-btn:hover {
   }
   main .third-section .container140 .news .news-area .news-text h4 {
     font-size: 24px;
-    color: #FE886D;
+    color: #fe886d;
     margin: 0;
   }
   main .third-section .container140 .news .news-area .news-text .date {
@@ -1152,6 +1166,9 @@ main .third-section .container140 .news-btn:hover {
   main .second-section .cat .text-contain .cat-btn p {
     font-size: 24px;
   }
+  main .third-section {
+    margin-top: 50px;
+  }
 }
 
 @media (max-width: 576px) {
@@ -1283,6 +1300,9 @@ main .third-section .container140 .news-btn:hover {
   main .third-section .title-area .title-text h1 {
     font-size: 24px;
   }
+  main .third-section .container140 {
+    margin-top: 50px;
+  }
   main .third-section .container140 .news {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1329,6 +1349,7 @@ main .third-section .container140 .news-btn:hover {
     font-size: 20px;
     color: #4f4f4f;
     margin: 0;
+    -webkit-line-clamp: 3;
   }
   main .third-section .container140 .news .news-area .news-text p {
     display: none;
@@ -1361,7 +1382,7 @@ main .third-section .container140 .news-btn:hover {
   }
   main .third-section .container140 .news .first-news .news-text h4 {
     font-size: 32px;
-    color: #FE886D;
+    color: #fe886d;
   }
   main .third-section .container140 .news .first-news .news-text p {
     display: none;
