@@ -382,9 +382,9 @@
 									</div>
 									<img src="./img/04-assistant/pencilCAT.png" alt="">
 								</div>
+								<img src="./img/second-section/cat-2.png" class="img">
 							</div>
 							<div class="swiper-slide">
-								<img src="./img/second-section/cat-2.png" class="img">
 							</div>
 							<div class="swiper-slide">
 								<div class="diary-text">
@@ -438,6 +438,7 @@
 							<div class="swiper-slide">Slide 6</div>
 							<div class="swiper-slide">Slide 7</div>
 							<div class="swiper-slide">Slide 8</div>
+							<div class="swiper-slide">Slide 9</div>
 						</div>
 					</div>
 					<div class="swiper-button-next my-arrow2 arrow2-next swiper-button-white"></div>
@@ -564,14 +565,9 @@
 					return '<span class="' + className + '">' + text + '</span>';
 				},
 			},
-
 		});
 
 		var diary_swiper = new Swiper(".diarySwiper", {
-			slidesPerView: 1,
-            slidesPerColumn: 1,
-			slidesPerGroup: 2,
-
 			pagination: {
 				el: ".diarySwiper .swiper-pagination",
 				clickable: true,
@@ -580,16 +576,26 @@
 				nextEl: ".swiper-group .swiper-button-next",
 				prevEl: ".swiper-group .swiper-button-prev",
 			},
-			breakpoints: {
-				// when window width is >= 577px
-				577: {
-					slidesPerView: 2,
-					slidesPerColumn: 1,
-
-				},
-			},
 		});
 
+
+		let menu = document.querySelector('.menu')
+		let burger = document.querySelector('.burger')
+		let burger_area = document.querySelector('.burger-area')
+		let off = document.querySelector('.off')
+
+		menu.addEventListener('click', function () {
+			// console.log(123);
+			burger.classList.remove('active');
+			burger_area.classList.add('active');
+		});
+
+		off.addEventListener('click', function () {
+			burger.classList.add('active');
+			burger_area.classList.remove('active');
+			// 停止事件，否則會一起觸發上面的事件
+			event.stopPropagation()
+		})
 	</script>
 </body>
 

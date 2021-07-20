@@ -544,6 +544,9 @@ main .fourth-section .container140 .swiper-group .diarySwiper {
 
 main .fourth-section .container140 .swiper-group .diarySwiper .swiper-slide {
   width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 main .fourth-section .container140 .swiper-group .diarySwiper .swiper-slide .img {
@@ -553,7 +556,7 @@ main .fourth-section .container140 .swiper-group .diarySwiper .swiper-slide .img
 }
 
 main .fourth-section .container140 .swiper-group .diarySwiper .swiper-slide .diary-text {
-  padding: 14.6% 12.3% 0px;
+  padding: 7.35% 6.1% 0px;
   height: 34.9vw;
   color: #fff;
   background-color: #ffa183;
@@ -591,7 +594,7 @@ main .fourth-section .container140 .swiper-group .diarySwiper .swiper-slide .dia
 main .fourth-section .container140 .swiper-group .diarySwiper .swiper-slide .diary-text img {
   position: absolute;
   bottom: 9%;
-  right: 8.2%;
+  left: 18.7%;
   width: 23.25vw;
   height: 6.7vw;
 }
@@ -718,7 +721,10 @@ main .fourth-section .background img:nth-child(1) {
   }
 }
 
-@media (max-width: 650px) {
+@media (max-width: 577px) {
+  main .container170 {
+    padding: 0 40px;
+  }
   main .first-section .background .img {
     height: 40.7vw;
   }
@@ -779,6 +785,9 @@ main .fourth-section .background img:nth-child(1) {
   main .first-section .helpSwiper .swiper-wrapper .swiper-slide .donate-can-card .bg-text .text-area h6:nth-last-child(1) {
     margin-bottom: 15px;
   }
+  main .third-section {
+    height: 432px;
+  }
   main .third-section .heart-pic img {
     width: 238px;
     height: 225px;
@@ -794,11 +803,17 @@ main .fourth-section .background img:nth-child(1) {
   main .third-section .heart-pic .heart-texts .thank-btn .btn {
     font-size: 12px;
   }
-}
-
-@media (max-width: 577px) {
-  main .container170 {
-    padding: 0 40px;
+  main .fourth-section .title-area {
+    width: 146px;
+    height: 45px;
+    margin-bottom: 35px;
+  }
+  main .fourth-section .title-area .title-img img {
+    width: 70px;
+    height: 31px;
+  }
+  main .fourth-section .title-area .title-text h1 {
+    font-size: 24px;
   }
   main .fourth-section .shadow {
     width: 326px;
@@ -806,6 +821,13 @@ main .fourth-section .background img:nth-child(1) {
   }
   main .fourth-section .container140 .swiper-group .diarySwiper {
     margin-top: -242px;
+    width: 100%;
+  }
+  main .fourth-section .container140 .swiper-group .diarySwiper .swiper-slide {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   main .fourth-section .container140 .swiper-group .diarySwiper .swiper-slide .diary-text {
     padding: 12.3% 14.6% 0px;
@@ -829,10 +851,24 @@ main .fourth-section .background img:nth-child(1) {
   main .fourth-section .container140 .swiper-group .diarySwiper .swiper-slide .diary-text img {
     width: 36vw;
     height: 10.5vw;
+    left: unset;
+    bottom: unset;
+    right: 8%;
+    top: 28%;
   }
   main .fourth-section .container140 .swiper-group .diarySwiper .swiper-slide .img {
     height: 66vw;
     border-radius: 0 0 20px 20px;
+  }
+  main .fourth-section .container140 .swiper-group .arrow2-next {
+    right: 0;
+  }
+  main .fourth-section .container140 .swiper-group .arrow2-prev {
+    left: 0;
+  }
+  main .fourth-section .background img:nth-child(1) {
+    width: 228px;
+    height: 91px;
   }
 }
 /*# sourceMappingURL=assistant.css.map */
