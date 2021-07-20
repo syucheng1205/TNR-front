@@ -60,65 +60,98 @@ h1 {
   padding: 0 10%;
   z-index: 2;
   position: absolute;
-  margin-top: 212px;
+  margin-top: 77px;
   top: 130px;
 }
 
-.first-section .btns-area .btns {
-  width: 14.2vw;
+.first-section .btns-area .select {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  width: 250px;
   height: 101px;
-  position: relative;
-  text-align: center;
-  line-height: 101px;
-  background-color: #ff7950;
-  border-radius: 30px;
-  -webkit-transform: translateY(77%);
-          transform: translateY(77%);
+  -webkit-transform: translate(50%, -50%);
+          transform: translate(50%, -50%);
 }
 
-.first-section .btns-area .btns:hover {
-  cursor: pointer;
-}
-
-.first-section .btns-area .btns .style-select-title1 {
-  font-size: 36px;
-  color: #ffffff;
-  padding: 28px 0;
-  border-radius: 30px;
-}
-
-.first-section .btns-area .btns .style-select-title1 i {
-  margin-left: 9px;
-}
-
-.first-section .btns-area .btns ul {
-  width: 100%;
-  background-color: #ff7950;
+.first-section .btns-area .option {
+  padding: 0 30px 0 10px;
+  min-height: 101px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #333;
+  border-top: #222 solid 1px;
   position: absolute;
-  top: 80px;
-  padding-top: 30px;
-  border-radius: 0 0 30px 30px;
-  display: none;
-}
-
-.first-section .btns-area .btns ul li {
+  top: 0;
   width: 100%;
-  font-size: 36px;
-  color: #fff;
+  pointer-events: none;
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
   z-index: 1;
+  -webkit-transition: background .4s ease-in-out;
+  transition: background .4s ease-in-out;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.first-section .btns-area .option:hover {
+  background: #666;
+}
+
+.first-section .btns-area .select:focus .option {
   position: relative;
-  background-color: #ffa183;
-  z-index: 6;
+  pointer-events: all;
 }
 
-.first-section .btns-area .btns ul li:nth-last-child(1) {
-  border-radius: 0 0 30px 30px;
+.first-section .btns-area input {
+  opacity: 0;
+  position: absolute;
+  left: -99999px;
 }
 
-.first-section .btns-area .btns ul li:hover {
-  background-color: #ff7950;
-  border-radius: unset;
-  cursor: pointer;
+.first-section .btns-area input:checked + label {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  z-index: 2;
+  background: #666;
+  border-top: none;
+  position: relative;
+}
+
+.first-section .btns-area input:checked + label:after {
+  content: '';
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid white;
+  position: absolute;
+  right: 10px;
+  top: calc(50% - 2.5px);
+  pointer-events: none;
+  z-index: 3;
+}
+
+.first-section .btns-area input:checked + label:before {
+  position: absolute;
+  right: 0;
+  height: 40px;
+  width: 40px;
+  content: '';
+  background: #666;
 }
 
 .first-section .swiper-group .catSwiper {
