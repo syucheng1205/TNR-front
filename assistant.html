@@ -549,7 +549,8 @@
 			slidesPerView: "auto",
 			slidesPerGroup: 2,
 			loop:true,
-			noSwiping: true,
+			noSwiping: false,
+
 			pagination: {
 				el: ".applySwiper .swiper-pagination",
 				clickable: true,
@@ -563,6 +564,13 @@
 						case 3: text = '申請成為醫療醫院'; break;
 					}
 					return '<span class="' + className + '">' + text + '</span>';
+				},
+			},
+			breakpoints: {
+				// when window width is >= 320px
+				1260: {
+				noSwiping: true,
+					
 				},
 			},
 		});
