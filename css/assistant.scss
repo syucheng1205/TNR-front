@@ -732,6 +732,50 @@ main {
 		.container170{
 			padding: 0 40px;
 		}
-		
+		.fourth-section{
+			.shadow{
+				width: 326px;
+				height: 303px;
+			}
+			.container140{
+				.swiper-group{
+					.diarySwiper{
+						margin-top: -242px;
+
+						.swiper-slide{
+							.diary-text{
+								padding: 12.3% 14.6% 0px;
+								height: 66vw;
+								border-radius: 20px 20px 0 0 ;
+								.sub{
+									.sub-title{
+										padding: 4.6px 9.2px;
+										font-size: 12px;
+									}
+									.date{
+										font-size: 12px;
+									}
+								}
+								.title {
+									margin: 2px 0 17px;
+									font-size: 20px;
+								}
+								.text{
+									font-size: 15px;
+								}
+								img{
+									width: 36vw;
+									height: 10.5vw;
+								}
+							}
+							.img{
+								height: 66vw;
+								border-radius: 0 0 20px 20px  ;
+							}
+						}
+					}
+				}
+			}
+		}     
 	}
 }
