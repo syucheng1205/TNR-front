@@ -734,6 +734,23 @@ main {
 			padding: 0 40px;
 		}
 		.fourth-section{
+			.title-area{
+				width: 146px;
+				height: 45px;
+				margin-bottom: 35px;
+				.title-img{
+					img{
+						width: 70px;
+						height: 31px;
+					}
+				}
+				.title-text{
+					h1{
+						font-size: 24px;
+					}
+				}
+				
+			}
 			.shadow{
 				width: 326px;
 				height: 303px;
@@ -776,10 +793,22 @@ main {
 							}
 							.img{
 								height: 66vw;
-								border-radius: 0 0 20px 20px  ;
+								border-radius: 0 0 20px 20px ;
 							}
 						}
 					}
+					.arrow2-next{
+						right: 0;
+					}
+					.arrow2-prev{
+						left: 0;
+					}
+				}
+			}
+			.background{
+				img:nth-child(1){
+					width: 228px;
+					height: 91px;
 				}
 			}
 		}     
