@@ -400,7 +400,7 @@ main .second-section {
 
 main .second-section .grass-3 {
   position: absolute;
-  top: -6.57vw;
+  top: -6.55vw;
   left: 0;
   width: 56.3%;
 }
@@ -924,8 +924,8 @@ main .third-section .container140 .news-btn:hover {
             flex-direction: column;
   }
   main .second-section .grass-3 {
-    width: 100vw;
-    top: -11.6vw;
+    width: 100%;
+    top: -11.3vw;
   }
   main .second-section .cat {
     width: 100%;
@@ -1165,25 +1165,34 @@ main .third-section .container140 .news-btn:hover {
     -ms-flex-item-align: end;
         align-self: flex-end;
   }
-  main .third-section .container140 .news .news-area:nth-child(1) .news-area {
-    width: 84.3%;
-    margin: auto;
-    background-color: red;
+  main .third-section .container140 .news .first-news {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
-  main .third-section .container140 .news .news-area:nth-child(1) .news-area .news-img .img {
+  main .third-section .container140 .news .first-news .news-img .img {
     width: 93.51%;
   }
-  main .third-section .container140 .news .news-area:nth-child(1) .news-area .news-img .img-shadow {
+  main .third-section .container140 .news .first-news .news-img .img-shadow {
+    border-radius: 20px;
+    display: block;
     width: 94.75%;
-    height: 52.1vw;
+    height: 100%;
+    top: 4.5vw;
+    left: 3.5vw;
   }
-  main .third-section .container140 .news .news-area:nth-child(1) .news-area .news-text h4 {
+  main .third-section .container140 .news .first-news .news-text {
+    margin-top: 40px;
+  }
+  main .third-section .container140 .news .first-news .news-text h4 {
     font-size: 32px;
+    color: #FE886D;
   }
-  main .third-section .container140 .news .news-area:nth-child(1) .news-area .news-text p {
+  main .third-section .container140 .news .first-news .news-text p {
     display: none;
   }
-  main .third-section .container140 .news .news-area:nth-child(1) .news-area .news-text .date {
+  main .third-section .container140 .news .first-news .news-text span {
     font-size: 15px;
     display: block;
     float: right;
