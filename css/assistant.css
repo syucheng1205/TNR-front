@@ -721,7 +721,10 @@ main .fourth-section .background img:nth-child(1) {
   }
 }
 
-@media (max-width: 650px) {
+@media (max-width: 577px) {
+  main .container170 {
+    padding: 0 40px;
+  }
   main .first-section .background .img {
     height: 40.7vw;
   }
@@ -782,6 +785,9 @@ main .fourth-section .background img:nth-child(1) {
   main .first-section .helpSwiper .swiper-wrapper .swiper-slide .donate-can-card .bg-text .text-area h6:nth-last-child(1) {
     margin-bottom: 15px;
   }
+  main .third-section {
+    height: 432px;
+  }
   main .third-section .heart-pic img {
     width: 238px;
     height: 225px;
@@ -796,12 +802,6 @@ main .fourth-section .background img:nth-child(1) {
   }
   main .third-section .heart-pic .heart-texts .thank-btn .btn {
     font-size: 12px;
-  }
-}
-
-@media (max-width: 577px) {
-  main .container170 {
-    padding: 0 40px;
   }
   main .fourth-section .title-area {
     width: 146px;
