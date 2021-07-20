@@ -629,6 +629,13 @@ main {
 	}
 
 	@media (max-width: 650px) {
+
+	}
+
+	@media (max-width: 577px) {
+		.container170{
+			padding: 0 40px;
+		}
 		.first-section {
 			.background {
 				.img{
@@ -706,6 +713,7 @@ main {
 			}
 		}
 		.third-section {
+			height: 432px;
 			.heart-pic{
 				img{
 					width: 238px;
@@ -726,12 +734,6 @@ main {
 					}
 				}
 			}
-		}
-	}
-
-	@media (max-width: 577px) {
-		.container170{
-			padding: 0 40px;
 		}
 		.fourth-section{
 			.title-area{
