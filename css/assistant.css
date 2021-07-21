@@ -12,15 +12,15 @@ main .first-section .background .img {
 }
 
 main .first-section .background .img .background-title {
-  font-size: 96px;
+  font-size: 81px;
   padding: 0 35px;
   color: #ffffff;
   background-color: #86cee8;
   position: absolute;
-  top: 16%;
+  top: 50%;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  -webkit-transform: translate(-50%, -100%);
+          transform: translate(-50%, -100%);
 }
 
 main .first-section .background .links {
@@ -43,7 +43,7 @@ main .first-section .background .links .link {
   height: 100px;
   border-radius: 50%;
   border: 3px solid #fe886d;
-  margin-right: 57px;
+  margin: 0 26px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -64,7 +64,7 @@ main .first-section .background .links .active {
 }
 
 main .first-section .helpSwiper {
-  margin-top: -14.2vw;
+  margin-top: -13.2vw;
 }
 
 main .first-section .helpSwiper .swiper-slide {
@@ -96,7 +96,7 @@ main .first-section .helpSwiper .swiper-slide .donate-can-card .donate-can-img:h
 
 main .first-section .helpSwiper .swiper-slide .donate-can-card .donate-can-img .card-shadow {
   position: absolute;
-  bottom: 0%;
+  bottom: -1%;
   width: 87%;
   color: #ffffff;
   background-color: rgba(252, 161, 131, 0.7);
@@ -172,6 +172,10 @@ main .first-section .helpSwiper .swiper-slide .donate-can-card .bg-text .text-ar
   color: #ffffff;
   margin-bottom: 20px;
   padding: 0 54px;
+}
+
+main .first-section .helpSwiper .swiper-slide .donate-can-card .bg-text .text-area h6:nth-child(2) {
+  font-weight: bolder;
 }
 
 main .first-section .helpSwiper .swiper-slide .donate-can-card .bg-text .text-area .donate-btn .btn {
@@ -631,30 +635,33 @@ main .fourth-section .background img:nth-child(1) {
           transform: translateX(-100%);
 }
 
-@media (max-width: 1600px) {
-  main .third-section .thank-card .text-area {
-    right: 25%;
+@media (max-width: 1401px) {
+  main .first-section .background .img .background-title {
+    font-size: 42px;
   }
-  main .third-section .heart-pic .heart-texts .text {
-    display: none;
+  main .first-section .background .links {
+    top: -57.5px;
+    right: 4.8%;
   }
-  main .third-section .heart-pic .heart-texts .phone-text {
-    display: block;
-    width: -webkit-max-content;
-    width: -moz-max-content;
-    width: max-content;
-    color: #ffffff;
+  main .first-section .background .links .link {
+    width: 63px;
+    height: 63px;
     font-size: 32px;
-    text-align: center;
   }
-  main .fourth-section .container140 .swiper-group .my-arrow2 {
-    width: 60px;
-    height: 60px;
-    --swiper-navigation-size: 10px;
+  main .first-section .background .links .active {
+    width: 105px;
+    height: 105px;
+    font-size: 64px;
+  }
+  main .first-section .helpSwiper .swiper-slide .donate-can-card .bg-text .text-area .donate-number p {
+    font-size: 14px;
+  }
+  main .first-section .helpSwiper .swiper-slide .donate-can-card .bg-text .text-area h6 {
+    font-size: 20px;
   }
 }
 
-@media (max-width: 1260px) {
+@media (max-width: 992px) {
   main .first-section .background .img {
     width: 100%;
     height: 40.7vw;
@@ -705,150 +712,134 @@ main .fourth-section .background img:nth-child(1) {
   }
 }
 
-@media (max-width: 1120px) {
-  main .first-section .helpSwiper .swiper-slide .donate-can-card .bg-text .text-area .donate-number p {
-    font-size: 12px;
-  }
-  main .first-section .helpSwiper .swiper-slide .donate-can-card .bg-text .text-area p {
-    font-size: 12px;
-  }
-  main .first-section .helpSwiper .swiper-slide .donate-can-card .bg-text .text-area h6 {
-    font-size: 15px;
-  }
-  main .first-section .helpSwiper .swiper-slide .donate-can-card .bg-text .text-area .donate-btn .btn {
-    width: 111px;
-    height: 35px;
-  }
-}
-
 @media (max-width: 577px) {
-  main .container170 {
+  .container170 {
     padding: 0 40px;
   }
-  main .first-section .background .img {
+  .first-section .background .img {
     height: 40.7vw;
   }
-  main .first-section .background .links .link {
+  .first-section .background .links .link {
     width: 50px;
     height: 50px;
     font-size: 20px;
   }
-  main .first-section .background .links .active {
+  .first-section .background .links .active {
     width: 100px;
     height: 100px;
     font-size: 48px;
   }
-  main .first-section .background .img .background-title {
+  .first-section .background .img .background-title {
     font-size: 30px;
   }
-  main .first-section .helpSwiper .swiper-wrapper .swiper-slide {
+  .first-section .helpSwiper .swiper-wrapper .swiper-slide {
     width: 238px !important;
   }
-  main .first-section .helpSwiper .swiper-wrapper .swiper-slide .donate-can-card {
+  .first-section .helpSwiper .swiper-wrapper .swiper-slide .donate-can-card {
     border-radius: 20px;
   }
-  main .first-section .helpSwiper .swiper-wrapper .swiper-slide .donate-can-card .donate-can-img {
+  .first-section .helpSwiper .swiper-wrapper .swiper-slide .donate-can-card .donate-can-img {
     padding: 10px;
   }
-  main .first-section .helpSwiper .swiper-wrapper .swiper-slide .donate-can-card .donate-can-img img {
+  .first-section .helpSwiper .swiper-wrapper .swiper-slide .donate-can-card .donate-can-img img {
     width: 218px;
     height: 145px;
   }
-  main .first-section .helpSwiper .swiper-wrapper .swiper-slide .donate-can-card .donate-can-img .card-shadow {
+  .first-section .helpSwiper .swiper-wrapper .swiper-slide .donate-can-card .donate-can-img .card-shadow {
     padding: 6px 0;
     width: 92%;
     bottom: 6%;
     border-radius: 20px;
   }
-  main .first-section .helpSwiper .swiper-wrapper .swiper-slide .donate-can-card .donate-can-img .card-shadow .shadow-text {
+  .first-section .helpSwiper .swiper-wrapper .swiper-slide .donate-can-card .donate-can-img .card-shadow .shadow-text {
     font-size: 18px;
   }
-  main .first-section .helpSwiper .swiper-wrapper .swiper-slide .donate-can-card .donate-can-img .card-shadow .shadow-text span {
+  .first-section .helpSwiper .swiper-wrapper .swiper-slide .donate-can-card .donate-can-img .card-shadow .shadow-text span {
     font-size: 20px;
     padding: 0 5px;
   }
-  main .first-section .helpSwiper .swiper-wrapper .swiper-slide .donate-can-card .bg-text {
+  .first-section .helpSwiper .swiper-wrapper .swiper-slide .donate-can-card .bg-text {
     padding: 10px 10px 20px;
     margin-top: unset;
     border-radius: 0 0 20px 20px;
   }
-  main .first-section .helpSwiper .swiper-wrapper .swiper-slide .donate-can-card .bg-text .text-area .donate-number {
+  .first-section .helpSwiper .swiper-wrapper .swiper-slide .donate-can-card .bg-text .text-area .donate-number {
     margin-bottom: 8px;
   }
-  main .first-section .helpSwiper .swiper-wrapper .swiper-slide .donate-can-card .bg-text .text-area .donate-number p {
+  .first-section .helpSwiper .swiper-wrapper .swiper-slide .donate-can-card .bg-text .text-area .donate-number p {
     padding: 5px 11px;
   }
-  main .first-section .helpSwiper .swiper-wrapper .swiper-slide .donate-can-card .bg-text .text-area h6 {
+  .first-section .helpSwiper .swiper-wrapper .swiper-slide .donate-can-card .bg-text .text-area h6 {
     padding: unset;
     margin-bottom: 8px;
   }
-  main .first-section .helpSwiper .swiper-wrapper .swiper-slide .donate-can-card .bg-text .text-area h6:nth-last-child(1) {
+  .first-section .helpSwiper .swiper-wrapper .swiper-slide .donate-can-card .bg-text .text-area h6:nth-last-child(1) {
     margin-bottom: 15px;
   }
-  main .third-section {
+  .third-section {
     height: 432px;
   }
-  main .third-section .heart-pic img {
+  .third-section .heart-pic img {
     width: 238px;
     height: 225px;
   }
-  main .third-section .heart-pic .heart-texts .phone-text {
+  .third-section .heart-pic .heart-texts .phone-text {
     font-size: 15px;
   }
-  main .third-section .heart-pic .heart-texts .thank-btn {
+  .third-section .heart-pic .heart-texts .thank-btn {
     width: 72px;
     height: 25px;
     margin-top: 10px;
   }
-  main .third-section .heart-pic .heart-texts .thank-btn .btn {
+  .third-section .heart-pic .heart-texts .thank-btn .btn {
     font-size: 12px;
   }
-  main .fourth-section .title-area {
+  .fourth-section .title-area {
     width: 146px;
     height: 45px;
     margin-bottom: 35px;
   }
-  main .fourth-section .title-area .title-img img {
+  .fourth-section .title-area .title-img img {
     width: 70px;
     height: 31px;
   }
-  main .fourth-section .title-area .title-text h1 {
+  .fourth-section .title-area .title-text h1 {
     font-size: 24px;
   }
-  main .fourth-section .shadow {
+  .fourth-section .shadow {
     width: 326px;
     height: 303px;
   }
-  main .fourth-section .container140 .swiper-group .diarySwiper {
+  .fourth-section .container140 .swiper-group .diarySwiper {
     margin-top: -242px;
     width: 100%;
   }
-  main .fourth-section .container140 .swiper-group .diarySwiper .swiper-slide {
+  .fourth-section .container140 .swiper-group .diarySwiper .swiper-slide {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  main .fourth-section .container140 .swiper-group .diarySwiper .swiper-slide .diary-text {
+  .fourth-section .container140 .swiper-group .diarySwiper .swiper-slide .diary-text {
     padding: 12.3% 14.6% 0px;
     height: 66vw;
     border-radius: 20px 20px 0 0;
   }
-  main .fourth-section .container140 .swiper-group .diarySwiper .swiper-slide .diary-text .sub .sub-title {
+  .fourth-section .container140 .swiper-group .diarySwiper .swiper-slide .diary-text .sub .sub-title {
     padding: 4.6px 9.2px;
     font-size: 12px;
   }
-  main .fourth-section .container140 .swiper-group .diarySwiper .swiper-slide .diary-text .sub .date {
+  .fourth-section .container140 .swiper-group .diarySwiper .swiper-slide .diary-text .sub .date {
     font-size: 12px;
   }
-  main .fourth-section .container140 .swiper-group .diarySwiper .swiper-slide .diary-text .title {
+  .fourth-section .container140 .swiper-group .diarySwiper .swiper-slide .diary-text .title {
     margin: 2px 0 17px;
     font-size: 20px;
   }
-  main .fourth-section .container140 .swiper-group .diarySwiper .swiper-slide .diary-text .text {
+  .fourth-section .container140 .swiper-group .diarySwiper .swiper-slide .diary-text .text {
     font-size: 15px;
   }
-  main .fourth-section .container140 .swiper-group .diarySwiper .swiper-slide .diary-text img {
+  .fourth-section .container140 .swiper-group .diarySwiper .swiper-slide .diary-text img {
     width: 36vw;
     height: 10.5vw;
     left: unset;
@@ -856,17 +847,17 @@ main .fourth-section .background img:nth-child(1) {
     right: 8%;
     top: 28%;
   }
-  main .fourth-section .container140 .swiper-group .diarySwiper .swiper-slide .img {
+  .fourth-section .container140 .swiper-group .diarySwiper .swiper-slide .img {
     height: 66vw;
     border-radius: 0 0 20px 20px;
   }
-  main .fourth-section .container140 .swiper-group .arrow2-next {
+  .fourth-section .container140 .swiper-group .arrow2-next {
     right: 0;
   }
-  main .fourth-section .container140 .swiper-group .arrow2-prev {
+  .fourth-section .container140 .swiper-group .arrow2-prev {
     left: 0;
   }
-  main .fourth-section .background img:nth-child(1) {
+  .fourth-section .background img:nth-child(1) {
     width: 228px;
     height: 91px;
   }
