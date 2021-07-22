@@ -82,12 +82,12 @@ h1 {
 
 .first-section .btns-area .sel::before {
   position: absolute;
-  content: "\f063";
-  font-family: "Font Awesome 5 Free";
-  font-size: 2em;
+  content: "\f107";
+  font-family: "Font Awesome 5 Pro";
+  font-size: 2vw;
   color: #fff;
-  right: 20px;
-  top: calc(50% - 0.5em);
+  right: 2vw;
+  top: calc(45% - 0.5em);
 }
 
 .first-section .btns-area .sel.active::before {
@@ -97,9 +97,9 @@ h1 {
 
 .first-section .btns-area .sel__placeholder {
   display: block;
-  font-size: 2.3em;
+  font-size: 1.5vw;
   color: #fff;
-  padding: 0.2em 0.5em;
+  padding: 0.2em 0.7em;
   text-align: left;
   pointer-events: none;
   -webkit-user-select: none;
@@ -113,6 +113,7 @@ h1 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-right: 1vw;
 }
 
 .first-section .btns-area .sel.active .sel__placeholder {
@@ -124,10 +125,19 @@ h1 {
   top: 0;
   bottom: 0;
   left: 0;
-  right: 0;
+  right: 1vw;
   padding: 0.2em 0.5em;
   content: attr(data-placeholder);
   visibility: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .first-section .btns-area .sel.active .sel__placeholder::before {
@@ -136,7 +146,7 @@ h1 {
 
 .first-section .btns-area .sel__box {
   position: absolute;
-  top: calc(64% + 4px);
+  top: calc(73% + 4px);
   border-radius: 0 0 30px 30px;
   display: none;
   list-style-type: none;
@@ -146,11 +156,6 @@ h1 {
   width: 14.2vw;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-}
-
-.first-section .btns-area .sel .sel__box {
-  -webkit-animation: fadeOut 500ms;
-          animation: fadeOut 500ms;
 }
 
 .first-section .btns-area .sel.active .sel__box {
@@ -172,9 +177,9 @@ h1 {
 
 .first-section .btns-area .sel__box__options::after {
   content: "\f00c";
-  font-family: "Font Awesome 5 Free";
+  font-family: "Font Awesome 5 Pro";
   color: #fff;
-  font-size: 0.5em;
+  font-size: 1em;
   margin-left: 5px;
   display: none;
 }
@@ -193,6 +198,24 @@ h1 {
 
 .first-section .btns-area .sel--black-panther {
   z-index: 3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.first-section .btns-area .sel.active .sel--black-panther {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 @-webkit-keyframes fadeInUp {
@@ -253,7 +276,11 @@ h1 {
   -webkit-transform: translateY(71.7%);
           transform: translateY(71.7%);
   padding-left: 7.3%;
-  padding-right: 6%;
+  margin-right: 6%;
+}
+
+.first-section .swiper-group .catSwiper .swiper-slide {
+  width: 420px !important;
 }
 
 .first-section .swiper-group .catSwiper .card-img {
