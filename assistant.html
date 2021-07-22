@@ -263,7 +263,7 @@
 				</div>
 			</div>
 
-			<img src="./img/04-assistant/sleepingCAt.png"	class="decorationCat">
+			<img src="./img/04-assistant/sleepingCAt.png" class="decorationCat">
 
 			<div class="swiper-container applySwiper">
 				<div class="swiper-pagination"></div>
@@ -280,6 +280,9 @@
 							<p>青山依舊在，幾度夕陽紅。慣看秋月春風。一壺濁酒喜相逢，浪花淘盡英雄。是非成敗轉頭空，滾滾長江東逝水，白髮漁樵江渚上，古今多少事，都付笑談中。
 								滾滾長江東逝水，浪花淘盡英雄。是非成敗轉頭空，青山依舊在，幾度夕陽紅。白髮漁樵江渚上，慣看秋月春風。一壺濁酒喜相逢，古今多少事，都付笑談中。
 								青山依舊在，幾度夕陽紅。慣看秋月春風。一壺濁酒喜相逢，浪花淘盡英雄。</p>
+							<button>
+								<span>查看流程</span>
+							</button>
 						</div>
 					</div>
 
@@ -296,6 +299,9 @@
 							<p>青山依舊在，幾度夕陽紅。慣看秋月春風。一壺濁酒喜相逢，浪花淘盡英雄。是非成敗轉頭空，滾滾長江東逝水，白髮漁樵江渚上，古今多少事，都付笑談中。
 								滾滾長江東逝水，浪花淘盡英雄。是非成敗轉頭空，青山依舊在，幾度夕陽紅。白髮漁樵江渚上，慣看秋月春風。一壺濁酒喜相逢，古今多少事，都付笑談中。
 								青山依舊在，幾度夕陽紅。慣看秋月春風。一壺濁酒喜相逢，浪花淘盡英雄。</p>
+							<button>
+								<span>查看流程</span>
+							</button>
 						</div>
 					</div>
 
@@ -312,6 +318,9 @@
 							<p>青山依舊在，幾度夕陽紅。慣看秋月春風。一壺濁酒喜相逢，浪花淘盡英雄。是非成敗轉頭空，滾滾長江東逝水，白髮漁樵江渚上，古今多少事，都付笑談中。
 								滾滾長江東逝水，浪花淘盡英雄。是非成敗轉頭空，青山依舊在，幾度夕陽紅。白髮漁樵江渚上，慣看秋月春風。一壺濁酒喜相逢，古今多少事，都付笑談中。
 								青山依舊在，幾度夕陽紅。慣看秋月春風。一壺濁酒喜相逢，浪花淘盡英雄。</p>
+							<button>
+								<span>查看流程</span>
+							</button>
 						</div>
 					</div>
 
@@ -327,7 +336,9 @@
 							<p>青山依舊在，幾度夕陽紅。慣看秋月春風。一壺濁酒喜相逢，浪花淘盡英雄。是非成敗轉頭空，滾滾長江東逝水，白髮漁樵江渚上，古今多少事，都付笑談中。
 								滾滾長江東逝水，浪花淘盡英雄。是非成敗轉頭空，青山依舊在，幾度夕陽紅。白髮漁樵江渚上，慣看秋月春風。一壺濁酒喜相逢，古今多少事，都付笑談中。
 								青山依舊在，幾度夕陽紅。慣看秋月春風。一壺濁酒喜相逢，浪花淘盡英雄。</p>
-
+							<button>
+								<span>查看流程</span>
+							</button>
 						</div>
 					</div>
 				</div>
@@ -540,15 +551,16 @@
 					spaceBetween: 40,
 				},
 			},
-			
+
 		});
 
 		var swiper = new Swiper(".applySwiper", {
-			spaceBetween: 0,
-			slidesPerView: "auto",
-			slidesPerGroup: 2,
-			loop:true,
+			spaceBetween: 40,
+			loop: true,
 			noSwiping: false,
+			slidesPerView: 2,
+			centeredSlides: true,
+			slidesPerGroup: 2,
 
 			pagination: {
 				el: ".applySwiper .swiper-pagination",
@@ -567,9 +579,12 @@
 			},
 			breakpoints: {
 				// when window width is >= 320px
-				1260: {
-				noSwiping: true,
-					
+				1401: {
+					noSwiping: true,
+					spaceBetween: 0,
+					slidesPerView: "auto",
+					centeredSlides: false,
+
 				},
 			},
 		});

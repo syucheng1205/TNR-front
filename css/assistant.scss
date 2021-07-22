@@ -293,11 +293,15 @@ main {
 						font-size: 56px;
 						margin-right: 10px;
 					}
+
 				}
 				p {
 					font-size: 18px;
 					margin-top: 50px;
 					color: #4f4f4f;
+				}
+				button{
+					display: none;
 				}
 			}
 		}
@@ -493,19 +497,21 @@ main {
 		.first-section {
 			.background {
 				.img {
+					width: 87.4vw;
+					height: 34.6vw;
 					.background-title {
 						font-size: 42px;
 					}
 				}
-				.links{
+				.links {
 					top: -57.5px;
 					right: 4.8%;
-					.link{
+					.link {
 						width: 63px;
 						height: 63px;
 						font-size: 32px;
 					}
-					.active{
+					.active {
 						width: 105px;
 						height: 105px;
 						font-size: 64px;
@@ -531,10 +537,188 @@ main {
 				}
 			}
 		}
+		.second-section {
+			.decorationCat {
+				height: 20.2vw;
+				left: 50%;
+				transform: translateX(-103%);
+			}
+			.applySwiper {
+				margin-top: -11.75vw;
+				.swiper-pagination {
+					display: none;
+				}
+				.swiper-wrapper {
+					.swiper-slide {
+						height: 50.4vw;
+
+						.left-photo {
+							display: none;
+						}
+						.line {
+							display: none;
+						}
+						.rwd-img {
+							width: 47.4vw;
+							height: 50.4vw;
+							display: block;
+							border-radius: 20px;
+						}
+						.text-area {
+							width: 35.3vw;
+							height: 35.3vw;
+							background-color: rgba(247, 247, 247, 0.8);
+							border-radius: 20px;
+							display: flex;
+							justify-content: center;
+							align-items: center;
+							flex-direction: column;
+							h3 {
+								font-size: 24px;
+								color: #fe886d;
+								span {
+									display: none;
+								}
+							}
+							p {
+								font-size: 18px;
+								margin: 8.6% 0;
+								padding: 0 30px;
+								overflow: hidden;
+								text-overflow: ellipsis;
+								display: -webkit-box;
+								-webkit-line-clamp: 5;
+								-webkit-box-orient: vertical;
+							}
+							button {
+								margin: 0;
+								padding: 0;
+								border: 1px solid transparent; 
+								outline: none;
+								display: block;
+								width: 166px;
+								height: 52px;
+								border-radius: 40px;
+								background-color: #FF7950;
+								box-shadow: 0 5px 10px #FF7950;
+								span{
+									color: white;
+									border-bottom: 4px solid transparent;
+								}
+								&:hover span{
+									border-bottom: 4px solid $color-btn-text;
+									transition-duration: 0.8s;
+								}
+							}
+						}
+						&:nth-child(2n) {
+							width: 469px;
+							padding: unset;
+							justify-content: center;
+						}
+						&:nth-child(2n+1) {
+							display: none;
+						}
+					}
+				}
+			}
+		}
 	}
 }
 
-@media (max-width: 992px) {
+@media (max-width: 993px) {
+	main {
+		.first-section {
+			.helpSwiper {
+				.swiper-wrapper {
+					.swiper-slide {
+						width: 356px !important;
+						.donate-can-card {
+							.donate-can-img {
+								padding: 23px 23px 0;
+								img {
+									width: 310px;
+									height: 231px;
+								}
+								.card-shadow {
+									border-radius: 0 0 20px 20px;
+									padding: 12px 0;
+
+									.shadow-text {
+										font-size: 24px;
+										span {
+											font-size: 24px;
+										}
+									}
+								}
+							}
+							.bg-text {
+								margin-top: -23px;
+								padding: 43px 26px 30px;
+								.text-area {
+									h6 {
+										padding: 0 46px;
+									}
+									.donate-btn {
+										a {
+											width: 165px;
+											height: 52px;
+											p {
+												font-size: 20px;
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+
+		.second-section {
+			margin-top: 200px;
+			.title-area {
+				width: 300px;
+				height: 100px;
+				margin-bottom: 20%;
+				.title-text {
+					position: absolute;
+					bottom: 0;
+					right: -8%;
+					h1 {
+						font-size: 40px;
+					}
+				}
+			}
+		}
+
+		.third-section {
+			.thank-card {
+				.text-area {
+					right: 30%;
+				}
+			}
+		}
+
+		.fourth-section {
+			.title-area {
+				width: 300px;
+				height: 100px;
+				margin-bottom: 20%;
+				.title-text {
+					position: absolute;
+					bottom: 0;
+					right: -8%;
+					h1 {
+						font-size: 40px;
+					}
+				}
+			}
+		}
+	}
+}
+@media (max-width: 580px) {
 	main {
 		.first-section {
 			.background {
@@ -599,7 +783,6 @@ main {
 		}
 	}
 }
-
 @media (max-width: 577px) {
 	.container170 {
 		padding: 0 40px;

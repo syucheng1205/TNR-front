@@ -398,6 +398,10 @@ main .second-section .applySwiper .text-area p {
   color: #4f4f4f;
 }
 
+main .second-section .applySwiper .text-area button {
+  display: none;
+}
+
 main .roll {
   background-repeat: no-repeat;
   background-size: cover;
@@ -636,6 +640,10 @@ main .fourth-section .background img:nth-child(1) {
 }
 
 @media (max-width: 1401px) {
+  main .first-section .background .img {
+    width: 87.4vw;
+    height: 34.6vw;
+  }
   main .first-section .background .img .background-title {
     font-size: 42px;
   }
@@ -659,9 +667,173 @@ main .fourth-section .background img:nth-child(1) {
   main .first-section .helpSwiper .swiper-slide .donate-can-card .bg-text .text-area h6 {
     font-size: 20px;
   }
+  main .second-section .decorationCat {
+    height: 20.2vw;
+    left: 50%;
+    -webkit-transform: translateX(-103%);
+            transform: translateX(-103%);
+  }
+  main .second-section .applySwiper {
+    margin-top: -11.75vw;
+  }
+  main .second-section .applySwiper .swiper-pagination {
+    display: none;
+  }
+  main .second-section .applySwiper .swiper-wrapper .swiper-slide {
+    height: 50.4vw;
+  }
+  main .second-section .applySwiper .swiper-wrapper .swiper-slide .left-photo {
+    display: none;
+  }
+  main .second-section .applySwiper .swiper-wrapper .swiper-slide .line {
+    display: none;
+  }
+  main .second-section .applySwiper .swiper-wrapper .swiper-slide .rwd-img {
+    width: 47.4vw;
+    height: 50.4vw;
+    display: block;
+    border-radius: 20px;
+  }
+  main .second-section .applySwiper .swiper-wrapper .swiper-slide .text-area {
+    width: 35.3vw;
+    height: 35.3vw;
+    background-color: rgba(247, 247, 247, 0.8);
+    border-radius: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main .second-section .applySwiper .swiper-wrapper .swiper-slide .text-area h3 {
+    font-size: 24px;
+    color: #fe886d;
+  }
+  main .second-section .applySwiper .swiper-wrapper .swiper-slide .text-area h3 span {
+    display: none;
+  }
+  main .second-section .applySwiper .swiper-wrapper .swiper-slide .text-area p {
+    font-size: 18px;
+    margin: 8.6% 0;
+    padding: 0 30px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+  }
+  main .second-section .applySwiper .swiper-wrapper .swiper-slide .text-area button {
+    margin: 0;
+    padding: 0;
+    border: 1px solid transparent;
+    outline: none;
+    display: block;
+    width: 166px;
+    height: 52px;
+    border-radius: 40px;
+    background-color: #FF7950;
+    -webkit-box-shadow: 0 5px 10px #FF7950;
+            box-shadow: 0 5px 10px #FF7950;
+  }
+  main .second-section .applySwiper .swiper-wrapper .swiper-slide .text-area button span {
+    color: white;
+    border-bottom: 4px solid transparent;
+  }
+  main .second-section .applySwiper .swiper-wrapper .swiper-slide .text-area button:hover span {
+    border-bottom: 4px solid #ffffff;
+    -webkit-transition-duration: 0.8s;
+            transition-duration: 0.8s;
+  }
+  main .second-section .applySwiper .swiper-wrapper .swiper-slide:nth-child(2n) {
+    width: 469px;
+    padding: unset;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  main .second-section .applySwiper .swiper-wrapper .swiper-slide:nth-child(2n+1) {
+    display: none;
+  }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 993px) {
+  main .first-section .helpSwiper .swiper-wrapper .swiper-slide {
+    width: 356px !important;
+  }
+  main .first-section .helpSwiper .swiper-wrapper .swiper-slide .donate-can-card .donate-can-img {
+    padding: 23px 23px 0;
+  }
+  main .first-section .helpSwiper .swiper-wrapper .swiper-slide .donate-can-card .donate-can-img img {
+    width: 310px;
+    height: 231px;
+  }
+  main .first-section .helpSwiper .swiper-wrapper .swiper-slide .donate-can-card .donate-can-img .card-shadow {
+    border-radius: 0 0 20px 20px;
+    padding: 12px 0;
+  }
+  main .first-section .helpSwiper .swiper-wrapper .swiper-slide .donate-can-card .donate-can-img .card-shadow .shadow-text {
+    font-size: 24px;
+  }
+  main .first-section .helpSwiper .swiper-wrapper .swiper-slide .donate-can-card .donate-can-img .card-shadow .shadow-text span {
+    font-size: 24px;
+  }
+  main .first-section .helpSwiper .swiper-wrapper .swiper-slide .donate-can-card .bg-text {
+    margin-top: -23px;
+    padding: 43px 26px 30px;
+  }
+  main .first-section .helpSwiper .swiper-wrapper .swiper-slide .donate-can-card .bg-text .text-area h6 {
+    padding: 0 46px;
+  }
+  main .first-section .helpSwiper .swiper-wrapper .swiper-slide .donate-can-card .bg-text .text-area .donate-btn a {
+    width: 165px;
+    height: 52px;
+  }
+  main .first-section .helpSwiper .swiper-wrapper .swiper-slide .donate-can-card .bg-text .text-area .donate-btn a p {
+    font-size: 20px;
+  }
+  main .second-section {
+    margin-top: 200px;
+  }
+  main .second-section .title-area {
+    width: 300px;
+    height: 100px;
+    margin-bottom: 20%;
+  }
+  main .second-section .title-area .title-text {
+    position: absolute;
+    bottom: 0;
+    right: -8%;
+  }
+  main .second-section .title-area .title-text h1 {
+    font-size: 40px;
+  }
+  main .third-section .thank-card .text-area {
+    right: 30%;
+  }
+  main .fourth-section .title-area {
+    width: 300px;
+    height: 100px;
+    margin-bottom: 20%;
+  }
+  main .fourth-section .title-area .title-text {
+    position: absolute;
+    bottom: 0;
+    right: -8%;
+  }
+  main .fourth-section .title-area .title-text h1 {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 580px) {
   main .first-section .background .img {
     width: 100%;
     height: 40.7vw;
