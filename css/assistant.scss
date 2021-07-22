@@ -345,11 +345,13 @@ main {
 
 				.text {
 					width: max-content;
-
 					color: $color-btn-text;
 					font-size: 32px;
 				}
 				.phone-text {
+					width: max-content;
+					color: $color-btn-text;
+					font-size: 32px;
 					display: none;
 				}
 				.thank-btn {
@@ -491,8 +493,15 @@ main {
 		}
 	}
 }
-@media (max-width: 1501px) {
-	
+@media (max-width: 1501px) { 
+	main .third-section .heart-pic .heart-texts{
+		.text{
+			display: none;
+		}
+		.phone-text{
+			display: block;
+		}
+	} 
 }
 @media (max-width: 1401px) {
 	main {
@@ -624,6 +633,23 @@ main {
 					}
 				}
 			}
+		}
+		.third-section{
+			.heart-pic{
+				.heart-texts{
+					.phone-text{
+						font-size: 24px;
+					}
+					.thank-btn{
+						width: 124px;
+						height: 44px;
+						margin-top: 27px;
+						.btn{
+							font-size: 16px;
+						}
+					}
+				}
+			}  
 		}
 	}
 }

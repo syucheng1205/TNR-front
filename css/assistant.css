@@ -468,6 +468,11 @@ main .third-section .heart-pic .heart-texts .text {
 }
 
 main .third-section .heart-pic .heart-texts .phone-text {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  color: #ffffff;
+  font-size: 32px;
   display: none;
 }
 
@@ -639,6 +644,15 @@ main .fourth-section .background img:nth-child(1) {
           transform: translateX(-100%);
 }
 
+@media (max-width: 1501px) {
+  main .third-section .heart-pic .heart-texts .text {
+    display: none;
+  }
+  main .third-section .heart-pic .heart-texts .phone-text {
+    display: block;
+  }
+}
+
 @media (max-width: 1401px) {
   main .first-section .background .img {
     width: 87.4vw;
@@ -761,6 +775,17 @@ main .fourth-section .background img:nth-child(1) {
   }
   main .second-section .applySwiper .swiper-wrapper .swiper-slide:nth-child(2n+1) {
     display: none;
+  }
+  main .third-section .heart-pic .heart-texts .phone-text {
+    font-size: 24px;
+  }
+  main .third-section .heart-pic .heart-texts .thank-btn {
+    width: 124px;
+    height: 44px;
+    margin-top: 27px;
+  }
+  main .third-section .heart-pic .heart-texts .thank-btn .btn {
+    font-size: 16px;
   }
 }
 
