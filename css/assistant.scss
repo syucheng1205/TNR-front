@@ -5,19 +5,19 @@ main {
 		.background {
 			.img {
 				width: 74.8vw;
-				height: 28.35vw;;
+				height: 28.35vw;
 				background-image: url(/img/04-assistant/blue-wave.png);
 				background-repeat: no-repeat;
 				background-size: cover;
 				.background-title {
-					font-size: 96px;
+					font-size: 81px;
 					padding: 0 35px;
 					color: $color-btn-text;
 					background-color: #86cee8;
 					position: absolute;
-					top: 16%;
+					top: 50%;
 					left: 50%;
-					transform: translateX(-50%);
+					transform: translate(-50%, -100%);
 				}
 			}
 			.links {
@@ -32,7 +32,7 @@ main {
 					height: 100px;
 					border-radius: 50%;
 					border: 3px solid $color-light-orange;
-					margin-right: 57px;
+					margin: 0 26px;
 					display: flex;
 					align-items: center;
 					justify-content: center;
@@ -47,7 +47,7 @@ main {
 			}
 		}
 		.helpSwiper {
-			margin-top: -14.2vw;
+			margin-top: -13.2vw;
 			.swiper-slide {
 				width: 462px !important;
 				.donate-can-card {
@@ -67,7 +67,7 @@ main {
 						}
 						.card-shadow {
 							position: absolute;
-							bottom: 0%;
+							bottom: -1%;
 							width: 87%;
 							color: $color-btn-text;
 							background-color: rgba(252, 161, 131, 0.7);
@@ -124,6 +124,9 @@ main {
 								color: $color-btn-text;
 								margin-bottom: 20px;
 								padding: 0 54px;
+								&:nth-child(2) {
+									font-weight: bolder;
+								}
 							}
 
 							.donate-btn {
@@ -290,11 +293,15 @@ main {
 						font-size: 56px;
 						margin-right: 10px;
 					}
+
 				}
 				p {
 					font-size: 18px;
 					margin-top: 50px;
 					color: #4f4f4f;
+				}
+				button{
+					display: none;
 				}
 			}
 		}
@@ -318,7 +325,7 @@ main {
 			top: 50%;
 			width: max-content;
 			height: max-content;
-			transform: translate(-20%,-50%);
+			transform: translate(-20%, -50%);
 			img {
 				width: 100%;
 				height: 100%;
@@ -345,7 +352,7 @@ main {
 				.phone-text {
 					display: none;
 				}
-				.thank-btn{
+				.thank-btn {
 					width: max-content;
 					height: 64px;
 					max-height: 64px;
@@ -359,26 +366,23 @@ main {
 					display: flex;
 					justify-content: center;
 
-					&:hover  {
+					&:hover {
 						box-shadow: 0px 0px 10px 0px $color-dark-orange;
 						transition-duration: 0.8s;
 					}
-					
+
 					.btn {
 						border-bottom: 4px solid transparent;
 						padding: 0px 5px;
 						color: $color-btn-text;
 						font-size: 24px;
 						font-weight: bold;
-
 					}
-					&:hover .btn{
+					&:hover .btn {
 						transition-duration: 0.8s;
 						border-bottom: 4px solid #fff;
-
 					}
 				}
-			
 			}
 		}
 	}
@@ -486,48 +490,236 @@ main {
 			}
 		}
 	}
+}
 
-	@media (max-width: 1600px) {
-		.third-section {
-			.thank-card {
-				.text-area {
-					right: 25%;
-				}
-			}
-		}
-
-		.third-section {
-			.heart-pic {
-				.heart-texts {
-					.text {
-						display: none;
+@media (max-width: 1401px) {
+	main {
+		.first-section {
+			.background {
+				.img {
+					width: 87.4vw;
+					height: 34.6vw;
+					.background-title {
+						font-size: 42px;
 					}
-					.phone-text {
-						display: block;
-						width: max-content;
-						color: $color-btn-text;
+				}
+				.links {
+					top: -57.5px;
+					right: 4.8%;
+					.link {
+						width: 63px;
+						height: 63px;
 						font-size: 32px;
-						text-align: center;
+					}
+					.active {
+						width: 105px;
+						height: 105px;
+						font-size: 64px;
+					}
+				}
+			}
+			.helpSwiper {
+				.swiper-slide {
+					.donate-can-card {
+						.bg-text {
+							.text-area {
+								.donate-number {
+									p {
+										font-size: 14px;
+									}
+								}
+								h6 {
+									font-size: 20px;
+								}
+							}
+						}
 					}
 				}
 			}
 		}
+		.second-section {
+			.decorationCat {
+				height: 20.2vw;
+				left: 50%;
+				transform: translateX(-103%);
+			}
+			.applySwiper {
+				margin-top: -11.75vw;
+				.swiper-pagination {
+					display: none;
+				}
+				.swiper-wrapper {
+					.swiper-slide {
+						height: 50.4vw;
 
-
-		.fourth-section {
-			.container140 {
-				.swiper-group {
-					.my-arrow2 {
-						width: 60px;
-						height: 60px;
-						--swiper-navigation-size: 10px;
+						.left-photo {
+							display: none;
+						}
+						.line {
+							display: none;
+						}
+						.rwd-img {
+							width: 47.4vw;
+							height: 50.4vw;
+							display: block;
+							border-radius: 20px;
+						}
+						.text-area {
+							width: 35.3vw;
+							height: 35.3vw;
+							background-color: rgba(247, 247, 247, 0.8);
+							border-radius: 20px;
+							display: flex;
+							justify-content: center;
+							align-items: center;
+							flex-direction: column;
+							h3 {
+								font-size: 24px;
+								color: #fe886d;
+								span {
+									display: none;
+								}
+							}
+							p {
+								font-size: 18px;
+								margin: 8.6% 0;
+								padding: 0 30px;
+								overflow: hidden;
+								text-overflow: ellipsis;
+								display: -webkit-box;
+								-webkit-line-clamp: 5;
+								-webkit-box-orient: vertical;
+							}
+							button {
+								margin: 0;
+								padding: 0;
+								border: 1px solid transparent; 
+								outline: none;
+								display: block;
+								width: 166px;
+								height: 52px;
+								border-radius: 40px;
+								background-color: #FF7950;
+								box-shadow: 0 5px 10px #FF7950;
+								span{
+									color: white;
+									border-bottom: 4px solid transparent;
+								}
+								&:hover span{
+									border-bottom: 4px solid $color-btn-text;
+									transition-duration: 0.8s;
+								}
+							}
+						}
+						&:nth-child(2n) {
+							width: 469px;
+							padding: unset;
+							justify-content: center;
+						}
+						&:nth-child(2n+1) {
+							display: none;
+						}
 					}
 				}
 			}
 		}
 	}
+}
 
-	@media (max-width: 1260px) {
+@media (max-width: 993px) {
+	main {
+		.first-section {
+			.helpSwiper {
+				.swiper-wrapper {
+					.swiper-slide {
+						width: 356px !important;
+						.donate-can-card {
+							.donate-can-img {
+								padding: 23px 23px 0;
+								img {
+									width: 310px;
+									height: 231px;
+								}
+								.card-shadow {
+									border-radius: 0 0 20px 20px;
+									padding: 12px 0;
+
+									.shadow-text {
+										font-size: 24px;
+										span {
+											font-size: 24px;
+										}
+									}
+								}
+							}
+							.bg-text {
+								margin-top: -23px;
+								padding: 43px 26px 30px;
+								.text-area {
+									h6 {
+										padding: 0 46px;
+									}
+									.donate-btn {
+										a {
+											width: 165px;
+											height: 52px;
+											p {
+												font-size: 20px;
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+
+		.second-section {
+			margin-top: 200px;
+			.title-area {
+				width: 300px;
+				height: 100px;
+				margin-bottom: 20%;
+				.title-text {
+					position: absolute;
+					bottom: 0;
+					right: -8%;
+					h1 {
+						font-size: 40px;
+					}
+				}
+			}
+		}
+
+		.third-section {
+			.thank-card {
+				.text-area {
+					right: 30%;
+				}
+			}
+		}
+
+		.fourth-section {
+			.title-area {
+				width: 300px;
+				height: 100px;
+				margin-bottom: 20%;
+				.title-text {
+					position: absolute;
+					bottom: 0;
+					right: -8%;
+					h1 {
+						font-size: 40px;
+					}
+				}
+			}
+		}
+	}
+}
+@media (max-width: 580px) {
+	main {
 		.first-section {
 			.background {
 				.img {
@@ -590,29 +782,76 @@ main {
 			}
 		}
 	}
-
-	@media (max-width: 1120px) {
-		.first-section {
-			.helpSwiper {
+}
+@media (max-width: 577px) {
+	.container170 {
+		padding: 0 40px;
+	}
+	.first-section {
+		.background {
+			.img {
+				height: 40.7vw;
+			}
+			.links {
+				.link {
+					width: 50px;
+					height: 50px;
+					font-size: 20px;
+				}
+				.active {
+					width: 100px;
+					height: 100px;
+					font-size: 48px;
+				}
+			}
+			.img {
+				.background-title {
+					font-size: 30px;
+				}
+			}
+		}
+		.helpSwiper {
+			.swiper-wrapper {
 				.swiper-slide {
+					width: 238px !important;
 					.donate-can-card {
+						border-radius: 20px;
+						.donate-can-img {
+							padding: 10px;
+							img {
+								width: 218px;
+								height: 145px;
+							}
+							.card-shadow {
+								padding: 6px 0;
+								width: 92%;
+								bottom: 6%;
+								border-radius: 20px;
+								.shadow-text {
+									font-size: 18px;
+									span {
+										font-size: 20px;
+										padding: 0 5px;
+									}
+								}
+							}
+						}
 						.bg-text {
+							padding: 10px 10px 20px;
+							margin-top: unset;
+							border-radius: 0 0 20px 20px;
 							.text-area {
 								.donate-number {
+									margin-bottom: 8px;
 									p {
-										font-size: 12px;
+										padding: 5px 11px;
 									}
-								}
-								p {
-									font-size: 12px;
 								}
 								h6 {
-									font-size: 15px;
-								}
-								.donate-btn {
-									.btn {
-										width: 111px;
-										height: 35px;
+									padding: unset;
+									margin-bottom: 8px;
+									&:nth-last-child(1) {
+										margin-bottom: 15px;
 									}
 								}
 							}
@@ -622,197 +861,104 @@ main {
 			}
 		}
 	}
-
-	@media (max-width: 992px) {
-		.third-section {
+	.third-section {
+		height: 432px;
+		.heart-pic {
+			img {
+				width: 238px;
+				height: 225px;
+			}
+			.heart-texts {
+				.phone-text {
+					font-size: 15px;
+				}
+				.thank-btn {
+					width: 72px;
+					height: 25px;
+					margin-top: 10px;
+					.btn {
+						font-size: 12px;
+					}
+				}
+			}
 		}
 	}
-
-	@media (max-width: 650px) {
-
-	}
-
-	@media (max-width: 577px) {
-		.container170{
-			padding: 0 40px;
-		}
-		.first-section {
-			.background {
-				.img{
-					height: 40.7vw;
-				}
-				.links {
-					.link {
-						width: 50px;
-						height: 50px;
-						font-size: 20px;
-					}
-					.active {
-						width: 100px;
-						height: 100px;
-						font-size: 48px;
-					}
-				}
-				.img {
-					.background-title {
-						font-size: 30px;
-					}
+	.fourth-section {
+		.title-area {
+			width: 146px;
+			height: 45px;
+			margin-bottom: 35px;
+			.title-img {
+				img {
+					width: 70px;
+					height: 31px;
 				}
 			}
-			.helpSwiper{
-				.swiper-wrapper{
-					.swiper-slide{
-						width: 238px !important; 
-						.donate-can-card{
-							border-radius: 20px;
-							.donate-can-img{
-								padding: 10px;
-								img{
-									width: 218px;
-									height: 145px;
-								}
-								.card-shadow{
-									padding: 6px 0;
-									width: 92%;
-									bottom: 6%;
-									border-radius: 20px;
-									.shadow-text{
-										font-size: 18px;
-										span{
-											font-size: 20px;
-											padding: 0 5px;
-										}
-									}
-								}
-							}
-							.bg-text{
-								padding: 10px 10px 20px;
-								margin-top: unset;
-								border-radius: 0 0 20px 20px;
-								.text-area{
-									.donate-number{
-										margin-bottom: 8px;
-										p {
-											padding: 5px 11px;
-										}
-									} 
-									h6{
-										padding: unset;
-										margin-bottom: 8px;
-										&:nth-last-child(1){
-											margin-bottom: 15px;
-
-										}
-									}
-								}
-								
-							}
-						}
-					}
+			.title-text {
+				h1 {
+					font-size: 24px;
 				}
 			}
 		}
-		.third-section {
-			height: 432px;
-			.heart-pic{
-				img{
-					width: 238px;
-					height: 225px;
-				}
-				.heart-texts{
-					.phone-text{
-						font-size: 15px ;
-					}
-					.thank-btn{
-						width: 72px;
-						height: 25px;
-						margin-top: 10px;
-						.btn{
-							font-size: 12px;
-
+		.shadow {
+			width: 326px;
+			height: 303px;
+		}
+		.container140 {
+			.swiper-group {
+				.diarySwiper {
+					margin-top: -242px;
+					width: 100%;
+					.swiper-slide {
+						flex-direction: column;
+						.diary-text {
+							padding: 12.3% 14.6% 0px;
+							height: 66vw;
+							border-radius: 20px 20px 0 0;
+							.sub {
+								.sub-title {
+									padding: 4.6px 9.2px;
+									font-size: 12px;
+								}
+								.date {
+									font-size: 12px;
+								}
+							}
+							.title {
+								margin: 2px 0 17px;
+								font-size: 20px;
+							}
+							.text {
+								font-size: 15px;
+							}
+							img {
+								width: 36vw;
+								height: 10.5vw;
+								left: unset;
+								bottom: unset;
+								right: 8%;
+								top: 28%;
+							}
+						}
+						.img {
+							height: 66vw;
+							border-radius: 0 0 20px 20px;
 						}
 					}
+				}
+				.arrow2-next {
+					right: 0;
+				}
+				.arrow2-prev {
+					left: 0;
 				}
 			}
 		}
-		.fourth-section{
-			.title-area{
-				width: 146px;
-				height: 45px;
-				margin-bottom: 35px;
-				.title-img{
-					img{
-						width: 70px;
-						height: 31px;
-					}
-				}
-				.title-text{
-					h1{
-						font-size: 24px;
-					}
-				}
-				
+		.background {
+			img:nth-child(1) {
+				width: 228px;
+				height: 91px;
 			}
-			.shadow{
-				width: 326px;
-				height: 303px;
-			}
-			.container140{
-				.swiper-group{
-					.diarySwiper{
-						margin-top: -242px;
-						width: 100%;
-						.swiper-slide{
-							flex-direction: column;
-							.diary-text{
-								padding: 12.3% 14.6% 0px;
-								height: 66vw;
-								border-radius: 20px 20px 0 0 ;
-								.sub{
-									.sub-title{
-										padding: 4.6px 9.2px;
-										font-size: 12px;
-									}
-									.date{
-										font-size: 12px;
-									}
-								}
-								.title {
-									margin: 2px 0 17px;
-									font-size: 20px;
-								}
-								.text{
-									font-size: 15px;
-								}
-								img{
-									width: 36vw;
-									height: 10.5vw;
-									left: unset;
-									bottom: unset;
-									right: 8%;
-									top: 28%;
-								}
-							}
-							.img{
-								height: 66vw;
-								border-radius: 0 0 20px 20px ;
-							}
-						}
-					}
-					.arrow2-next{
-						right: 0;
-					}
-					.arrow2-prev{
-						left: 0;
-					}
-				}
-			}
-			.background{
-				img:nth-child(1){
-					width: 228px;
-					height: 91px;
-				}
-			}
-		}     
+		}
 	}
 }
