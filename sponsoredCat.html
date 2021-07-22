@@ -61,7 +61,7 @@
                 <img src="./img/03-adoptCat/adopt-grass1.png" alt="">
                 <img src="./img/03-adoptCat/yellowCat.png" alt="">
                 <div class="btns-area d-flex justify-content-around">
-                    <div class="sel sel--black-panther">
+                    <div class="sel sel--black-panther remove">
                         <select name="select-profession" id="select-profession">
                             <option value="area" disabled>所在區域</option>
                             <option value="northern-area">北部區域</option>
@@ -96,55 +96,6 @@
             </div>
 
             <div class="swiper-group">
-               
-                <!-- <div class="btns-area">
-                    <div class="dino-input-field select btns">
-                        <span class="option-selected style-select-title1">
-                            縣市<i class="fas fa-caret-down"></i>
-                        </span>
-                        <ul class="select-options style-select-option">
-                            <li>台北縣</li>
-                            <li>金門縣</li>
-                        </ul>
-                    </div>
-                    <div class="dino-input-field select btns">
-                        <span class="option-selected style-select-title1">
-                            性別<i class="fas fa-caret-down"></i>
-                        </span>
-                        <ul class="select-options style-select-option">
-                            <li>公</li>
-                            <li>母</li>
-                        </ul>
-                    </div>
-                    <div class="dino-input-field select btns">
-                        <span class="option-selected style-select-title1">
-                            年齡<i class="fas fa-caret-down"></i>
-                        </span>
-                        <ul class="select-options style-select-option">
-                            <a href="">
-                                <li>1個月</li>
-                            </a>
-                            <a href="">
-                                <li>2個月</li>
-                            </a>
-                            <a href="">
-                                <li>3個月</li>
-                            </a>
-                            <a href="">
-                                <li>4個月</li>
-                            </a>
-                        </ul>
-                    </div>
-                    <div class="dino-input-field select btns">
-                        <span class="option-selected style-select-title1">
-                            預防針<i class="fas fa-caret-down"></i>
-                        </span>
-                        <ul class="select-options style-select-option">
-                            <li>有</li>
-                            <li>無</li>
-                        </ul>
-                    </div>
-                </div> -->
                 <div class="swiper-container catSwiper">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
@@ -780,13 +731,25 @@
     <script>
         var my_swiper = new Swiper(".catSwiper", {
             slidesPerView: 4,
-            spaceBetween: 295,
-            // slidesPerGroup: 3,
+            // width:400,
+            spaceBetween: 30,
+            // slidesPerGroup: 2,
             freeMode: true,
-            // width: window.innerWidth,
+            // width: 1220,
             pagination: {
                 el: ".catSwiper .swiper-pagination",
                 clickable: true,
+            },
+            breakpoints: {
+                // 520: {
+                //     slidesPerView: 1.1,
+                // },
+                // 768: {
+                //     slidesPerView: 1.6,
+                // },
+                // 1500: {
+                //     // spaceBetween:0,
+                // }
             },
         });
 
@@ -829,7 +792,7 @@
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
-    <script>
+    <!-- <script>
         $(document).ready(function (e) {
             $('.btns').click(function (e) {
                 e.stopPropagation();
@@ -847,7 +810,7 @@
                 $('.select-options').slideUp();
             });
         });
-    </script>
+    </script> -->
     <script>
         $('.sel').each(function () {
             $(this).children('select').css('display', 'none');
