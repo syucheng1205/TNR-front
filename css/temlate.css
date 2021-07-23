@@ -378,6 +378,7 @@ footer .footer-area .container140 .ft-bot {
 footer .footer-area .container140 .ft-bot p {
   font-size: 16px;
   color: #ffffff;
+  opacity: 0.7;
 }
 
 @media (max-width: 935px) {
