@@ -473,6 +473,7 @@ main .third-section .heart-pic .heart-texts .phone-text {
   width: max-content;
   color: #ffffff;
   font-size: 32px;
+  text-align: center;
   display: none;
 }
 
@@ -621,7 +622,7 @@ main .fourth-section .container140 .swiper-group .my-arrow2 {
           box-shadow: 0 0 15px 0 #ff7950;
   opacity: 0.4;
   position: absolute;
-  top: 45%;
+  top: 47.5%;
 }
 
 main .fourth-section .container140 .swiper-group .my-arrow2:hover {
@@ -650,6 +651,10 @@ main .fourth-section .background img:nth-child(1) {
   }
   main .third-section .heart-pic .heart-texts .phone-text {
     display: block;
+  }
+  main .fourth-section .container140 .swiper-group .diarySwiper .swiper-slide .diary-text .title {
+    font-size: 36px;
+    margin: 0 0 20px;
   }
 }
 
@@ -753,9 +758,9 @@ main .fourth-section .background img:nth-child(1) {
     width: 166px;
     height: 52px;
     border-radius: 40px;
-    background-color: #FF7950;
-    -webkit-box-shadow: 0 5px 10px #FF7950;
-            box-shadow: 0 5px 10px #FF7950;
+    background-color: #ff7950;
+    -webkit-box-shadow: 0 5px 10px #ff7950;
+            box-shadow: 0 5px 10px #ff7950;
   }
   main .second-section .applySwiper .swiper-wrapper .swiper-slide .text-area button span {
     color: white;
@@ -773,7 +778,7 @@ main .fourth-section .background img:nth-child(1) {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  main .second-section .applySwiper .swiper-wrapper .swiper-slide:nth-child(2n+1) {
+  main .second-section .applySwiper .swiper-wrapper .swiper-slide:nth-child(2n + 1) {
     display: none;
   }
   main .third-section .heart-pic .heart-texts .phone-text {
@@ -786,6 +791,73 @@ main .fourth-section .background img:nth-child(1) {
   }
   main .third-section .heart-pic .heart-texts .thank-btn .btn {
     font-size: 16px;
+  }
+  main .fourth-section .title-area {
+    width: 300px;
+    height: 100px;
+    margin-bottom: 20%;
+  }
+  main .fourth-section .title-area .title-text {
+    position: absolute;
+    bottom: 0;
+    right: -8%;
+  }
+  main .fourth-section .title-area .title-text h1 {
+    font-size: 40px;
+  }
+  main .fourth-section .shadow {
+    width: 54.6vw;
+    height: 45vw;
+  }
+  main .fourth-section .container140 .swiper-group .diarySwiper {
+    margin-top: -41.5%;
+    width: 100%;
+  }
+  main .fourth-section .container140 .swiper-group .diarySwiper .swiper-slide {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main .fourth-section .container140 .swiper-group .diarySwiper .swiper-slide .diary-text {
+    height: 50vw;
+    border-radius: 20px 20px 0 0;
+    padding: 9.5% 9.6% 0px;
+  }
+  main .fourth-section .container140 .swiper-group .diarySwiper .swiper-slide .diary-text .sub .sub-title {
+    padding: 4.6px 9.2px;
+  }
+  main .fourth-section .container140 .swiper-group .diarySwiper .swiper-slide .diary-text .title {
+    margin: 2px 0 17px;
+  }
+  main .fourth-section .container140 .swiper-group .diarySwiper .swiper-slide .diary-text img {
+    width: 36vw;
+    height: 10.5vw;
+    left: unset;
+    bottom: unset;
+    right: 6%;
+    top: 35.5%;
+  }
+  main .fourth-section .container140 .swiper-group .diarySwiper .swiper-slide .img {
+    height: 50vw;
+    border-radius: 0 0 20px 20px;
+  }
+  main .fourth-section .container140 .swiper-group .my-arrow2 {
+    width: 7.5vw;
+    height: 7.5vw;
+  }
+  main .fourth-section .container140 .swiper-group .my-arrow2::after {
+    font-size: 2.5vw;
+  }
+  main .fourth-section .container140 .swiper-group .arrow2-next {
+    right: 0;
+  }
+  main .fourth-section .container140 .swiper-group .arrow2-prev {
+    left: 0;
+  }
+  main .fourth-section .background img:nth-child(1) {
+    width: 39%;
+    height: 17.2vw;
   }
 }
 
@@ -825,87 +897,74 @@ main .fourth-section .background img:nth-child(1) {
     font-size: 20px;
   }
   main .second-section {
-    margin-top: 200px;
+    margin: 200px 0 150px;
   }
   main .second-section .title-area {
     width: 300px;
     height: 100px;
-    margin-bottom: 20%;
+    margin-bottom: 71px;
+  }
+  main .second-section .title-area .title-img img {
+    width: 137px;
+    height: 60px;
   }
   main .second-section .title-area .title-text {
-    position: absolute;
-    bottom: 0;
-    right: -8%;
+    bottom: 22px;
+    right: 36px;
   }
   main .second-section .title-area .title-text h1 {
     font-size: 40px;
   }
-  main .third-section .thank-card .text-area {
-    right: 30%;
+  main .third-section {
+    height: 73vh;
   }
-  main .fourth-section .title-area {
-    width: 300px;
-    height: 100px;
-    margin-bottom: 20%;
+  main .third-section .heart-pic img {
+    width: 49.2vw;
+    height: 46.5vw;
   }
-  main .fourth-section .title-area .title-text {
-    position: absolute;
-    bottom: 0;
-    right: -8%;
-  }
-  main .fourth-section .title-area .title-text h1 {
-    font-size: 40px;
+  main .fourth-section .container140 .swiper-group .diarySwiper .swiper-slide .diary-text .text {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
   }
 }
 
-@media (max-width: 580px) {
+@media (max-width: 769px) {
   main .first-section .background .img {
     width: 100%;
     height: 40.7vw;
   }
   main .first-section .background .img .background-title {
-    font-size: 72px;
     padding: 0 14px;
-    position: absolute;
-    top: 23%;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
   }
   main .first-section .background .links {
-    top: -82.5px;
+    top: -60px;
     right: 50%;
     -webkit-transform: translateX(50%);
             transform: translateX(50%);
   }
-  main .second-section .title-area {
-    width: 300px;
-    height: 100px;
-    margin-bottom: 20%;
+  main .second-section .applySwiper .swiper-wrapper .swiper-slide .rwd-img {
+    width: 54.4vw;
+    height: 58vw;
   }
-  main .second-section .title-area .title-text {
-    position: absolute;
-    bottom: 0;
-    right: -8%;
+  main .second-section .applySwiper .swiper-wrapper .swiper-slide .text-area p {
+    -webkit-line-clamp: 2;
   }
-  main .second-section .title-area .title-text h1 {
-    font-size: 40px;
+  main .second-section .applySwiper .swiper-wrapper .swiper-slide .text-area button {
+    width: 111px;
+    height: 35px;
+    font-size: 15px;
+  }
+  main .second-section .applySwiper .swiper-wrapper .swiper-slide:nth-child(2n) {
+    height: 58vw;
   }
   main .third-section .thank-card .text-area {
     right: 30%;
   }
-  main .fourth-section .title-area {
-    width: 300px;
-    height: 100px;
-    margin-bottom: 20%;
-  }
-  main .fourth-section .title-area .title-text {
-    position: absolute;
-    bottom: 0;
-    right: -8%;
-  }
-  main .fourth-section .title-area .title-text h1 {
-    font-size: 40px;
+  main .fourth-section .container140 .swiper-group .diarySwiper .swiper-slide .diary-text .text {
+    -webkit-line-clamp: 4;
   }
 }
 
@@ -913,130 +972,154 @@ main .fourth-section .background img:nth-child(1) {
   .container170 {
     padding: 0 40px;
   }
-  .first-section .background .img {
+  main .first-section .background .img {
     height: 40.7vw;
   }
-  .first-section .background .links .link {
+  main .first-section .background .links .link {
     width: 50px;
     height: 50px;
     font-size: 20px;
   }
-  .first-section .background .links .active {
+  main .first-section .background .links .active {
     width: 100px;
     height: 100px;
     font-size: 48px;
   }
-  .first-section .background .img .background-title {
+  main .first-section .background .img .background-title {
     font-size: 30px;
   }
-  .first-section .helpSwiper .swiper-wrapper .swiper-slide {
+  main .first-section .helpSwiper .swiper-wrapper .swiper-slide {
     width: 238px !important;
   }
-  .first-section .helpSwiper .swiper-wrapper .swiper-slide .donate-can-card {
+  main .first-section .helpSwiper .swiper-wrapper .swiper-slide .donate-can-card {
     border-radius: 20px;
   }
-  .first-section .helpSwiper .swiper-wrapper .swiper-slide .donate-can-card .donate-can-img {
+  main .first-section .helpSwiper .swiper-wrapper .swiper-slide .donate-can-card .donate-can-img {
     padding: 10px;
   }
-  .first-section .helpSwiper .swiper-wrapper .swiper-slide .donate-can-card .donate-can-img img {
+  main .first-section .helpSwiper .swiper-wrapper .swiper-slide .donate-can-card .donate-can-img img {
     width: 218px;
     height: 145px;
   }
-  .first-section .helpSwiper .swiper-wrapper .swiper-slide .donate-can-card .donate-can-img .card-shadow {
+  main .first-section .helpSwiper .swiper-wrapper .swiper-slide .donate-can-card .donate-can-img .card-shadow {
     padding: 6px 0;
     width: 92%;
     bottom: 6%;
-    border-radius: 20px;
+    border-radius: 0 0 20px 20px;
   }
-  .first-section .helpSwiper .swiper-wrapper .swiper-slide .donate-can-card .donate-can-img .card-shadow .shadow-text {
+  main .first-section .helpSwiper .swiper-wrapper .swiper-slide .donate-can-card .donate-can-img .card-shadow .shadow-text {
     font-size: 18px;
   }
-  .first-section .helpSwiper .swiper-wrapper .swiper-slide .donate-can-card .donate-can-img .card-shadow .shadow-text span {
+  main .first-section .helpSwiper .swiper-wrapper .swiper-slide .donate-can-card .donate-can-img .card-shadow .shadow-text span {
     font-size: 20px;
     padding: 0 5px;
   }
-  .first-section .helpSwiper .swiper-wrapper .swiper-slide .donate-can-card .bg-text {
+  main .first-section .helpSwiper .swiper-wrapper .swiper-slide .donate-can-card .bg-text {
     padding: 10px 10px 20px;
     margin-top: unset;
     border-radius: 0 0 20px 20px;
   }
-  .first-section .helpSwiper .swiper-wrapper .swiper-slide .donate-can-card .bg-text .text-area .donate-number {
+  main .first-section .helpSwiper .swiper-wrapper .swiper-slide .donate-can-card .bg-text .text-area .donate-number {
     margin-bottom: 8px;
   }
-  .first-section .helpSwiper .swiper-wrapper .swiper-slide .donate-can-card .bg-text .text-area .donate-number p {
+  main .first-section .helpSwiper .swiper-wrapper .swiper-slide .donate-can-card .bg-text .text-area .donate-number p {
     padding: 5px 11px;
+    font-size: 12px;
+    border: 1px solid;
   }
-  .first-section .helpSwiper .swiper-wrapper .swiper-slide .donate-can-card .bg-text .text-area h6 {
+  main .first-section .helpSwiper .swiper-wrapper .swiper-slide .donate-can-card .bg-text .text-area .donate-number .fb-icon {
+    width: 35px;
+    height: 35px;
+  }
+  main .first-section .helpSwiper .swiper-wrapper .swiper-slide .donate-can-card .bg-text .text-area h6 {
     padding: unset;
     margin-bottom: 8px;
-  }
-  .first-section .helpSwiper .swiper-wrapper .swiper-slide .donate-can-card .bg-text .text-area h6:nth-last-child(1) {
-    margin-bottom: 15px;
-  }
-  .third-section {
-    height: 432px;
-  }
-  .third-section .heart-pic img {
-    width: 238px;
-    height: 225px;
-  }
-  .third-section .heart-pic .heart-texts .phone-text {
     font-size: 15px;
   }
-  .third-section .heart-pic .heart-texts .thank-btn {
-    width: 72px;
-    height: 25px;
-    margin-top: 10px;
+  main .first-section .helpSwiper .swiper-wrapper .swiper-slide .donate-can-card .bg-text .text-area h6:nth-last-child(1) {
+    margin-bottom: 15px;
   }
-  .third-section .heart-pic .heart-texts .thank-btn .btn {
-    font-size: 12px;
+  main .first-section .helpSwiper .swiper-wrapper .swiper-slide .donate-can-card .bg-text .text-area .donate-btn a {
+    width: 111px;
+    height: 35px;
   }
-  .fourth-section .title-area {
+  main .first-section .helpSwiper .swiper-wrapper .swiper-slide .donate-can-card .bg-text .text-area .donate-btn a p {
+    font-size: 15px;
+  }
+  main .second-section {
+    margin: 85px 0 92px;
+  }
+  main .second-section .title-area {
+    width: 146px;
+    height: 45px;
+    margin-bottom: 52px;
+  }
+  main .second-section .title-area .title-img img {
+    width: 70px;
+    height: 30px;
+  }
+  main .second-section .title-area .title-text {
+    right: 0;
+    bottom: 0;
+  }
+  main .second-section .title-area .title-text h1 {
+    font-size: 24px;
+  }
+  main .second-section .decorationCat {
+    width: 26.5vw;
+    height: 23vw;
+    -webkit-transform: translateX(-89%);
+            transform: translateX(-89%);
+  }
+  main .second-section .applySwiper {
+    margin-top: -13.75vw;
+  }
+  main .fourth-section .title-area {
     width: 146px;
     height: 45px;
     margin-bottom: 35px;
   }
-  .fourth-section .title-area .title-img img {
+  main .fourth-section .title-area .title-img img {
     width: 70px;
     height: 31px;
   }
-  .fourth-section .title-area .title-text h1 {
+  main .fourth-section .title-area .title-text h1 {
     font-size: 24px;
   }
-  .fourth-section .shadow {
+  main .fourth-section .shadow {
     width: 326px;
     height: 303px;
   }
-  .fourth-section .container140 .swiper-group .diarySwiper {
+  main .fourth-section .container140 .swiper-group .diarySwiper {
     margin-top: -242px;
     width: 100%;
   }
-  .fourth-section .container140 .swiper-group .diarySwiper .swiper-slide {
+  main .fourth-section .container140 .swiper-group .diarySwiper .swiper-slide {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .fourth-section .container140 .swiper-group .diarySwiper .swiper-slide .diary-text {
+  main .fourth-section .container140 .swiper-group .diarySwiper .swiper-slide .diary-text {
     padding: 12.3% 14.6% 0px;
     height: 66vw;
     border-radius: 20px 20px 0 0;
   }
-  .fourth-section .container140 .swiper-group .diarySwiper .swiper-slide .diary-text .sub .sub-title {
+  main .fourth-section .container140 .swiper-group .diarySwiper .swiper-slide .diary-text .sub .sub-title {
     padding: 4.6px 9.2px;
     font-size: 12px;
   }
-  .fourth-section .container140 .swiper-group .diarySwiper .swiper-slide .diary-text .sub .date {
+  main .fourth-section .container140 .swiper-group .diarySwiper .swiper-slide .diary-text .sub .date {
     font-size: 12px;
   }
-  .fourth-section .container140 .swiper-group .diarySwiper .swiper-slide .diary-text .title {
+  main .fourth-section .container140 .swiper-group .diarySwiper .swiper-slide .diary-text .title {
     margin: 2px 0 17px;
     font-size: 20px;
   }
-  .fourth-section .container140 .swiper-group .diarySwiper .swiper-slide .diary-text .text {
+  main .fourth-section .container140 .swiper-group .diarySwiper .swiper-slide .diary-text .text {
     font-size: 15px;
   }
-  .fourth-section .container140 .swiper-group .diarySwiper .swiper-slide .diary-text img {
+  main .fourth-section .container140 .swiper-group .diarySwiper .swiper-slide .diary-text img {
     width: 36vw;
     height: 10.5vw;
     left: unset;
@@ -1044,17 +1127,11 @@ main .fourth-section .background img:nth-child(1) {
     right: 8%;
     top: 28%;
   }
-  .fourth-section .container140 .swiper-group .diarySwiper .swiper-slide .img {
+  main .fourth-section .container140 .swiper-group .diarySwiper .swiper-slide .img {
     height: 66vw;
     border-radius: 0 0 20px 20px;
   }
-  .fourth-section .container140 .swiper-group .arrow2-next {
-    right: 0;
-  }
-  .fourth-section .container140 .swiper-group .arrow2-prev {
-    left: 0;
-  }
-  .fourth-section .background img:nth-child(1) {
+  main .fourth-section .background img:nth-child(1) {
     width: 228px;
     height: 91px;
   }

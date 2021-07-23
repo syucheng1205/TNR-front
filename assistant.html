@@ -552,12 +552,11 @@
 		});
 
 		var swiper = new Swiper(".applySwiper", {
-			spaceBetween: 40,
-			loop: true,
+			spaceBetween: 20,
+			loop: false,
 			noSwiping: false,
 			slidesPerView: 2,
 			centeredSlides: true,
-			slidesPerGroup: 2,
 
 			pagination: {
 				el: ".applySwiper .swiper-pagination",
@@ -581,8 +580,14 @@
 					spaceBetween: 0,
 					slidesPerView: "auto",
 					centeredSlides: false,
+					loop: true,
+					slidesPerGroup: 2,
 
 				},
+				577:{
+					spaceBetween: 40,
+
+				}
 			},
 		});
 

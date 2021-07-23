@@ -293,14 +293,13 @@ main {
 						font-size: 56px;
 						margin-right: 10px;
 					}
-
 				}
 				p {
 					font-size: 18px;
 					margin-top: 50px;
 					color: #4f4f4f;
 				}
-				button{
+				button {
 					display: none;
 				}
 			}
@@ -352,6 +351,7 @@ main {
 					width: max-content;
 					color: $color-btn-text;
 					font-size: 32px;
+					text-align: center;
 					display: none;
 				}
 				.thank-btn {
@@ -471,7 +471,7 @@ main {
 					box-shadow: 0 0 15px 0 $color-dark-orange;
 					opacity: 0.4;
 					position: absolute;
-					top: 45%;
+					top: 47.5%;
 
 					&:hover {
 						box-shadow: 0 0 5px 0 $color-dark-orange;
@@ -493,15 +493,23 @@ main {
 		}
 	}
 }
-@media (max-width: 1501px) { 
-	main .third-section .heart-pic .heart-texts{
-		.text{
-			display: none;
+@media (max-width: 1501px) {
+	main {
+		.third-section .heart-pic .heart-texts {
+			.text {
+				display: none;
+			}
+			.phone-text {
+				display: block;
+			}
 		}
-		.phone-text{
-			display: block;
+		.fourth-section .container140 .swiper-group .diarySwiper .swiper-slide .diary-text {
+			.title {
+				font-size: 36px;
+				margin: 0 0 20px;
+			}
 		}
-	} 
+	}
 }
 @media (max-width: 1401px) {
 	main {
@@ -604,19 +612,19 @@ main {
 							button {
 								margin: 0;
 								padding: 0;
-								border: 1px solid transparent; 
+								border: 1px solid transparent;
 								outline: none;
 								display: block;
 								width: 166px;
 								height: 52px;
 								border-radius: 40px;
-								background-color: #FF7950;
-								box-shadow: 0 5px 10px #FF7950;
-								span{
+								background-color: #ff7950;
+								box-shadow: 0 5px 10px #ff7950;
+								span {
 									color: white;
 									border-bottom: 4px solid transparent;
 								}
-								&:hover span{
+								&:hover span {
 									border-bottom: 4px solid $color-btn-text;
 									transition-duration: 0.8s;
 								}
@@ -627,29 +635,103 @@ main {
 							padding: unset;
 							justify-content: center;
 						}
-						&:nth-child(2n+1) {
+						&:nth-child(2n + 1) {
 							display: none;
 						}
 					}
 				}
 			}
 		}
-		.third-section{
-			.heart-pic{
-				.heart-texts{
-					.phone-text{
+		.third-section {
+			.heart-pic {
+				.heart-texts {
+					.phone-text {
 						font-size: 24px;
 					}
-					.thank-btn{
+					.thank-btn {
 						width: 124px;
 						height: 44px;
 						margin-top: 27px;
-						.btn{
+						.btn {
 							font-size: 16px;
 						}
 					}
 				}
-			}  
+			}
+		}
+		.fourth-section {
+			.title-area {
+				width: 300px;
+				height: 100px;
+				margin-bottom: 20%;
+				.title-text {
+					position: absolute;
+					bottom: 0;
+					right: -8%;
+					h1 {
+						font-size: 40px;
+					}
+				}
+			}
+			.shadow {
+				width: 54.6vw;
+				height: 45vw;
+			}
+			.container140 {
+				.swiper-group {
+					.diarySwiper {
+						margin-top: -41.5%;
+						width: 100%;
+						.swiper-slide {
+							flex-direction: column;
+							.diary-text {
+								height: 50vw;
+								border-radius: 20px 20px 0 0;
+								padding: 9.5% 9.6% 0px;
+								.sub {
+									.sub-title {
+										padding: 4.6px 9.2px;
+									}
+								}
+								.title {
+									margin: 2px 0 17px;
+								}
+								img {
+									width: 36vw;
+									height: 10.5vw;
+									left: unset;
+									bottom: unset;
+									right: 6%;
+									top: 35.5%;
+								}
+							}
+							.img {
+								height: 50vw;
+								border-radius: 0 0 20px 20px;
+							}
+						}
+					}
+					.my-arrow2 {
+						width: 7.5vw;
+						height: 7.5vw;
+						&::after {
+							font-size: 2.5vw;
+						}
+					}
+					.arrow2-next {
+						right: 0;
+					}
+					.arrow2-prev {
+						left: 0;
+					}
+				}
+			}
+			.background {
+				img:nth-child(1) {
+					width: 39%;
+					height: 17.2vw;
+				}
+			}
 		}
 	}
 }
@@ -705,15 +787,20 @@ main {
 		}
 
 		.second-section {
-			margin-top: 200px;
+			margin: 200px 0 150px;
 			.title-area {
 				width: 300px;
 				height: 100px;
-				margin-bottom: 20%;
+				margin-bottom: 71px;
+				.title-img {
+					img {
+						width: 137px;
+						height: 60px;
+					}
+				}
 				.title-text {
-					position: absolute;
-					bottom: 0;
-					right: -8%;
+					bottom: 22px;
+					right: 36px;
 					h1 {
 						font-size: 40px;
 					}
@@ -722,31 +809,26 @@ main {
 		}
 
 		.third-section {
-			.thank-card {
-				.text-area {
-					right: 30%;
+			height: 73vh;
+			.heart-pic {
+				img {
+					width: 49.2vw;
+					height: 46.5vw;
 				}
 			}
 		}
-
-		.fourth-section {
-			.title-area {
-				width: 300px;
-				height: 100px;
-				margin-bottom: 20%;
-				.title-text {
-					position: absolute;
-					bottom: 0;
-					right: -8%;
-					h1 {
-						font-size: 40px;
-					}
-				}
+		.fourth-section .container140 .swiper-group {
+			.diarySwiper .swiper-slide .diary-text .text {
+				overflow: hidden;
+				text-overflow: ellipsis;
+				display: -webkit-box;
+				-webkit-line-clamp: 5;
+				-webkit-box-orient: vertical;
 			}
 		}
 	}
 }
-@media (max-width: 580px) {
+@media (max-width: 769px) {
 	main {
 		.first-section {
 			.background {
@@ -754,16 +836,11 @@ main {
 					width: 100%;
 					height: 40.7vw;
 					.background-title {
-						font-size: 72px;
 						padding: 0 14px;
-						position: absolute;
-						top: 23%;
-						left: 50%;
-						transform: translateX(-50%);
 					}
 				}
 				.links {
-					top: -82.5px;
+					top: -60px;
 					right: 50%;
 					transform: translateX(50%);
 				}
@@ -771,17 +848,23 @@ main {
 		}
 
 		.second-section {
-			.title-area {
-				width: 300px;
-				height: 100px;
-				margin-bottom: 20%;
-				.title-text {
-					position: absolute;
-					bottom: 0;
-					right: -8%;
-					h1 {
-						font-size: 40px;
+			.applySwiper .swiper-wrapper .swiper-slide {
+				.rwd-img {
+					width: 54.4vw;
+					height: 58vw;
+				}
+				.text-area {
+					p {
+						-webkit-line-clamp: 2;
 					}
+					button {
+						width: 111px;
+						height: 35px;
+						font-size: 15px;
+					}
+				}
+				&:nth-child(2n){
+					height: 58vw;
 				}
 			}
 		}
@@ -794,20 +877,8 @@ main {
 			}
 		}
 
-		.fourth-section {
-			.title-area {
-				width: 300px;
-				height: 100px;
-				margin-bottom: 20%;
-				.title-text {
-					position: absolute;
-					bottom: 0;
-					right: -8%;
-					h1 {
-						font-size: 40px;
-					}
-				}
-			}
+		.fourth-section .container140 .swiper-group .diarySwiper .swiper-slide .diary-text .text {
+			-webkit-line-clamp: 4;
 		}
 	}
 }
@@ -815,177 +886,194 @@ main {
 	.container170 {
 		padding: 0 40px;
 	}
-	.first-section {
-		.background {
-			.img {
-				height: 40.7vw;
-			}
-			.links {
-				.link {
-					width: 50px;
-					height: 50px;
-					font-size: 20px;
+	main {
+		.first-section {
+			.background {
+				.img {
+					height: 40.7vw;
 				}
-				.active {
-					width: 100px;
-					height: 100px;
-					font-size: 48px;
+				.links {
+					.link {
+						width: 50px;
+						height: 50px;
+						font-size: 20px;
+					}
+					.active {
+						width: 100px;
+						height: 100px;
+						font-size: 48px;
+					}
 				}
-			}
-			.img {
-				.background-title {
-					font-size: 30px;
-				}
-			}
-		}
-		.helpSwiper {
-			.swiper-wrapper {
-				.swiper-slide {
-					width: 238px !important;
-					.donate-can-card {
-						border-radius: 20px;
-						.donate-can-img {
-							padding: 10px;
-							img {
-								width: 218px;
-								height: 145px;
-							}
-							.card-shadow {
-								padding: 6px 0;
-								width: 92%;
-								bottom: 6%;
-								border-radius: 20px;
-								.shadow-text {
-									font-size: 18px;
-									span {
-										font-size: 20px;
-										padding: 0 5px;
-									}
-								}
-							}
-						}
-						.bg-text {
-							padding: 10px 10px 20px;
-							margin-top: unset;
-							border-radius: 0 0 20px 20px;
-							.text-area {
-								.donate-number {
-									margin-bottom: 8px;
-									p {
-										padding: 5px 11px;
-									}
-								}
-								h6 {
-									padding: unset;
-									margin-bottom: 8px;
-									&:nth-last-child(1) {
-										margin-bottom: 15px;
-									}
-								}
-							}
-						}
+				.img {
+					.background-title {
+						font-size: 30px;
 					}
 				}
 			}
-		}
-	}
-	.third-section {
-		height: 432px;
-		.heart-pic {
-			img {
-				width: 238px;
-				height: 225px;
-			}
-			.heart-texts {
-				.phone-text {
-					font-size: 15px;
-				}
-				.thank-btn {
-					width: 72px;
-					height: 25px;
-					margin-top: 10px;
-					.btn {
-						font-size: 12px;
-					}
-				}
-			}
-		}
-	}
-	.fourth-section {
-		.title-area {
-			width: 146px;
-			height: 45px;
-			margin-bottom: 35px;
-			.title-img {
-				img {
-					width: 70px;
-					height: 31px;
-				}
-			}
-			.title-text {
-				h1 {
-					font-size: 24px;
-				}
-			}
-		}
-		.shadow {
-			width: 326px;
-			height: 303px;
-		}
-		.container140 {
-			.swiper-group {
-				.diarySwiper {
-					margin-top: -242px;
-					width: 100%;
+			.helpSwiper {
+				.swiper-wrapper {
 					.swiper-slide {
-						flex-direction: column;
-						.diary-text {
-							padding: 12.3% 14.6% 0px;
-							height: 66vw;
-							border-radius: 20px 20px 0 0;
-							.sub {
-								.sub-title {
-									padding: 4.6px 9.2px;
-									font-size: 12px;
+						width: 238px !important;
+						.donate-can-card {
+							border-radius: 20px;
+							.donate-can-img {
+								padding: 10px;
+								img {
+									width: 218px;
+									height: 145px;
 								}
-								.date {
-									font-size: 12px;
+								.card-shadow {
+									padding: 6px 0;
+									width: 92%;
+									bottom: 6%;
+									border-radius: 0 0 20px 20px;
+									.shadow-text {
+										font-size: 18px;
+										span {
+											font-size: 20px;
+											padding: 0 5px;
+										}
+									}
 								}
 							}
-							.title {
-								margin: 2px 0 17px;
-								font-size: 20px;
+							.bg-text {
+								padding: 10px 10px 20px;
+								margin-top: unset;
+								border-radius: 0 0 20px 20px;
+								.text-area {
+									.donate-number {
+										margin-bottom: 8px;
+										p {
+											padding: 5px 11px;
+											font-size: 12px;
+											border: 1px solid;
+										}
+										.fb-icon {
+											width: 35px;
+											height: 35px;
+										}
+									}
+									h6 {
+										padding: unset;
+										margin-bottom: 8px;
+										font-size: 15px;
+										&:nth-last-child(1) {
+											margin-bottom: 15px;
+										}
+									}
+									.donate-btn {
+										a {
+											width: 111px;
+											height: 35px;
+											p {
+												font-size: 15px;
+											}
+										}
+									}
+								}
 							}
-							.text {
-								font-size: 15px;
-							}
-							img {
-								width: 36vw;
-								height: 10.5vw;
-								left: unset;
-								bottom: unset;
-								right: 8%;
-								top: 28%;
-							}
-						}
-						.img {
-							height: 66vw;
-							border-radius: 0 0 20px 20px;
 						}
 					}
 				}
-				.arrow2-next {
-					right: 0;
-				}
-				.arrow2-prev {
-					left: 0;
-				}
 			}
 		}
-		.background {
-			img:nth-child(1) {
-				width: 228px;
-				height: 91px;
+		.second-section {
+			margin: 85px 0 92px;
+			.title-area {
+				width: 146px;
+				height: 45px;
+				margin-bottom: 52px;
+				.title-img img {
+					width: 70px;
+					height: 30px;
+				}
+				.title-text {
+					right: 0;
+					bottom: 0;
+					h1 {
+						font-size: 24px;
+					}
+				}
+			}
+			.decorationCat {
+				width: 26.5vw;
+				height: 23vw;
+				transform: translateX(-89%);
+			}
+			.applySwiper {
+				margin-top: -13.75vw;
+			}
+		}
+		.fourth-section {
+			.title-area {
+				width: 146px;
+				height: 45px;
+				margin-bottom: 35px;
+				.title-img {
+					img {
+						width: 70px;
+						height: 31px;
+					}
+				}
+				.title-text {
+					h1 {
+						font-size: 24px;
+					}
+				}
+			}
+			.shadow {
+				width: 326px;
+				height: 303px;
+			}
+			.container140 {
+				.swiper-group {
+					.diarySwiper {
+						margin-top: -242px;
+						width: 100%;
+						.swiper-slide {
+							flex-direction: column;
+							.diary-text {
+								padding: 12.3% 14.6% 0px;
+								height: 66vw;
+								border-radius: 20px 20px 0 0;
+								.sub {
+									.sub-title {
+										padding: 4.6px 9.2px;
+										font-size: 12px;
+									}
+									.date {
+										font-size: 12px;
+									}
+								}
+								.title {
+									margin: 2px 0 17px;
+									font-size: 20px;
+								}
+								.text {
+									font-size: 15px;
+								}
+								img {
+									width: 36vw;
+									height: 10.5vw;
+									left: unset;
+									bottom: unset;
+									right: 8%;
+									top: 28%;
+								}
+							}
+							.img {
+								height: 66vw;
+								border-radius: 0 0 20px 20px;
+							}
+						}
+					}
+				}
+			}
+			.background {
+				img:nth-child(1) {
+					width: 228px;
+					height: 91px;
+				}
 			}
 		}
 	}
