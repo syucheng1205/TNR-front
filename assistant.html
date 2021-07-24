@@ -543,9 +543,6 @@
 					slidesPerView: 3,
 					spaceBetween: 60,
 				},
-			},
-			breakpoints: {
-				// when window width is >= 320px
 				577: {
 					slidesPerView: 2,
 					spaceBetween: 40,
@@ -555,12 +552,11 @@
 		});
 
 		var swiper = new Swiper(".applySwiper", {
-			spaceBetween: 40,
-			loop: true,
+			spaceBetween: 100,
+			loop: false,
 			noSwiping: false,
 			slidesPerView: 2,
 			centeredSlides: true,
-			slidesPerGroup: 2,
 
 			pagination: {
 				el: ".applySwiper .swiper-pagination",
@@ -584,8 +580,13 @@
 					spaceBetween: 0,
 					slidesPerView: "auto",
 					centeredSlides: false,
+					loop: true,
+					slidesPerGroup: 2,
 
 				},
+				577:{
+					spaceBetween: 80,
+				}
 			},
 		});
 
