@@ -317,7 +317,6 @@ main .second-section .container140 .product-area .top h6 {
 }
 
 main .second-section .container140 .product-area .bot {
-  margin-top: 60px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -346,6 +345,25 @@ main .second-section .container140 .product-area .bot .quantity {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+main .second-section .container140 .product-area .bot .quantity .qty {
+  padding: 0;
+  font-size: 24px;
+  width: 8vw;
+  height: 57px;
+  text-align: center;
+}
+
+main .second-section .container140 .product-area .bot .quantity .minus, main .second-section .container140 .product-area .bot .quantity .add {
+  font-size: 32px;
+  height: 57px;
+  border: #707070 solid 1px;
+  padding: 0 10px;
+}
+
+main .second-section .container140 .product-area .bot .delete {
+  font-size: 24px;
 }
 
 footer .footer-area {
