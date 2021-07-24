@@ -960,8 +960,14 @@ main .fourth-section .background img:nth-child(1) {
   main .second-section .applySwiper .swiper-wrapper .swiper-slide:nth-child(2n) {
     height: 58vw;
   }
-  main .third-section .thank-card .text-area {
-    right: 30%;
+  main .third-section .heart-pic .heart-texts .phone-text {
+    font-size: 18px;
+  }
+  main .third-section .heart-pic .heart-texts .thank-btn {
+    margin-top: 14px;
+  }
+  main .third-section .heart-pic .heart-texts .thank-btn .btn {
+    font-size: 14px;
   }
   main .fourth-section .container140 .swiper-group .diarySwiper .swiper-slide .diary-text .text {
     -webkit-line-clamp: 4;
@@ -1068,11 +1074,15 @@ main .fourth-section .background img:nth-child(1) {
   main .second-section .decorationCat {
     width: 26.5vw;
     height: 23vw;
-    -webkit-transform: translateX(-89%);
-            transform: translateX(-89%);
+    -webkit-transform: translateX(-103%);
+            transform: translateX(-103%);
   }
   main .second-section .applySwiper {
     margin-top: -13.75vw;
+  }
+  main .third-section .heart-pic img {
+    width: 325px;
+    height: 307px;
   }
   main .fourth-section .title-area {
     width: 146px;

@@ -863,16 +863,24 @@ main {
 						font-size: 15px;
 					}
 				}
-				&:nth-child(2n){
+				&:nth-child(2n) {
 					height: 58vw;
 				}
 			}
 		}
 
 		.third-section {
-			.thank-card {
-				.text-area {
-					right: 30%;
+			.heart-pic {
+				.heart-texts {
+					.phone-text {
+						font-size: 18px;
+					}
+					.thank-btn {
+						margin-top: 14px;
+						.btn {
+							font-size: 14px;
+						}
+					}
 				}
 			}
 		}
@@ -998,10 +1006,18 @@ main {
 			.decorationCat {
 				width: 26.5vw;
 				height: 23vw;
-				transform: translateX(-89%);
+				transform: translateX(-103%);
 			}
 			.applySwiper {
 				margin-top: -13.75vw;
+			}
+		}
+		.third-section {
+			.heart-pic {
+				img {
+					width: 325px;
+					height: 307px;
+				}
 			}
 		}
 		.fourth-section {
