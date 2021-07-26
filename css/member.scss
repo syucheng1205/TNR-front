@@ -1,4 +1,151 @@
 @import "_style_guide.scss";
-main{
-    
+main {
+    .title {
+        width: 428px;
+        height: 131px;
+        margin: auto;
+        position: relative;
+        img {
+            width: 195px;
+            height: 85px;
+        }
+        h1 {
+            font-size: 72px;
+            font-weight: bold;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+        }
+    }
+    .decorate1 {
+        margin-left: calc(100% - 547px);
+    }
+    .information {
+        display: flex;
+        justify-content: center;
+        gap: 65px;
+        margin-top: -134px;
+        margin-bottom: 100px;
+        .pic-group {
+            position: relative;
+            .shadow {
+                width: 321px;
+                height: 290px;
+                background-image: url("/img/first-section/米色背景.jpg");
+            }
+            .pic {
+                width: 394px;
+                height: 361px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border: 3px solid #fea182;
+                border-radius: 10px;
+                position: relative;
+                margin-left: 106px;
+                margin-top: -222px;
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    width: 335px;
+                    height: 300px;
+                    border: 3px solid #fea182;
+                    border-radius: 10px;
+                    background-color: white;
+                }
+                &::after {
+                    content: "\f007";
+                    font-family: "Font Awesome 5 Pro";
+                    position: absolute;
+                    color: #fea182;
+                    font-size: 180px;
+                    font-weight: 900;
+                }
+            }
+        }
+        .text-group {
+            div {
+                margin-bottom: 30px;
+                &:nth-child(1) {
+                    margin-top: 64px;
+                }
+                &:nth-last-child(2) {
+                    margin-bottom: 17px;
+                }
+                &:nth-last-child(1) {
+                    width: 244px;
+                    height: 70px;
+                    background-color: #ff7950;
+                    border-radius: 20px;
+                    a {
+                        width: 244px;
+                        height: 70px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        p {
+                            font-size: 24px;
+                            color: white;
+                            border-bottom: 2px solid transparent;
+                        }
+                        &:hover p {
+                            border-bottom: 2px solid white;
+                        }
+                    }
+                }
+            }
+            div span {
+                font-size: 32px;
+                &:nth-child(2) {
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+    .record {
+        width: 1360px;
+        height: 680px;
+        margin: auto;
+        .item {
+            width: 473px;
+            height: 220px;
+            display: flex;
+
+            .link {
+                width: 220px;
+                height: 220px;
+                border-radius: 50%;
+                position: relative;
+                background-color: #ffa183;
+                box-shadow: 0 10px 20px #ffa183;
+
+                .icon {
+                    height: 220px;
+                    background-image: url(/img/06-member/shopbagCAt.svg);
+                    background-repeat: no-repeat;
+                    background-position: center;
+                }
+
+                i {
+                    position: absolute;
+                    left: 50%;
+                    top: 50%;
+                    transform: translate(-50%, -50%);
+                    font-size: 92px;
+                    color: white;
+                }
+            }
+            .text {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                margin-left: 60.5px;
+                p {
+                    font-size: 32px;
+                    margin-bottom: 13px;
+                }
+            }
+        }
+    }
 }

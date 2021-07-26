@@ -1,1 +1,196 @@
-/* No CSS *//*# sourceMappingURL=member.css.map */
+@charset "UTF-8";
+main .title {
+  width: 428px;
+  height: 131px;
+  margin: auto;
+  position: relative;
+}
+
+main .title img {
+  width: 195px;
+  height: 85px;
+}
+
+main .title h1 {
+  font-size: 72px;
+  font-weight: bold;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+main .decorate1 {
+  margin-left: calc(100% - 547px);
+}
+
+main .information {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 65px;
+  margin-top: -134px;
+  margin-bottom: 100px;
+}
+
+main .information .pic-group {
+  position: relative;
+}
+
+main .information .pic-group .shadow {
+  width: 321px;
+  height: 290px;
+  background-image: url("/img/first-section/米色背景.jpg");
+}
+
+main .information .pic-group .pic {
+  width: 394px;
+  height: 361px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 3px solid #fea182;
+  border-radius: 10px;
+  position: relative;
+  margin-left: 106px;
+  margin-top: -222px;
+}
+
+main .information .pic-group .pic::before {
+  content: "";
+  position: absolute;
+  width: 335px;
+  height: 300px;
+  border: 3px solid #fea182;
+  border-radius: 10px;
+  background-color: white;
+}
+
+main .information .pic-group .pic::after {
+  content: "\f007";
+  font-family: "Font Awesome 5 Pro";
+  position: absolute;
+  color: #fea182;
+  font-size: 180px;
+  font-weight: 900;
+}
+
+main .information .text-group div {
+  margin-bottom: 30px;
+}
+
+main .information .text-group div:nth-child(1) {
+  margin-top: 64px;
+}
+
+main .information .text-group div:nth-last-child(2) {
+  margin-bottom: 17px;
+}
+
+main .information .text-group div:nth-last-child(1) {
+  width: 244px;
+  height: 70px;
+  background-color: #ff7950;
+  border-radius: 20px;
+}
+
+main .information .text-group div:nth-last-child(1) a {
+  width: 244px;
+  height: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .information .text-group div:nth-last-child(1) a p {
+  font-size: 24px;
+  color: white;
+  border-bottom: 2px solid transparent;
+}
+
+main .information .text-group div:nth-last-child(1) a:hover p {
+  border-bottom: 2px solid white;
+}
+
+main .information .text-group div span {
+  font-size: 32px;
+}
+
+main .information .text-group div span:nth-child(2) {
+  margin-left: 10px;
+}
+
+main .record {
+  width: 1360px;
+  height: 680px;
+  margin: auto;
+}
+
+main .record .item {
+  width: 473px;
+  height: 220px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .record .item .link {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  position: relative;
+  background-color: #ffa183;
+  -webkit-box-shadow: 0 10px 20px #ffa183;
+          box-shadow: 0 10px 20px #ffa183;
+}
+
+main .record .item .link .icon {
+  height: 220px;
+  background-image: url(/img/06-member/shopbagCAt.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+main .record .item .link i {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 92px;
+  color: white;
+}
+
+main .record .item .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: 60.5px;
+}
+
+main .record .item .text p {
+  font-size: 32px;
+  margin-bottom: 13px;
+}
+/*# sourceMappingURL=member.css.map */
