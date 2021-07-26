@@ -276,6 +276,110 @@ main .first-section .container140 .active h5 {
   color: #ffffff;
 }
 
+main .container140 .detail {
+  margin-bottom: 100px;
+  border-top: 1px solid #FFA183;
+  border-bottom: 1px solid #FFA183;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .container140 .detail .text {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+main .container140 .detail .text h6 {
+  font-size: 32px;
+  font-weight: bold;
+  color: #4F4F4F;
+}
+
+main .container140 .detail .select {
+  margin-bottom: 30px;
+  width: 186px;
+}
+
+main .second-section .container140 .content {
+  border-bottom: 2px #ffa183 solid;
+}
+
+main .second-section .container140 .content .text {
+  width: 237px;
+  padding: 20px 0;
+  border-radius: 20px 20px 0 0;
+  background-color: #ffa183;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .second-section .container140 .content .text h5 {
+  font-size: 32px;
+  color: #ffffff;
+}
+
+main .second-section .container140 .form-area {
+  padding: 70px 60px;
+}
+
+main .third-section {
+  margin-top: 120px;
+}
+
+main .third-section .container140 .content {
+  border-bottom: 2px #ffa183 solid;
+}
+
+main .third-section .container140 .content .text {
+  width: 237px;
+  padding: 20px 0;
+  border-radius: 20px 20px 0 0;
+  background-color: #ffa183;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .third-section .container140 .content .text h5 {
+  font-size: 32px;
+  color: #ffffff;
+}
+
+main .third-section .radio-area {
+  padding: 0 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 32px;
+  color: #4F4F4F;
+}
+
+main .third-section .radio-area .radio {
+  width: 40px;
+  height: 40px;
+}
+
 footer .footer-area {
   margin-top: 100px;
 }
