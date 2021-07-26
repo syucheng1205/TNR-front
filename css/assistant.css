@@ -922,6 +922,14 @@ main .fourth-section .background img:nth-child(1) {
     width: 49.2vw;
     height: 46.5vw;
   }
+  main .fourth-section .title-area .title-img img {
+    width: 137px;
+    height: 60px;
+  }
+  main .fourth-section .title-area .title-text {
+    bottom: 22px;
+    right: 36px;
+  }
   main .fourth-section .container140 .swiper-group .diarySwiper .swiper-slide .diary-text .text {
     overflow: hidden;
     text-overflow: ellipsis;
