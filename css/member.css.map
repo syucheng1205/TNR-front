@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "member.scss",
+        "_style_guide.scss"
+    ],
+    "names": [],
+    "file": "member.css"
+}
