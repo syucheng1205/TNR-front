@@ -18,13 +18,14 @@ main {
         }
     }
     .decorate1 {
-        margin-left: calc(100% - 547px);
+        margin-left: calc(100% - 28.5%);
+        width: 28.5%;
     }
     .information {
         display: flex;
         justify-content: center;
         gap: 65px;
-        margin-top: -134px;
+        margin-top: -7%;
         margin-bottom: 100px;
         .pic-group {
             position: relative;
