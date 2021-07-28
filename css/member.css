@@ -24,7 +24,11 @@ main .decorate1 {
   width: 28.5%;
 }
 
-main .information {
+main .container280 {
+  padding: 0 14.6%;
+}
+
+main .container280 .information {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -36,17 +40,17 @@ main .information {
   margin-bottom: 100px;
 }
 
-main .information .pic-group {
+main .container280 .information .pic-group {
   position: relative;
 }
 
-main .information .pic-group .shadow {
+main .container280 .information .pic-group .shadow {
   width: 321px;
   height: 290px;
   background-image: url("/img/first-section/米色背景.jpg");
 }
 
-main .information .pic-group .pic {
+main .container280 .information .pic-group .pic {
   width: 394px;
   height: 361px;
   display: -webkit-box;
@@ -65,7 +69,7 @@ main .information .pic-group .pic {
   margin-top: -222px;
 }
 
-main .information .pic-group .pic::before {
+main .container280 .information .pic-group .pic::before {
   content: "";
   position: absolute;
   width: 335px;
@@ -75,7 +79,7 @@ main .information .pic-group .pic::before {
   background-color: white;
 }
 
-main .information .pic-group .pic::after {
+main .container280 .information .pic-group .pic::after {
   content: "\f007";
   font-family: "Font Awesome 5 Pro";
   position: absolute;
@@ -84,26 +88,26 @@ main .information .pic-group .pic::after {
   font-weight: 900;
 }
 
-main .information .text-group div {
+main .container280 .information .text-group div {
   margin-bottom: 30px;
 }
 
-main .information .text-group div:nth-child(1) {
+main .container280 .information .text-group div:nth-child(1) {
   margin-top: 64px;
 }
 
-main .information .text-group div:nth-last-child(2) {
+main .container280 .information .text-group div:nth-last-child(2) {
   margin-bottom: 17px;
 }
 
-main .information .text-group div:nth-last-child(1) {
+main .container280 .information .text-group div:nth-last-child(1) {
   width: 244px;
   height: 70px;
   background-color: #ff7950;
   border-radius: 20px;
 }
 
-main .information .text-group div:nth-last-child(1) a {
+main .container280 .information .text-group div:nth-last-child(1) a {
   width: 244px;
   height: 70px;
   display: -webkit-box;
@@ -117,39 +121,55 @@ main .information .text-group div:nth-last-child(1) a {
           align-items: center;
 }
 
-main .information .text-group div:nth-last-child(1) a p {
+main .container280 .information .text-group div:nth-last-child(1) a p {
   font-size: 24px;
   color: white;
   border-bottom: 2px solid transparent;
 }
 
-main .information .text-group div:nth-last-child(1) a:hover p {
+main .container280 .information .text-group div:nth-last-child(1) a:hover p {
   border-bottom: 2px solid white;
 }
 
-main .information .text-group div span {
+main .container280 .information .text-group div span {
   font-size: 32px;
 }
 
-main .information .text-group div span:nth-child(2) {
+main .container280 .information .text-group div span:nth-child(2) {
   margin-left: 10px;
 }
 
-main .record {
-  width: 1360px;
-  height: 680px;
-  margin: auto;
+main .container280 .record {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 1fr;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template: 1fr 1fr / 1fr 1fr;
+  position: relative;
+  background-image: repeating-linear-gradient(0deg, #ff7950, #ff7950 5px, transparent 5px, transparent 20px, #ff7950 20px), repeating-linear-gradient(90deg, #ff7950, #ff7950 5px, transparent 5px, transparent 20px, #ff7950 20px), repeating-linear-gradient(180deg, #ff7950, #ff7950 5px, transparent 5px, transparent 20px, #ff7950 20px), repeating-linear-gradient(270deg, #ff7950, #ff7950 5px, transparent 5px, transparent 20px, #ff7950 20px);
+  background-size: 2px 100%, 100% 2px, 2px 100%, 100% 2px;
+  background-position: 0 0, 0 0, 100% 0, 0 100%;
+  background-repeat: no-repeat;
 }
 
-main .record .item {
+main .container280 .record .item {
   width: 473px;
   height: 220px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin: 45px auto;
 }
 
-main .record .item .link {
+main .container280 .record .item:nth-child(1), main .container280 .record .item:nth-child(2) {
+  margin-top: 60px;
+}
+
+main .container280 .record .item:nth-child(3), main .container280 .record .item:nth-child(4) {
+  margin-bottom: 60px;
+}
+
+main .container280 .record .item .link {
   width: 220px;
   height: 220px;
   border-radius: 50%;
@@ -159,14 +179,14 @@ main .record .item .link {
           box-shadow: 0 10px 20px #ffa183;
 }
 
-main .record .item .link .icon {
+main .container280 .record .item .link .icon {
   height: 220px;
   background-image: url(/img/06-member/shopbagCAt.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
 
-main .record .item .link i {
+main .container280 .record .item .link i {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -176,7 +196,7 @@ main .record .item .link i {
   color: white;
 }
 
-main .record .item .text {
+main .container280 .record .item .text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -190,8 +210,26 @@ main .record .item .text {
   margin-left: 60.5px;
 }
 
-main .record .item .text p {
+main .container280 .record .item .text p {
   font-size: 32px;
   margin-bottom: 13px;
+}
+
+main .container280 .record picture img {
+  position: absolute;
+  right: -2px;
+  bottom: -20px;
+}
+
+main .container280 .record picture img:nth-child(2) {
+  display: none;
+}
+
+main .container280 .record picture img:nth-child(3) {
+  display: none;
+}
+
+main .decorate2 {
+  width: 28.5%;
 }
 /*# sourceMappingURL=member.css.map */

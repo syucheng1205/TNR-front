@@ -21,132 +21,173 @@ main {
         margin-left: calc(100% - 28.5%);
         width: 28.5%;
     }
-    .information {
-        display: flex;
-        justify-content: center;
-        gap: 65px;
-        margin-top: -7%;
-        margin-bottom: 100px;
-        .pic-group {
-            position: relative;
-            .shadow {
-                width: 321px;
-                height: 290px;
-                background-image: url("/img/first-section/米色背景.jpg");
-            }
-            .pic {
-                width: 394px;
-                height: 361px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                border: 3px solid #fea182;
-                border-radius: 10px;
+    .container280{
+        padding:0 14.6%;
+        .information {
+            display: flex;
+            justify-content: center;
+            gap: 65px;
+            margin-top: -7%;
+            margin-bottom: 100px;
+            .pic-group {
                 position: relative;
-                margin-left: 106px;
-                margin-top: -222px;
-
-                &::before {
-                    content: "";
-                    position: absolute;
-                    width: 335px;
-                    height: 300px;
+                .shadow {
+                    width: 321px;
+                    height: 290px;
+                    background-image: url("/img/first-section/米色背景.jpg");
+                }
+                .pic {
+                    width: 394px;
+                    height: 361px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
                     border: 3px solid #fea182;
                     border-radius: 10px;
-                    background-color: white;
-                }
-                &::after {
-                    content: "\f007";
-                    font-family: "Font Awesome 5 Pro";
-                    position: absolute;
-                    color: #fea182;
-                    font-size: 180px;
-                    font-weight: 900;
-                }
-            }
-        }
-        .text-group {
-            div {
-                margin-bottom: 30px;
-                &:nth-child(1) {
-                    margin-top: 64px;
-                }
-                &:nth-last-child(2) {
-                    margin-bottom: 17px;
-                }
-                &:nth-last-child(1) {
-                    width: 244px;
-                    height: 70px;
-                    background-color: #ff7950;
-                    border-radius: 20px;
-                    a {
-                        width: 244px;
-                        height: 70px;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        p {
-                            font-size: 24px;
-                            color: white;
-                            border-bottom: 2px solid transparent;
-                        }
-                        &:hover p {
-                            border-bottom: 2px solid white;
-                        }
+                    position: relative;
+                    margin-left: 106px;
+                    margin-top: -222px;
+    
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        width: 335px;
+                        height: 300px;
+                        border: 3px solid #fea182;
+                        border-radius: 10px;
+                        background-color: white;
+                    }
+                    &::after {
+                        content: "\f007";
+                        font-family: "Font Awesome 5 Pro";
+                        position: absolute;
+                        color: #fea182;
+                        font-size: 180px;
+                        font-weight: 900;
                     }
                 }
             }
-            div span {
-                font-size: 32px;
-                &:nth-child(2) {
-                    margin-left: 10px;
+            .text-group {
+                div {
+                    margin-bottom: 30px;
+                    &:nth-child(1) {
+                        margin-top: 64px;
+                    }
+                    &:nth-last-child(2) {
+                        margin-bottom: 17px;
+                    }
+                    &:nth-last-child(1) {
+                        width: 244px;
+                        height: 70px;
+                        background-color: #ff7950;
+                        border-radius: 20px;
+                        a {
+                            width: 244px;
+                            height: 70px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            p {
+                                font-size: 24px;
+                                color: white;
+                                border-bottom: 2px solid transparent;
+                            }
+                            &:hover p {
+                                border-bottom: 2px solid white;
+                            }
+                        }
+                    }
                 }
+                div span {
+                    font-size: 32px;
+                    &:nth-child(2) {
+                        margin-left: 10px;
+                    }
+                }
+            }
+        }
+        .record {
+            display: grid;
+            grid-template: 1fr 1fr / 1fr 1fr;
+            position: relative;
+            background-image: repeating-linear-gradient(
+                    0deg,
+                    #ff7950,
+                    #ff7950 5px,
+                    transparent 5px,
+                    transparent 20px,
+                    #ff7950 20px
+                ),
+                repeating-linear-gradient(90deg, #ff7950, #ff7950 5px, transparent 5px, transparent 20px, #ff7950 20px),
+                repeating-linear-gradient(180deg, #ff7950, #ff7950 5px, transparent 5px, transparent 20px, #ff7950 20px),
+                repeating-linear-gradient(270deg, #ff7950, #ff7950 5px, transparent 5px, transparent 20px, #ff7950 20px);
+            background-size: 2px 100%, 100% 2px, 2px 100%, 100% 2px;
+            background-position: 0 0, 0 0, 100% 0, 0 100%;
+            background-repeat: no-repeat;
+    
+            .item {
+                width: 473px;
+                height: 220px;
+                display: flex;
+                margin: 45px auto;
+                &:nth-child(1),&:nth-child(2){
+                    margin-top: 60px;
+                }
+                &:nth-child(3),&:nth-child(4){
+                    margin-bottom: 60px;
+                }
+                .link {
+                    width: 220px;
+                    height: 220px;
+                    border-radius: 50%;
+                    position: relative;
+                    background-color: #ffa183;
+                    box-shadow: 0 10px 20px #ffa183;
+    
+                    .icon {
+                        height: 220px;
+                        background-image: url(/img/06-member/shopbagCAt.svg);
+                        background-repeat: no-repeat;
+                        background-position: center;
+                    }
+    
+                    i {
+                        position: absolute;
+                        left: 50%;
+                        top: 50%;
+                        transform: translate(-50%, -50%);
+                        font-size: 92px;
+                        color: white;
+                    }
+                }
+                .text {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    margin-left: 60.5px;
+                    p {
+                        font-size: 32px;
+                        margin-bottom: 13px;
+                    }
+                }
+            }
+            picture{
+                img{
+                    position: absolute;
+                    right: -2px;
+                    bottom: -20px;
+                    &:nth-child(2){
+                        display: none;
+                    }
+                    &:nth-child(3){
+                        display: none;
+                    }
+                }
+                
             }
         }
     }
-    .record {
-        width: 1360px;
-        height: 680px;
-        margin: auto;
-        .item {
-            width: 473px;
-            height: 220px;
-            display: flex;
-
-            .link {
-                width: 220px;
-                height: 220px;
-                border-radius: 50%;
-                position: relative;
-                background-color: #ffa183;
-                box-shadow: 0 10px 20px #ffa183;
-
-                .icon {
-                    height: 220px;
-                    background-image: url(/img/06-member/shopbagCAt.svg);
-                    background-repeat: no-repeat;
-                    background-position: center;
-                }
-
-                i {
-                    position: absolute;
-                    left: 50%;
-                    top: 50%;
-                    transform: translate(-50%, -50%);
-                    font-size: 92px;
-                    color: white;
-                }
-            }
-            .text {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                margin-left: 60.5px;
-                p {
-                    font-size: 32px;
-                    margin-bottom: 13px;
-                }
-            }
-        }
+    .decorate2 {
+        width: 28.5%;
     }
 }
