@@ -817,13 +817,26 @@ main {
 				}
 			}
 		}
-		.fourth-section .container140 .swiper-group {
-			.diarySwiper .swiper-slide .diary-text .text {
-				overflow: hidden;
-				text-overflow: ellipsis;
-				display: -webkit-box;
-				-webkit-line-clamp: 5;
-				-webkit-box-orient: vertical;
+		.fourth-section {
+			.title-area{
+				.title-img img {
+					width: 137px;
+					height: 60px;
+				}
+				.title-text{
+					bottom: 22px;
+					right: 36px;
+				}
+			} 
+			
+			.container140 .swiper-group {
+				.diarySwiper .swiper-slide .diary-text .text {
+					overflow: hidden;
+					text-overflow: ellipsis;
+					display: -webkit-box;
+					-webkit-line-clamp: 5;
+					-webkit-box-orient: vertical;
+				}
 			}
 		}
 	}

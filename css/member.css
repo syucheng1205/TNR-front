@@ -1,0 +1,235 @@
+@charset "UTF-8";
+main .title {
+  width: 428px;
+  height: 131px;
+  margin: auto;
+  position: relative;
+}
+
+main .title img {
+  width: 195px;
+  height: 85px;
+}
+
+main .title h1 {
+  font-size: 72px;
+  font-weight: bold;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+main .decorate1 {
+  margin-left: calc(100% - 28.5%);
+  width: 28.5%;
+}
+
+main .container280 {
+  padding: 0 14.6%;
+}
+
+main .container280 .information {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 65px;
+  margin-top: -7%;
+  margin-bottom: 100px;
+}
+
+main .container280 .information .pic-group {
+  position: relative;
+}
+
+main .container280 .information .pic-group .shadow {
+  width: 321px;
+  height: 290px;
+  background-image: url("/img/first-section/米色背景.jpg");
+}
+
+main .container280 .information .pic-group .pic {
+  width: 394px;
+  height: 361px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 3px solid #fea182;
+  border-radius: 10px;
+  position: relative;
+  margin-left: 106px;
+  margin-top: -222px;
+}
+
+main .container280 .information .pic-group .pic::before {
+  content: "";
+  position: absolute;
+  width: 335px;
+  height: 300px;
+  border: 3px solid #fea182;
+  border-radius: 10px;
+  background-color: white;
+}
+
+main .container280 .information .pic-group .pic::after {
+  content: "\f007";
+  font-family: "Font Awesome 5 Pro";
+  position: absolute;
+  color: #fea182;
+  font-size: 180px;
+  font-weight: 900;
+}
+
+main .container280 .information .text-group div {
+  margin-bottom: 30px;
+}
+
+main .container280 .information .text-group div:nth-child(1) {
+  margin-top: 64px;
+}
+
+main .container280 .information .text-group div:nth-last-child(2) {
+  margin-bottom: 17px;
+}
+
+main .container280 .information .text-group div:nth-last-child(1) {
+  width: 244px;
+  height: 70px;
+  background-color: #ff7950;
+  border-radius: 20px;
+}
+
+main .container280 .information .text-group div:nth-last-child(1) a {
+  width: 244px;
+  height: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .container280 .information .text-group div:nth-last-child(1) a p {
+  font-size: 24px;
+  color: white;
+  border-bottom: 2px solid transparent;
+}
+
+main .container280 .information .text-group div:nth-last-child(1) a:hover p {
+  border-bottom: 2px solid white;
+}
+
+main .container280 .information .text-group div span {
+  font-size: 32px;
+}
+
+main .container280 .information .text-group div span:nth-child(2) {
+  margin-left: 10px;
+}
+
+main .container280 .record {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 1fr;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template: 1fr 1fr / 1fr 1fr;
+  position: relative;
+  background-image: repeating-linear-gradient(0deg, #ff7950, #ff7950 5px, transparent 5px, transparent 20px, #ff7950 20px), repeating-linear-gradient(90deg, #ff7950, #ff7950 5px, transparent 5px, transparent 20px, #ff7950 20px), repeating-linear-gradient(180deg, #ff7950, #ff7950 5px, transparent 5px, transparent 20px, #ff7950 20px), repeating-linear-gradient(270deg, #ff7950, #ff7950 5px, transparent 5px, transparent 20px, #ff7950 20px);
+  background-size: 2px 100%, 100% 2px, 2px 100%, 100% 2px;
+  background-position: 0 0, 0 0, 100% 0, 0 100%;
+  background-repeat: no-repeat;
+}
+
+main .container280 .record .item {
+  width: 473px;
+  height: 220px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 45px auto;
+}
+
+main .container280 .record .item:nth-child(1), main .container280 .record .item:nth-child(2) {
+  margin-top: 60px;
+}
+
+main .container280 .record .item:nth-child(3), main .container280 .record .item:nth-child(4) {
+  margin-bottom: 60px;
+}
+
+main .container280 .record .item .link {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  position: relative;
+  background-color: #ffa183;
+  -webkit-box-shadow: 0 10px 20px #ffa183;
+          box-shadow: 0 10px 20px #ffa183;
+}
+
+main .container280 .record .item .link .icon {
+  height: 220px;
+  background-image: url(/img/06-member/shopbagCAt.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+main .container280 .record .item .link i {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 92px;
+  color: white;
+}
+
+main .container280 .record .item .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: 60.5px;
+}
+
+main .container280 .record .item .text p {
+  font-size: 32px;
+  margin-bottom: 13px;
+}
+
+main .container280 .record picture img {
+  position: absolute;
+  right: -2px;
+  bottom: -20px;
+}
+
+main .container280 .record picture img:nth-child(2) {
+  display: none;
+}
+
+main .container280 .record picture img:nth-child(3) {
+  display: none;
+}
+
+main .decorate2 {
+  width: 28.5%;
+}
+/*# sourceMappingURL=member.css.map */
