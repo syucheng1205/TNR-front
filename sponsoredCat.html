@@ -27,22 +27,22 @@
         <div id="nav" class="nav">
             <div class="logo"></div>
             <div class="menu">
-				<div class="burger active"></div>
-				<div class="burger-area">
-					<span class="off"><i class="fas fa-times "></i></span>
-					<div class="list">
-						<a style="margin-top: 140px;">首頁</a>
-						<a>最新消息</a>
-						<a>養貓咪趣</a>
-						<a>救助計畫</a>
-						<a>貓貓店鋪</a>
-						<div href="" class="nav-btn">
-							<p>會員登入</p>
-							<!-- <p>會員登出</p> -->
-						</div>
-					</div>
-				</div>
-			</div>
+                <div class="burger active"></div>
+                <div class="burger-area">
+                    <span class="off"><i class="fas fa-times "></i></span>
+                    <div class="list">
+                        <a style="margin-top: 140px;">首頁</a>
+                        <a>最新消息</a>
+                        <a>養貓咪趣</a>
+                        <a>救助計畫</a>
+                        <a>貓貓店鋪</a>
+                        <div href="" class="nav-btn">
+                            <p>會員登入</p>
+                            <!-- <p>會員登出</p> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </nav>
 
@@ -50,7 +50,7 @@
         <div class="first-section d-flex-column">
             <div class="title-area mt-200">
                 <!-- <div class="title-img"> -->
-                    <img src="/img/deco-title.svg">
+                <img src="/img/deco-title.svg">
                 <!-- </div> -->
                 <div class="title-text">
                     <h1>領養之樂</h1>
@@ -88,28 +88,24 @@
                     <div class="sel sel--black-panther">
                         <select name="select-profession" id="select-profession">
                             <option value="vaccine" disabled>預防針</option>
-                            <option value="yes">有</option>
-                            <option value="no">無</option>
+                            <option value="yes">已施打</option>
+                            <option value="no">未施打</option>
                         </select>
                     </div>
                     <div class="sel sel--black-panther all">
                         <select name="select-profession" id="select-profession">
                             <option value="area" disabled>篩選</option>
-                            <option value="area" disabled>區域</option>
                             <option value="northern-area">北部區域</option>
                             <option value="middle-area">中部區域</option>
                             <option value="southern-area">南部區域</option>
-                            <option value="gender" disabled>性別</option>
                             <option value="male">公</option>
                             <option value="female">母</option>
-                            <option value="age" disabled>年齡</option>
                             <option value="hacker">6個月以下</option>
                             <option value="gamer">6個月以上～未滿1歲</option>
                             <option value="developer">1歲以上</option>
                             <option value="programmer">年齡不詳</option>
-                            <option value="vaccine" disabled>預防針</option>
-                            <option value="yes">有</option>
-                            <option value="no">無</option>
+                            <option value="yes">已施打</option>
+                            <option value="no">未施打</option>
                         </select>
                     </div>
                 </div>
@@ -334,7 +330,7 @@
             </div>
         </div>
         <div class="row mx-0 more-area d-flex justify-content-center">
-            <a href="" class="btn more-btn d-flex justify-content-center align-items-center">查看更多</a>
+            <a href="" class="btn more-btn d-flex justify-content-center align-items-center"><span>查看更多</span></a>
         </div>
 
         <div class="adopt-img-area">
@@ -365,10 +361,15 @@
 
             <div class="anyang-img-area">
                 <div class="anyang-img">
+                    <!-- <div class="anyang-img"></div> -->
                     <img class="paralysis-cat-1" src="/img/03-adoptCat/paralysisCat-1.png">
-
                     <img class="paralysis-cat-2" src="/img/03-adoptCat/paralysisCat-2.png">
+                    <div class="foot-area flex-column">
+                    </div>
                 </div>
+                <div class="anyang"></div>
+                <img class="bg-mobile" src="/img/03-adoptCat/decoPink-576.png" alt="">
+                <!-- <div class="anyang-img small"></div> -->
             </div>
 
             <div class="swiper-father position-relative">
@@ -616,7 +617,7 @@
         </div>
 
         <div class="row mx-0 more-area d-flex justify-content-center">
-            <a href="" class="btn more-btn d-flex justify-content-center align-items-center">查看更多</a>
+            <a href="" class="btn more-btn d-flex justify-content-center align-items-center"><span>查看更多</span></a>
         </div>
 
         <div class="third-section">
@@ -769,17 +770,17 @@
             breakpoints: {
                 521: {
                     slidesPerView: 1.1,
-                    width:500,
+                    width: 500,
 
                 },
                 769: {
                     slidesPerView: 1.5,
-                    width:480,
+                    width: 480,
                     spaceBetween: 58,
                 },
                 993: {
                     slidesPerView: 1.8,
-                    width:820,
+                    width: 820,
                     spaceBetween: 30,
                 },
                 1281: {
@@ -836,27 +837,26 @@
 
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
     <script>
-		let menu = document.querySelector('.menu')
-		let burger = document.querySelector('.burger')
-		let burger_area = document.querySelector('.burger-area')
-		let off = document.querySelector('.off')
+        let menu = document.querySelector('.menu')
+        let burger = document.querySelector('.burger')
+        let burger_area = document.querySelector('.burger-area')
+        let off = document.querySelector('.off')
 
-		menu.addEventListener('click', function () {
-			// console.log(123);
-			burger.classList.remove('active');
-			burger_area.classList.add('active');
-		});
+        menu.addEventListener('click', function () {
+            // console.log(123);
+            burger.classList.remove('active');
+            burger_area.classList.add('active');
+        });
 
-		off.addEventListener('click', function () {
-			burger.classList.add('active');
-			burger_area.classList.remove('active');
-			// 停止事件，否則會一起觸發上面的事件
-			event.stopPropagation()
-		})
+        off.addEventListener('click', function () {
+            burger.classList.add('active');
+            burger_area.classList.remove('active');
+            // 停止事件，否則會一起觸發上面的事件
+            event.stopPropagation()
+        })
 
-	</script>
+    </script>
     <script>
         $('.sel').each(function () {
             $(this).children('select').css('display', 'none');
@@ -879,7 +879,31 @@
                     return;
                 }
                 if (i == 1) {
-                    
+                    $current.children('div').append($('<span>', {
+                        class: $current.attr('class').replace(/sel/g, 'type'),
+                        text: "區域",
+                    }));
+                }
+
+                if (i == 4) {
+                    $current.children('div').append($('<span>', {
+                        class: $current.attr('class').replace(/sel/g, 'type'),
+                        text: "性別",
+                    }));
+                }
+
+                if (i == 6) {
+                    $current.children('div').append($('<span>', {
+                        class: $current.attr('class').replace(/sel/g, 'type'),
+                        text: "年齡",
+                    }));
+                }
+
+                if (i == 10) {
+                    $current.children('div').append($('<span>', {
+                        class: $current.attr('class').replace(/sel/g, 'type'),
+                        text: "預防針",
+                    }));
                 }
 
                 $current.children('div').append($('<span>', {
@@ -900,13 +924,32 @@
             var index = $(this).index();
 
             $(this).siblings('.sel__box__options').removeClass('selected');
-            $(this).siblings('.type')
+
             $(this).addClass('selected');
 
             var $currentSel = $(this).closest('.sel');
             $currentSel.children('.sel__placeholder').text(txt);
             $currentSel.children('select').prop('selectedIndex', index + 1);
         });
+    </script>
+    <script>
+        var foot_area = document.querySelector('.foot-area')
+        function create_foot() {
+            for (let i = 0; i < 3; i++) {
+                var foot_r = document.createElement('img');
+                foot_r.className = 'foot-r';
+                foot_r.setAttribute('src', '/img/03-adoptCat/footprint-red.png');
+                foot_area.appendChild(foot_r);
+            }
+            for (let i = 0; i < 4; i++) {
+                var foot_w = document.createElement('img');
+                foot_w.className = 'foot-w';
+                foot_w.setAttribute('src', '/img/03-adoptCat/footprint-white.png');
+                foot_area.appendChild(foot_w);
+                
+            }
+        }
+        create_foot();
     </script>
 </body>
 

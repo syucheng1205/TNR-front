@@ -73,6 +73,7 @@ h1 {
   font-size: 1rem;
   display: inline-block;
   width: 14.2vw;
+  max-width: 268px;
   height: 101px;
   border-radius: 30px;
   background-color: #ff7950;
@@ -86,13 +87,17 @@ h1 {
   position: absolute;
   content: "\f107";
   font-family: "Font Awesome 5 Pro";
-  font-size: 2vw;
+  font-size: 36px;
   color: #fff;
   right: 2vw;
   top: calc(45% - 0.5em);
 }
 
 .first-section .btns-area .sel.all {
+  display: none;
+}
+
+.first-section .btns-area .type {
   display: none;
 }
 
@@ -103,7 +108,7 @@ h1 {
 
 .first-section .btns-area .sel__placeholder {
   display: block;
-  font-size: 1.5vw;
+  font-size: 36px;
   color: #fff;
   padding: 0.2em 0.7em;
   text-align: left;
@@ -160,6 +165,7 @@ h1 {
   font-size: 1em;
   background-color: #ffa183;
   width: 14.2vw;
+  max-width: 268px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -182,10 +188,11 @@ h1 {
 }
 
 .first-section .btns-area .sel__box__options::after {
-  content: "\f00c";
+  content: "\f6be";
   font-family: "Font Awesome 5 Pro";
   color: #fff;
-  font-size: 1em;
+  font-weight: 900;
+  font-size: 0.8em;
   margin-left: 5px;
   display: none;
 }
@@ -445,8 +452,8 @@ h1 {
 }
 
 .more-area .more-btn {
-  width: 428px;
-  height: 85px;
+  width: 528px;
+  height: 126px;
   font-size: 32px;
   color: #ffa183;
   background-color: #fff;
@@ -457,6 +464,14 @@ h1 {
 .more-area .more-btn:hover {
   color: #fff;
   background-color: #ffa183;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+
+.more-area .more-btn:hover span {
+  border-bottom: 4px solid #fff;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
 }
 
 .second-section .title-area {
@@ -481,17 +496,17 @@ h1 {
   width: 76%;
   margin: auto;
   color: #707070;
-  margin-top: 106px;
-  margin-bottom: 135px;
+  margin-top: 7vw;
+  margin-bottom: 28px;
 }
 
 .second-section .text-area h3 {
-  font-size: 48px;
-  line-height: 70px;
+  font-size: 2.5vw;
+  line-height: 4vw;
 }
 
 .second-section .text-area h3 span {
-  font-size: 48px;
+  font-size: 2.5vw;
   background-color: #ff7950;
   color: white;
 }
@@ -529,6 +544,14 @@ h1 {
       align-self: flex-end;
   margin-left: 12%;
   margin-bottom: 33vw;
+}
+
+.second-section .anyang-img-area .anyang-img .bg-mobile {
+  display: none;
+}
+
+.second-section .anyang-img-area .foot-area {
+  display: none;
 }
 
 .second-section .swiper-father {
@@ -886,6 +909,9 @@ h1 {
     margin-top: 0%;
     height: 130px;
   }
+  .first-section .btns-area .sel::before {
+    font-size: 2vw;
+  }
   .first-section .btns-area .sel__placeholder,
   .first-section .btns-area .sel__box > .sel__box__options {
     font-size: 24px;
@@ -897,43 +923,61 @@ h1 {
   .more-area:nth-child(2) {
     margin-top: 71px;
   }
+  .second-section .text-area h3 {
+    font-size: 2.5vw;
+  }
 }
 
 @media (max-width: 1200px) {
-  .first-section .title-area .title-text {
+  .first-section .title-area .title-text,
+  .second-section .title-area .title-text {
     bottom: 12px;
     right: 50px;
   }
-  .first-section .title-area .title-text h1 {
+  .first-section .title-area .title-text h1,
+  .second-section .title-area .title-text h1 {
     font-size: 60px;
   }
-  .first-section .background img:nth-child(1) {
+  .first-section .background img:nth-child(1),
+  .second-section .background img:nth-child(1) {
     width: 350px;
   }
-  .first-section .background img:nth-child(2) {
+  .first-section .background img:nth-child(2),
+  .second-section .background img:nth-child(2) {
     height: 100px;
     top: 55px;
   }
-  .first-section .background img:nth-child(3) {
+  .first-section .background img:nth-child(3),
+  .second-section .background img:nth-child(3) {
     top: 0;
   }
-  .first-section .btns-area {
+  .first-section .btns-area,
+  .second-section .btns-area {
     height: 100px;
   }
-  .first-section .btns-area .sel {
+  .first-section .btns-area .sel,
+  .second-section .btns-area .sel {
     -webkit-transform: translateY(50%);
             transform: translateY(50%);
   }
-  .first-section .btns-area .sel ~ .sel__box {
+  .first-section .btns-area .sel ~ .sel__box,
+  .second-section .btns-area .sel ~ .sel__box {
     width: 15vw;
   }
   .first-section .btns-area .sel__placeholder,
-  .first-section .btns-area .sel__box > .sel__box__options {
+  .first-section .btns-area .sel__box > .sel__box__options,
+  .second-section .btns-area .sel__placeholder,
+  .second-section .btns-area .sel__box > .sel__box__options {
     font-size: 20px;
   }
-  .first-section .swiper-group .catSwiper {
+  .first-section .swiper-group .catSwiper,
+  .second-section .swiper-group .catSwiper {
     -webkit-transform: translateY(55.7%);
             transform: translateY(55.7%);
+  }
+  .more-area .more-btn {
+    width: 428px;
+    height: 85px;
   }
   .more-area:nth-child(2) {
     margin-top: 37px;
@@ -1008,6 +1052,7 @@ h1 {
   }
   .first-section .btns-area .sel.all .sel__placeholder {
     font-size: 24px;
+    line-height: 30px;
   }
   .first-section .btns-area .sel.all .sel__placeholder::before {
     margin-bottom: 20px;
@@ -1015,6 +1060,15 @@ h1 {
   .first-section .btns-area .sel.all .sel__box {
     width: 195px;
     top: 40px;
+  }
+  .first-section .btns-area .type {
+    width: 100%;
+    display: block;
+    color: #ff7950;
+    background-color: wheat;
+    font-size: 20px;
+    padding-left: 10px;
+    cursor: not-allowed;
   }
   .first-section .swiper-group .catSwiper {
     padding-left: 4.1%;
@@ -1043,7 +1097,39 @@ h1 {
     height: 240px;
   }
   .more-area:nth-child(2) {
-    margin-top: 88px;
+    margin-top: 15px;
+  }
+  .second-section .title-area {
+    width: 270px;
+    height: 86px;
+  }
+  .second-section .title-area .title-text {
+    bottom: 5px;
+    right: 5px;
+  }
+  .second-section .title-area .title-text h1 {
+    font-size: 42px;
+  }
+  .second-section .title-area img {
+    width: 137px;
+  }
+  .second-section .anyang-img-area {
+    height: 83vw;
+  }
+  .second-section .anyang-img-area .anyang-img {
+    background-image: url("/img/03-adoptCat/decoPink-576.png");
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .second-section .anyang-img-area .anyang-img .paralysis-cat-1 {
+    display: none;
+  }
+  .second-section .anyang-img-area .foot-area {
+    row-gap: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 /*# sourceMappingURL=sponsoredCat.css.map */
