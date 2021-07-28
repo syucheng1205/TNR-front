@@ -26,11 +26,11 @@ main {
         .information {
             display: flex;
             justify-content: center;
-            gap: 65px;
             margin-top: -7%;
             margin-bottom: 100px;
             .pic-group {
                 position: relative;
+                margin-right: 4.8%;
                 .shadow {
                     width: 321px;
                     height: 290px;
@@ -188,6 +188,18 @@ main {
         }
     }
     .decorate2 {
-        width: 28.5%;
+        width: 38.7%;
+        margin-top: -50px;
+    }
+}
+footer{
+    .mt-200{
+        margin-top: unset;
+    }
+}
+
+@media (max-width: 1400px) {
+    main{
+        
     }
 }

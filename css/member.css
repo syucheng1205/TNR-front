@@ -35,13 +35,13 @@ main .container280 .information {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  gap: 65px;
   margin-top: -7%;
   margin-bottom: 100px;
 }
 
 main .container280 .information .pic-group {
   position: relative;
+  margin-right: 4.8%;
 }
 
 main .container280 .information .pic-group .shadow {
@@ -230,6 +230,11 @@ main .container280 .record picture img:nth-child(3) {
 }
 
 main .decorate2 {
-  width: 28.5%;
+  width: 38.7%;
+  margin-top: -50px;
+}
+
+footer .mt-200 {
+  margin-top: unset;
 }
 /*# sourceMappingURL=member.css.map */
