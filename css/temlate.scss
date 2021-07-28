@@ -2,6 +2,7 @@
 
 * {
 	box-sizing: border-box;
+	user-select: none;
 }
 
 html {
@@ -10,6 +11,8 @@ html {
 
 body {
 	margin: 0;
+	max-width: 1920px;
+	margin: auto;
 }
 
 h1,
@@ -55,9 +58,11 @@ li {
 
 .nav {
 	width: 100%;
+	max-width: 1920px;
 	display: flex;
 	justify-content: space-between;
 	padding: 20px 7.3% 0;
+	padding-right: max($numbers: 500px);
 	// position: absolute; //首頁
 	margin-bottom: 180px; //其他頁面
 

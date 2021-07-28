@@ -71,6 +71,7 @@ h1 {
             display: inline-block;
             // margin: 3em 2em;
             width: 14.2vw;
+            max-width: 268px;
             height: 101px;
             border-radius: 30px;
             background-color: $color-dark-orange;
@@ -81,7 +82,7 @@ h1 {
                 position: absolute;
                 content: "\f107";
                 font-family: "Font Awesome 5 Pro";
-                font-size: 2vw;
+                font-size: 36px;
                 color: #fff;
                 right: 2vw;
                 top: calc(45% - 0.5em);
@@ -91,6 +92,9 @@ h1 {
         .sel.all {
             display: none;
         }
+        .type {
+            display: none;
+        }
 
         .sel.active::before {
             transform: rotateX(-180deg);
@@ -98,7 +102,7 @@ h1 {
 
         .sel__placeholder {
             display: block;
-            font-size: 1.5vw;
+            font-size: 36px;
             color: #fff;
             padding: 0.2em 0.7em;
             text-align: left;
@@ -144,6 +148,7 @@ h1 {
             font-size: 1em;
             background-color: $color-banner-number;
             width: 14.2vw;
+            max-width: 268px;
             box-sizing: border-box;
         }
 
@@ -166,10 +171,11 @@ h1 {
         }
 
         .sel__box__options::after {
-            content: "\f00c";
+            content: "\f6be";
             font-family: "Font Awesome 5 Pro";
             color: #fff;
-            font-size: 1em;
+            font-weight: 900;
+            font-size: 0.8em;
             margin-left: 5px;
             display: none;
         }
@@ -364,8 +370,8 @@ h1 {
         margin-top: 85px;
     }
     .more-btn {
-        width: 428px;
-        height: 85px;
+        width: 528px;
+        height: 126px;
         font-size: 32px;
         color: $color-banner-number;
         background-color: #fff;
@@ -374,6 +380,11 @@ h1 {
         &:hover {
             color: #fff;
             background-color: $color-banner-number;
+            transition-duration: 0.3s;
+            span {
+                border-bottom: 4px solid #fff;
+                transition-duration: 0.3s;
+            }
         }
     }
 }
@@ -400,15 +411,15 @@ h1 {
         width: 76%;
         margin: auto;
         color: $color-banner-gray;
-        margin-top: 106px;
-        margin-bottom: 135px;
+        margin-top: 7vw;
+        margin-bottom: 28px;
 
         h3 {
-            font-size: 48px;
-            line-height: 70px;
+            font-size: 2.5vw;
+            line-height: 4vw;
 
             span {
-                font-size: 48px;
+                font-size: 2.5vw;
                 background-color: $color-dark-orange;
                 color: rgb(255, 255, 255);
             }
@@ -454,6 +465,13 @@ h1 {
                 // right: 1%;
                 // top: 31%;
             }
+            
+            .bg-mobile{
+                display: none;
+            }
+        }
+        .foot-area{
+            display: none;
         }
     }
 
@@ -751,6 +769,9 @@ h1 {
         .btns-area {
             margin-top: 0%;
             height: 130px;
+            .sel::before {
+                font-size: 2vw;
+            }
             .sel__placeholder,
             .sel__box > .sel__box__options {
                 font-size: 24px;
@@ -765,10 +786,18 @@ h1 {
     .more-area:nth-child(2) {
         margin-top: 71px;
     }
+    .second-section {
+        .text-area {
+            h3{
+                font-size: 2.5vw;
+            }
+        }
+    }
 }
 
 @media (max-width: 1200px) {
-    .first-section {
+    .first-section,
+    .second-section {
         .title-area {
             .title-text {
                 bottom: 12px;
@@ -809,8 +838,14 @@ h1 {
             }
         }
     }
-    .more-area:nth-child(2) {
-        margin-top: 37px;
+    .more-area {
+        .more-btn {
+            width: 428px;
+            height: 85px;
+        }
+        &:nth-child(2) {
+            margin-top: 37px;
+        }
     }
 }
 
@@ -868,25 +903,35 @@ h1 {
                 height: 65px;
                 // margin-right: 78%;
                 // justify-self: start;
-                transform: translate(20%,70%);
-                &::before{
+                transform: translate(20%, 70%);
+                &::before {
                     font-size: 30px;
-                    
+
                     top: 12px;
                 }
-                &.active::before{
+                &.active::before {
                     top: 0px;
                 }
-                .sel__placeholder{
+                .sel__placeholder {
                     font-size: 24px;
-                    &::before{
+                    line-height: 30px;
+                    &::before {
                         margin-bottom: 20px;
                     }
                 }
-                .sel__box{
+                .sel__box {
                     width: 195px;
                     top: 40px;
                 }
+            }
+            .type {
+                width: 100%;
+                display: block;
+                color: $color-dark-orange;
+                background-color: wheat;
+                font-size: 20px;
+                padding-left: 10px;
+                cursor: not-allowed;
             }
         }
         .swiper-group {
@@ -918,7 +963,40 @@ h1 {
             }
         }
     }
-    .more-area:nth-child(2) {
-        margin-top: 88px;
+    .more-area {
+        &:nth-child(2) {
+            margin-top: 15px;
+        }
+    }
+    .second-section {
+        .title-area {
+            width: 270px;
+            height: 86px;
+            .title-text {
+                bottom: 5px;
+                right: 5px;
+                h1 {
+                    font-size: 42px;
+                }
+            }
+            img {
+                width: 137px;
+            }
+        }
+        .anyang-img-area {
+            height: 83vw;
+            .anyang-img {
+                background-image: url("/img/03-adoptCat/decoPink-576.png");
+                justify-content: space-between;
+                .paralysis-cat-1{
+                    display: none;
+                }
+            }
+            .foot-area{
+                row-gap: 20px;
+                display: flex;
+                // flex-direction: column;
+            }
+        }
     }
 }

@@ -2,6 +2,10 @@
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 html {
@@ -10,6 +14,8 @@ html {
 
 body {
   margin: 0;
+  max-width: 1920px;
+  margin: auto;
 }
 
 h1,
@@ -55,6 +61,7 @@ li {
 
 .nav {
   width: 100%;
+  max-width: 1920px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -62,6 +69,7 @@ li {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 20px 7.3% 0;
+  padding-right: 500px;
   margin-bottom: 180px;
 }
 
