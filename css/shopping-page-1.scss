@@ -1,14 +1,12 @@
 @import "_style_guide.scss";
 
-nav{
-	.nav{
-
+nav {
+	.nav {
 		margin-bottom: 9.38%;
 	}
 }
 
 main {
-	
 	.first-section {
 		margin-bottom: 190px;
 		.container140 {
@@ -37,6 +35,29 @@ main {
 				display: flex;
 				justify-content: center;
 				align-items: center;
+				position: relative;
+				&::before {
+					position: absolute;
+					top: -44%;
+					left: 17.16%;
+					content: "";
+					width: 0;
+					height: 0;
+					border-style: solid;
+					border-width: 0 41.5px 50px 41.5px;
+					border-color: transparent transparent #ffa183 transparent;
+				}
+				&::after {
+					position: absolute;
+					top: -44%;
+					right: 17.16%;
+					content: "";
+					width: 0;
+					height: 0;
+					border-style: solid;
+					border-width: 0 41.5px 50px 41.5px;
+					border-color: transparent transparent #ffa183 transparent;
+				}
 				h2 {
 					font-size: 3vw;
 					color: #ffffff;
@@ -74,7 +95,7 @@ main {
 					padding: 1.83% 0;
 					display: grid;
 					grid-template-columns: 26% repeat(3, 1fr) 90px;
-					border-bottom: 2px solid #FFA183;
+					border-bottom: 2px solid #ffa183;
 					h6 {
 						font-size: 24px;
 						color: #4f4f4f;
@@ -90,7 +111,7 @@ main {
 					display: grid;
 					grid-template-columns: 26% repeat(3, 1fr) 90px;
 					padding-bottom: 30px;
-					border-bottom: 2px solid #FFA183;
+					border-bottom: 2px solid #ffa183;
 					h6 {
 						font-size: 24px;
 						color: #4f4f4f;
@@ -104,7 +125,7 @@ main {
 							margin-right: 16px;
 							padding-left: 12px;
 						}
-						h6{
+						h6 {
 							margin-top: 12px;
 						}
 					}
@@ -127,9 +148,9 @@ main {
 							padding: 0 10px;
 						}
 					}
-					.delete{
+					.delete {
 						font-size: 24px;
-						color: #4F4F4F;
+						color: #4f4f4f;
 					}
 				}
 			}
@@ -249,13 +270,13 @@ main {
 		}
 	}
 
-	@media(max-width:992px){
-		.first-section{
+	@media (max-width: 992px) {
+		.first-section {
 			margin-bottom: 9%;
 		}
 
-		.second-section{
-			.container140{
+		.second-section {
+			.container140 {
 				.content {
 					.text {
 						h5 {
@@ -263,42 +284,43 @@ main {
 						}
 					}
 				}
-				.product-area{
-					.top{
+				.product-area {
+					.top {
 						display: none;
 					}
-					.bot{
-						grid-template: repeat(2,1fr)/repeat(2,1fr);
+					.bot {
+						grid-template: repeat(2, 1fr) / repeat(2, 1fr);
 						align-items: center;
 						padding: unset;
-						h6{
+						h6 {
 							text-align: right;
 						}
-						.product{
+						.product {
 							margin: unset;
 							align-items: center;
-							.product-img{
+							.product-img {
 								padding: unset;
 							}
 						}
-						.price{
+						.price {
 							display: none;
 						}
-						.delete{
+						.delete {
 							order: 1;
 							text-align: right;
 						}
-						.quantity{
+						.quantity {
 							order: 2;
 							justify-content: unset;
-							.qty{
+							.qty {
 								width: 17vw;
 							}
-							.add,.minus{
+							.add,
+							.minus {
 								padding: 0 20px;
 							}
 						}
-						.subtotal{
+						.subtotal {
 							order: 3;
 						}
 					}
@@ -306,12 +328,12 @@ main {
 			}
 		}
 
-		.third-section{
+		.third-section {
 			margin-top: 100px;
-			.container140{
-				.top{
+			.container140 {
+				.top {
 					flex-direction: column;
-					.mode{
+					.mode {
 						width: 100%;
 						margin-bottom: 100px;
 						.content {
@@ -322,7 +344,7 @@ main {
 							}
 						}
 					}
-					.information{
+					.information {
 						width: 100%;
 						margin: 0;
 						.content {
@@ -332,15 +354,61 @@ main {
 								}
 							}
 						}
-						.inf-area{
-							.inf-btn{
-								p{
+						.inf-area {
+							.inf-btn {
+								p {
 									font-size: 32px;
 								}
 							}
 						}
 					}
 				}
+			}
+		}
+	}
+
+	@media (max-width: 768px){
+		.first-section{
+			.container140{
+				display: flex;
+				justify-content: center;
+				.process{
+					display: none;
+				}
+				.active{
+					display: flex;
+					width: 80%;
+					h2{
+						font-size: 48px;
+					}
+					h5{
+						font-size: 24px;
+					}
+				}
+
+			}
+		}
+	}
+
+	@media (max-width: 576px){
+		.first-section{
+			.container140{
+				display: flex;
+				justify-content: center;
+				.process{
+					display: none;
+				}
+				.active{
+					display: flex;
+					width: 80%;
+					h2{
+						font-size: 8.3vw;
+					}
+					h5{
+						font-size: 4vw;
+					}
+				}
+
 			}
 		}
 	}
