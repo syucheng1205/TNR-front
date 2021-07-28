@@ -107,8 +107,9 @@ main {
             }
         }
         .record {
+            max-height: 651px;
             display: grid;
-            grid-template: 1fr 1fr / 1fr 1fr;
+            grid-template: 340px 340px / 1fr 1fr;
             position: relative;
             background-image: repeating-linear-gradient(
                     0deg,
@@ -126,8 +127,8 @@ main {
             background-repeat: no-repeat;
     
             .item {
-                width: 473px;
-                height: 220px;
+                width: 70%;
+                height: 11.5vw;
                 display: flex;
                 margin: 45px auto;
                 &:nth-child(1),&:nth-child(2){
@@ -145,7 +146,7 @@ main {
                     box-shadow: 0 10px 20px #ffa183;
     
                     .icon {
-                        height: 220px;
+                        height: 11.5vw;
                         background-image: url(/img/06-member/shopbagCAt.svg);
                         background-repeat: no-repeat;
                         background-position: center;
@@ -200,6 +201,6 @@ footer{
 
 @media (max-width: 1400px) {
     main{
-        
+
     }
 }

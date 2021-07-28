@@ -140,11 +140,12 @@ main .container280 .information .text-group div span:nth-child(2) {
 }
 
 main .container280 .record {
+  max-height: 651px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 1fr 1fr;
+  -ms-grid-rows: 340px 340px;
   -ms-grid-columns: 1fr 1fr;
-      grid-template: 1fr 1fr / 1fr 1fr;
+      grid-template: 340px 340px / 1fr 1fr;
   position: relative;
   background-image: repeating-linear-gradient(0deg, #ff7950, #ff7950 5px, transparent 5px, transparent 20px, #ff7950 20px), repeating-linear-gradient(90deg, #ff7950, #ff7950 5px, transparent 5px, transparent 20px, #ff7950 20px), repeating-linear-gradient(180deg, #ff7950, #ff7950 5px, transparent 5px, transparent 20px, #ff7950 20px), repeating-linear-gradient(270deg, #ff7950, #ff7950 5px, transparent 5px, transparent 20px, #ff7950 20px);
   background-size: 2px 100%, 100% 2px, 2px 100%, 100% 2px;
@@ -153,8 +154,8 @@ main .container280 .record {
 }
 
 main .container280 .record .item {
-  width: 473px;
-  height: 220px;
+  width: 70%;
+  height: 11.5vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -180,7 +181,7 @@ main .container280 .record .item .link {
 }
 
 main .container280 .record .item .link .icon {
-  height: 220px;
+  height: 11.5vw;
   background-image: url(/img/06-member/shopbagCAt.svg);
   background-repeat: no-repeat;
   background-position: center;
