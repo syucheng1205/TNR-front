@@ -316,10 +316,21 @@ footer .mt-200 {
     font-size: 110px;
   }
   main .container280 .information .text-group div {
-    margin-top: 23px;
+    margin-bottom: 23px;
   }
   main .container280 .information .text-group div:nth-child(1) {
     margin-top: 45px;
+  }
+  main .container280 .information .text-group div:nth-last-child(1) {
+    width: 183px;
+    height: 52px;
+  }
+  main .container280 .information .text-group div:nth-last-child(1) a {
+    width: 183px;
+    height: 52px;
+  }
+  main .container280 .information .text-group div:nth-last-child(1) a p {
+    font-size: 18px;
   }
 }
 /*# sourceMappingURL=member.css.map */

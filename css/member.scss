@@ -286,10 +286,21 @@ footer {
                     }
                 }
                 .text-group {
-                    div{
-                        margin-top: 23px ;
+                    div{ 
+                        margin-bottom: 23px ;
                         &:nth-child(1) {
                             margin-top: 45px;
+                        }
+                        &:nth-last-child(1) {
+                            width: 183px;
+                            height: 52px;
+                            a {
+                                width: 183px;
+                                height: 52px;
+                                p {
+                                    font-size: 18px;
+                                }
+                            }
                         }
                     }
                 }
