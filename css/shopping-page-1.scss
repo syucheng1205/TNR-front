@@ -1,11 +1,5 @@
 @import "_style_guide.scss";
 
-nav {
-	.nav {
-		margin-bottom: 9.38%;
-	}
-}
-
 main {
 	.first-section {
 		margin-bottom: 190px;
@@ -43,29 +37,6 @@ main {
 				display: flex;
 				justify-content: center;
 				align-items: center;
-				position: relative;
-				// &::before {
-				// 	position: absolute;
-				// 	top: -3.5vw;
-				// 	left: 17.16%;
-				// 	content: "";
-				// 	width: 0;
-				// 	height: 0;
-				// 	border-style: solid;
-				// 	border-width: 0 3.5vw 5vw 3.5vw;
-				// 	border-color: transparent transparent #ffa183 transparent;
-				// }
-				// &::after {
-				// 	position: absolute;
-				// 	top: -3.5vw;
-				// 	right: 17.16%;
-				// 	content: "";
-				// 	width: 0;
-				// 	height: 0;
-				// 	border-style: solid;
-				// 	border-width: 0 3.5vw 5vw 3.5vw;
-				// 	border-color: transparent transparent #ffa183 transparent;
-				// }
 				h2 {
 					font-size: 3vw;
 					color: #ffffff;
@@ -243,26 +214,26 @@ main {
 							margin-top: 40px;
 							width: 79.8%;
 							height: 69px;
-							background-color: $color-dark-orange;
+							background-color: #ff7950;
 							display: flex;
 							align-items: center;
 							justify-content: center;
 							border-radius: 40px;
 							cursor: pointer;
-							box-shadow: 0px 10px 30px 0px $color-dark-orange;
+							box-shadow: 0px 10px 30px 0px #ff7950;
 
 							p {
 								font-size: 2vw;
 								font-weight: bold;
-								color: $color-btn-text;
-								border-bottom: 4px solid $color-dark-orange;
+								color: #ffffff;
+								border-bottom: 4px solid #ff7950;
 							}
 							&:hover p {
-								border-bottom: 4px solid $color-btn-text;
+								border-bottom: 4px solid #ffffff;
 								transition-duration: 0.8s;
 							}
 							&:hover {
-								box-shadow: 0px 0px 10px 0px $color-dark-orange;
+								box-shadow: 0px 0px 10px 0px #ff7950;
 								transition-duration: 0.8s;
 							}
 						}
@@ -396,16 +367,6 @@ main {
 					}
 					h5 {
 						font-size: 24px;
-					}
-					&::before {
-						position: absolute;
-						top: -6.5vw;
-						border-width: 0 41.5px 50px 41.5px;
-					}
-					&::after {
-						position: absolute;
-						top: -6.5vw;
-						border-width: 0 41.5px 50px 41.5px;
 					}
 				}
 			}

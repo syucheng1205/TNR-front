@@ -1,7 +1,3 @@
-nav .nav {
-  margin-bottom: 9.38%;
-}
-
 main .first-section {
   margin-bottom: 190px;
 }
@@ -65,7 +61,6 @@ main .first-section .container140 .active {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  position: relative;
 }
 
 main .first-section .container140 .active h2 {
@@ -457,16 +452,6 @@ main .third-section .container140 .bot {
   }
   main .first-section .container140 .active h5 {
     font-size: 24px;
-  }
-  main .first-section .container140 .active::before {
-    position: absolute;
-    top: -6.5vw;
-    border-width: 0 41.5px 50px 41.5px;
-  }
-  main .first-section .container140 .active::after {
-    position: absolute;
-    top: -6.5vw;
-    border-width: 0 41.5px 50px 41.5px;
   }
 }
 
