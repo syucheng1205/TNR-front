@@ -12,6 +12,14 @@ main {
 		.container140 {
 			display: flex;
 			justify-content: space-between;
+			position: relative;
+			.cat-ear{
+				position: absolute;
+				top: -30%;
+				width: 24.76%;
+				display: flex;
+				justify-content: space-around;
+			}
 			.process {
 				width: 29.76%;
 				padding: 27px 0;
@@ -373,6 +381,10 @@ main {
 			.container140 {
 				display: flex;
 				justify-content: center;
+				.cat-ear{
+					width: 65%;
+					justify-content: space-around;
+				}
 				.process {
 					display: none;
 				}
