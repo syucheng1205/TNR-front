@@ -1,4 +1,8 @@
 @charset "UTF-8";
+nav .nav {
+  margin-bottom: 97px;
+}
+
 main .title {
   width: 428px;
   height: 131px;
@@ -288,6 +292,9 @@ footer .mt-200 {
 }
 
 @media (max-width: 992px) {
+  nav .nav {
+    margin-bottom: 73px;
+  }
   main .title {
     width: 269px;
     height: 82px;

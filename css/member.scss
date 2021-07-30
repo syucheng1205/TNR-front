@@ -1,4 +1,9 @@
 @import "_style_guide.scss";
+nav{
+    .nav{
+        margin-bottom: 97px; 
+    }
+}
 main {
     .title {
         width: 428px;
@@ -253,6 +258,11 @@ footer {
 }
 
 @media (max-width: 992px) {
+    nav{
+        .nav{
+            margin-bottom: 73px;
+        }
+    }
     main {
         .title {
             width: 269px;
