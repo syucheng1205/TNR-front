@@ -65,7 +65,7 @@ main .container280 .information .pic-group .pic {
   border: 3px solid #fea182;
   border-radius: 10px;
   position: relative;
-  margin-left: 106px;
+  margin-left: 5.5vw;
   margin-top: -222px;
 }
 
@@ -209,11 +209,11 @@ main .container280 .record .item .text {
 
 main .container280 .record .item .text p {
   font-size: 32px;
-  margin-bottom: 13px;
 }
 
 main .container280 .record .item .text p:nth-child(1) {
   font-weight: bold;
+  margin-bottom: 13px;
 }
 
 main .container280 .record .background img {
@@ -247,7 +247,7 @@ footer .mt-200 {
 
 @media (max-width: 1400px) {
   main .container280 {
-    padding: 0 2%;
+    padding: 0 4%;
   }
   main .container280 .record .item .link {
     width: 160px;
@@ -300,37 +300,139 @@ footer .mt-200 {
     font-size: 42px;
   }
   main .container280 .information .pic-group .shadow {
-    width: 249px;
-    height: 218px;
+    width: 25vw;
+    height: 22vw;
   }
   main .container280 .information .pic-group .pic {
-    width: 296px;
-    height: 271px;
-    margin-top: -166px;
+    width: 30.5vw;
+    height: 28vw;
+    margin-top: -15.9vw;
   }
   main .container280 .information .pic-group .pic::before {
-    width: 252px;
-    height: 225px;
+    width: 27.1vw;
+    height: 24.3vw;
   }
   main .container280 .information .pic-group .pic::after {
-    font-size: 110px;
+    font-size: 11.5vw;
   }
   main .container280 .information .text-group div {
-    margin-bottom: 23px;
+    margin-bottom: 2vw;
+  }
+  main .container280 .information .text-group div span {
+    font-size: 2.3vw;
   }
   main .container280 .information .text-group div:nth-child(1) {
-    margin-top: 45px;
+    margin-top: 5.7vw;
   }
   main .container280 .information .text-group div:nth-last-child(1) {
-    width: 183px;
-    height: 52px;
+    width: 18.5vw;
+    height: 5.2vw;
   }
   main .container280 .information .text-group div:nth-last-child(1) a {
-    width: 183px;
-    height: 52px;
+    width: 18.5vw;
+    height: 5.2vw;
   }
   main .container280 .information .text-group div:nth-last-child(1) a p {
-    font-size: 18px;
+    font-size: 1.85vw;
+  }
+}
+
+@media (max-width: 768px) {
+  main .container280 {
+    padding: 0 40px;
+  }
+  main .container280 .record {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: unset;
+        flex-wrap: unset;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  main .container280 .record .item {
+    width: 100%;
+    margin: 40px 0;
+  }
+  main .container280 .record .item:nth-last-child(2) {
+    margin-bottom: 77.8px;
+  }
+  main .container280 .record .background img:nth-child(2) {
+    display: none;
+  }
+  main .container280 .record .background img:nth-child(3) {
+    display: block;
+  }
+}
+
+@media (max-width: 576px) {
+  main .title {
+    width: 146px;
+    height: 45px;
+  }
+  main .title img {
+    width: 70px;
+    height: 30px;
+  }
+  main .title h1 {
+    font-size: 24px;
+  }
+  main .container280 .information .pic-group .shadow {
+    width: 26vw;
+    height: 21.2vw;
+  }
+  main .container280 .information .pic-group .pic {
+    width: 29.5vw;
+    height: 27.6vw;
+  }
+  main .container280 .information .pic-group .pic::before {
+    width: 25vw;
+    height: 22vw;
+  }
+  main .container280 .information .pic-group .pic::after {
+    font-size: 12vw;
+  }
+  main .container280 .information .text-group div span {
+    font-size: 15px;
+  }
+  main .container280 .information .text-group div span:nth-child(2) {
+    margin-left: unset;
+  }
+  main .container280 .information .text-group div:nth-child(1) {
+    margin-top: 4vw;
+  }
+  main .container280 .information .text-group div:nth-last-child(2) {
+    margin-bottom: 10px;
+  }
+  main .container280 .information .text-group div:nth-last-child(1) {
+    width: 100px;
+    height: 30px;
+  }
+  main .container280 .information .text-group div:nth-last-child(1) a {
+    width: 100px;
+    height: 30px;
+  }
+  main .container280 .information .text-group div:nth-last-child(1) a p {
+    font-size: 12px;
+  }
+  main .container280 .record .item .link {
+    width: 100px;
+    height: 100px;
+  }
+  main .container280 .record .item .link i {
+    font-size: 50px;
+  }
+  main .container280 .record .item .link .icon {
+    width: 50px;
+    height: 50px;
+  }
+  main .container280 .record .item .text {
+    margin-left: 30px;
+  }
+  main .container280 .record .item .text p {
+    font-size: 20px;
   }
 }
 /*# sourceMappingURL=member.css.map */
