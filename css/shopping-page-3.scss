@@ -1,8 +1,11 @@
 @import "_style_guide.scss";
 
+.nav{
+	margin-bottom: 9.4vw;
+}
 main {
 	.first-section {
-		margin-bottom: 190px;
+		margin-bottom: 10vw;
 		.container140 {
 			display: flex;
 			justify-content: space-between;
@@ -54,15 +57,25 @@ main {
 	.thank-text {
 		display: flex;
 		justify-content: center;
+		align-items: center;
 		margin-bottom: 103px;
 		h4 {
 			font-size: 46px;
 			color: #4f4f4f;
+			@media (max-width: 992px) {
+				font-size: 4vw;
+			}
+			@media (max-width: 768px) {
+				font-size: 30px;
+			}
+			@media (max-width: 576px) {
+				font-size: 4.5vw;
+			}
 		}
 		.text-img {
 			width: 60px;
 			height: 60px;
-			margin-left: 37.5px;
+			margin-left: 1.95vw;
 		}
 	}
 
@@ -109,26 +122,110 @@ main {
 						font-size: 24px;
 						color: #4f4f4f;
 						text-align: center;
-					}
-					.product {
-						h6 {
+						&:nth-child(1){
 							text-align: unset;
 							padding-left: 6.1%;
 						}
 					}
+					
 				}
 			}
 		}
 	}
 
 	.third-section {
-		margin-top: 142px;
+		margin-top: 5vw;
 		.container140 {
-			h6 {
-				font-size: 40px;
-				span {
-					margin-left: 20px;
-					font-size: 24px;
+			.detail-btn {
+				border: unset;
+				color: #4f4f4f;
+				margin-bottom: 90px;
+				&:hover {
+					background-color: unset;
+				}
+				h6 {
+					font-size: 36px;
+					span {
+						margin-left: 20px;
+						font-size: 24px;
+					}
+				}
+			}
+
+			.detail-area {
+				padding: 0 2.93%;
+				hr {
+					background-color: #f2a589;
+					margin: unset;
+				}
+				.top {
+					padding: 28px 0;
+					display: grid;
+					grid-template-columns: repeat(1, 1fr) 26vw 15.8vw;
+					h6 {
+						font-size: 24px;
+						text-align: center;
+						&:nth-child(1) {
+							text-align: unset;
+							padding-left: 26px;
+						}
+					}
+				}
+
+				.bot {
+					margin-top: 30px;
+					display: grid;
+					grid-template-columns: repeat(1, 1fr) 26vw 15.8vw;
+					padding-bottom: 30px;
+					border-bottom: 2px solid #707070;
+					h6 {
+						font-size: 24px;
+						color: #4f4f4f;
+						text-align: center;
+					}
+
+					.product {
+						display: flex;
+						margin-left: 10px;
+						.product-img {
+							margin-right: 16px;
+							padding-left: 12px;
+						}
+						h6 {
+							margin-top: 12px;
+						}
+					}
+				}
+
+				.total-cost {
+					margin-bottom: 150px;
+					.top {
+						display: grid;
+						grid-template-columns: repeat(1, 1fr) 26vw 15.8vw;
+					}
+					.mid {
+						display: grid;
+						grid-template-columns: repeat(1, 1fr) 26vw 15.8vw;
+						h6 {
+							font-size: 24px;
+							text-align: center;
+						}
+					}
+					.bot {
+						display: grid;
+						grid-template-columns: repeat(1, 1fr) 26vw 15.8vw;
+						border: unset;
+						h6 {
+							font-size: 26px;
+							font-weight: bold;
+							&:nth-child(2) {
+								padding-right: 3vw;
+							}
+							&:nth-child(3) {
+								padding-right: 3%;
+							}
+						}
+					}
 				}
 			}
 		}
@@ -208,6 +305,54 @@ main {
 					}
 					h5 {
 						font-size: 24px;
+					}
+				}
+			}
+		}
+
+		.second-section {
+			.container140 {
+				.product-area {
+					display: flex;
+					.top,
+					.bot {
+						grid-template-columns: unset;
+						grid-template-rows: repeat(5, 1fr);
+						width: 50%;
+						margin: 0;
+						padding: 10px 0;
+						border-bottom: unset;
+						h6 {
+							font-size: 18px;
+							text-align: unset;
+							padding-bottom: 15px;
+							margin-bottom: 15px;
+							border-bottom: 2px solid #4f4f4f;
+							&:nth-child(1) {
+								padding: 0;
+							}
+							&:nth-child(5){
+								border-bottom: 2px solid #F2A589;
+							}
+						}
+					}
+					.top{
+						text-align: left;
+						h6{
+							padding-left: 30px;
+							&:nth-child(1){
+								padding-left: 30px;
+							}
+						}
+					}
+					.bot{
+						text-align: right;
+						h6{
+							padding-right: 30px;
+							&:nth-child(1){
+								padding-right: 30px;
+							}
+						}
 					}
 				}
 			}

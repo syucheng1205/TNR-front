@@ -1,5 +1,9 @@
+.nav {
+  margin-bottom: 9.4vw;
+}
+
 main .first-section {
-  margin-bottom: 190px;
+  margin-bottom: 10vw;
 }
 
 main .first-section .container140 {
@@ -82,6 +86,9 @@ main .thank-text {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-bottom: 103px;
 }
 
@@ -90,10 +97,28 @@ main .thank-text h4 {
   color: #4f4f4f;
 }
 
+@media (max-width: 992px) {
+  main .thank-text h4 {
+    font-size: 4vw;
+  }
+}
+
+@media (max-width: 768px) {
+  main .thank-text h4 {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 576px) {
+  main .thank-text h4 {
+    font-size: 4.5vw;
+  }
+}
+
 main .thank-text .text-img {
   width: 60px;
   height: 60px;
-  margin-left: 37.5px;
+  margin-left: 1.95vw;
 }
 
 main .second-section .container140 .content {
@@ -155,22 +180,135 @@ main .second-section .container140 .product-area .bot h6 {
   text-align: center;
 }
 
-main .second-section .container140 .product-area .bot .product h6 {
+main .second-section .container140 .product-area .bot h6:nth-child(1) {
   text-align: unset;
   padding-left: 6.1%;
 }
 
 main .third-section {
-  margin-top: 142px;
+  margin-top: 5vw;
 }
 
-main .third-section .container140 h6 {
-  font-size: 40px;
+main .third-section .container140 .detail-btn {
+  border: unset;
+  color: #4f4f4f;
+  margin-bottom: 90px;
 }
 
-main .third-section .container140 h6 span {
+main .third-section .container140 .detail-btn:hover {
+  background-color: unset;
+}
+
+main .third-section .container140 .detail-btn h6 {
+  font-size: 36px;
+}
+
+main .third-section .container140 .detail-btn h6 span {
   margin-left: 20px;
   font-size: 24px;
+}
+
+main .third-section .container140 .detail-area {
+  padding: 0 2.93%;
+}
+
+main .third-section .container140 .detail-area hr {
+  background-color: #f2a589;
+  margin: unset;
+}
+
+main .third-section .container140 .detail-area .top {
+  padding: 28px 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[1] 26vw 15.8vw;
+      grid-template-columns: repeat(1, 1fr) 26vw 15.8vw;
+}
+
+main .third-section .container140 .detail-area .top h6 {
+  font-size: 24px;
+  text-align: center;
+}
+
+main .third-section .container140 .detail-area .top h6:nth-child(1) {
+  text-align: unset;
+  padding-left: 26px;
+}
+
+main .third-section .container140 .detail-area .bot {
+  margin-top: 30px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[1] 26vw 15.8vw;
+      grid-template-columns: repeat(1, 1fr) 26vw 15.8vw;
+  padding-bottom: 30px;
+  border-bottom: 2px solid #707070;
+}
+
+main .third-section .container140 .detail-area .bot h6 {
+  font-size: 24px;
+  color: #4f4f4f;
+  text-align: center;
+}
+
+main .third-section .container140 .detail-area .bot .product {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 10px;
+}
+
+main .third-section .container140 .detail-area .bot .product .product-img {
+  margin-right: 16px;
+  padding-left: 12px;
+}
+
+main .third-section .container140 .detail-area .bot .product h6 {
+  margin-top: 12px;
+}
+
+main .third-section .container140 .detail-area .total-cost {
+  margin-bottom: 150px;
+}
+
+main .third-section .container140 .detail-area .total-cost .top {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[1] 26vw 15.8vw;
+      grid-template-columns: repeat(1, 1fr) 26vw 15.8vw;
+}
+
+main .third-section .container140 .detail-area .total-cost .mid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[1] 26vw 15.8vw;
+      grid-template-columns: repeat(1, 1fr) 26vw 15.8vw;
+}
+
+main .third-section .container140 .detail-area .total-cost .mid h6 {
+  font-size: 24px;
+  text-align: center;
+}
+
+main .third-section .container140 .detail-area .total-cost .bot {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[1] 26vw 15.8vw;
+      grid-template-columns: repeat(1, 1fr) 26vw 15.8vw;
+  border: unset;
+}
+
+main .third-section .container140 .detail-area .total-cost .bot h6 {
+  font-size: 26px;
+  font-weight: bold;
+}
+
+main .third-section .container140 .detail-area .total-cost .bot h6:nth-child(2) {
+  padding-right: 3vw;
+}
+
+main .third-section .container140 .detail-area .total-cost .bot h6:nth-child(3) {
+  padding-right: 3%;
 }
 
 main .fouth-section {
@@ -281,6 +419,56 @@ main .fouth-section .btn-area .back:hover {
   }
   main .first-section .container140 .active h5 {
     font-size: 24px;
+  }
+  main .second-section .container140 .product-area {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  main .second-section .container140 .product-area .top,
+  main .second-section .container140 .product-area .bot {
+    -ms-grid-columns: unset;
+        grid-template-columns: unset;
+    -ms-grid-rows: (1fr)[5];
+        grid-template-rows: repeat(5, 1fr);
+    width: 50%;
+    margin: 0;
+    padding: 10px 0;
+    border-bottom: unset;
+  }
+  main .second-section .container140 .product-area .top h6,
+  main .second-section .container140 .product-area .bot h6 {
+    font-size: 18px;
+    text-align: unset;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #4f4f4f;
+  }
+  main .second-section .container140 .product-area .top h6:nth-child(1),
+  main .second-section .container140 .product-area .bot h6:nth-child(1) {
+    padding: 0;
+  }
+  main .second-section .container140 .product-area .top h6:nth-child(5),
+  main .second-section .container140 .product-area .bot h6:nth-child(5) {
+    border-bottom: 2px solid #F2A589;
+  }
+  main .second-section .container140 .product-area .top {
+    text-align: left;
+  }
+  main .second-section .container140 .product-area .top h6 {
+    padding-left: 30px;
+  }
+  main .second-section .container140 .product-area .top h6:nth-child(1) {
+    padding-left: 30px;
+  }
+  main .second-section .container140 .product-area .bot {
+    text-align: right;
+  }
+  main .second-section .container140 .product-area .bot h6 {
+    padding-right: 30px;
+  }
+  main .second-section .container140 .product-area .bot h6:nth-child(1) {
+    padding-right: 30px;
   }
 }
 /*# sourceMappingURL=shopping-page-3.css.map */
