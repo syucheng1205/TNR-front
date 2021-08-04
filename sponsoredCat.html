@@ -350,11 +350,11 @@
             <div class="text-area">
                 <h3>
                     不是每隻貓，都可以原地野放的 ，不是每隻貓，都可以順利的送養…
-                    <br>
+                    <!-- <br> -->
                     救的貓越多，就有越多放不回﹑也送不出去的貓！
-                    <br>
+                    <!-- <br> -->
                     這些貓，有的是身體上嚴重缺陷，有的需長期服藥﹑特別灌食…等
-                    <br>
+                    <!-- <br> -->
                     支持老病殘貓安養計劃， 來 <span>線上養一隻貓</span> 吧！
                 </h3>
             </div>
@@ -364,11 +364,13 @@
                     <!-- <div class="anyang-img"></div> -->
                     <img class="paralysis-cat-1" src="/img/03-adoptCat/paralysisCat-1.png">
                     <img class="paralysis-cat-2" src="/img/03-adoptCat/paralysisCat-2.png">
+                </div>
+                <div class="anyang-mobile flex-row-reverse">
                     <div class="foot-area flex-column">
                     </div>
+                    <img class="paralysis-cat-2" src="/img/03-adoptCat/paralysisCat-2.png">
+                    <img class="bg-mobile" src="/img/03-adoptCat/decoPink-576.png" alt="">
                 </div>
-                <div class="anyang"></div>
-                <img class="bg-mobile" src="/img/03-adoptCat/decoPink-576.png" alt="">
                 <!-- <div class="anyang-img small"></div> -->
             </div>
 
@@ -802,6 +804,7 @@
         var donate_swiper = new Swiper(".donateSwiper", {
             slidesPerView: 1,
             slidesPerColumn: 2,
+            
             pagination: {
                 el: ".donateSwiper .swiper-pagination",
                 clickable: true,
@@ -811,10 +814,14 @@
                 prevEl: ".swiper-father .swiper-button-prev",
             },
             breakpoints: {
+                992:{
+                    // slidesPerView:3,
+                    // width:500,
+                    // spaceBetween:300
+                },
                 1500: {
                     slidesPerView: 2,
                     slidesPerColumn: 2,
-
                 }
 
             }
@@ -946,7 +953,7 @@
                 foot_w.className = 'foot-w';
                 foot_w.setAttribute('src', '/img/03-adoptCat/footprint-white.png');
                 foot_area.appendChild(foot_w);
-                
+
             }
         }
         create_foot();

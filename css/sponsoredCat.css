@@ -550,7 +550,7 @@ h1 {
   display: none;
 }
 
-.second-section .anyang-img-area .foot-area {
+.second-section .anyang-img-area .anyang-mobile {
   display: none;
 }
 
@@ -1113,23 +1113,99 @@ h1 {
   .second-section .title-area img {
     width: 137px;
   }
+  .second-section .text-area {
+    width: 90%;
+  }
+  .second-section .text-area h3 span {
+    font-size: 2.5vw;
+  }
   .second-section .anyang-img-area {
     height: 83vw;
   }
   .second-section .anyang-img-area .anyang-img {
-    background-image: url("/img/03-adoptCat/decoPink-576.png");
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    display: none;
   }
   .second-section .anyang-img-area .anyang-img .paralysis-cat-1 {
     display: none;
   }
-  .second-section .anyang-img-area .foot-area {
-    row-gap: 20px;
+  .second-section .anyang-img-area .anyang-mobile {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    position: relative;
+  }
+  .second-section .anyang-img-area .anyang-mobile .bg-mobile {
+    width: 100%;
+    position: relative;
+  }
+  .second-section .anyang-img-area .anyang-mobile .paralysis-cat-2 {
+    position: absolute;
+    top: 17%;
+    left: 13%;
+    z-index: 2;
+    width: 53vw;
+    border-radius: 40px;
+  }
+  .second-section .anyang-img-area .anyang-mobile .foot-area {
+    width: 30%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    right: 10%;
+    z-index: 3;
+  }
+  .second-section .anyang-img-area .anyang-mobile .foot-area .foot-r, .second-section .anyang-img-area .anyang-mobile .foot-area .foot-w {
+    width: 2.8vw;
+  }
+  .second-section .anyang-img-area .anyang-mobile .foot-area .foot-r:nth-child(2) {
+    margin-left: 15vw;
+    margin-top: 1vw;
+  }
+  .second-section .anyang-img-area .anyang-mobile .foot-area .foot-r:nth-child(3) {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    margin-top: 15vw;
+    margin-left: 9vw;
+    -webkit-transform: rotate(60deg);
+            transform: rotate(60deg);
+  }
+  .second-section .anyang-img-area .anyang-mobile .foot-area .foot-w:nth-child(4) {
+    margin-left: 15vw;
+    margin-top: 12vw;
+    -webkit-transform: rotate(20deg);
+            transform: rotate(20deg);
+  }
+  .second-section .anyang-img-area .anyang-mobile .foot-area .foot-w:nth-child(5) {
+    margin-left: 25vw;
+    margin-top: 9vw;
+    -webkit-transform: rotate(60deg);
+            transform: rotate(60deg);
+  }
+  .second-section .anyang-img-area .anyang-mobile .foot-area .foot-w:nth-child(6) {
+    margin-left: 18vw;
+    margin-top: 10vw;
+  }
+  .second-section .anyang-img-area .anyang-mobile .foot-area .foot-w:nth-child(7) {
+    margin-left: 21vw;
+    margin-top: 10vw;
+    -webkit-transform: rotate(50deg);
+            transform: rotate(50deg);
+  }
+  .second-section .swiper-father .my-arrow1 {
+    width: 10vw;
+    height: 10vw;
+  }
+  .second-section .swiper-father .donateSwiper {
+    margin: 0 13vw;
+  }
+  .second-section .swiper-father .donateSwiper .swiper-slide {
+    margin-right: 120px;
+  }
+  .second-section .swiper-father .donateSwiper .swiper-slide .donate-card .card-img .donate-img {
+    width: 26.2vw;
+    height: 26.2vw;
   }
 }
 /*# sourceMappingURL=sponsoredCat.css.map */
