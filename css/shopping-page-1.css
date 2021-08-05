@@ -1,3 +1,9 @@
+@media (max-width: 768px) {
+  nav .nav {
+    margin-bottom: 100px;
+  }
+}
+
 main .first-section {
   margin-bottom: 190px;
 }

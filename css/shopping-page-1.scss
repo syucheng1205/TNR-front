@@ -1,5 +1,13 @@
 @import "_style_guide.scss";
 
+nav{
+	@media (max-width: 768px){
+		.nav{
+			margin-bottom: 100px;
+		}
+	}
+}
+
 main {
 	.first-section {
 		margin-bottom: 190px;
@@ -36,7 +44,7 @@ main {
 					font-size: 2vw;
 					color: #ffffff;
 				}
-				.cat-ear{
+				.cat-ear {
 					position: absolute;
 					top: -45px;
 					width: 100%;
@@ -44,7 +52,6 @@ main {
 					justify-content: space-around;
 				}
 			}
-
 		}
 	}
 
