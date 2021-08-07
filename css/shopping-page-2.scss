@@ -153,9 +153,8 @@ main {
 			display: flex;
 			justify-content: center;
 			.btn {
-				margin-top: 40px;
 				width: 20.05%;
-				height: 69px;
+				padding: 10px 0;
 				background-color: $color-dark-orange;
 				display: flex;
 				align-items: center;
@@ -199,6 +198,20 @@ main {
 		}
 	}
 
+	@media (max-width: 1110px){
+		.fouth-section {
+			margin: 100px 0;
+			.btn-area {
+				.btn {
+					width: 30%;
+					p {
+						font-size: 32px;
+					}
+				}
+			}
+		}
+	}
+
 	@media (max-width: 768px) {
 		.first-section {
 			.container140 {
@@ -215,6 +228,18 @@ main {
 					}
 					h5 {
 						font-size: 24px;
+					}
+				}
+			}
+		}
+
+		.fouth-section {
+			margin: 100px 0;
+			.btn-area {
+				.btn {
+					width: 30%;
+					p {
+						font-size: 4vw;
 					}
 				}
 			}

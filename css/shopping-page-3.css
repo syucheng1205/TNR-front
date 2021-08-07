@@ -13,19 +13,6 @@ main .first-section .container140 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  position: relative;
-}
-
-main .first-section .container140 .cat-ear {
-  position: absolute;
-  top: -30%;
-  left: 67.5vw;
-  width: 24.76%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
 }
 
 main .first-section .container140 .process {
@@ -57,15 +44,7 @@ main .first-section .container140 .process h5 {
 
 main .first-section .container140 .active {
   background-color: #ffa183;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  position: relative;
 }
 
 main .first-section .container140 .active h2 {
@@ -77,6 +56,17 @@ main .first-section .container140 .active h2 {
 main .first-section .container140 .active h5 {
   font-size: 2vw;
   color: #ffffff;
+}
+
+main .first-section .container140 .active .cat-ear {
+  position: absolute;
+  top: -45px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 main .thank-text {
