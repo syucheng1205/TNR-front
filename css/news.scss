@@ -1,0 +1,47 @@
+
+.TNRnews{
+
+    max-width: 1920px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    background-color: violet;
+    padding: 0px 140px;
+}
+.announce{
+   width: 21.4%;
+    background:url(/img/first-section/米色背景.jpg) ;
+    border-radius:20px ;
+    ul{
+         padding: 74px 90px 90px 90px;
+        li{
+            margin-bottom: 73px;
+
+        }
+        li:nth-child(5){
+            margin-bottom: unset;
+        }
+        a{
+            font-size: 24px;
+        }
+    }
+}
+.allNews{
+    width: 72.5%;
+    background-color: rgb(211, 211, 155);
+
+   
+  }
+  .NewsCard{
+    
+      display: flex;
+      justify-content: space-between;
+      .card{
+       width: 31%;
+background-color:#FFA183 
+;
+
+    }
+  }
+    
+

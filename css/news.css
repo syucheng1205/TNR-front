@@ -1,1 +1,55 @@
-/* No CSS *//*# sourceMappingURL=news.css.map */
+@charset "UTF-8";
+.TNRnews {
+  max-width: 1920px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: violet;
+  padding: 0px 140px;
+}
+
+.announce {
+  width: 21.4%;
+  background: url(/img/first-section/米色背景.jpg);
+  border-radius: 20px;
+}
+
+.announce ul {
+  padding: 74px 90px 90px 90px;
+}
+
+.announce ul li {
+  margin-bottom: 73px;
+}
+
+.announce ul li:nth-child(5) {
+  margin-bottom: unset;
+}
+
+.announce ul a {
+  font-size: 24px;
+}
+
+.allNews {
+  width: 72.5%;
+  background-color: #d3d39b;
+}
+
+.NewsCard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.NewsCard .card {
+  width: 31%;
+  background-color: #FFA183;
+}
+/*# sourceMappingURL=news.css.map */
