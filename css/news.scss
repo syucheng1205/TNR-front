@@ -1,19 +1,27 @@
 
 .TNRnews{
-
+    img{
+        width: 100%;
+        height: auto;
+        display: block;
+    }
     max-width: 1920px;
     margin: auto;
     display: flex;
     justify-content: space-between;
-    background-color: violet;
+  
     padding: 0px 140px;
 }
 .announce{
+    // position: fixed;
    width: 21.4%;
     background:url(/img/first-section/米色背景.jpg) ;
-    border-radius:20px ;
+    border-radius:40px ;
     ul{
-         padding: 74px 90px 90px 90px;
+        
+        padding-top: 74px;
+        padding-bottom: 90px;
+        text-align: center;
         li{
             margin-bottom: 73px;
 
@@ -28,7 +36,7 @@
 }
 .allNews{
     width: 72.5%;
-    background-color: rgb(211, 211, 155);
+   
 
    
   }
@@ -36,12 +44,57 @@
     
       display: flex;
       justify-content: space-between;
+      flex-wrap: wrap;
       .card{
-       width: 31%;
-background-color:#FFA183 
-;
+        width: 31.62%;
+        margin-bottom: 5.88%;
+    
+.pic{
+   
+    
+    position: relative;
+    img{
+        border-radius: 40px 40px 0 0;
+    }
+   
+  
+    .newDeco{
+        position: absolute;
+        top: -48px;
+        left: 31px;
+    display: flex;
+    P{
+font-size:24px ;
+// color: #FFA183;
+    }
+
+}
+
+}
+
 
     }
   }
     
+  .NewsCard{
+      .text{
+         
+         
+        border-radius:  0 0 40px 40px;
+    font-size: 24px;
+    color: white;
+         background-color: #FFA183;
+         img{
+             margin: 5.4% 0;
+         }
+         h4{
+            padding: 0 10% 16% 10%;
+         }
+         p{text-align: center;
+            padding-top: 5.4% ;
+             opacity: 0.8;
+         }
+      }
+  
+  }
 
