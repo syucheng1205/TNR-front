@@ -9,15 +9,6 @@ main {
 		.container140 {
 			display: flex;
 			justify-content: space-between;
-			position: relative;
-			.cat-ear {
-				position: absolute;
-				top: -30%;
-				left: 67.5vw;
-				width: 24.76%;
-				display: flex;
-				justify-content: space-around;
-			}
 			.process {
 				width: 29.76%;
 				padding: 27px 0;
@@ -38,9 +29,7 @@ main {
 			}
 			.active {
 				background-color: #ffa183;
-				display: flex;
-				justify-content: center;
-				align-items: center;
+				position: relative;
 				h2 {
 					font-size: 3vw;
 					color: #ffffff;
@@ -49,6 +38,13 @@ main {
 				h5 {
 					font-size: 2vw;
 					color: #ffffff;
+				}
+				.cat-ear {
+					position: absolute;
+					top: -45px;
+					width: 100%;
+					display: flex;
+					justify-content: space-around;
 				}
 			}
 		}

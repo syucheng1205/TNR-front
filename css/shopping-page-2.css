@@ -208,9 +208,8 @@ main .fouth-section .btn-area {
 }
 
 main .fouth-section .btn-area .btn {
-  margin-top: 40px;
   width: 20.05%;
-  height: 69px;
+  padding: 10px 0;
   background-color: #ff7950;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -272,6 +271,18 @@ main .fouth-section .btn-area .back:hover {
           transition-duration: 0.8s;
 }
 
+@media (max-width: 1110px) {
+  main .fouth-section {
+    margin: 100px 0;
+  }
+  main .fouth-section .btn-area .btn {
+    width: 30%;
+  }
+  main .fouth-section .btn-area .btn p {
+    font-size: 32px;
+  }
+}
+
 @media (max-width: 768px) {
   main .first-section .container140 {
     display: -webkit-box;
@@ -295,6 +306,15 @@ main .fouth-section .btn-area .back:hover {
   }
   main .first-section .container140 .active h5 {
     font-size: 24px;
+  }
+  main .fouth-section {
+    margin: 100px 0;
+  }
+  main .fouth-section .btn-area .btn {
+    width: 30%;
+  }
+  main .fouth-section .btn-area .btn p {
+    font-size: 4vw;
   }
 }
 /*# sourceMappingURL=shopping-page-2.css.map */
