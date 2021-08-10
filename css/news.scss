@@ -13,8 +13,10 @@
     padding: 0px 140px;
 }
 .announce{
-    // position: fixed;
-   width: 21.4%;
+   
+     position: fixed;
+     top: 27.5%;
+   width: 18.2%;
     background:url(/img/first-section/米色背景.jpg) ;
     border-radius:40px ;
     ul{
@@ -36,6 +38,7 @@
 }
 .allNews{
     width: 72.5%;
+   margin-left: 27.5%;
    
 
    
@@ -97,4 +100,6 @@ font-size:24px ;
       }
   
   }
-
+  footer{
+      z-index:2;
+  position:relative;}
