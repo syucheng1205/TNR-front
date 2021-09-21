@@ -143,6 +143,30 @@ main .grass-area .scroll-line::after {
   top: 80px;
 }
 
+main .grass-area .scroll-line::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  position: absolute;
+  border-radius: 50%;
+  top: 80px;
+  -webkit-animation: scrolling 1s infinite;
+          animation: scrolling 1s infinite;
+}
+
+@-webkit-keyframes scrolling {
+  to {
+    top: 173px;
+  }
+}
+
+@keyframes scrolling {
+  to {
+    top: 173px;
+  }
+}
+
 main .grass-area .grass-1 {
   width: 100%;
   height: 190px;

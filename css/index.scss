@@ -109,6 +109,21 @@ main {
 				position: absolute;
 				top: 80px;
 			}
+			&::before{
+				content: "";
+				width: 10px;
+				height: 10px;
+				background-color: #fff;
+				position: absolute;
+				border-radius: 50%;
+				top: 80px;
+				animation: scrolling 1s infinite;
+				@keyframes scrolling {
+					to{
+						top: 173px;
+					}
+				}
+			}
 		}
 		.grass-1 {
 			width: 100%;
