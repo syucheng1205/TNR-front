@@ -166,7 +166,7 @@
 						</div>
 						<div class="text">
 							<h3>節育貓咪數</h3>
-							<h1 class="count" data-target="19940">19,940</h1>
+							<h1 class="count" data-target="19940">0</h1>
 						</div>
 					</div>
 
@@ -176,7 +176,7 @@
 						</div>
 						<div class="text">
 							<h3>醫療救助案</h3>
-							<h1 class="count" data-target="19940">8,893</h1>
+							<h1 class="count" data-target="8893">0</h1>
 						</div>
 					</div>
 
@@ -186,7 +186,7 @@
 						</div>
 						<div class="text">
 							<h3>助罐貓咪數</h3>
-							<h1 class="count" data-target="19940">2,943</h1>
+							<h1 class="count" data-target="2943">0</h1>
 						</div>
 					</div>
 				</div>
@@ -405,46 +405,28 @@
 	<!-- number counter -->
 
 	<script>
-		// const counters = document.querySelectorAll(".count");
-		// const speed = 200;
+		const counters = document.querySelectorAll('.count');
+		const speed = 600;
 
-		// counters.forEach((counter) => {
-		// 	const updateCount = () => {
-		// 		const target = +counter.getAttribute("data-target");
-		// 		const count = +counter.innerText;
-		// 		const increment = Math.trunc(target / speed);
-		// 		// console.log(increment);
+		counters.forEach(counter => {
+			const animate = () => {
+				const value = +counter.getAttribute('data-target');
+				const data = +counter.innerText;
 
-		// 		if (count < target) {
-		// 			counter.innerText = parseInt(count + increment);
-		// 			console.log(parseInt(count + increment));
-		// 			setTimeout(updateCount, 7);
-		// 		} else {
-		// 			counter.innerText = target;
-		// 		}
-		// 	};
-		// });
-		// $(window).scroll(function () {
-		// 	var height = $(window).scrollTop();
-		// 	console.log(height);
-		// 	if (height >= 1900) {
-		// 		$(function () {
-		// 		$('.count').each(function () {
-		// 			$(this).prop('Counter', 0).animate({
-		// 				Counter: $(this).text()
-		// 			}, {
-		// 				duration: 2000,
-		// 				easing: 'swing',
-		// 				step: function (now) {
-		// 					$(this).text(Math.ceil(now).toString().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,"));
-		// 				}
-		// 			});
-		// 		});
+				const time = value / speed;
+				if (data < value) {
+					counter.innerText = Math.ceil(data + time);
+					setTimeout(animate, 1);
+				} else {
+					counter.innerText = value;
+				}
+				// console.log(formatNumber.format(Number(counter.innerText)));
+				// var formatNumber = new Intl.NumberFormat('us-US');
+				// formatNumber.format(Number(counter.innerText));
+			}
 
-		// 	});
-		// 	}
-		// });
-
+			animate();
+		});
 	</script>
 </body>
 
