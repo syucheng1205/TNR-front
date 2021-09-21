@@ -9,19 +9,6 @@ main .first-section .container140 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  position: relative;
-}
-
-main .first-section .container140 .cat-ear {
-  position: absolute;
-  top: -30%;
-  left: 37.5vw;
-  width: 24.76%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
 }
 
 main .first-section .container140 .process {
@@ -62,6 +49,7 @@ main .first-section .container140 .active {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
 }
 
 main .first-section .container140 .active h2 {
@@ -73,6 +61,17 @@ main .first-section .container140 .active h2 {
 main .first-section .container140 .active h5 {
   font-size: 2vw;
   color: #ffffff;
+}
+
+main .first-section .container140 .active .cat-ear {
+  position: absolute;
+  top: -45px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 main .container140 .detail {
@@ -209,9 +208,8 @@ main .fouth-section .btn-area {
 }
 
 main .fouth-section .btn-area .btn {
-  margin-top: 40px;
   width: 20.05%;
-  height: 69px;
+  padding: 10px 0;
   background-color: #ff7950;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -273,6 +271,18 @@ main .fouth-section .btn-area .back:hover {
           transition-duration: 0.8s;
 }
 
+@media (max-width: 1110px) {
+  main .fouth-section {
+    margin: 100px 0;
+  }
+  main .fouth-section .btn-area .btn {
+    width: 30%;
+  }
+  main .fouth-section .btn-area .btn p {
+    font-size: 32px;
+  }
+}
+
 @media (max-width: 768px) {
   main .first-section .container140 {
     display: -webkit-box;
@@ -281,12 +291,6 @@ main .fouth-section .btn-area .back:hover {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-  }
-  main .first-section .container140 .cat-ear {
-    width: 65%;
-    left: unset;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
   }
   main .first-section .container140 .process {
     display: none;
@@ -302,6 +306,15 @@ main .fouth-section .btn-area .back:hover {
   }
   main .first-section .container140 .active h5 {
     font-size: 24px;
+  }
+  main .fouth-section {
+    margin: 100px 0;
+  }
+  main .fouth-section .btn-area .btn {
+    width: 30%;
+  }
+  main .fouth-section .btn-area .btn p {
+    font-size: 4vw;
   }
 }
 /*# sourceMappingURL=shopping-page-2.css.map */

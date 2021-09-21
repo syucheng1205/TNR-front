@@ -1,19 +1,19 @@
 @import "_style_guide.scss";
 
+nav{
+	@media (max-width: 768px){
+		.nav{
+			margin-bottom: 100px;
+		}
+	}
+}
+
 main {
 	.first-section {
 		margin-bottom: 190px;
 		.container140 {
 			display: flex;
 			justify-content: space-between;
-			position: relative;
-			.cat-ear{
-				position: absolute;
-				top: -30%;
-				width: 24.76%;
-				display: flex;
-				justify-content: space-around;
-			}
 			.process {
 				width: 29.76%;
 				padding: 27px 0;
@@ -34,9 +34,7 @@ main {
 			}
 			.active {
 				background-color: #ffa183;
-				display: flex;
-				justify-content: center;
-				align-items: center;
+				position: relative;
 				h2 {
 					font-size: 3vw;
 					color: #ffffff;
@@ -46,8 +44,14 @@ main {
 					font-size: 2vw;
 					color: #ffffff;
 				}
+				.cat-ear {
+					position: absolute;
+					top: -45px;
+					width: 100%;
+					display: flex;
+					justify-content: space-around;
+				}
 			}
-
 		}
 	}
 
@@ -352,10 +356,6 @@ main {
 			.container140 {
 				display: flex;
 				justify-content: center;
-				.cat-ear{
-					width: 65%;
-					justify-content: space-around;
-				}
 				.process {
 					display: none;
 				}

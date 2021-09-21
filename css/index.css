@@ -197,6 +197,7 @@ main .first-section .container170 {
 main .first-section .container170 .about-us-swiper-area .swiper-container {
   width: 41.25vw;
   height: 35.2vw;
+  overflow: hidden;
 }
 
 main .first-section .container170 .about-us-swiper-area .swiper-container .deco-line1 {

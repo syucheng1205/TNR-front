@@ -13,19 +13,6 @@ main .first-section .container140 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  position: relative;
-}
-
-main .first-section .container140 .cat-ear {
-  position: absolute;
-  top: -30%;
-  left: 67.5vw;
-  width: 24.76%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
 }
 
 main .first-section .container140 .process {
@@ -57,15 +44,7 @@ main .first-section .container140 .process h5 {
 
 main .first-section .container140 .active {
   background-color: #ffa183;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  position: relative;
 }
 
 main .first-section .container140 .active h2 {
@@ -77,6 +56,17 @@ main .first-section .container140 .active h2 {
 main .first-section .container140 .active h5 {
   font-size: 2vw;
   color: #ffffff;
+}
+
+main .first-section .container140 .active .cat-ear {
+  position: absolute;
+  top: -45px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 main .thank-text {
@@ -268,7 +258,7 @@ main .third-section .container140 .detail-area .bot .product h6 {
 }
 
 main .third-section .container140 .detail-area .total-cost {
-  margin-bottom: 150px;
+  margin-bottom: 7.81vw;
 }
 
 main .third-section .container140 .detail-area .total-cost .top {
@@ -326,9 +316,8 @@ main .fouth-section .btn-area {
 }
 
 main .fouth-section .btn-area .btn {
-  margin-top: 40px;
   width: 20.05%;
-  height: 69px;
+  padding: 10px 0;
   background-color: #ff7950;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -450,7 +439,7 @@ main .fouth-section .btn-area .back:hover {
   }
   main .second-section .container140 .product-area .top h6:nth-child(5),
   main .second-section .container140 .product-area .bot h6:nth-child(5) {
-    border-bottom: 2px solid #F2A589;
+    border-bottom: 2px solid #f2a589;
   }
   main .second-section .container140 .product-area .top {
     text-align: left;
@@ -469,6 +458,44 @@ main .fouth-section .btn-area .back:hover {
   }
   main .second-section .container140 .product-area .bot h6:nth-child(1) {
     padding-right: 30px;
+  }
+  main .third-section .container140 .detail-area .bot .product {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main .third-section .container140 .detail-area .bot .product .product-img {
+    width: 110px;
+    height: 110px;
+  }
+  main .third-section .container140 .detail-area .bot .product h6 {
+    text-align: unset;
+  }
+  main .third-section .container140 .detail-area .total-cost {
+    margin-bottom: unset;
+  }
+  main .third-section .container140 .detail-area .total-cost .top h6,
+  main .third-section .container140 .detail-area .total-cost .mid h6,
+  main .third-section .container140 .detail-area .total-cost .bot h6 {
+    font-size: 20px;
+  }
+  main .fouth-section {
+    margin: 100px 0;
+  }
+  main .fouth-section .btn-area .btn {
+    width: 30%;
+  }
+  main .fouth-section .btn-area .btn p {
+    font-size: 4vw;
+  }
+}
+
+@media (max-width: 576px) {
+  main .third-section .container140 .detail-area .total-cost .top h6,
+  main .third-section .container140 .detail-area .total-cost .mid h6,
+  main .third-section .container140 .detail-area .total-cost .bot h6 {
+    font-size: 18px;
   }
 }
 /*# sourceMappingURL=shopping-page-3.css.map */

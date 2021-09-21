@@ -62,7 +62,7 @@ li {
 	display: flex;
 	justify-content: space-between;
 	padding: 20px 7.3% 0;
-	padding-right: max($numbers: 500px);
+	// padding-right: max($numbers: 500px);
 	// position: absolute; //首頁
 	margin-bottom: 180px; //其他頁面
 
@@ -83,7 +83,7 @@ li {
 		top: 40px;
 		height: 37px;
 		z-index: 99;
-
+		cursor: pointer;
 		.burger {
 			width: 90px;
 			height: 7px;
@@ -117,13 +117,14 @@ li {
 		}
 
 		.active {
-			display: block;
+			display: flex;
+			justify-content: center;
 		}
 	}
 	.burger-area {
-		float: right;
+		// float: right;
 		width: 60vw;
-		// height: 100vh;
+		height: 100vh;
 		background-image: url("/img/first-section/米色背景.jpg");
 		border-radius: 40px 0 40px 40px;
 		opacity: 0.8;
@@ -141,22 +142,24 @@ li {
 		}
 
 		.list {
+			height: 100%;
 			display: flex;
 			flex-direction: column;
 			align-items: center;
-
+			align-self: center;
+			justify-content: space-evenly;
 			a {
 				font-size: 60px;
 				color: #4f4f4f;
-				margin-bottom: 6%;
+				// margin-bottom: 6%;
 				cursor: pointer;
 				border-bottom: 4px solid transparent;
-				padding-bottom: 10px;
+				// padding-bottom: 10px;
 
 				&:hover {
 					color: $color-btn-text;
 					border-bottom: 4px solid $color-btn-text;
-					padding-bottom: 10px;
+					// padding-bottom: 10px;
 					transition-duration: 0.3s;
 				}
 			}
@@ -171,7 +174,7 @@ li {
 				box-shadow: 0px 10px 30px 0px $color-dark-orange;
 				cursor: pointer;
 				padding: 30px;
-				margin-bottom: 3vw;
+				// margin-bottom: 3vw;
 
 				p {
 					font-size: 48px;
