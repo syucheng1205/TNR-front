@@ -65,6 +65,7 @@ main .first-section .background .links .active {
 
 main .first-section .helpSwiper {
   margin-top: -13.2vw;
+  overflow-x: hidden;
 }
 
 main .first-section .helpSwiper .swiper-slide {
@@ -240,6 +241,7 @@ main .second-section .decorationCat:hover + .applySwiper .swiper-slide .left-pho
 main .second-section .applySwiper {
   margin-top: -232px;
   position: relative !important;
+  overflow-x: hidden;
 }
 
 main .second-section .applySwiper .swiper-slide {
@@ -250,7 +252,6 @@ main .second-section .applySwiper .swiper-slide {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  position: relative;
 }
 
 main .second-section .applySwiper .swiper-slide .line {
@@ -555,6 +556,7 @@ main .fourth-section .shadow {
 
 main .fourth-section .container140 .swiper-group .diarySwiper {
   margin-top: -14%;
+  overflow-x: hidden;
 }
 
 main .fourth-section .container140 .swiper-group .diarySwiper .swiper-slide {
