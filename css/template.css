@@ -353,6 +353,7 @@ footer .footer-area .container140 .ft-top .ft-mouse {
   background-image: url("/img/mouse.png");
   background-repeat: no-repeat;
   background-position: 45px 35px;
+  background-color: unset;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -363,6 +364,11 @@ footer .footer-area .container140 .ft-top .ft-mouse {
       -ms-flex-align: end;
           align-items: flex-end;
   margin-right: 45px;
+  cursor: pointer;
+}
+
+footer .footer-area .container140 .ft-top .ft-mouse:focus {
+  outline: unset;
 }
 
 footer .footer-area .container140 .ft-top .ft-mouse span {
