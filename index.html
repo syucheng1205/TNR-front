@@ -22,6 +22,8 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+	<!-- AOS -->
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -55,8 +57,8 @@
 				<span>每年有</span>
 				<div class="mid">
 					<div class="area-top">
-						<h1>1934</h1>
-						<h3>隻貓被撲殺</h3>
+						<h1 data-aos="fade-right" data-aos-delay="600" data-aos-duration="800">1934</h1>
+						<h3 data-aos="fade-left" data-aos-delay="200" data-aos-duration="800">隻貓被撲殺</h3>
 					</div>
 
 					<div class="area-bot">
@@ -65,9 +67,9 @@
 					</div>
 				</div>
 				<div class="bot">
-					<h2>絕育</h2>
-					<h1>0</h1>
-					<h2>撲殺</h2>
+					<h2 data-aos="zoom-in" data-aos-easing="ease-in-back">絕育</h2>
+					<h1 data-aos="zoom-in" data-aos-delay="800">0</h1>
+					<h2 data-aos="zoom-in" data-aos-easing="ease-in-back">撲殺</h2>
 				</div>
 				<a href="" class="banner-btn hvr-bounce-in">
 					<p>立即幫助</p>
@@ -344,17 +346,20 @@
 
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
 		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-	</script>
+		</script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
 		integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous">
-	</script>
+		</script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
 		integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous">
-	</script>
+		</script>
 	<!-- swiper -->
 	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
-
+	<!-- AOS -->
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js">
+	</script>
+	
 	<script>
 		var swiper = new Swiper(".mySwiper", {
 			spaceBetween: 0,
@@ -402,6 +407,11 @@
 	<!-- number counter -->
 	<script src="./js/scroll_animation.js"></script>
 	<script>
+
+	$(document).ready(function(){
+		AOS.init();  //AOS 初始化
+	})	
+
 		// document.addEventListener("scroll", function(){
 		// 	var top = window.scrollY;
 		// 	var bot = top + window.innerHeight*3/4;
@@ -432,17 +442,18 @@
 				animate();
 			});
 		}
-		
-		function scrollToTop () {
-			window.scrollTo(0,0);
+
+		function scrollToTop() {
+			window.scrollTo(0, 0);
 		}
 
-		function toFirstSection () {
+		function toFirstSection() {
 			var first_section = document.querySelector('.first-section').offsetTop;
-			window.scrollTo(0,first_section - 20);
+			window.scrollTo(0, first_section - 20);
 		}
-		
+
 	</script>
+
 </body>
 
 </html>
