@@ -310,10 +310,15 @@ footer {
 					background-image: url("/img/mouse.png");
 					background-repeat: no-repeat;
 					background-position: 45px 35px;
+					background-color: unset;
 					display: flex;
 					justify-content: center;
 					align-items: flex-end;
 					margin-right: 45px;
+					cursor: pointer;
+					&:focus{
+						outline: unset; 
+					}
 
 					span {
 						color: $color-btn-text;
