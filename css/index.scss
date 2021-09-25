@@ -101,6 +101,7 @@ main {
 			align-items: center;
 			z-index: 3;
 			height: 190px;
+			cursor: pointer;
 
 			&::after {
 				content: "";

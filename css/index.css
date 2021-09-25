@@ -133,6 +133,7 @@ main .grass-area .scroll-line {
           align-items: center;
   z-index: 3;
   height: 190px;
+  cursor: pointer;
 }
 
 main .grass-area .scroll-line::after {
