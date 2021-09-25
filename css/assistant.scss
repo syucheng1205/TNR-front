@@ -48,7 +48,6 @@ main {
 		}
 		.helpSwiper {
 			margin-top: -13.2vw;
-			overflow-x: hidden;
 			.swiper-slide {
 				width: 462px !important;
 				.donate-can-card {
@@ -187,12 +186,11 @@ main {
 		.applySwiper {
 			margin-top: -232px;
 			position: relative !important;
-			overflow-x: hidden;
 			.swiper-slide {
 				width: max-content;
 				height: 40.06vw;
 				align-items: center;
-				// position: relative;
+				position: relative;
 
 				.line {
 					width: 11%;
@@ -421,7 +419,6 @@ main {
 			.swiper-group {
 				.diarySwiper {
 					margin-top: -14%;
-					overflow-x: hidden;
 					.swiper-slide {
 						width: 50%;
 						display: flex;
