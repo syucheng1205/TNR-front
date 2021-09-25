@@ -328,11 +328,9 @@
 							</a>
 						</div>
 					</div>
-					<a href="#nav">
-						<div class="ft-mouse">
-							<span>Top</span>
-						</div>
-					</a>
+					<button class="ft-mouse">
+						<span>Top</span>
+					</button>
 				</div>
 				<div class="ft-bot">
 					<p>勸募核准文號：衛部救字第1091364516號</p>
@@ -345,14 +343,14 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
 
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-		crossorigin="anonymous"></script>
+		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+	</script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
-		integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
-		crossorigin="anonymous"></script>
+		integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous">
+	</script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
-		integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
-		crossorigin="anonymous"></script>
+		integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous">
+	</script>
 	<!-- swiper -->
 	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
@@ -400,7 +398,6 @@
 			// 停止事件，否則會一起觸發上面的事件
 			event.stopPropagation()
 		})
-
 	</script>
 	<!-- number counter -->
 	<script src="./js/scroll_animation.js"></script>
@@ -414,29 +411,27 @@
 		// 		scrollAnimation();
 		// 	}
 		// })
-		function scrollAnimation () {
+		function scrollAnimation() {
 			const counters = document.querySelectorAll('.count');
 			const speed = 2000;
-		
+
 			counters.forEach(counter => {
-			const animate = () => {
-				const value = +counter.getAttribute('data-target');
-				const data = +counter.innerText;
+				const animate = () => {
+					const value = +counter.getAttribute('data-target');
+					const data = +counter.innerText;
 
-				const time = value / speed;
-				if (data < value) {
-					counter.innerText = Math.ceil(data + time);
-					setTimeout(animate, 1);
-				} else {
-					counter.innerText = value.toLocaleString();
+					const time = value / speed;
+					if (data < value) {
+						counter.innerText = Math.ceil(data + time);
+						setTimeout(animate, 1);
+					} else {
+						counter.innerText = value.toLocaleString();
+					}
 				}
-			}
 
-			animate();
-		});
+				animate();
+			});
 		}
-		
-		
 	</script>
 </body>
 
