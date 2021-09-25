@@ -87,7 +87,7 @@
 							</a>
 						</div>
 					</div>
-					<button class="ft-mouse">
+					<button class="ft-mouse" onclick="scrollToTop()">
 						<span>Top</span>
 					</button>
 				</div>
@@ -144,6 +144,10 @@
 			// 停止事件，否則會一起觸發上面的事件
 			event.stopPropagation()
 		})
+
+		function scrollToTop () {
+			window.scrollTo(0,0);
+		}
 
 	</script>
 </body>
