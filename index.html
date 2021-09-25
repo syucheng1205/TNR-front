@@ -166,7 +166,7 @@
 						</div>
 						<div class="text">
 							<h3>節育貓咪數</h3>
-							<h1 class="count" data-target="19940">0</h1>
+							<h1 class="count" data-target="19940" onscroll="">0</h1>
 						</div>
 					</div>
 
@@ -403,12 +403,22 @@
 
 	</script>
 	<!-- number counter -->
-
+	<script src="./js/scroll_animation.js"></script>
 	<script>
-		const counters = document.querySelectorAll('.count');
-		const speed = 600;
-
-		counters.forEach(counter => {
+		// document.addEventListener("scroll", function(){
+		// 	var top = window.scrollY;
+		// 	var bot = top + window.innerHeight*3/4;
+		// 	var numerical = document.querySelector('.numerical').offsetTop
+		// 	console.log(numerical,bot);
+		// 	if (numerical < bot) {
+		// 		scrollAnimation();
+		// 	}
+		// })
+		function scrollAnimation () {
+			const counters = document.querySelectorAll('.count');
+			const speed = 2000;
+		
+			counters.forEach(counter => {
 			const animate = () => {
 				const value = +counter.getAttribute('data-target');
 				const data = +counter.innerText;
@@ -418,15 +428,15 @@
 					counter.innerText = Math.ceil(data + time);
 					setTimeout(animate, 1);
 				} else {
-					counter.innerText = value;
+					counter.innerText = value.toLocaleString();
 				}
-				// console.log(formatNumber.format(Number(counter.innerText)));
-				// var formatNumber = new Intl.NumberFormat('us-US');
-				// formatNumber.format(Number(counter.innerText));
 			}
 
 			animate();
 		});
+		}
+		
+		
 	</script>
 </body>
 

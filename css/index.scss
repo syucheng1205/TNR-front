@@ -111,11 +111,16 @@ main {
 			}
 			&::before{
 				content: "";
-				width: 10px;
-				height: 10px;
-				background-color: #fff;
+				border: solid white;
+  				border-width: 0 3px 3px 0;
+  				display: inline-block;
+  				padding: 5px;
+				transform: rotate(45deg);
+				// width: 10px;
+				// height: 10px;
+				// background-color: #fff;
 				position: absolute;
-				border-radius: 50%;
+				// border-radius: 50%;
 				top: 80px;
 				animation: scrolling 1s infinite;
 				@keyframes scrolling {
