@@ -239,6 +239,7 @@ main .second-section .decorationCat:hover + .applySwiper .swiper-slide .left-pho
 
 main .second-section .applySwiper {
   margin-top: -232px;
+  position: relative !important;
 }
 
 main .second-section .applySwiper .swiper-slide {
