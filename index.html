@@ -84,7 +84,7 @@
 		<div class="grass-area">
 			<img src="/img/grass-1.png" class="grass-1">
 			<img src="/img/second-section/grass-3.png" alt="" class="grass-3">
-			<div class="scroll-line">SCROLL</div>
+			<div class="scroll-line" onclick="toFirstSection()">SCROLL</div>
 			<img src="./img/grass-2.png" class="grass-2">
 			<div class="grass-4"></div>
 		</div>
@@ -328,7 +328,7 @@
 							</a>
 						</div>
 					</div>
-					<button class="ft-mouse" onclick="scrollToTop()">
+					<button class="ft-mouse">
 						<span>Top</span>
 					</button>
 				</div>
@@ -433,8 +433,13 @@
 			});
 		}
 		
-		function scrollToTop() {
+		function scrollToTop () {
 			window.scrollTo(0,0);
+		}
+
+		function toFirstSection () {
+			var first_section = document.querySelector('.first-section').offsetTop;
+			window.scrollTo(0,first_section - 20);
 		}
 		
 	</script>
