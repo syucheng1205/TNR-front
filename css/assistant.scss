@@ -38,11 +38,15 @@ main {
 					justify-content: center;
 					color: $color-light-orange;
 					font-size: 48px;
+					cursor: pointer; 
+					transition-duration: .2s;
 				}
 				.active {
 					width: 165px;
 					height: 165px;
 					font-size: 108px;
+					transition-duration: .2s;
+					order: -1;
 				}
 			}
 		}
