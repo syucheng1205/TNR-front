@@ -54,9 +54,9 @@
 					<span class="background-title">捐罐計畫</span>
 				</div>
 				<div class="links">
-					<div class="link active"><i class="fas fa-utensil-fork"></i></div>
-					<div class="link"><i class="fas fa-heartbeat"></i></div>
-					<div class="link"><i class="fas fa-stethoscope"></i></div>
+					<div class="link active" data-order="1"><i class="fas fa-utensil-fork"></i></div>
+					<div class="link" data-order="2"><i class="fas fa-heartbeat"></i></div>
+					<div class="link" data-order="3"><i class="fas fa-stethoscope"></i></div>
 				</div>
 			</div>
 
@@ -618,20 +618,22 @@
 			event.stopPropagation()
 		})
 	</script>
-	<!-- 最上選單 -->
+	<!-- 上方篩選選單 -->
 	<script>
 		var links = document.querySelectorAll('.link')
-		links.forEach(link =>{
-			link.addEventListener('click',function () {
+		var linkBox = document.querySelectorAll('.links')
+		links.forEach(link => {
+			link.addEventListener('click', function () {
 				removeActive()
 				this.classList.add('active')
 			})
 		})
+
 		function removeActive() {
-			links.forEach(link =>{
+			links.forEach(link => {
 				link.classList.remove('active')
 			})
-		}		
+		}
 	</script>
 </body>
 

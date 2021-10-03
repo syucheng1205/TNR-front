@@ -25,7 +25,6 @@ main {
 				top: -82.5px;
 				right: 6.8%;
 				display: flex;
-				justify-content: space-between;
 				align-items: center;
 				.link {
 					width: 100px;
@@ -38,16 +37,18 @@ main {
 					justify-content: center;
 					color: $color-light-orange;
 					font-size: 48px;
-					cursor: pointer; 
-					transition-duration: .2s;
+					cursor: pointer;
+					transition-duration: 1s;
 				}
 				.active {
 					width: 165px;
 					height: 165px;
 					font-size: 108px;
-					transition-duration: .2s;
+					transition-duration: 1.5s;
 					order: -1;
+					cursor: unset;
 				}
+				
 			}
 		}
 		.helpSwiper {
@@ -822,17 +823,17 @@ main {
 			}
 		}
 		.fourth-section {
-			.title-area{
+			.title-area {
 				.title-img img {
 					width: 137px;
 					height: 60px;
 				}
-				.title-text{
+				.title-text {
 					bottom: 22px;
 					right: 36px;
 				}
-			} 
-			
+			}
+
 			.container140 .swiper-group {
 				.diarySwiper .swiper-slide .diary-text .text {
 					overflow: hidden;
