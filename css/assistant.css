@@ -30,9 +30,6 @@ main .first-section .background .links {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -55,12 +52,21 @@ main .first-section .background .links .link {
           justify-content: center;
   color: #fe886d;
   font-size: 48px;
+  cursor: pointer;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
 }
 
 main .first-section .background .links .active {
   width: 165px;
   height: 165px;
   font-size: 108px;
+  -webkit-transition-duration: 1.5s;
+          transition-duration: 1.5s;
+  -webkit-box-ordinal-group: 0;
+      -ms-flex-order: -1;
+          order: -1;
+  cursor: unset;
 }
 
 main .first-section .helpSwiper {
